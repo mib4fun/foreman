@@ -15,7 +15,7 @@ class RemoveNonRedHat < ActiveRecord::Migration
     rhr.template = rhr.template.gsub('spacewalk', 'satellite').gsub('Spacewalk/Satellite', 'Satellite').gsub('Spacewalk', 'Satellite')
     rhr.save!
 
-    Ptable.destroy_all('name NOT LIKE "RedHat%"')
+    Ptable.destroy_all("name NOT LIKE 'RedHat%'")
   end
 
   def down

@@ -14,8 +14,8 @@
 %endif
 
 Name:   foreman
-Version: 1.6.0
-Release: 0.develop%{?dist}
+Version: 1.6.0.1
+Release: 1.%{?dist}
 Summary:Systems Management web application
 
 Group:  Applications/System

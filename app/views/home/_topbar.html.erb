@@ -2,10 +2,7 @@
   <div class="navbar-header">
     <div class="container">
       <div class="navbar-brand">
-        <!--[if IE]><div class='logo-small'> <![endif]-->
-        <%= image_tag("foreman.png") %>
-        <!--[if IE]></div> <![endif]-->
-        <%= link_to "Foreman", main_app.root_path %>
+        <%= link_to image_tag("Header-logotype.png"), root_path %>
       </div>
       <% if User.current %>
         <div>

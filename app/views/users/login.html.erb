@@ -1,10 +1,13 @@
 <% content_for :title, _('Login') %>
 
+<span id="badge">
+  <%= image_tag("Redhat-logo.png") %>
+</span>
 <div id="login" class="container">
   <div class="row">
     <div class="col-sm-12">
       <div id="brand">
-        <%= image_tag("foreman_white.png") %>
+        <%= image_tag("Login-logotype.png") %>
       </div><!--/#brand-->
     </div>
     <div class="col-sm-7 col-md-6 col-lg-5 login">
@@ -29,8 +32,8 @@
       <% end %>
     </div>
     <div class="col-sm-5 col-md-6 col-lg-7 details">
-      <p><strong><%= _("Welcome to Foreman") %></strong>
-      <p><%= _("Version %{version}") % {:version => SETTINGS[:version]} %></p>
+      <p><strong><%= _("Welcome to Satellite") %></strong>
+      <p><%= _("Version %{version}") % {:version => Satellite::VERSION} %></p>
     </div><!--/.col-*-->
   </div>
 </div>

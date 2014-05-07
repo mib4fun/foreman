@@ -19,7 +19,7 @@ module Api
         @total = SmartProxy.authorized(:view_smart_proxies).includes(:features).count
       end
 
-      api :GET, "/smart_proxies/:id/", "Show a smart proxy."
+      api :GET, "/smart_proxies/:id/", "Show a Capsule."
       param :id, :identifier, :required => true
 
       def show
@@ -32,7 +32,7 @@ module Api
         end
       end
 
-      api :POST, "/smart_proxies/", "Create a smart proxy."
+      api :POST, "/smart_proxies/", "Create a Capsule."
       param_group :smart_proxy, :as => :create
 
       def create
@@ -40,7 +40,7 @@ module Api
         process_response @smart_proxy.save
       end
 
-      api :PUT, "/smart_proxies/:id/", "Update a smart proxy."
+      api :PUT, "/smart_proxies/:id/", "Update a Capsule."
       param :id, String, :required => true
       param_group :smart_proxy
 
@@ -48,14 +48,14 @@ module Api
         process_response @smart_proxy.update_attributes(params[:smart_proxy])
       end
 
-      api :DELETE, "/smart_proxies/:id/", "Delete a smart_proxy."
+      api :DELETE, "/smart_proxies/:id/", "Delete a Capsule."
       param :id, String, :required => true
 
       def destroy
         process_response @smart_proxy.destroy
       end
 
-      api :PUT, "/smart_proxies/:id/refresh", "Refresh smart proxy features"
+      api :PUT, "/smart_proxies/:id/refresh", "Refresh Capsule features"
       param :id, String, :required => true
 
       def refresh

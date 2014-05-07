@@ -91,7 +91,7 @@ module Foreman::Model
     end
 
     def self.provider_friendly_name
-      "OpenStack"
+      "RHEL OpenStack Platform"
     end
 
     private

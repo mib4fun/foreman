@@ -28,11 +28,11 @@ module Api
         param :compute_resource, Hash, :action_aware => true do
           param :name, String
           param :provider, String, :desc => "Providers include #{ComputeResource.providers.join(', ')}"
-          param :url, String, :required => true, :desc => "URL for Libvirt, Ovirt, and Openstack"
+          param :url, String, :required => true, :desc => "URL for Libvirt, RHEV, and Openstack"
           param :description, String
-          param :user, String, :desc => "Username for Ovirt, EC2, Vmware, Openstack. Access Key for EC2."
-          param :password, String, :desc => "Password for Ovirt, EC2, Vmware, Openstack. Secret key for EC2"
-          param :uuid, String, :desc => "for Ovirt, Vmware Datacenter"
+          param :user, String, :desc => "Username for RHEV, EC2, Vmware, Openstack. Access Key for EC2."
+          param :password, String, :desc => "Password for RHEV, EC2, Vmware, Openstack. Secret key for EC2"
+          param :uuid, String, :desc => "for RHEV, Vmware Datacenter"
           param :region, String, :desc => "for EC2 only"
           param :tenant, String, :desc => "for Openstack only"
           param :server, String, :desc => "for Vmware"

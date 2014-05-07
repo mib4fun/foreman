@@ -98,7 +98,7 @@ echo "updating system time"
 
 <%= snippet 'redhat_register' %>
 
-<% if @host.info["parameters"]["realm"] && @host.otp && @host.realm && @host.realm.realm_type == "FreeIPA" && os_major <= 6 -%>
+<% if @host.info["parameters"]["realm"] && @host.otp && @host.realm && @host.realm.realm_type == "Red Hat Directory Server" && os_major <= 6 -%>
 <%= snippet "freeipa_register" %>
 <% end -%>
 

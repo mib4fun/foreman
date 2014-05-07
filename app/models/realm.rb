@@ -2,7 +2,7 @@ class Realm < ActiveRecord::Base
   include Authorizable
   include Taxonomix
 
-  TYPES = ["FreeIPA", "Active Directory"]
+  TYPES = ["Red Hat Directory Server", "Active Directory"]
 
   audited :allow_mass_assignment => true
   before_destroy EnsureNotUsedBy.new(:hosts, :hostgroups)

@@ -15,13 +15,13 @@ module Api
         @smart_proxies = proxies_by_type(params[:type]).paginate(paginate_options)
       end
 
-      api :GET, "/smart_proxies/:id/", "Show a smart proxy."
+      api :GET, "/smart_proxies/:id/", "Show a Capsule."
       param :id, :identifier, :required => true
 
       def show
       end
 
-      api :POST, "/smart_proxies/", "Create a smart proxy."
+      api :POST, "/smart_proxies/", "Create a Capsule."
       param :smart_proxy, Hash, :required => true do
         param :name, String, :required => true
         param :url, String, :required => true
@@ -32,7 +32,7 @@ module Api
         process_response @smart_proxy.save
       end
 
-      api :PUT, "/smart_proxies/:id/", "Update a smart proxy."
+      api :PUT, "/smart_proxies/:id/", "Update a Capsule."
       param :id, String, :required => true
       param :smart_proxy, Hash, :required => true do
         param :name, String
@@ -50,7 +50,7 @@ module Api
         process_response @smart_proxy.destroy
       end
 
-      api :PUT, "/smart_proxies/:id/refresh", "Refresh smart proxy features"
+      api :PUT, "/smart_proxies/:id/refresh", "Refresh Capsule features"
       param :id, String, :required => true
 
       def refresh

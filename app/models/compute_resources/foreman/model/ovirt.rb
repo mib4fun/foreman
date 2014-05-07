@@ -221,7 +221,7 @@ module Foreman::Model
     end
 
     def self.provider_friendly_name
-      "oVirt"
+      "RHEV"
     end
 
     def public_key

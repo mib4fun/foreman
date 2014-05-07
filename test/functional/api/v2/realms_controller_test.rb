@@ -21,7 +21,7 @@ class Api::V2::RealmsControllerTest < ActionController::TestCase
   end
 
   test "should create valid realm" do
-    post :create, { :realm => { :name => "realm.net", :realm_proxy_id => smart_proxies(:realm).to_param, :realm_type => "FreeIPA" } }
+    post :create, { :realm => { :name => "realm.net", :realm_proxy_id => smart_proxies(:realm).to_param, :realm_type => "Red Hat Directory Server" } }
     assert_response :success
     show_response = ActiveSupport::JSON.decode(@response.body)
     assert !show_response.empty?

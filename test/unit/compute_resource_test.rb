@@ -75,7 +75,7 @@ class ComputeResourceTest < ActiveSupport::TestCase
   test "friendly provider name" do
     assert_equal "Libvirt", compute_resources(:one).provider_friendly_name
     assert_equal "EC2", compute_resources(:ec2).provider_friendly_name
-    assert_equal "OpenStack", compute_resources(:openstack).provider_friendly_name
+    assert_equal "RHEL OpenStack Platform", compute_resources(:openstack).provider_friendly_name
   end
 
   test "ensure compute resource with associated profile can get destroyed" do

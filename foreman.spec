@@ -14,7 +14,7 @@
 %endif
 
 Name:   foreman
-Version: 1.6.0.3
+Version: 1.6.0.4
 Release: 1%{?dist}
 Summary:Systems Management web application
 
@@ -583,6 +583,11 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Wed May 07 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.4-1
+- Merge remote-tracking branch 'upstream/develop' into SATELLITE-6.0.3
+  (jmontleo@redhat.com)
+- refs #5188 - prepare place holder for host details (abenari@redhat.com)
+
 * Wed May 07 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.3-1
 - brand names (abenari@redhat.com)
 - down straem css and colors (abenari@redhat.com)

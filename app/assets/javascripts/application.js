@@ -378,5 +378,6 @@ function setPowerState(item, status){
   }else{
     $('#loading_power_state').text(_('Unknown power state'))
   }
+  power_actions.hide();
   $('[rel="twipsy"]').tooltip();
 }

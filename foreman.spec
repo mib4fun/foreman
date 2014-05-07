@@ -14,7 +14,7 @@
 %endif
 
 Name:   foreman
-Version: 1.6.0.1
+Version: 1.6.0.2
 Release: 1%{?dist}
 Summary:Systems Management web application
 
@@ -583,6 +583,90 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Wed May 07 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.2-1
+- change version number to satisfy requirement that branded source file be
+  different from upstream source file (jmontleo@redhat.com)
+- change version number to satisfy requirement that branded source file be
+  different from upstream source file (jmontleo@redhat.com)
+- add rel-eng files (jmontleo@redhat.com)
+- fixes #4590 - convert VMware SCSI controller type during creation
+  (dcleal@redhat.com)
+- fixes #5580 - pin scoped_search for Ruby 1.8 compatibility
+  (dcleal@redhat.com)
+- fixes #5537: it's possible to specify menu item url directly now
+  (dmitri@appliedlogic.ca)
+- fixes #5242 - Update external user attributes and group membership on every
+  logon (jpazdziora@redhat.com)
+- fixes #3892 - process REMOTE_USER_GROUP_N and REMOTE_USER_GROUP_#, add user
+  to groups based on external user groups. (jpazdziora@redhat.com)
+- fixes #5489 - don't generate empty search () filters on permissions migration
+  (dcleal@redhat.com)
+- fixes #5540 - also clone builtin roles during migration (dcleal@redhat.com)
+- fixes #5506 - added scoped search to SmartProxy for UI and API v2
+  (jmagen@redhat.com)
+- Fixes #4370 - Filters list show permissions (elobatocs@gmail.com)
+- Fixes #4287 - Join directly to template_combinations when resolving templates
+  (gsutclif@redhat.com)
+- fixes #5520 - proper capitalization in orchestration header
+  (stephen@bitbin.de)
+- fixes #2785 - host model clone method also copies relationships using
+  deep_cloneable gem (jmagen@redhat.com)
+- fixes #5427 - skip user roles FK removal if it's missing (dcleal@redhat.com)
+- fixes #4612 show friendly CR names, fix typo in oVirt name
+  (abenari@redhat.com)
+- fixes #5038 - remove empty label causing template edit box indentation
+  (dcleal@redhat.com)
+- fixes #5490 - ambiguous column in taxonomix pluck on Rails 3.2.8
+  (dcleal@redhat.com)
+- fixes #5241 - Add support for external user groups. (jpazdziora@redhat.com)
+- fixes #5132 URL doesn't update correctly after creating a new host
+  (abenari@redhat.com)
+- i18n - extracting new, updating rails, pulling from tx (dcleal@redhat.com)
+- templates - sync from community-templates (dcleal@redhat.com)
+- fixes #5450 - add realm to params for 1.4-compatible use in templates
+  (stephen@bitbin.de)
+- fixes #5132 hang when provisioning on ovirt 3.4 (abenari@redhat.com)
+- fixes #5470 vm state doesn't load on show page after redirect from new host
+  (abenari@redhat.com)
+- fixes #5453 - ensure all VMware compute attribute keys are symbolized
+  (dcleal@redhat.com)
+- fixes #5248 - restrict fog-core to compatible version (fog#2873)
+  (dcleal@redhat.com)
+- fixes #5444 - add param_false? host method and allow in templates
+  (stephen@bitbin.de)
+- fixes #5436 - provisioning templates are world accessible
+  (ohadlevy@gmail.com)
+- fixes #4599 - DNS and DHCP records for BMC and managed interfaces not using
+  FQDN (treydock@gmail.com)
+- fixes #5443 - cron.log is now appended to (lzap+git@redhat.com)
+- fixes #5106: only puppet and puppet-ca proxies are now being shown on the
+  'new host' page (dmitri@appliedlogic.ca)
+- fixes #5398: replaces calls to deprecated SmartProxy.*_proxies scope with
+  SmartProxy.with_features scope (dmitri@appliedlogic.ca)
+- Fixes #5391 - Authorizer test should use testing permission
+  (mhulan@redhat.com)
+- fixes #5401 - fixed foreman-debug tarball creation including '.'
+  (lzap+git@redhat.com)
+- fixes #4380 [vSphere] allow selection of guest OS (martin@matuska.org)
+- fixes #5205 - fixed all authorized links with given action
+  (lzap+git@redhat.com)
+- fixes #5258 - Can't edit a host due to IPMC/BMC interface form error
+  (jmagen@redhat.com)
+- fixes #4422 Implement available_images for oVirt to populate new image form
+  (abenari@redhat.com)
+- fixes #5246 - remove second host/class lookup impl so config groups are
+  included in ENC output (dcleal@redhat.com)
+- fixes #5247 - overridable keys displayed on host group when env is inherited
+  (dcleal@redhat.com)
+- fixes #4597 - map host disassociate actions to permission (dcleal@redhat.com)
+- fixes #5224 - Don't update a user with blank LDAP attribute values
+  (stephen@bitbin.de)
+- fixes #1902 - audit changes to lookup keys and values/overrides
+  (dcleal@redhat.com)
+- fixes #5222 - Log ldap attributes in debug-level logging (stephen@bitbin.de)
+- fixes #5214 - pin ancestry for Ruby 1.8 compatibility (dcleal@redhat.com)
+- Bump version to 1.6-develop (dcleal@redhat.com)
+
 * Wed Apr 16 2014 Dominic Cleal <dcleal@redhat.com> - 1.6.0-0.develop
 - Bump version to 1.6-develop
 

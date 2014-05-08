@@ -14,7 +14,7 @@
 %endif
 
 Name:   foreman
-Version: 1.6.0.5
+Version: 1.6.0.6
 Release: 1%{?dist}
 Summary:Systems Management web application
 
@@ -583,6 +583,13 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Thu May 08 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.6-1
+- Merge remote-tracking branch 'upstream/develop' into SATELLITE-6.0.3
+  (jmontleo@redhat.com)
+- fixes #5612 - use correct permissions for authz in parameters API
+  (dcleal@redhat.com)
+- fixes #5610 - upgrade to Rails 3.2.18 (dcleal@redhat.com)
+
 * Wed May 07 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.5-1
 - fix typo (jmontleo@redhat.com)
 

@@ -63,6 +63,7 @@
 .navbar-outer {
   background-color: $primary_color;
   border-color: darken($primary_color, 5%);
+  border-top: 3px solid #cc0000;
   height: 25px;
   min-height: 0;
   z-index: 1;

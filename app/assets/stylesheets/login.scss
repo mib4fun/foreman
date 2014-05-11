@@ -20,7 +20,8 @@
 }
 .login-page #badge {
   display: block;
-  margin: 20px auto 70px;
+  margin: 0 auto 70px;
+  padding-top: 20px;
   position: relative;
   text-align: center;
 }
@@ -33,7 +34,7 @@
 }
 .login-page {
   height: 100%;
-  background: url(bg-login.jpg);
+  background: #1d2226 url(bg-login.jpg) no-repeat;
   background-size: 100% auto;
   color: #fff;
 }

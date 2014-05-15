@@ -29,7 +29,7 @@ module Api
         param :realm, Hash, :action_aware => true do
           param :name, String, :required => true, :desc => "The realm name, e.g. EXAMPLE.COM"
           param :realm_proxy_id, :number, :required => false, :allow_nil => true, :desc => "Proxy to use for this realm"
-          param :realm_type, String, :required => true, :desc => "Realm type, e.g. Red Hat Directory Server or Active Directory"
+          param :realm_type, String, :required => true, :desc => "Realm type, e.g. Red Hat Identity Management or Active Directory"
         end
       end
 

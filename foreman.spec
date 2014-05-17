@@ -14,7 +14,7 @@
 %endif
 
 Name:   foreman
-Version: 1.6.0.7
+Version: 1.6.0.8
 Release: 1%{?dist}
 Summary:Systems Management web application
 
@@ -583,6 +583,17 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Sat May 17 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.8-1
+- Merge remote-tracking branch 'upstream/develop' into SATELLITE-6.0.3
+  (jmontleo@redhat.com)
+- Fixes #5637 - Don't raise lease conflicts when reading ad-hoc DHCP leases
+  (gsutclif@redhat.com)
+- fixes #5553: FiltersHelper#search_path returns an empty string for
+  unrecognized resources (dmitri@appliedlogic.ca)
+- fixes #5680 - quote searches for config groups containing spaces
+  (dcleal@redhat.com)
+- fixes #4250 - API v2 - add compute profiles (jmagen@redhat.com)
+
 * Thu May 08 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.7-1
 - Merge remote-tracking branch 'upstream/develop' into SATELLITE-6.0.3
   (jmontleo@redhat.com)

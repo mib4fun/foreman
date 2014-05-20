@@ -14,7 +14,7 @@
 %endif
 
 Name:   foreman
-Version: 1.6.0.8
+Version: 1.6.0.9
 Release: 1%{?dist}
 Summary:Systems Management web application
 
@@ -583,6 +583,18 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Tue May 20 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.9-1
+- Merge remote-tracking branch 'upstream/develop' into SATELLITE-6.0.3
+  (jmontleo@redhat.com)
+- Fixes #5689 - Plugin permissions are migrated too (mhulan@redhat.com)
+- fixes #5690 - determine host taxonomy fact based on setting value
+  (stephen@bitbin.de)
+- Fixes #5664 - Host filters can use taxonomies (mhulan@redhat.com)
+- Fixes #5221: Adds a helper method to allow a model instance to inquire if the
+  instance is authorized for a particular permission. (ericdhelms@gmail.com)
+- fixes #5660 - use with_taxonomy_scope for OS media selection
+  (stephen@bitbin.de)
+
 * Sat May 17 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.8-1
 - Merge remote-tracking branch 'upstream/develop' into SATELLITE-6.0.3
   (jmontleo@redhat.com)

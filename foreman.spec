@@ -14,7 +14,7 @@
 %endif
 
 Name:   foreman
-Version: 1.6.0.9
+Version: 1.6.0.10
 Release: 1%{?dist}
 Summary:Systems Management web application
 
@@ -583,6 +583,27 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Thu May 22 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.10-1
+- Merge remote-tracking branch 'upstream/develop' into SATELLITE-6.0.3
+  (jmontleo@redhat.com)
+- change version in VERSION file (jmontleo@redhat.com)
+- Fixed migration for removing non-RH distros with pg (shk@redhat.com)
+- Fixes BZ#971463 - remove non-Red Hat default content (shk@redhat.com)
+- fixes #5836 - Welcome page - missing rel attribute (jmagen@redhat.com)
+- fixes #5685 - add :path_ids to with_taxonomy_scope instead of subtree_ids for
+  SmartProxy select dropdowns (jmagen@redhat.com)
+- Fixes #5645: Fixes session undefined error when user has a default taxonomy
+  set. (ericdhelms@gmail.com)
+- fixes #5631 - API v2 - host and hostgroups show.json.rabl should show all
+  puppetclasses in child node (jmagen@redhat.com)
+- fixes #5671 - LookupValue name should be matcher, value is too long
+  (dcleal@redhat.com)
+- update releasers.conf (jmontleo@redhat.com)
+- fixes #5788 - before_destroy missing from EnsureNotUsedBy.new in SmartProxy
+  model (jmagen@redhat.com)
+- fixes #5726 - parameter values missing from host#show API call
+  (jmagen@redhat.com)
+
 * Tue May 20 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.9-1
 - Merge remote-tracking branch 'upstream/develop' into SATELLITE-6.0.3
   (jmontleo@redhat.com)

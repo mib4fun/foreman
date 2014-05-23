@@ -14,7 +14,7 @@
 %endif
 
 Name:   foreman
-Version: 1.6.0.12
+Version: 1.6.0.13
 Release: 1%{?dist}
 Summary:Systems Management web application
 
@@ -583,6 +583,9 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Fri May 23 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.13-1
+- remove migrate file for removing non Red Hat (jmontleo@redhat.com)
+
 * Fri May 23 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.12-1
 - Revert "change version in VERSION file" (jmontleo@redhat.com)
 

@@ -14,7 +14,7 @@
 %endif
 
 Name:   foreman
-Version: 1.6.0.10
+Version: 1.6.0.11
 Release: 1%{?dist}
 Summary:Systems Management web application
 
@@ -583,6 +583,10 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Fri May 23 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.11-1
+- Revert "Fixed migration for removing non-RH distros with pg"
+  (jmontleo@redhat.com)
+
 * Thu May 22 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.10-1
 - Merge remote-tracking branch 'upstream/develop' into SATELLITE-6.0.3
   (jmontleo@redhat.com)

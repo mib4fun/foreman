@@ -14,7 +14,7 @@
 %endif
 
 Name:   foreman
-Version: 1.6.0.13
+Version: 1.6.0.14
 Release: 1%{?dist}
 Summary:Systems Management web application
 
@@ -583,6 +583,10 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Tue Jun 03 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.14-1
+- fixes #5965: removed 8443 port from the suggested ovirt url
+  (dmitri@appliedlogic.ca)
+
 * Fri May 23 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.13-1
 - remove migrate file for removing non Red Hat (jmontleo@redhat.com)
 

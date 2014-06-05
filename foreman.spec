@@ -14,7 +14,7 @@
 %endif
 
 Name:   foreman
-Version: 1.6.0.31
+Version: 1.6.0.32
 Release: 1%{?dist}
 Summary:Systems Management web application
 
@@ -583,6 +583,12 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Wed Jul 23 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.32-1
+- Fixes #6065 - Update TopbarSweeper to clear cache for other users than
+  User.current (gsutclif@redhat.com)
+- fixes #6402 - use standard success/error handlers in UI controllers
+  (dcleal@redhat.com)
+
 * Tue Jul 22 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.31-1
 - fixes #6375 - fix needed for Rails 3.2.8 only that ensures reference_id on
   parameter.rb matches the nested object id (jmagen@redhat.com)

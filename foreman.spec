@@ -14,7 +14,7 @@
 %endif
 
 Name:   foreman
-Version: 1.6.0.14
+Version: 1.6.0.15
 Release: 1%{?dist}
 Summary:Systems Management web application
 
@@ -583,6 +583,14 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Mon Jun 09 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.15-1
+- fixes #6091 - menu removal wasn't traversing menu hierarchy
+  (sseago@redhat.com)
+- fixes #5834 - Hosts: . in the name is invalid - user is told this but the UI
+  adds one anyway (jmagen@redhat.com)
+- fixes #5826 - Using dots in kickstart template names or hostgroups causes
+  routing errors (jmagen@redhat.com)
+
 * Tue Jun 03 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.14-1
 - fixes #5965: removed 8443 port from the suggested ovirt url
   (dmitri@appliedlogic.ca)

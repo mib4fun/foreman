@@ -128,7 +128,7 @@
       <h6><%= _("Issue tracker") %></h6>
       <p><%= _("We use Redmine to report and track bugs and feature requests, which can be found here:") %> <%= link_to _("issue tracker"), "http://projects.theforeman.org/projects/foreman/issues", :rel => "external" %></p>
     </div>
-    <div class="stats-well">
+    <div class="stats-well" id="copyright-div">
       <h4><%= _("System Information") %> </h4>
       <p>Red Hat Satellite<br/><%= _("Version %{version} © 2014 Red Hat Inc.") % {:version => Satellite::VERSION} %></p>
       <p><%= (_("Includes Foreman © 2009-%{year} Paul Kelly and %{author}") % {:year=>DateTime.now.year, :author=>link_to("Ohad Levy", "mailto:ohadlevy@gmail.com" )}).html_safe %></p>

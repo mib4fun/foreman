@@ -14,7 +14,7 @@
 %endif
 
 Name:   foreman
-Version: 1.6.0.15
+Version: 1.6.0.16
 Release: 1%{?dist}
 Summary:Systems Management web application
 
@@ -583,6 +583,9 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Wed Jun 11 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.16-1
+- templates - sync from community-templates (dcleal@redhat.com)
+
 * Mon Jun 09 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.15-1
 - fixes #6091 - menu removal wasn't traversing menu hierarchy
   (sseago@redhat.com)

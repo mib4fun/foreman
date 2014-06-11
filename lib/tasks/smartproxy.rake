@@ -5,7 +5,7 @@
 require 'resolv'
 # TRANSLATORS: do not translate
 desc <<-END_DESC
-  Migrate each host's textual puppetmaster value over to a reference to a smart proxy
+  Migrate each host's textual puppetmaster value over to a reference to a capsule
 
   The smart proxies should be declared using a FQDN before this operation. The procedure is as follows
     find all smart-proxies that support puppetca and their aliases
@@ -52,7 +52,7 @@ namespace :smartproxy do
           puts "Updated #{host.name} to use the #{proxy.name} Capsule"
         end
       end
-      puts "Failed to map #{host.name}'s puppetmaster(#{host.pm_fqdn}) to a smart proxy" if host.puppet_proxy.nil?
+      puts "Failed to map #{host.name}'s puppetmaster(#{host.pm_fqdn}) to a capsule" if host.puppet_proxy.nil?
     end
   end
 end

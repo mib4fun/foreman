@@ -1269,6 +1269,32 @@ class HostTest < ActiveSupport::TestCase
     assert_equal "dhcp123", host.fqdn
   end
 
+  test 'clone should create compute_attributes for VM-based hosts' do
+    copy = hosts(:one).clone
+    assert !copy.compute_attributes.nil?
+  end
+
+  test 'clone should NOT create compute_attributes for bare-metal host' do
+    copy = hosts(:bare_metal).clone
+    assert copy.compute_attributes.nil?
+  end
+
+  test 'facts are deleted when build set to true' do
+    host = FactoryGirl.create(:host, :with_facts)
+    assert_present host.fact_values
+    refute host.build?
+    host.update_attributes(:build => true)
+    assert_empty host.fact_values.reload
+  end
+
+  test 'reports are deleted when build set to true' do
+    host = FactoryGirl.create(:host, :with_reports)
+    assert_present host.reports
+    refute host.build?
+    host.update_attributes(:build => true)
+    assert_empty host.reports.reload
+  end
+
   private
 
   def parse_json_fixture(relative_path)

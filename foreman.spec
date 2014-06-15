@@ -14,7 +14,7 @@
 %endif
 
 Name:   foreman
-Version: 1.6.0.21
+Version: 1.6.0.22
 Release: 1%{?dist}
 Summary:Systems Management web application
 
@@ -583,6 +583,22 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Fri Jul 11 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.22-1
+- Fixes #6117 - clean usergroup cache (mhulan@redhat.com)
+- fixes #6216, #4416 - avoid foreign key errors when deleting some objects in
+  use (jmagen@redhat.com)
+- fixes #5969 - improve message when deleting virtual machines to indicate
+  delay (jmagen@redhat.com)
+- fixes #5854 - org creation by non-admin normal user now associates themselves
+  (jmagen@redhat.com)
+- fixes #5939: it's no longer possible to switch tabs when compute profile is
+  being edited. (dmitri@appliedlogic.ca)
+- Fixes #6337 - ensure VM tab is still visible when we deselect profile
+  (elobatocs@gmail.com)
+- Fixes #6357 - ensure JS is loaded so taxonomy_added is defined on user form
+  (elobatocs@gmail.com)
+- update releasers (jmontleo@redhat.com)
+
 * Wed Jun 25 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.21-1
 - [REFACTOR] refs #6229 - extract validation to a method (jmagen@redhat.com)
 

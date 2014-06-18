@@ -14,7 +14,7 @@
 %endif
 
 Name:   foreman
-Version: 1.6.0.17
+Version: 1.6.0.18
 Release: 1%{?dist}
 Summary:Systems Management web application
 
@@ -583,6 +583,14 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Wed Jun 18 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.18-1
+- style fixes after review by kyle (abenari@redhat.com)
+- renamed Red Hat Directory Server to Red Hat Identity Management
+  (abenari@redhat.com)
+-  Merge branch '1103295' into 'SATELLITE-6.0.3' (jmontleo@redhat.com)
+- fixes BZ #1103295 - Inconsistent use of 'capsule' and 'smart proxy' in the UI
+  (jmagen@redhat.com)
+
 * Thu Jun 12 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.17-1
 - fixes #4736 - organization edit ui has unselectable environment
   (jmagen@redhat.com)

@@ -14,7 +14,7 @@
 %endif
 
 Name:   foreman
-Version: 1.6.0.18
+Version: 1.6.0.19
 Release: 1%{?dist}
 Summary:Systems Management web application
 
@@ -583,6 +583,13 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Thu Jun 19 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.19-1
+- fixes #6121 - made copyright section defaceable (lzap+git@redhat.com)
+- fixes RHBZ#1103306 - branding copyright info on the about page
+  (lzap+git@redhat.com)
+- fixes #6003 - don't render user default loc/org object directly
+  (thomasmckay@redhat.com)
+
 * Wed Jun 18 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.18-1
 - style fixes after review by kyle (abenari@redhat.com)
 - renamed Red Hat Directory Server to Red Hat Identity Management

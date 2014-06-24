@@ -14,7 +14,7 @@
 %endif
 
 Name:   foreman
-Version: 1.6.0.19
+Version: 1.6.0.20
 Release: 1%{?dist}
 Summary:Systems Management web application
 
@@ -583,6 +583,15 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Tue Jun 24 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.20-1
+- Merge branch 'SATELLITE-6.0.3' of
+  gitlab.sat.lab.tlv.redhat.com:satellite6/foreman into SATELLITE-6.0.3
+  (jmontleo@redhat.com)
+- fixes #5129 - Host Group creation may fail if parameter is same name
+  (jmagen@redhat.com)
+- fixes BZ #1111042 - CSS float right for Admin Menu is not right justified on
+  some browsers (jmagen@redhat.com)
+
 * Thu Jun 19 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.19-1
 - fixes #6121 - made copyright section defaceable (lzap+git@redhat.com)
 - fixes RHBZ#1103306 - branding copyright info on the about page

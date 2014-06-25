@@ -14,7 +14,7 @@
 %endif
 
 Name:   foreman
-Version: 1.6.0.20
+Version: 1.6.0.21
 Release: 1%{?dist}
 Summary:Systems Management web application
 
@@ -583,6 +583,9 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Wed Jun 25 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.21-1
+- [REFACTOR] refs #6229 - extract validation to a method (jmagen@redhat.com)
+
 * Tue Jun 24 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.20-1
 - Merge branch 'SATELLITE-6.0.3' of
   gitlab.sat.lab.tlv.redhat.com:satellite6/foreman into SATELLITE-6.0.3

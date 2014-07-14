@@ -14,7 +14,7 @@
 %endif
 
 Name:   foreman
-Version: 1.6.0.22
+Version: 1.6.0.23
 Release: 1%{?dist}
 Summary:Systems Management web application
 
@@ -583,6 +583,10 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Mon Jul 14 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.23-1
+- fixes #6441 - allows filtering of parameters per controller
+  (dtsang@redhat.com)
+
 * Fri Jul 11 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.22-1
 - Fixes #6117 - clean usergroup cache (mhulan@redhat.com)
 - fixes #6216, #4416 - avoid foreign key errors when deleting some objects in

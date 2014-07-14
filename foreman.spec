@@ -14,7 +14,7 @@
 %endif
 
 Name:   foreman
-Version: 1.6.0.24
+Version: 1.6.0.25
 Release: 1%{?dist}
 Summary:Systems Management web application
 
@@ -583,6 +583,50 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Mon Jul 14 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.25-1
+- Fixes #6532 - permission related api extensions (tstrachota@redhat.com)
+- Fixes #5696 - Allow taxonomy and roles display (mhulan@redhat.com)
+- fixes #5928 - added selinux info to foreman-debug (lzap+git@redhat.com)
+- fixes #6501: pin jquery-ui-rails (kvedulv@kvedulv.de)
+- fixes #6374 - NIC hostname now blank when domain is present, but no hostname
+  is given (dswift@brightroll.com)
+- fixes #5963 - fix Role has_permission? function (martin.ducar@gooddata.com)
+- fixes #6030 - update list of VMware guest types (kvedulv@kvedulv.de)
+- fixes #6067 - UI inconsistency around root password limit 8 characters
+  (jmagen@redhat.com)
+- fixes #5777 - search on filters returns error (jmagen@redhat.com)
+- fixes #5566 - free text fact values query produces invalid SQL error
+  (jmagen@redhat.com)
+- fixes #5832 - org switcher does not collapse when moving mouse diagnally to
+  submenu (jmagen@redhat.com)
+- fixes #6355 - OS free text search shouldn't search associations
+  (jmagen@redhat.com)
+- fixes #5848 - can't search for host with class inherited from config group
+  (jmagen@redhat.com)
+- fixes #6248 - API V2 return object for POST/PUT/DELETE should *not* include
+  root node (jmagen@redhat.com)
+- Fixes #6160 - don't validate images for network based provisioning
+  (inecas@redhat.com)
+- Fixes #6099 - Bubble Fog::Errors up to Host (gsutclif@redhat.com)
+- Fixes #5941 - Handle nil comparison object in DHCP::Record.valid?
+  (gsutclif@redhat.com)
+- Fixes #6533 - rest-client 1.7.0 dropped Ruby 1.8 support
+  (elobatocs@gmail.com)
+- Fixes #5946 - Only call fact_name_class.maximum if necessary.
+  (nacho.barrientos@cern.ch)
+- fixes #5994: Power and Console buttons are available to non-admin users with
+  appropriate permissions (dmitri@appliedlogic.ca)
+- fixes #5708: #nil? is now an allowed method inside of Host and Token jails
+  (dmitri@appliedlogic.ca)
+- fixes #6331 - use view permission to authorize individual VM show pages
+  (dcleal@redhat.com)
+- fixes #5652 - run parse_args when calling new_vm for compute profiles
+  (dcleal@redhat.com)
+- fixes #5869 - permit accents in user names on Ruby 1.8 (dcleal@redhat.com)
+- fixes #5879 - minimum of scoped_search 2.7.0 required (dcleal@redhat.com)
+- fixes #5966 - pin execjs for Ruby 1.8 compatibility (dcleal@redhat.com)
+- Fixes #5810 - fixes issue with incorrect page titles (cfouant@redhat.com)
+
 * Mon Jul 14 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.24-1
 - fixes #6497: New Organization: Focus should exist in Name field
   (orabin@redhat.com)

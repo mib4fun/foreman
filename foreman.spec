@@ -14,7 +14,7 @@
 %endif
 
 Name:   foreman
-Version: 1.6.0.23
+Version: 1.6.0.24
 Release: 1%{?dist}
 Summary:Systems Management web application
 
@@ -583,6 +583,10 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Mon Jul 14 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.24-1
+- fixes #6497: New Organization: Focus should exist in Name field
+  (orabin@redhat.com)
+
 * Mon Jul 14 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.23-1
 - fixes #6441 - allows filtering of parameters per controller
   (dtsang@redhat.com)

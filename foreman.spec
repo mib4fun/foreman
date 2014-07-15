@@ -14,7 +14,7 @@
 %endif
 
 Name:   foreman
-Version: 1.6.0.27
+Version: 1.6.0.28
 Release: 1%{?dist}
 Summary:Systems Management web application
 
@@ -583,6 +583,10 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Tue Jul 15 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.28-1
+- fixes #3272 - allow 'admin' account to be removed and replaced
+  (dcleal@redhat.com)
+
 * Tue Jul 15 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.27-1
 - Fixes #6580 - XSS in operating system name/description (CVE-2014-3531)
   (elobatocs@gmail.com)

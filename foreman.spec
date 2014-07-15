@@ -14,7 +14,7 @@
 %endif
 
 Name:   foreman
-Version: 1.6.0.25
+Version: 1.6.0.26
 Release: 1%{?dist}
 Summary:Systems Management web application
 
@@ -583,6 +583,14 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Tue Jul 15 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.26-1
+- Fixes #6537: Entering a very large number for idle_timeout is unchecked,
+  crashes UI (orabin@redhat.com)
+- fixes #6177 - clear host facts/reports when build=true set over API
+  (dcleal@redhat.com)
+- fixes #3664 - support deletion of installation media that's in use
+  (jmagen@redhat.com)
+
 * Mon Jul 14 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.25-1
 - Fixes #6532 - permission related api extensions (tstrachota@redhat.com)
 - Fixes #5696 - Allow taxonomy and roles display (mhulan@redhat.com)

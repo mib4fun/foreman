@@ -14,7 +14,7 @@
 %endif
 
 Name:   foreman
-Version: 1.6.0.26
+Version: 1.6.0.27
 Release: 1%{?dist}
 Summary:Systems Management web application
 
@@ -583,6 +583,17 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Tue Jul 15 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.27-1
+- Fixes #6580 - XSS in operating system name/description (CVE-2014-3531)
+  (elobatocs@gmail.com)
+- Fixes #6057: highlight active tab based on current URL. (walden@redhat.com)
+- Fixes #6582: Change position of buttons when editing a location
+  (orabin@redhat.com)
+- fixes #5235: it's impossible to create filters with invaid searches
+  (dmitri@appliedlogic.ca)
+- fixes #5178 - unify API parameters and return values. User creation should
+  not require payload wrapped with 'user' root (jmagen@redhat.com)
+
 * Tue Jul 15 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.26-1
 - Fixes #6537: Entering a very large number for idle_timeout is unchecked,
   crashes UI (orabin@redhat.com)

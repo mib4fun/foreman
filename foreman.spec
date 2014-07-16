@@ -14,7 +14,7 @@
 %endif
 
 Name:   foreman
-Version: 1.6.0.28
+Version: 1.6.0.29
 Release: 1%{?dist}
 Summary:Systems Management web application
 
@@ -583,6 +583,11 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Wed Jul 16 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.29-1
+-  Merge branch '1103295b' into 'SATELLITE-6.0.4' (jmontleo@redhat.com)
+- more fixes #1103295 - Inconsistent use of 'capsule' and 'smart proxy' in the
+  UI (jmagen@redhat.com)
+
 * Tue Jul 15 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.28-1
 - fixes #3272 - allow 'admin' account to be removed and replaced
   (dcleal@redhat.com)

@@ -14,7 +14,7 @@
 %endif
 
 Name:   foreman
-Version: 1.6.0.29
+Version: 1.6.0.30
 Release: 1%{?dist}
 Summary:Systems Management web application
 
@@ -583,6 +583,9 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Tue Jul 22 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.30-1
+- fixes #3601: Use secure websockets if available (ewoud@kohlvanwijngaarden.nl)
+
 * Wed Jul 16 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.29-1
 -  Merge branch '1103295b' into 'SATELLITE-6.0.4' (jmontleo@redhat.com)
 - more fixes #1103295 - Inconsistent use of 'capsule' and 'smart proxy' in the

@@ -14,7 +14,7 @@
 %endif
 
 Name:   foreman
-Version: 1.6.0.30
+Version: 1.6.0.31
 Release: 1%{?dist}
 Summary:Systems Management web application
 
@@ -583,6 +583,12 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Tue Jul 22 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.31-1
+- fixes #6375 - fix needed for Rails 3.2.8 only that ensures reference_id on
+  parameter.rb matches the nested object id (jmagen@redhat.com)
+- Fixes #6650: Friendlier message when attempting to delete oneself.
+  (ericdhelms@gmail.com)
+
 * Tue Jul 22 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.30-1
 - fixes #3601: Use secure websockets if available (ewoud@kohlvanwijngaarden.nl)
 

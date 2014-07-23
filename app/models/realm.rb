@@ -4,6 +4,7 @@ class Realm < ActiveRecord::Base
 
   TYPES = ["Red Hat Identity Management", "Active Directory"]
 
+  validates_lengths_from_database
   audited :allow_mass_assignment => true
   before_destroy EnsureNotUsedBy.new(:hosts, :hostgroups)
 

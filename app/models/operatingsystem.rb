@@ -5,6 +5,7 @@ class Operatingsystem < ActiveRecord::Base
   include Authorizable
   include ValidateOsFamily
 
+  validates_lengths_from_database
   before_destroy EnsureNotUsedBy.new(:hosts, :hostgroups)
   has_many_hosts
   has_many :hostgroups
@@ -18,7 +19,7 @@ class Operatingsystem < ActiveRecord::Base
   accepts_nested_attributes_for :os_default_templates, :allow_destroy => true,
     :reject_if => lambda { |v| v[:config_template_id].blank? }
 
-  validates :major, :numericality => true, :presence => { :message => N_("Operating System version is required") }
+  validates :major, :numericality => {:greater_than_or_equal_to => 0}, :presence => { :message => N_("Operating System version is required") }
   has_many :os_parameters, :dependent => :destroy, :foreign_key => :reference_id
   has_many :parameters, :dependent => :destroy, :foreign_key => :reference_id, :class_name => "OsParameter"
   accepts_nested_attributes_for :os_parameters, :reject_if => lambda { |a| a[:value].blank? }, :allow_destroy => true

@@ -11,6 +11,7 @@ class LookupKey < ActiveRecord::Base
   EQ_DELM  = "="
 
   audited :associated_with => :audit_class, :allow_mass_assignment => true
+  validates_lengths_from_database
 
   serialize :default_value
 
@@ -30,7 +31,6 @@ class LookupKey < ActiveRecord::Base
   accepts_nested_attributes_for :lookup_values, :reject_if => lambda { |a| a[:value].blank? }, :allow_destroy => true
 
   before_validation :validate_and_cast_default_value
-
   validates :key, :uniqueness => true, :unless => Proc.new{|p| p.is_param?}
   validates :key, :presence => true
   validates :puppetclass, :presence => true, :unless => Proc.new {|k| k.is_param?}

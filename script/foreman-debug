@@ -293,19 +293,3 @@ if [ "$NOTAR" -eq 0 ]; then
 else
   qprintf "%s: %s\n\n" "A debug directory has been created" "$DIR"
 fi
-
-qprintf "You may want to upload the tarball to our public server via rsync. There is a\n"
-qprintf "write only directory (readable only by Foreman core developers) for that. Note\n"
-qprintf "the rsync transmission is UNENCRYPTED:\n\n"
-qprintf "  rsync $TARBALL rsync://theforeman.org/debug-incoming\n\n"
-
-# offer upload if the shell is interactive and not in quiet mode
-if [ $QUIET -ne 1 ] && tty -s && type -p rsync >/dev/null; then
-  clean_stdin
-  read -p "Do you want to do this now? [y/N] " -n 1 -r; echo
-  if [[ $REPLY =~ ^[Yy]$ ]]; then
-    echo "Uploading..."
-    rsync $TARBALL rsync://theforeman.org/debug-incoming
-    echo "The tarball has been uploaded, please contact us on mailing list or IRC."
-  fi
-fi

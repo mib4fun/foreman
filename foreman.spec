@@ -14,7 +14,7 @@
 %endif
 
 Name:   foreman
-Version: 1.6.0.32
+Version: 1.6.0.33
 Release: 1%{?dist}
 Summary:Systems Management web application
 
@@ -583,6 +583,17 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Wed Jul 30 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.33-1
+- Fixes #6779: Restrict ci_reporter gem to less than 2.0.0 to fix CI.
+  (ericdhelms@gmail.com)
+- Fixes #6483 - oVirt network is properly populated for multiple datacenters
+  (nmiao@redhat.com)
+- Fixes #6768 - Hammer set-parameter does not work (martin.bacovsky@gmail.com)
+- fixes #4641 - Ensure default role only after save/update. Change default role
+  permissions (maria.nita.dn@gmail.com)
+- Fixes #6606 - Allow deletion of non-admin users if 1 admin
+  (daviddavis@redhat.com)
+
 * Wed Jul 23 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.32-1
 - Fixes #6065 - Update TopbarSweeper to clear cache for other users than
   User.current (gsutclif@redhat.com)

@@ -14,7 +14,7 @@
 %endif
 
 Name:   foreman
-Version: 1.6.0.33
+Version: 1.6.0.34
 Release: 1%{?dist}
 Summary:Systems Management web application
 
@@ -583,6 +583,10 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Wed Jul 30 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.34-1
+- BZ1105259 - Do not upload debug info to Foreman public servers
+  (stbenjam@redhat.com)
+
 * Wed Jul 30 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.33-1
 - Fixes #6779: Restrict ci_reporter gem to less than 2.0.0 to fix CI.
   (ericdhelms@gmail.com)

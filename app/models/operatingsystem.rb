@@ -21,7 +21,7 @@ class Operatingsystem < ActiveRecord::Base
   validates :major, :numericality => true, :presence => { :message => N_("Operating System version is required") }
   has_many :os_parameters, :dependent => :destroy, :foreign_key => :reference_id
   has_many :parameters, :dependent => :destroy, :foreign_key => :reference_id, :class_name => "OsParameter"
-  accepts_nested_attributes_for :os_parameters, :reject_if => lambda { |a| a[:value].blank? }, :allow_destroy => true
+  accepts_nested_attributes_for :os_parameters, :allow_destroy => true
   has_many :trends, :as => :trendable, :class_name => "ForemanTrend"
   attr_name :to_label
   validates :minor, :numericality => true, :allow_nil => true, :allow_blank => true

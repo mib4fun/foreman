@@ -25,7 +25,7 @@ class Operatingsystem < ActiveRecord::Base
   accepts_nested_attributes_for :os_parameters, :reject_if => lambda { |a| a[:value].blank? }, :allow_destroy => true
   has_many :trends, :as => :trendable, :class_name => "ForemanTrend"
   attr_name :to_label
-  validates :minor, :numericality => true, :allow_nil => true, :allow_blank => true
+  validates :minor, :numericality => {:greater_than_or_equal_to => 0}, :allow_nil => true, :allow_blank => true
   validates :name, :format => {:with => /\A(\S+)\Z/, :message => N_("can't be blank or contain white spaces.")}
   validates :description, :uniqueness => true, :allow_blank => true
   before_validation :downcase_release_name

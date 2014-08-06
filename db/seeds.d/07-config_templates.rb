@@ -12,6 +12,12 @@ kinds = {}
   raise "Unable to create template kind: #{format_errors kinds[type]}" if kinds[type].nil? || kinds[type].errors.any?
 end
 
+
+# *NOTE*: The following templates should remain commented out in Satellite:
+#         Kickstart default, Kickstart RHEL default, Kickstart default finish,
+#         Kickstart default user data, and redhat_register.
+
+
 # Provisioning templates
 ConfigTemplate.without_auditing do
   [
@@ -30,12 +36,12 @@ ConfigTemplate.without_auditing do
       { :name => 'Jumpstart default', :source => 'jumpstart/provision.erb', :template_kind => kinds[:provision], :operatingsystems => os_solaris },
       { :name => 'Jumpstart default finish', :source => 'jumpstart/finish.erb', :template_kind => kinds[:finish], :operatingsystems => os_solaris },
       { :name => 'Jumpstart default PXEGrub', :source => 'jumpstart/PXEGrub.erb', :template_kind => kinds[:PXEGrub], :operatingsystems => os_solaris },
-      { :name => 'Kickstart default', :source => 'kickstart/provision.erb', :template_kind => kinds[:provision] },
-      { :name => 'Kickstart RHEL default', :source => 'kickstart/provision_rhel.erb', :template_kind => kinds[:provision] },
-      { :name => 'Kickstart default finish', :source => 'kickstart/finish.erb', :template_kind => kinds[:finish] },
+      # { :name => 'Kickstart default', :source => 'kickstart/provision.erb', :template_kind => kinds[:provision] },
+      # { :name => 'Kickstart RHEL default', :source => 'kickstart/provision_rhel.erb', :template_kind => kinds[:provision] },
+      # { :name => 'Kickstart default finish', :source => 'kickstart/finish.erb', :template_kind => kinds[:finish] },
       { :name => 'Kickstart default PXELinux', :source => 'kickstart/PXELinux.erb', :template_kind => kinds[:PXELinux] },
       { :name => 'Kickstart default iPXE', :source => 'kickstart/iPXE.erb', :template_kind => kinds[:iPXE] },
-      { :name => 'Kickstart default user data', :source => 'kickstart/userdata.erb', :template_kind => kinds[:user_data] },
+      # { :name => 'Kickstart default user data', :source => 'kickstart/userdata.erb', :template_kind => kinds[:user_data] },
       { :name => 'Preseed default', :source => 'preseed/provision.erb', :template_kind => kinds[:provision] },
       { :name => 'Preseed default finish', :source => 'preseed/finish.erb', :template_kind => kinds[:finish] },
       { :name => 'Preseed default PXELinux', :source => 'preseed/PXELinux.erb', :template_kind => kinds[:PXELinux] },
@@ -51,8 +57,8 @@ ConfigTemplate.without_auditing do
       { :name => 'fix_hosts', :source => 'snippets/_fix_hosts.erb', :snippet => true },
       { :name => 'freeipa_register', :source => 'snippets/_freeipa_register.erb', :snippet => true },
       { :name => 'http_proxy', :source => 'snippets/_http_proxy.erb', :snippet => true },
-      { :name => 'puppet.conf', :source => 'snippets/_puppet.conf.erb', :snippet => true },
-      { :name => 'redhat_register', :source => 'snippets/_redhat_register.erb', :snippet => true }
+      { :name => 'puppet.conf', :source => 'snippets/_puppet.conf.erb', :snippet => true }
+      # { :name => 'redhat_register', :source => 'snippets/_redhat_register.erb', :snippet => true }
   ].each do |input|
     next if ConfigTemplate.find_by_name(input[:name])
     next if audit_modified? ConfigTemplate, input[:name]

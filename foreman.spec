@@ -14,7 +14,7 @@
 %endif
 
 Name:   foreman
-Version: 1.6.0.34
+Version: 1.6.0.35
 Release: 1%{?dist}
 Summary:Systems Management web application
 
@@ -583,6 +583,43 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Wed Aug 06 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.35-1
+- Merge branch 'SATELLITE-6.0.4' of
+  gitlab.sat.lab.tlv.redhat.com:satellite6/foreman into SATELLITE-6.0.4
+  (jmontleo@redhat.com)
+- Merge branch 'SATELLITE-6.0.4' of
+  gitlab.sat.lab.tlv.redhat.com:satellite6/foreman into SATELLITE-6.0.4
+  (jmontleo@redhat.com)
+- Merge branch 'BZ1104570' into 'SATELLITE-6.0.4' (jmontleo@redhat.com)
+- BZ1104570 - Do not seed community kickstarts & related files
+  (stbenjam@redhat.com)
+- fixes #1646, #3103 - enable cloning and locking of templates
+  (stephen@bitbin.de)
+- Fixes #6816 - pass oVirt quota as nil instead of "" to prevent server error
+  (inecas@redhat.com)
+- Fixes #6844 - display v2 resources rather than v1 resources in /api/v2
+  (dtsang@redhat.com)
+- Merge branch 'SATELLITE-6.0.4' of
+  gitlab.sat.lab.tlv.redhat.com:satellite6/foreman into SATELLITE-6.0.4
+  (jmontleo@redhat.com)
+- Fixes #6657 - add field length validations by db size, extend audit field
+  length (orabin@redhat.com)
+- Merge branch 'SATELLITE-6.0.4' of
+  gitlab.sat.lab.tlv.redhat.com:satellite6/foreman into SATELLITE-6.0.4
+  (jmontleo@redhat.com)
+- Fixes #6657 - add field length validations by db size, extend audit field
+  length (orabin@redhat.com)
+- Fixes #215: Parameters can be saved without a value (orabin@redhat.com)
+- Fixes #6693 - set parameters tab to error state and focus when validation
+  fails (orabin@redhat.com)
+- Merge branch 'SATELLITE-6.0.4' of
+  gitlab.sat.lab.tlv.redhat.com:satellite6/foreman into SATELLITE-6.0.4
+  (jmontleo@redhat.com)
+- Fixes #6786 - Handle error when no taxonomy params get sent
+  (daviddavis@redhat.com)
+- fixes #6234 - fixes sorting on compute resources and subnets
+  (stephen@bitbin.de)
+
 * Wed Jul 30 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.34-1
 - BZ1105259 - Do not upload debug info to Foreman public servers
   (stbenjam@redhat.com)

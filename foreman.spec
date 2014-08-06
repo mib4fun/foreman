@@ -14,7 +14,7 @@
 %endif
 
 Name:   foreman
-Version: 1.6.0.36
+Version: 1.6.0.37
 Release: 1%{?dist}
 Summary:Systems Management web application
 
@@ -587,6 +587,10 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Wed Aug 06 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.37-1
+- update rubygem-validates_lengths_from_database dependencies
+  (jmontleo@redhat.com)
+
 * Wed Aug 06 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.36-1
 - add rubygem-validates_lengths_from_database require to rpm spec file
   (jmontleo@redhat.com)

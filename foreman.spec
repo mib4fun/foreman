@@ -80,6 +80,7 @@ Requires: %{?scl_prefix}rubygem(bootstrap-sass) >= 3.0.3.0
 Requires: %{?scl_prefix}rubygem(bootstrap-sass) < 3.0.4
 Requires: %{?scl_prefix}rubygem(foreigner) >= 1.4.2
 Requires: %{?scl_prefix}rubygem(deep_cloneable)
+Requires: %{?scl_prefix}rubygem-validates_lengths_from_database
 BuildRequires: %{?scl_prefix}rubygem(ancestry) >= 2.0.0
 BuildRequires: %{?scl_prefix}rubygem(ancestry) < 3.0.0
 BuildRequires: %{?scl_prefix}rubygem(apipie-rails) >= 0.1.1
@@ -120,6 +121,7 @@ BuildRequires: %{?scl_prefix}rubygem(foreigner) >= 1.4.2
 BuildRequires: %{?scl_prefix}rubygem(multi-select-rails) >= 0.9.10
 BuildRequires: %{?scl_prefix}rubygem(multi-select-rails) < 0.10.0
 BuildRequires: %{?scl_prefix}rubygem(deep_cloneable)
+BuildRequires: %{?scl_prefix}rubygem-validates_lengths_from_database
 BuildRequires: %{?scl_prefix}facter
 BuildRequires: gettext
 BuildRequires: asciidoc

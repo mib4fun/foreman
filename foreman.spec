@@ -123,7 +123,7 @@ BuildRequires: %{?scl_prefix}rubygem(multi-select-rails) >= 0.9.10
 BuildRequires: %{?scl_prefix}rubygem(multi-select-rails) < 0.10.0
 BuildRequires: %{?scl_prefix}rubygem(deep_cloneable)
 BuildRequires: %{?scl_prefix}rubygem(validates_lengths_from_database) >= 0.2.0
-BuildRequires: %{?scl_prefix}rubygem(validates_lengths_from_database) < 0.3.0:x
+BuildRequires: %{?scl_prefix}rubygem(validates_lengths_from_database) < 0.3.0
 BuildRequires: %{?scl_prefix}facter
 BuildRequires: gettext
 BuildRequires: asciidoc

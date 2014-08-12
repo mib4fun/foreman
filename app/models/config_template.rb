@@ -49,8 +49,8 @@ class ConfigTemplate < ActiveRecord::Base
   end
 
   def clone
-    self.deep_clone(:include => [:operatingsystems, :organizations, :locations],
-                    :except  => [:name, :locked, :default, :vendor])
+    self.dup(:include => [:operatingsystems, :organizations, :locations],
+             :except  => [:name, :locked, :default, :vendor])
   end
 
   # TODO: review if we can improve SQL

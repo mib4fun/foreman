@@ -14,7 +14,7 @@
 %endif
 
 Name:   foreman
-Version: 1.6.0.39
+Version: 1.6.0.40
 Release: 1%{?dist}
 Summary:Systems Management web application
 
@@ -589,6 +589,9 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Wed Aug 13 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.40-1
+- update apipie-rails dependency version in rpm spec (jmontleo@redhat.com)
+
 * Wed Aug 13 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.39-1
 - fixes #6861 - provide a way to detect host group provisioning
   (stbenjam@redhat.com)

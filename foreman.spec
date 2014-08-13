@@ -14,7 +14,7 @@
 %endif
 
 Name:   foreman
-Version: 1.6.0.38
+Version: 1.6.0.39
 Release: 1%{?dist}
 Summary:Systems Management web application
 
@@ -48,6 +48,8 @@ Requires(postun): initscripts
 Requires: %{?scl_prefix}rubygem(json)
 Requires: %{?scl_prefix}rubygem(rails) >= 3.2.8
 Requires: %{?scl_prefix}rubygem(rails) < 3.3.0
+# minitest - workaround as rubygem-activesupport is missing dep
+Requires: %{?scl_prefix}rubygem(minitest)
 Requires: %{?scl_prefix}rubygem(jquery-rails)
 Requires: %{?scl_prefix}rubygem(rest-client)
 Requires: %{?scl_prefix}rubygem(will_paginate) >= 3.0.0
@@ -115,6 +117,8 @@ BuildRequires: %{?scl_prefix}rubygem(uglifier) >= 1.0.3
 BuildRequires: %{?scl_prefix}rubygem(uuidtools)
 BuildRequires: %{?scl_prefix}rubygem(will_paginate) >= 3.0.2
 BuildRequires: %{?scl_prefix}rubygem(rails)
+# minitest - workaround as rubygem-activesupport is missing dep
+BuildRequires: %{?scl_prefix}rubygem(minitest)
 BuildRequires: %{?scl_prefix}rubygem(quiet_assets)
 BuildRequires: %{?scl_prefix}rubygem(spice-html5-rails)
 BuildRequires: %{?scl_prefix}rubygem(flot-rails) = 0.0.3
@@ -264,8 +268,6 @@ Group:  Applications/System
 Requires: %{?scl_prefix}rubygem(awesome_print)
 Requires: %{?scl_prefix}rubygem(hirb-unicode)
 Requires: %{?scl_prefix}rubygem(wirb)
-# minitest - workaround until Rails 4.0 (#2650)
-Requires: %{?scl_prefix}rubygem(minitest)
 Requires: %{name} = %{version}-%{release}
 
 %description console
@@ -587,6 +589,27 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Wed Aug 13 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.39-1
+- fixes #6861 - provide a way to detect host group provisioning
+  (stbenjam@redhat.com)
+- Merge branch 'SATELLITE-6.0.4' of
+  gitlab.sat.lab.tlv.redhat.com:satellite6/foreman into SATELLITE-6.0.4
+  (jmontleo@redhat.com)
+- Merge branch '1117834' into 'SATELLITE-6.0.4' (jmontleo@redhat.com)
+- fixes BZ #1109922 - Environments in an Organization view is ambiguously named
+  (jmagen@redhat.com)
+- Merge branch 'BZ1123761-part-deux' into 'SATELLITE-6.0.4'
+  (stbenjam@redhat.com)
+- Fix BZ1123761 - Make cloning compatible with deep_clone version < 2.0
+  (stbenjam@redhat.com)
+- fixes #6881 - check if in rake when validating template changes
+  (stbenjam@redhat.com)
+- fixes #6696 - API v2 - specify 'host' as the key in which parameters will be
+  wrapped rather than Host::Base (jmagen@redhat.com)
+- fixes BZ1117834 / #6358 - Update LookupValue fqdn matchers when a host is
+  renamed ... (ohadlevy@gmail.com)
+- Fixes BZ1128229: correct version for Satellite 6 GA. (walden@redhat.com)
+
 * Wed Aug 06 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.38-1
 - fix typo in dependency (jmontleo@redhat.com)
 

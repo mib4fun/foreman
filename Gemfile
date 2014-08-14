@@ -17,7 +17,7 @@ gem 'uuidtools'
 gem "apipie-rails", "~> 0.1.1"
 gem 'rabl', '>= 0.7.5', '<= 0.9.0'
 gem 'oauth'
-gem 'deep_cloneable'
+gem 'deep_cloneable', '<  2.0.0'
 gem 'foreigner', '~> 1.4.2'
 
 gem 'validates_lengths_from_database',  '~> 0.2.0'

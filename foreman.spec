@@ -14,7 +14,7 @@
 %endif
 
 Name:   foreman
-Version: 1.6.0.40
+Version: 1.6.0.41
 Release: 1%{?dist}
 Summary:Systems Management web application
 
@@ -589,6 +589,30 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Wed Aug 20 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.41-1
+- Merge branch 'SATELLITE-6.0.4' of
+  gitlab.sat.lab.tlv.redhat.com:satellite6/foreman into SATELLITE-6.0.4
+  (jmontleo@redhat.com)
+- Fixes #6831 - expire topbar cache for admin on taxonomy updates
+  (tbrisker@gmail.com)
+- fixes #7061 - show file upload when template is not locked
+  (stbenjam@redhat.com)
+- fixes #6860 - add missing attributes to hostgroup jail (stbenjam@redhat.com)
+- fixes #6205 Changed regex to parse CNs from SSL DNs on separator chars
+  (nelsonab@red-tux.net)
+- Merge branch '1130220' into 'SATELLITE-6.0.4' (jmontleo@redhat.com)
+- Merge branch 'SATELLITE-6.0.4' of
+  gitlab.sat.lab.tlv.redhat.com:satellite6/foreman into SATELLITE-6.0.4
+  (jmontleo@redhat.com)
+- Merge branch '1130211' into 'SATELLITE-6.0.4' (jmontleo@redhat.com)
+- Fixes #6446 - Forbidding non-json POST/PUT requests in v2
+  (daviddavis@redhat.com)
+- Modify the zanata.xml file to push to the specific languages, but map to
+  generic on the client (bkearney@redhat.com)
+- Fixes BZ #1130220 - Add fixures missed in cherry-pick for HostObserver test
+  failures (gsutclif@redhat.com)
+- Fixes BZ #1130211 - Pin deep_clonable to < 2.0.0 (gsutclif@redhat.com)
+
 * Wed Aug 13 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.40-1
 - update apipie-rails dependency version in rpm spec (jmontleo@redhat.com)
 

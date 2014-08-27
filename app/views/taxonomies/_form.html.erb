@@ -43,7 +43,7 @@
       </div>
 
       <div class="tab-pane" id="smart_proxies">
-        <%= checkbox_f(f, :ignore_types, {:label => _("All capsules"), :multiple => true, :onchange => 'ignore_checked(this)'}, "SmartProxy") %>
+        <%= checkbox_f(f, :ignore_types, {:label => _("All capsules"), :multiple => true, :onchange => 'ignore_checked(this)'}, "Capsule") %>
         <%= multiple_selects f, :smart_proxies, SmartProxy, taxonomy.selected_or_inherited_ids[:smart_proxy_ids],
                              {:disabled => taxonomy.used_and_selected_or_inherited_ids[:smart_proxy_ids], :label => _('Select capsules')},
                              {'data-mismatches' => taxonomy.need_to_be_selected_ids[:smart_proxy_ids].to_json,

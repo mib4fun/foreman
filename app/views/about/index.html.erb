@@ -111,20 +111,19 @@
   <div class="col-md-5">
     <div class="stats-well">
       <h4><%= _("Support") %></h4>
+      <p>Visit the <%= link_to _('Customer Portal'), "https://access.redhat.com/", :rel => "external" %> to get support, find solutions to common questions, and more.</p>
       <h6><%= _("Documentation") %></h6>
       <ul>
-        <li><%= link_to _('Manual'),"https://access.redhat.com/documentation/en-US/Red_Hat_Satellite/6.0/html/User_Guide/index.html", :rel => "external" %></li>
-        <li><%= link_to _('Wiki'),"http://projects.theforeman.org", :rel => "external" %></li>
-        <li><%= link_to _("First use instructions"), :controller => '/dashboard', :action => 'welcome' %></li>
+        <li><%= link_to _('User Guide'),"https://access.redhat.com/documentation/en-US/Red_Hat_Satellite/6.0/html/User_Guide/index.html", :rel => "external" %></li>
+        <li><%= link_to _('Transition Guide'),"https://access.redhat.com/site/documentation/en-US/Red_Hat_Satellite/6.0/html/Transition_Guide/index.html", :rel => "external" %></li>
+        <li><%= link_to _("API Guide"), "https://access.redhat.com/site/documentation/en-US/Red_Hat_Satellite/6.0/html/API_Guide/index.html", :rel => "external" %></li>
+      </ul>
+      <h6><%= _("Blog") %></h6>
+      <ul>
+        <li><%= link_to _('Red Hat Satellite Blog'), "https://access.redhat.com/blogs/1169563", :rel => "external" %></li>
       </ul>
       <h6><%= _("IRC") %></h6>
-      <p><%= (_("You can find The Satellite 6 on the %{freenode} (irc.freenode.net) network.  For general support, please visit #satellite6 and for development specific related chat, please visit #theforeman-dev.") % {:freenode => link_to("freenode", "http://www.freenode.net", :rel => "external")}).html_safe  %></p>
-      <h6><%= _("Mailing lists") %></h6>
-      <p><%= _("Mailing lists are available via Google Groups. Much like IRC, we have a general users (support, Q/A, etc) lists and a development list:") %></p>
-      <ul>
-        <li><%= link_to _("Foreman Users"), "http://groups.google.com/group/foreman-users", :rel => "external" %></li>
-        <li><%= link_to _("Foreman Developers"), "http://groups.google.com/group/foreman-dev", :rel => "external" %></li>
-      </ul>
+      <p><%= (_("You can find us on %{freenode} (irc.freenode.net) on #satellite6.") % {:freenode => link_to("freenode", "http://www.freenode.net", :rel => "external")}).html_safe  %></p>
     </div>
     <div class="stats-well" id="copyright-div">
       <h4><%= _("System Information") %> </h4>

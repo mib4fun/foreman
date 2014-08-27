@@ -14,7 +14,7 @@
 %endif
 
 Name:   foreman
-Version: 1.6.0.41
+Version: 1.6.0.42
 Release: 1%{?dist}
 Summary:Systems Management web application
 
@@ -589,6 +589,13 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Wed Aug 27 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.42-1
+- fix apipie-rails dependency version in rpm spec (jmontleo@redhat.com)
+- Fixes #7028 - completing api docs for taxonomies (tstrachota@redhat.com)
+- fixes BZ1079190 - brand about page (stbenjam@redhat.com)
+- Fixes BZ: #1112399 -- Updated documentation links to point to Sat6 docs and
+  substituted 'Foreman' with 'Satellite 6'. (dmitri@appliedlogic.ca)
+
 * Wed Aug 20 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.41-1
 - Merge branch 'SATELLITE-6.0.4' of
   gitlab.sat.lab.tlv.redhat.com:satellite6/foreman into SATELLITE-6.0.4

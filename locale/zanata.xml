@@ -5,25 +5,25 @@
     <project-version>6.0</project-version>
     <project-type>podir</project-type>
     <locales>
-        <locale>fr</locale>
-        <locale>it</locale>
-        <locale>ja</locale>
-        <locale>ko</locale>
-        <locale>gu</locale>
-        <locale>hi</locale>
-        <locale>mr</locale>
-        <locale>or</locale>
-        <locale>ru</locale>
-        <locale>te</locale>
-        <locale>pa</locale>
-        <locale>kn</locale>
-        <locale>gl</locale>
-        <locale map-from="de">de-DE</locale>
-        <locale map-from="es">es-ES</locale>
+        <locale map-from="bn_IN">bn-IN</locale>
+        <locale map-from="de_DE">de-DE</locale>
+        <locale map-from="es_ES">es-ES</locale>
+        <locale map-from="fr_FR">fr</locale>
+        <locale map-from="it_IT">it</locale>
+        <locale map-from="ja_JP">ja</locale>
+        <locale map-from="gl_ES">gl</locale>
+        <locale map-from="gu_IN">gu</locale>
+        <locale map-from="hi_IN">hi</locale>
+        <locale map-from="kn_IN">kn</locale>
+        <locale map-from="ko_KR">ko</locale>
+        <locale map-from="mr_IN">mr</locale>
+        <locale map-from="or_IN">or</locale>
+        <locale map-from="pa_IN">pa</locale>
+        <locale map-from="ru_RU">ru</locale>
+        <locale map-from="te_IN">te</locale>
         <locale map-from="pt_BR">pt-BR</locale>
-        <locale map-from="bn">bn-IN</locale>
-        <locale map-from="ta">ta-IN</locale>
+        <locale map-from="ta_IN">ta-IN</locale>
         <locale map-from="zh_CN">zh-Hans-CN</locale>
-        <locale map-from="zh_TW">zh-Hant-TW</locale>      
+        <locale map-from="zh_TW">zh-Hant-TW</locale>
     </locales>
 </config>

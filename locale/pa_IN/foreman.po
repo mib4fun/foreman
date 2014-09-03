@@ -1,64 +1,64 @@
-# Template file for strings which can be localized in the Foreman Application.
-# 
-# This file is distributed under the same license as the Foreman.
-# 
-# Translators:
-# 
-# 
-# Translators:
-# mithweth <jeanbaptiste.langlois@gmail.com>, 2013
+# jassy <jassy@fedoraproject.org>, 2011. #zanata
+# A S Alam <aalam@fedoraproject.org>, 2013. #zanata
+# asaini <asaini@redhat.com>, 2013. #zanata
+# jassy <jassy@fedoraproject.org>, 2013. #zanata
 msgid ""
 msgstr ""
-"Project-Id-Version: Foreman\n"
+"Project-Id-Version: version 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-14 12:47-0700\n"
-"PO-Revision-Date: 2014-04-15 09:18+0000\n"
-"Last-Translator: Lukáš Zapletal\n"
-"Language-Team: Japanese (http://www.transifex.com/projects/p/foreman/language/ja/)\n"
+"POT-Creation-Date: 2014-08-04 13:37-0400\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"PO-Revision-Date: 2013-10-01 05:49-0400\n"
+"Last-Translator: asaini <asaini@redhat.com>\n"
+"Language-Team: Punjabi\n"
+"Language: pa\n"
+"X-Generator: Zanata 3.4.2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 msgid " Remove"
 msgstr ""
 
 msgid "%s - Press Shift-F12 to release the cursor."
-msgstr "%s - マウスを使えるように、Shift+F12を押して下さい"
+msgstr ""
 
 msgid "%s - The following hosts are about to be changed"
 msgstr ""
 
 msgid "%s Distribution"
-msgstr "%s ディストリビューション"
+msgstr ""
 
 msgid "%s Host"
-msgstr "%s ホスト"
+msgstr ""
 
 msgid "%s Parameters updated, see below for more information"
-msgstr "%s アップデートされた設定、情報は下に調べて下さい"
+msgstr ""
 
 msgid "%s Template"
-msgstr "%s テンプレート"
+msgstr ""
 
 msgid "%s VM associated to a host"
 msgid_plural "%s VMs associated to hosts"
 msgstr[0] ""
+msgstr[1] ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
 msgid "%s ago"
-msgstr "%s 前"
+msgstr "%s ਪਹਿਲਾਂ"
 
 msgid "%s console is not supported at this time"
-msgstr "%s コンソールはまだ操作されていません"
+msgstr ""
 
 msgid "%s core"
 msgid_plural "%s cores"
 msgstr[0] ""
+msgstr[1] ""
 
 msgid "%s day ago"
 msgid_plural "%s days ago"
-msgstr[0] "%s 日前"
+msgstr[0] ""
+msgstr[1] ""
 
 msgid "%s has been disassociated from VM"
 msgstr ""
@@ -71,18 +71,21 @@ msgstr ""
 
 msgid "%s minute ago"
 msgid_plural "%s minutes ago"
-msgstr[0] "%s 分前"
+msgstr[0] ""
+msgstr[1] ""
 
 msgid "%s month ago"
 msgid_plural "%s months ago"
-msgstr[0] "%s ヶ月前"
+msgstr[0] ""
+msgstr[1] ""
 
 msgid "%s selected hosts"
-msgstr "%s セレクトされたホスト"
+msgstr ""
 
 msgid "%s week ago"
 msgid_plural "%s weeks ago"
-msgstr[0] "%s 週前"
+msgstr[0] ""
+msgstr[1] ""
 
 msgid "%{cores} Cores and %{memory} memory"
 msgstr ""
@@ -90,6 +93,7 @@ msgstr ""
 msgid "%{count} host with no %{taxonomy_single} assigned"
 msgid_plural "%{count} hosts with no %{taxonomy_single} assigned"
 msgstr[0] ""
+msgstr[1] ""
 
 msgid "%{cpus} CPUs and %{memory} MB memory"
 msgstr ""
@@ -130,6 +134,9 @@ msgid "%{name} changed from %{label1} to %{label2}"
 msgstr ""
 
 msgid "%{record} is used by %{what}"
+msgstr ""
+
+msgid "%{record} is used by host in build mode %{what}"
 msgstr ""
 
 msgid "%{task} task failed with the following error: %{e}"
@@ -192,20 +199,20 @@ msgid ""
 msgstr ""
 
 msgid ""
-"<dl><dt>String</dt> <dd>Everything is taken as a "
-"string.</dd><dt>Boolean</dt> <dd>Common representation of boolean values are"
-" accepted.</dd><dt>Integer</dt> <dd>Integer numbers only, can be "
-"negative.</dd><dt>Real</dt> <dd>Accept any numerical "
-"input.</dd><dt>Array</dt> <dd>A valid JSON or YAML input, that must evaluate"
-" to an array.</dd><dt>Hash</dt> <dd>A valid JSON or YAML input, that must "
-"evaluate to an object/map/dict/hash.</dd><dt>YAML</dt> <dd>Any valid YAML "
-"input.</dd><dt>JSON</dt> <dd>Any valid JSON input.</dd></dl>"
+"<dl><dt>String</dt> <dd>Everything is taken as a string.</dd><dt>Boolean</"
+"dt> <dd>Common representation of boolean values are accepted.</"
+"dd><dt>Integer</dt> <dd>Integer numbers only, can be negative.</dd><dt>Real</"
+"dt> <dd>Accept any numerical input.</dd><dt>Array</dt> <dd>A valid JSON or "
+"YAML input, that must evaluate to an array.</dd><dt>Hash</dt> <dd>A valid "
+"JSON or YAML input, that must evaluate to an object/map/dict/hash.</"
+"dd><dt>YAML</dt> <dd>Any valid YAML input.</dd><dt>JSON</dt> <dd>Any valid "
+"JSON input.</dd></dl>"
 msgstr ""
 
 msgid ""
 "A host group is in some ways similar to an inherited node declaration, in "
-"that it is a high level grouping of classes that can be named and treated as"
-" a unit. This is then treated as a template and  is selectable during the "
+"that it is a high level grouping of classes that can be named and treated as "
+"a unit. This is then treated as a template and  is selectable during the "
 "creation of a new host and ensures that the host is configured in one of "
 "your pre-defined states."
 msgstr ""
@@ -231,20 +238,23 @@ msgstr ""
 msgid "API Key"
 msgstr ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
 msgid "About"
-msgstr ""
+msgstr "ਬਾਰੇ"
 
 msgid "Access Key"
 msgstr ""
 
+# translation auto-copied from project subscription-manager, version 1.10.X, document keys
 msgid "Account"
-msgstr ""
+msgstr "ਅਕਾਊਂਟ"
 
 msgid "Acquire IP address for %s"
 msgstr ""
 
+# translation auto-copied from project aeolus-conductor, version 0.5.0, document aeolus_conductor, author jassy
 msgid "Action"
-msgstr ""
+msgstr "ਕਾਰਵਾਈ"
 
 msgid "Actions"
 msgstr ""
@@ -283,6 +293,9 @@ msgstr ""
 msgid "Add combination"
 msgstr ""
 
+msgid "Add external user group"
+msgstr ""
+
 msgid "Add permission"
 msgstr ""
 
@@ -305,21 +318,19 @@ msgid "Additional steps"
 msgstr ""
 
 msgid ""
-"Additionally, you may restrict user permissions based on many criteria, make"
-" sure you check the roles settings tab."
+"Additionally, you may restrict user permissions based on many criteria, make "
+"sure you check the roles settings tab."
 msgstr ""
 
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author asaini
 msgid "Administer"
-msgstr ""
+msgstr "ਪਰਸ਼ਾਸ਼ਕ"
 
 msgid ""
 "After you have decided on the two primary modes of operation and performed "
 "any appropriate imports then it would be good idea if you visited some of "
 "the other configuration pages to see if additional setup is required under "
 "the Additional settings select box on the top right."
-msgstr ""
-
-msgid "Alert"
 msgstr ""
 
 msgid "Alerts disabled"
@@ -329,6 +340,9 @@ msgid "All Puppet Classes for %s"
 msgstr ""
 
 msgid "All Reports"
+msgstr ""
+
+msgid "All capsules"
 msgstr ""
 
 msgid "All compute resources"
@@ -371,9 +385,6 @@ msgstr ""
 msgid "All realms"
 msgstr ""
 
-msgid "All smart proxies"
-msgstr ""
-
 msgid "All subnets"
 msgstr ""
 
@@ -390,14 +401,17 @@ msgid "Allocation (GB)"
 msgstr ""
 
 msgid ""
-"An IP address will be auto-suggested if you have a DHCP-enabled Smart Proxy "
-"on the subnet selected above.<br/><br/>The IP address can be left blank "
-"when:<br/><ul><li>provisioning tokens are enabled</li><li>the domain does "
-"not manage DNS</li><li>the subnet does not manage reverse DNS</li><li>and "
-"the subnet does not manage DHCP reservations</li></ul>"
+"An IP address will be auto-suggested if you have a DHCP-enabled Capsule on "
+"the subnet selected above.<br/><br/>The IP address can be left blank when:"
+"<br/><ul><li>provisioning tokens are enabled</li><li>the domain does not "
+"manage DNS</li><li>the subnet does not manage reverse DNS</li><li>and the "
+"subnet does not manage DHCP reservations</li></ul>"
 msgstr ""
 
 msgid "An explicit layout for the partitions of your hard drive(s). E.G."
+msgstr ""
+
+msgid "Anonymous admin user %s is missing, run foreman-rake db:seed"
 msgstr ""
 
 msgid "Any Context"
@@ -412,16 +426,18 @@ msgstr ""
 msgid "Applicable<br>Operating Systems"
 msgstr ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
 msgid "Applied"
-msgstr ""
+msgstr "ਲਾਗੂ ਕੀਤਾ ਗਿਆ ਹੈ"
 
 #. initial character of Applied
 msgid "Applied|A"
 msgstr ""
 
+# translation auto-copied from project Fedora Installation Guide, version f18, document Grub
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Architecture"
-msgstr ""
+msgstr "ਢਾਂਚਾ ਕਿਸਮ"
 
 msgid "Architecture Distribution"
 msgstr ""
@@ -429,7 +445,16 @@ msgstr ""
 msgid "Architecture configuration"
 msgstr ""
 
+# translation auto-copied from project subscription-manager, version 1.10.X, document keys, author asaini
 msgid "Architectures"
+msgstr "ਬਣਾਵਟ ਸ਼ੈਲੀਆਂ"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Architecture|Hostgroups count"
+msgstr ""
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Architecture|Hosts count"
 msgstr ""
 
 #. "Table name" or "Table name|Column name" for error messages
@@ -442,8 +467,9 @@ msgstr ""
 msgid "Are you sure you want to power %{act} %{vm}?"
 msgstr ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
 msgid "Are you sure?"
-msgstr ""
+msgstr "ਪੱਕਾ?"
 
 msgid "Assign All"
 msgstr ""
@@ -465,6 +491,7 @@ msgid ""
 msgid_plural ""
 "Assign all %{count} hosts with no %{taxonomy_single} to %{taxonomy_name}"
 msgstr[0] ""
+msgstr[1] ""
 
 msgid "Assign to %s"
 msgstr ""
@@ -584,6 +611,10 @@ msgid "AuthSource|Attr mail"
 msgstr ""
 
 #. "Table name" or "Table name|Column name" for error messages
+msgid "AuthSource|Attr photo"
+msgstr ""
+
+#. "Table name" or "Table name|Column name" for error messages
 msgid "AuthSource|Base dn"
 msgstr ""
 
@@ -614,8 +645,9 @@ msgstr ""
 msgid "Authentication Source Configuration"
 msgstr ""
 
+# translation auto-copied from project DocBook locales, version 1, document locale
 msgid "Author"
-msgstr ""
+msgstr "ਲੇਖਕ"
 
 msgid "Authorize login delegation with REMOTE_USER environment variable"
 msgstr ""
@@ -661,8 +693,9 @@ msgstr ""
 msgid "BMC"
 msgstr ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
 msgid "Back"
-msgstr ""
+msgstr "ਪਿੱਛੇ"
 
 msgid "Back to host"
 msgstr ""
@@ -682,8 +715,8 @@ msgid ""
 msgstr ""
 
 msgid ""
-"Before you proceed to using Foreman you should provide information about one"
-" or more architectures."
+"Before you proceed to using Foreman you should provide information about one "
+"or more architectures."
 msgstr ""
 
 #. "Table name" or "Table name|Column name" for error messages
@@ -758,8 +791,8 @@ msgstr ""
 
 msgid ""
 "By unchecking this you can specify filter using Foreman search syntax in "
-"search field. If filter remains unlimited (this field is checked) it applies"
-" on all resources of the selected type"
+"search field. If filter remains unlimited (this field is checked) it applies "
+"on all resources of the selected type"
 msgstr ""
 
 msgid "CA Certificate"
@@ -777,21 +810,21 @@ msgstr ""
 msgid "Can't delete internal admin account"
 msgstr ""
 
+msgid "Can't delete the last admin account"
+msgstr ""
+
+msgid "Can't delete the last admin user group"
+msgstr ""
+
 msgid "Can't find a valid Foreman Proxy with a Puppet feature"
-msgstr ""
-
-msgid ""
-"Can't remove Administrator flag from internal protected <b>admin</b> account"
-msgstr ""
-
-msgid "Can't rename internal protected <b>admin</b> account to %s"
 msgstr ""
 
 msgid "Can't use the same value as the primary interface"
 msgstr ""
 
+# translation auto-copied from project Subscription Manager, version 1.8.X, document keys
 msgid "Cancel"
-msgstr ""
+msgstr "ਰੱਦ ਕਰੋ"
 
 msgid "Cancel build"
 msgstr ""
@@ -808,7 +841,25 @@ msgstr ""
 msgid "Cannot delete group %{current} because it has nested groups."
 msgstr ""
 
+msgid "Cannot find user %s when switching context"
+msgstr ""
+
 msgid "Canvas not supported."
+msgstr ""
+
+msgid "Capsule"
+msgstr ""
+
+msgid "Capsule Installation"
+msgstr ""
+
+msgid "Capsules"
+msgstr ""
+
+msgid "Capsule|Name"
+msgstr ""
+
+msgid "Capsule|Url"
 msgstr ""
 
 msgid "Certificate Name"
@@ -817,8 +868,12 @@ msgstr ""
 msgid "Certificate path"
 msgstr ""
 
-msgid "Certificates"
+msgid "Certificate that Foreman will use to encrypt websockets "
 msgstr ""
+
+# translation auto-copied from project Subscription Manager, version 1.8.X, document keys, author jassy
+msgid "Certificates"
+msgstr "ਸਾਰਟੀਫਿਕੇਟ"
 
 msgid "Change Environment"
 msgstr ""
@@ -859,6 +914,9 @@ msgstr ""
 msgid "Choose a provider"
 msgstr ""
 
+msgid "Class"
+msgstr ""
+
 msgid "Class Distribution"
 msgstr ""
 
@@ -872,8 +930,9 @@ msgstr ""
 msgid "Click to add %s"
 msgstr ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
 msgid "Click to edit"
-msgstr ""
+msgstr "ਸੋਧਣ ਲਈ ਦਬਾਓ"
 
 msgid "Click to edit.."
 msgstr ""
@@ -894,13 +953,14 @@ msgid "Client Email"
 msgstr ""
 
 msgid ""
-"Client SSL certificates are used to identify Smart Proxies accessing "
-"fact/report importers and ENC output over HTTPS (:require_ssl should also be"
-" enabled)"
+"Client SSL certificates are used to identify Smart Proxies accessing fact/"
+"report importers and ENC output over HTTPS (:require_ssl should also be "
+"enabled)"
 msgstr ""
 
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author asaini
 msgid "Clone"
-msgstr ""
+msgstr "ਕਲੋਨ"
 
 msgid "Clone %s"
 msgstr ""
@@ -908,8 +968,9 @@ msgstr ""
 msgid "Clone Host %s"
 msgstr ""
 
+# translation auto-copied from project Subscription Manager, version 1.8.X, document keys
 msgid "Close"
-msgstr ""
+msgstr "ਬੰਦ"
 
 msgid "Cluster"
 msgstr ""
@@ -990,11 +1051,31 @@ msgstr ""
 msgid "Config Retrieval"
 msgstr ""
 
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Config group"
+msgstr ""
+
 msgid "Config groups"
 msgstr ""
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Config template"
+msgstr ""
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "ConfigGroup|Config group classes count"
+msgstr ""
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "ConfigGroup|Hostgroups count"
+msgstr ""
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "ConfigGroup|Hosts count"
+msgstr ""
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "ConfigGroup|Name"
 msgstr ""
 
 #. "Table name" or "Table name|Column name" for error messages
@@ -1009,8 +1090,9 @@ msgstr ""
 msgid "ConfigTemplate|Template"
 msgstr ""
 
+# translation auto-copied from project aeolus-conductor, version 0.5.0, document aeolus_conductor, author jassy
 msgid "Configure"
-msgstr ""
+msgstr "ਸੰਰਚਨਾ"
 
 msgid "Configure instance %s via SSH"
 msgstr ""
@@ -1062,7 +1144,7 @@ msgstr ""
 msgid "Create Reverse DNS record for %s"
 msgstr ""
 
-msgid "Create a Smart Proxy"
+msgid "Create a Capsule"
 msgstr ""
 
 msgid "Create realm entry for %s"
@@ -1074,25 +1156,19 @@ msgstr ""
 msgid "Custom LDAP search filter, <i>optional</i>"
 msgstr ""
 
-msgid "DHCP Proxy"
+msgid "DHCP Capsule"
 msgstr ""
 
-msgid "DHCP Proxy to use within this subnet"
+msgid "DHCP Capsule to use within this subnet"
 msgstr ""
 
 msgid "DHCP conflicts removal for %s"
-msgstr ""
-
-msgid "DHCP has a lease at %s"
 msgstr ""
 
 msgid "DHCP lease conflicts have been detected"
 msgstr ""
 
 msgid "DHCP not supported for this NIC"
-msgstr ""
-
-msgid "DHCP record %s conflicts with an existing reservation"
 msgstr ""
 
 msgid "DHCP records %s already exists"
@@ -1104,23 +1180,24 @@ msgstr ""
 msgid "DNS A Records %s already exists"
 msgstr ""
 
+msgid "DNS Capsule"
+msgstr ""
+
+msgid "DNS Capsule to use within this domain"
+msgstr ""
+
+msgid "DNS Capsule to use within this subnet"
+msgstr ""
+
 msgid "DNS PTR Records %s already exists"
-msgstr ""
-
-msgid "DNS Proxy"
-msgstr ""
-
-msgid "DNS Proxy to use within this domain"
-msgstr ""
-
-msgid "DNS Proxy to use within this subnet"
 msgstr ""
 
 msgid "DNS name"
 msgstr ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
 msgid "Dashboard"
-msgstr ""
+msgstr "ਡੈਸ਼ਬੋਰਡ"
 
 msgid "Data store"
 msgstr ""
@@ -1128,8 +1205,9 @@ msgstr ""
 msgid "Datacenter"
 msgstr ""
 
+# translation auto-copied from project Fonts Tweak Tool, version master, document fonts-tweak-tool, author aalam
 msgid "Default"
-msgstr ""
+msgstr "ਮੂਲ"
 
 msgid "Default Puppet server hostname"
 msgstr ""
@@ -1152,8 +1230,9 @@ msgstr ""
 msgid "Default value"
 msgstr ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
 msgid "Delete"
-msgstr ""
+msgstr "ਹਟਾਓ"
 
 msgid "Delete %s?"
 msgstr ""
@@ -1188,20 +1267,23 @@ msgstr ""
 msgid "Deploy on"
 msgstr ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
 msgid "Description"
-msgstr ""
+msgstr "ਵਰਣਨ"
 
 msgid "Deselect All"
 msgstr ""
 
+# translation auto-copied from project aeolus-conductor, version 0.5.0, document aeolus_conductor, author jassy
 msgid "Destroy"
-msgstr ""
+msgstr "ਨਸ਼ਟ"
 
 msgid "Destroyed selected hosts"
 msgstr ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
 msgid "Details"
-msgstr ""
+msgstr "ਵੇਰਵਾ"
 
 msgid "Diff View"
 msgstr ""
@@ -1212,8 +1294,9 @@ msgstr ""
 msgid "Disable alerts for selected hosts"
 msgstr ""
 
+# translation auto-copied from project subscription-manager, version 1.9.X, document keys, author asaini
 msgid "Disabled"
-msgstr ""
+msgstr "ਅਯੋਗ ਕੀਤਾ ਗਿਆ"
 
 #. host's status: first character of "disabled"
 msgid "Disabled|D"
@@ -1231,8 +1314,9 @@ msgstr ""
 msgid "Disk"
 msgstr ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
 msgid "Display"
-msgstr ""
+msgstr "ਦਰਿਸ਼"
 
 msgid "Display Name"
 msgstr ""
@@ -1246,6 +1330,7 @@ msgstr ""
 msgid "Displaying <b>%{count}</b> entry"
 msgid_plural "Displaying <b>all %{count}</b> entries"
 msgstr[0] ""
+msgstr[1] ""
 
 msgid "Displaying entries <b>%{from} - %{to}</b> of <b>%{count}</b> in total"
 msgstr ""
@@ -1280,6 +1365,14 @@ msgid "Domain|Fullname"
 msgstr ""
 
 #. "Table name" or "Table name|Column name" for error messages
+msgid "Domain|Hostgroups count"
+msgstr ""
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Domain|Hosts count"
+msgstr ""
+
+#. "Table name" or "Table name|Column name" for error messages
 msgid "Domain|Name"
 msgstr ""
 
@@ -1287,8 +1380,8 @@ msgid "EC2"
 msgstr ""
 
 msgid ""
-"Each architecture can also be associated with more than one operating system"
-" and a selector block is provided to allow you to select valid combinations."
+"Each architecture can also be associated with more than one operating system "
+"and a selector block is provided to allow you to select valid combinations."
 msgstr ""
 
 msgid ""
@@ -1297,8 +1390,9 @@ msgid ""
 "system family, which includes <b>sparc</b> based systems."
 msgstr ""
 
+# translation auto-copied from project aeolus-conductor, version 0.5.0, document aeolus_conductor, author jassy
 msgid "Edit"
-msgstr ""
+msgstr "ਸੋਧ"
 
 msgid "Edit %s"
 msgstr ""
@@ -1307,6 +1401,9 @@ msgid "Edit Architecture"
 msgstr ""
 
 msgid "Edit Bookmark"
+msgstr ""
+
+msgid "Edit Capsule"
 msgstr ""
 
 msgid "Edit Compute profile"
@@ -1321,8 +1418,9 @@ msgstr ""
 msgid "Edit Domain"
 msgstr ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
 msgid "Edit Environment"
-msgstr ""
+msgstr "ਵਾਤਾਵਰਨ ਸੋਧ"
 
 msgid "Edit Filter"
 msgstr ""
@@ -1351,9 +1449,6 @@ msgstr ""
 msgid "Edit Properties"
 msgstr ""
 
-msgid "Edit Proxy"
-msgstr ""
-
 msgid "Edit Puppet Class %s"
 msgstr ""
 
@@ -1375,8 +1470,9 @@ msgstr ""
 msgid "Edit Trend %s"
 msgstr ""
 
+# translation auto-copied from project aeolus-conductor, version 0.5.0, document aeolus_conductor, author jassy
 msgid "Edit User"
-msgstr ""
+msgstr "ਯੂਜ਼ਰ ਸੋਧ"
 
 msgid "Edit User group"
 msgstr ""
@@ -1388,10 +1484,10 @@ msgid "Edit your host"
 msgstr ""
 
 msgid ""
-"Either you didnt generate the puppetdocs (see <a rel=\"external\" "
-"href=\"%{url}\">here</a>) or the class <strong>%{name}</strong> could not be"
-" found in environment <strong>%{environment}</strong><br/> Please ensure "
-"that the class <strong>%{name}</strong>s declaration is accessible via the "
+"Either you didnt generate the puppetdocs (see <a rel=\"external\" href="
+"\"%{url}\">here</a>) or the class <strong>%{name}</strong> could not be "
+"found in environment <strong>%{environment}</strong><br/> Please ensure that "
+"the class <strong>%{name}</strong>s declaration is accessible via the "
 "modulepath associated with <strong>%{environment}</strong>."
 msgstr ""
 
@@ -1425,15 +1521,17 @@ msgstr ""
 msgid "Enable this host for provisioning"
 msgstr ""
 
+# translation auto-copied from project subscription-manager, version 1.10.X, document keys
 msgid "Enabled"
-msgstr ""
+msgstr "ਯੋਗ ਕੀਤਾ"
 
 msgid "Enabled %s for rebuild on next boot"
 msgstr ""
 
+# translation auto-copied from project Subscription Manager, version 1.8.X, document keys, author jassy
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Environment"
-msgstr ""
+msgstr "ਇਨਵਾਇਰਮੈਂਟ"
 
 msgid "Environment only"
 msgstr ""
@@ -1447,8 +1545,9 @@ msgid ""
 "certificate"
 msgstr ""
 
+# translation auto-copied from project Subscription Manager, version 1.8.X, document keys, author jassy
 msgid "Environments"
-msgstr ""
+msgstr "ਇਨਵਾਇਰਮੈਂਟ"
 
 msgid "Environments Distribution"
 msgstr ""
@@ -1462,11 +1561,20 @@ msgid ""
 msgstr ""
 
 #. "Table name" or "Table name|Column name" for error messages
+msgid "Environment|Hostgroups count"
+msgstr ""
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Environment|Hosts count"
+msgstr ""
+
+#. "Table name" or "Table name|Column name" for error messages
 msgid "Environment|Name"
 msgstr ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
 msgid "Error"
-msgstr ""
+msgstr "ਗਲਤੀ"
 
 msgid "Error has occurred while communicating with %{cr}: %{e}"
 msgstr ""
@@ -1493,10 +1601,25 @@ msgstr ""
 msgid "Expand the chart"
 msgstr ""
 
+# translation auto-copied from project Subscription Manager, version 1.8.X, document keys
 msgid "Expires"
-msgstr ""
+msgstr "ਮਿਆਦ"
 
 msgid "External IP"
+msgstr ""
+
+msgid "External groups"
+msgstr ""
+
+msgid "External user group"
+msgstr ""
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "External usergroup"
+msgstr ""
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "ExternalUsergroup|Name"
 msgstr ""
 
 msgid "Fact Chart"
@@ -1536,14 +1659,16 @@ msgstr ""
 msgid "FactValue|Value"
 msgstr ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
 msgid "Facts"
-msgstr ""
+msgstr "ਸਿਧਾਂਤ"
 
 msgid "Fail on Mismatch"
 msgstr ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
 msgid "Failed"
-msgstr ""
+msgstr "ਫੇਲ ਹੋਇਆ ਹੈ"
 
 msgid "Failed Restarts"
 msgstr ""
@@ -1647,6 +1772,11 @@ msgstr ""
 msgid "Failed to update a compute %{compute_resource} instance %{name}: %{e}"
 msgstr ""
 
+msgid ""
+"Failed to update environments and Puppet classes from the on-disk Puppet "
+"installation: %s"
+msgstr ""
+
 #. initial character of Failed
 msgid "Failed|F"
 msgstr ""
@@ -1665,8 +1795,10 @@ msgstr ""
 msgid "Fetch TFTP boot files for %s"
 msgstr ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
+#. "Table name" or "Table name|Column name" for error messages
 msgid "Filter"
-msgstr ""
+msgstr "ਫਿਲਟਰ"
 
 msgid "Filter %s"
 msgstr ""
@@ -1674,16 +1806,25 @@ msgstr ""
 msgid "Filter classes"
 msgstr ""
 
+# translation auto-copied from project Subscription Manager, version 1.8.X, document keys
 msgid "Filters"
-msgstr ""
+msgstr "ਫਿਲਟਰ"
 
 msgid "Filters and permissions"
+msgstr ""
+
+msgid "Filter|Permissions"
 msgstr ""
 
 msgid "Filter|Resource"
 msgstr ""
 
+#. "Table name" or "Table name|Column name" for error messages
 msgid "Filter|Search"
+msgstr ""
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Filter|Taxonomy search"
 msgstr ""
 
 msgid "Filter|Unlimited"
@@ -1724,8 +1865,8 @@ msgid ""
 "directory structure where the disk images are named 5.8 or 6.2, and each "
 "contained both x86_64 and i386 binaries, then you\\n  could create a single "
 "medium entry describing them all.\\n  The entry, which could be just named "
-"'Red Hat' could contain a path like this "
-"<em>'http://server/redhat/$version/$arch'</em>"
+"'Red Hat' could contain a path like this <em>'http://server/redhat/$version/"
+"$arch'</em>"
 msgstr ""
 
 msgid ""
@@ -1752,12 +1893,12 @@ msgid ""
 msgstr ""
 
 msgid ""
-"Foreman considers a domain and a DNS zone as the same thing. That is, if you"
-" are planning to manage a site where all the machines are or the form "
-"<i>hostname</i>.<b>somewhere.com</b>\\n  then the domain is "
-"<b>somewhere.com</b>. This allows Foreman to associate a puppet variable "
-"with a domain/site and automatically append this variable to all external "
-"node requests made\\n  by machines at that site."
+"Foreman considers a domain and a DNS zone as the same thing. That is, if you "
+"are planning to manage a site where all the machines are or the form "
+"<i>hostname</i>.<b>somewhere.com</b>\\n  then the domain is <b>somewhere."
+"com</b>. This allows Foreman to associate a puppet variable with a domain/"
+"site and automatically append this variable to all external node requests "
+"made\\n  by machines at that site."
 msgstr ""
 
 msgid ""
@@ -1778,10 +1919,10 @@ msgid "Foreman smart variables will be exposed via the ENC yaml output"
 msgstr ""
 
 msgid ""
-"Foreman supports automatically creating realm entries for new hosts.  When a"
-" realm is selected for a host, Foreman contacts the relevant realm smart "
-"proxy to create an entry for the host and retrieve it's one-time "
-"registration password."
+"Foreman supports automatically creating realm entries for new hosts.  When a "
+"realm is selected for a host, Foreman contacts the relevant realm Capsule to "
+"create an entry for the host and retrieve it's one-time registration "
+"password."
 msgstr ""
 
 msgid "Foreman ticketing system"
@@ -1861,8 +2002,9 @@ msgid ""
 "performed without reference to the user who is performing the task."
 msgstr ""
 
+# translation auto-copied from project Fonts Tweak Tool, version master, document po/fonts-tweak-tool
 msgid "Full"
-msgstr ""
+msgstr "ਪੂਰਾ"
 
 msgid "Full name describing the domain"
 msgstr ""
@@ -1879,8 +2021,9 @@ msgstr ""
 msgid "Gateway"
 msgstr ""
 
+# translation auto-copied from project aeolus-conductor, version 0.5.0, document aeolus_conductor, author jassy
 msgid "General Settings"
-msgstr ""
+msgstr "ਆਮ ਸੈਟਿੰਗ"
 
 msgid ""
 "General useful description, for example this kind of hardware needs a "
@@ -1911,8 +2054,12 @@ msgstr ""
 msgid "Google Project ID"
 msgstr ""
 
-msgid "Hardware"
+msgid "Guest OS"
 msgstr ""
+
+# translation auto-copied from project aeolus-conductor, version 0.5.0, document aeolus_conductor, author jassy
+msgid "Hardware"
+msgstr "ਹਾਰਡਵੇਅਰ"
 
 msgid "Hardware Model"
 msgstr ""
@@ -1923,8 +2070,9 @@ msgstr ""
 msgid "Hardware models"
 msgstr ""
 
+# translation auto-copied from project Indic On-screen Keyboard, version f18-1, document iok
 msgid "Help"
-msgstr ""
+msgstr "ਮੱਦਦ"
 
 msgid "Help!"
 msgstr ""
@@ -1932,11 +2080,13 @@ msgstr ""
 msgid "Here you can manage bookmarks. Bookmarks are saved search queries."
 msgstr ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
 msgid "History"
-msgstr ""
+msgstr "ਅਤੀਤ"
 
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
 msgid "Host"
-msgstr ""
+msgstr "ਹੋਸਟ"
 
 msgid "Host %s is not associated with a VM"
 msgstr ""
@@ -1954,6 +2104,10 @@ msgid "Host Parameters"
 msgstr ""
 
 msgid "Host audit entries"
+msgstr ""
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Host config group"
 msgstr ""
 
 msgid "Host details"
@@ -2043,7 +2197,15 @@ msgid "Host::Base|Name"
 msgstr ""
 
 #. "Table name" or "Table name|Column name" for error messages
+msgid "Host::Base|Otp"
+msgstr ""
+
+#. "Table name" or "Table name|Column name" for error messages
 msgid "Host::Base|Owner type"
+msgstr ""
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Host::Base|Provision method"
 msgstr ""
 
 #. "Table name" or "Table name|Column name" for error messages
@@ -2067,6 +2229,10 @@ msgid "Host::Base|Uuid"
 msgstr ""
 
 #. "Table name" or "Table name|Column name" for error messages
+msgid "HostConfigGroup|Host type"
+msgstr ""
+
+#. "Table name" or "Table name|Column name" for error messages
 msgid "Hostgroup"
 msgstr ""
 
@@ -2079,15 +2245,15 @@ msgid "Hostgroup|Image file"
 msgstr ""
 
 #. "Table name" or "Table name|Column name" for error messages
-msgid "Hostgroup|Label"
-msgstr ""
-
-#. "Table name" or "Table name|Column name" for error messages
 msgid "Hostgroup|Name"
 msgstr ""
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Hostgroup|Root pass"
+msgstr ""
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Hostgroup|Title"
 msgstr ""
 
 #. "Table name" or "Table name|Column name" for error messages
@@ -2135,8 +2301,8 @@ msgid "Hosts that had performed modifications without error"
 msgstr ""
 
 msgid ""
-"Hosts that will be trusted in addition to Smart Proxies for access to "
-"fact/report importers and ENC output"
+"Hosts that will be trusted in addition to Smart Proxies for access to fact/"
+"report importers and ENC output"
 msgstr ""
 
 msgid "Hosts which didn't run puppet in the last %s"
@@ -2195,8 +2361,8 @@ msgid ""
 msgstr ""
 
 msgid ""
-"If you are planning to use Foreman as an external node classifier you should"
-" provide information about one or more environments."
+"If you are planning to use Foreman as an external node classifier you should "
+"provide information about one or more environments."
 msgstr ""
 
 msgid ""
@@ -2210,14 +2376,13 @@ msgid ""
 msgstr ""
 
 msgid ""
-"If you wish to track the actions of a particular user then it is possible to"
-" use an additional authentication stage and provide a user account."
+"If you wish to track the actions of a particular user then it is possible to "
+"use an additional authentication stage and provide a user account."
 msgstr ""
 
 msgid ""
 "If you're planning to do anything more than just handle reports, you'll be "
-"in need of a smart proxy - either on this machine or elsewhere on your "
-"network."
+"in need of a capsule - either on this machine or elsewhere on your network."
 msgstr ""
 
 #. "Table name" or "Table name|Column name" for error messages
@@ -2227,8 +2392,9 @@ msgstr ""
 msgid "Image Based"
 msgstr ""
 
+# translation auto-copied from project aeolus-conductor, version 0.5.0, document aeolus_conductor, author jassy
 msgid "Image ID"
-msgstr ""
+msgstr "ਈਮੇਜ਼ ID"
 
 msgid "Image ID as provided by the compute resource, e.g. ami-.."
 msgstr ""
@@ -2239,8 +2405,9 @@ msgstr ""
 msgid "Image to use"
 msgstr ""
 
+# translation auto-copied from project aeolus-conductor, version 0.5.0, document aeolus_conductor, author jassy
 msgid "Images"
-msgstr ""
+msgstr "ਈਮੇਜ਼"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Image|Iam role"
@@ -2248,6 +2415,10 @@ msgstr ""
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Image|Name"
+msgstr ""
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Image|Password"
 msgstr ""
 
 #. "Table name" or "Table name|Column name" for error messages
@@ -2262,8 +2433,9 @@ msgstr ""
 msgid "Image|Uuid"
 msgstr ""
 
+# translation auto-copied from project Subscription Manager, version 1.8.X, document keys, author jassy
 msgid "Import"
-msgstr ""
+msgstr "ਇੰਪੋਰਟ"
 
 msgid "Import from %s"
 msgstr ""
@@ -2274,8 +2446,9 @@ msgstr ""
 msgid "Import your data"
 msgstr ""
 
+# translation auto-copied from project DocBook locales, version 1, document locale
 msgid "Important"
-msgstr ""
+msgstr "ਖਾਸ"
 
 msgid "Imported Subnets"
 msgstr ""
@@ -2286,14 +2459,10 @@ msgstr ""
 msgid "Importing Puppet classes and environments"
 msgstr ""
 
-msgid "In Progress"
-msgstr ""
-
 msgid ""
-"In addition to defining which puppet classes get included when building this"
-" host type you are also able to assign variables and provisioning "
-"information to a host group to further refine the behavior of the puppet "
-"runtime."
+"In addition to defining which puppet classes get included when building this "
+"host type you are also able to assign variables and provisioning information "
+"to a host group to further refine the behavior of the puppet runtime."
 msgstr ""
 
 msgid "Include this host within Foreman reporting"
@@ -2306,6 +2475,9 @@ msgid "Included Config Groups"
 msgstr ""
 
 msgid "Included Parameters via inheritance"
+msgstr ""
+
+msgid "Includes Foreman © 2009-%{year} Paul Kelly and %{author}"
 msgstr ""
 
 msgid "Incorrect username or password"
@@ -2326,8 +2498,9 @@ msgstr ""
 msgid "Installation medium configuration"
 msgstr ""
 
+# translation auto-copied from project subscription-manager, version 1.10.X, document keys
 msgid "Installed"
-msgstr ""
+msgstr "ਇੰਸਟਾਲ ਕੀਤੇ"
 
 msgid "Interface"
 msgstr ""
@@ -2405,8 +2578,9 @@ msgid ""
 "time they log into Foreman"
 msgstr ""
 
+# translation auto-copied from project Fedora Installation Guide, version f19, document pot/Kickstart2
 msgid "Language"
-msgstr ""
+msgstr "ਭਾਸ਼ਾ"
 
 msgid "Last report"
 msgstr ""
@@ -2417,8 +2591,9 @@ msgstr ""
 msgid "Latest Events"
 msgstr ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
 msgid "Level"
-msgstr ""
+msgstr "ਲੈਵਲ"
 
 msgid "List of hosts which answer to the provided query"
 msgstr ""
@@ -2435,8 +2610,9 @@ msgstr ""
 msgid "Load zones"
 msgstr ""
 
+# translation auto-copied from project CFSE, version 1.0.1, document app, author jassy
 msgid "Loading"
-msgstr ""
+msgstr "ਲੋਡ ਹੋ ਰਿਹਾ ਹੈ"
 
 msgid "Loading ..."
 msgstr ""
@@ -2462,8 +2638,9 @@ msgstr ""
 msgid "Loading virtual machines information ..."
 msgstr ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
 msgid "Location"
-msgstr ""
+msgstr "ਟਿਕਾਣਾ"
 
 msgid "Location configuration"
 msgstr ""
@@ -2491,8 +2668,9 @@ msgstr ""
 msgid "Logged-in"
 msgstr ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app
 msgid "Login"
-msgstr ""
+msgstr "ਲਾਗਇਨ"
 
 msgid "Logout"
 msgstr ""
@@ -2566,8 +2744,9 @@ msgstr ""
 msgid "MAC address for this host"
 msgstr ""
 
+# translation auto-copied from project CFSE, version 1.0.1, document app, author jassy
 msgid "Machine Type"
-msgstr ""
+msgstr "ਮਸ਼ੀਨ ਕਿਸਮ"
 
 msgid "Machine type"
 msgstr ""
@@ -2589,8 +2768,9 @@ msgstr ""
 msgid "Manage Locations"
 msgstr ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
 msgid "Manage Organizations"
-msgstr ""
+msgstr "ਸੰਗਠਨ ਪਰਬੰਧਨ"
 
 msgid "Manage host"
 msgstr ""
@@ -2613,8 +2793,8 @@ msgstr ""
 msgid ""
 "Matcher is a combination of an attribute and its value, if they match, the "
 "value below would be provided.<br> You may use any attribute foreman knows "
-"about, such as facts etc for example: <code> domain = example.com </code> or"
-" <code> is_virtual = true</code>"
+"about, such as facts etc for example: <code> domain = example.com </code> or "
+"<code> is_virtual = true</code>"
 msgstr ""
 
 msgid "Max days for Trends graphs"
@@ -2623,9 +2803,10 @@ msgstr ""
 msgid "Media"
 msgstr ""
 
+# translation auto-copied from project Fonts Tweak Tool, version master, document fonts-tweak-tool, author aalam
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Medium"
-msgstr ""
+msgstr "ਮੱਧਮ"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Medium|Config path"
@@ -2651,15 +2832,17 @@ msgstr ""
 msgid "Medium|Path"
 msgstr ""
 
+# translation auto-copied from project aeolus-conductor, version 0.5.0, document aeolus_conductor, author jassy
 msgid "Memory"
-msgstr ""
+msgstr "ਮੈਮੋਰੀ"
 
 msgid "Memory (MB)"
 msgstr ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Message"
-msgstr ""
+msgstr "ਸੁਨੇਹਾ"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Message|Digest"
@@ -2693,6 +2876,10 @@ msgid "Model|Hardware model"
 msgstr ""
 
 #. "Table name" or "Table name|Column name" for error messages
+msgid "Model|Hosts count"
+msgstr ""
+
+#. "Table name" or "Table name|Column name" for error messages
 msgid "Model|Info"
 msgstr ""
 
@@ -2704,11 +2891,13 @@ msgstr ""
 msgid "Model|Vendor class"
 msgstr ""
 
+# translation auto-copied from project subscription-manager, version 1.11.X, document keys
 msgid "Modified"
-msgstr ""
+msgstr "ਸੁਧਾਰਿਆ ਹੋਇਆ"
 
+# translation auto-copied from project aeolus-conductor, version 0.5.0, document aeolus_conductor, author jassy
 msgid "Monitor"
-msgstr ""
+msgstr "ਮਾਨੀਟਰ"
 
 msgid "Must provide an operating systems"
 msgstr ""
@@ -2716,14 +2905,15 @@ msgstr ""
 msgid "Must provide template kind"
 msgstr ""
 
-msgid "Must specify a Smart Proxy to use"
+msgid "Must specify a Capsule to use"
 msgstr ""
 
 msgid "My account"
 msgstr ""
 
+# translation auto-copied from project Subscription Manager, version 1.0.X, document keys
 msgid "N/A"
-msgstr ""
+msgstr "N/A"
 
 msgid "NA"
 msgstr ""
@@ -2734,8 +2924,9 @@ msgstr ""
 msgid "NIC type"
 msgstr ""
 
+# translation auto-copied from project Subscription Manager, version 1.8.X, document keys
 msgid "Name"
-msgstr ""
+msgstr "ਨਾਂ"
 
 msgid ""
 "Name of the external auth source where unknown externally authentication "
@@ -2767,8 +2958,9 @@ msgstr ""
 msgid "Networks"
 msgstr ""
 
+# translation auto-copied from project aeolus-conductor, version 0.5.0, document aeolus_conductor, author jassy
 msgid "New"
-msgstr ""
+msgstr "ਨਵਾਂ"
 
 msgid "New %s"
 msgstr ""
@@ -2780,6 +2972,9 @@ msgid "New Autosign Entry"
 msgstr ""
 
 msgid "New Bookmark"
+msgstr ""
+
+msgid "New Capsule"
 msgstr ""
 
 msgid "New Compute Profile"
@@ -2803,8 +2998,9 @@ msgstr ""
 msgid "New Environment"
 msgstr ""
 
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author asaini
 msgid "New Filter"
-msgstr ""
+msgstr "ਨਵਾਂ ਛਾਣਨਾ"
 
 msgid "New Global Parameter"
 msgstr ""
@@ -2839,16 +3035,14 @@ msgstr ""
 msgid "New Operating system"
 msgstr ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
 msgid "New Organization"
-msgstr ""
+msgstr "ਨਵਾਂ ਸੰਗਠਨ"
 
 msgid "New Parameter"
 msgstr ""
 
 msgid "New Partition Table"
-msgstr ""
-
-msgid "New Proxy"
 msgstr ""
 
 msgid "New Puppet Environment"
@@ -2857,14 +3051,13 @@ msgstr ""
 msgid "New Puppet class"
 msgstr ""
 
+# translation auto-copied from project aeolus-conductor, version 0.5.0, document aeolus_conductor, author jassy
 msgid "New Realm"
-msgstr ""
+msgstr "ਨਵਾਂ Realm"
 
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
 msgid "New Role"
-msgstr ""
-
-msgid "New Smart Proxy"
-msgstr ""
+msgstr "ਨਵਾਂ ਰੋਲ"
 
 msgid "New Subnet"
 msgstr ""
@@ -2875,8 +3068,9 @@ msgstr ""
 msgid "New Trend"
 msgstr ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
 msgid "New User"
-msgstr ""
+msgstr "ਨਵਾਂ ਯੂਜ਼ਰ"
 
 msgid "New User group"
 msgstr ""
@@ -2928,8 +3122,11 @@ msgid "Nic::Base|Name"
 msgstr ""
 
 msgid ""
-"No %{template_kind} templates were found for this host, make sure you define"
-" at least one in your %{os} settings"
+"No %{template_kind} templates were found for this host, make sure you define "
+"at least one in your %{os} settings"
+msgstr ""
+
+msgid "No Capsules to show"
 msgstr ""
 
 msgid "No TFTP proxies defined, can't continue"
@@ -2942,6 +3139,9 @@ msgid "No changes"
 msgstr ""
 
 msgid "No changes found when refreshing features from %s."
+msgstr ""
+
+msgid "No changes to your environments detected"
 msgstr ""
 
 msgid "No compute resource to show"
@@ -3015,7 +3215,9 @@ msgstr ""
 msgid "No reports|N"
 msgstr ""
 
-msgid "No smart proxies to show"
+msgid ""
+"No smart proxy was found to import environments from, ensure that at least "
+"one smart proxy is registered with the 'puppet' feature."
 msgstr ""
 
 msgid "No subnets"
@@ -3042,8 +3244,9 @@ msgstr ""
 msgid "No value warning"
 msgstr ""
 
+# translation auto-copied from project Fonts Tweak Tool, version master, document fonts-tweak-tool, author aalam
 msgid "None"
-msgstr ""
+msgstr "ਕੋਈ ਨਹੀਂ"
 
 msgid "None Found"
 msgstr ""
@@ -3051,8 +3254,9 @@ msgstr ""
 msgid "Not Found"
 msgstr ""
 
+# translation auto-copied from project subscription-manager, version 0.96.X, document keys
 msgid "Not Installed"
-msgstr ""
+msgstr "ਨਾ ਇੰਸਟਾਲ ਕੀਤਾ"
 
 msgid "Not authorized to edit classes"
 msgstr ""
@@ -3064,9 +3268,6 @@ msgid "Not implemented for %s"
 msgstr ""
 
 msgid "Not relevant for snippet"
-msgstr ""
-
-msgid "Note: %s "
 msgstr ""
 
 msgid "Nothing to show"
@@ -3097,8 +3298,9 @@ msgstr ""
 msgid "Notification disabled"
 msgstr ""
 
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author asaini
 msgid "Notifications"
-msgstr ""
+msgstr "ਸੂਚਨਾਵਾਂ"
 
 msgid "Number Of Clients"
 msgstr ""
@@ -3124,8 +3326,9 @@ msgstr ""
 msgid "OAuth consumer secret"
 msgstr ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
 msgid "OK"
-msgstr ""
+msgstr "ਠੀਕ"
 
 #. host's status: first character of "OK"
 msgid "OK|O"
@@ -3152,14 +3355,16 @@ msgstr ""
 msgid "Obsolete"
 msgstr ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app
 msgid "Off"
-msgstr ""
+msgstr "ਬੰਦ"
 
 msgid "Old"
 msgstr ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app
 msgid "On"
-msgstr ""
+msgstr "ਚਾਲੂ"
 
 msgid "Once installed you should head over to"
 msgstr ""
@@ -3225,6 +3430,14 @@ msgid "Operatingsystem|Description"
 msgstr ""
 
 #. "Table name" or "Table name|Column name" for error messages
+msgid "Operatingsystem|Hostgroups count"
+msgstr ""
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Operatingsystem|Hosts count"
+msgstr ""
+
+#. "Table name" or "Table name|Column name" for error messages
 msgid "Operatingsystem|Major"
 msgstr ""
 
@@ -3245,6 +3458,9 @@ msgid "Operatingsystem|Release name"
 msgstr ""
 
 msgid "Operation"
+msgstr ""
+
+msgid "Operators"
 msgstr ""
 
 msgid ""
@@ -3270,11 +3486,13 @@ msgstr ""
 msgid "Optional: VLAN ID for this subnet"
 msgstr ""
 
+# translation auto-copied from project Subscription Manager, version 1.8.X, document keys
 msgid "Order"
-msgstr ""
+msgstr "ਕ੍ਰਮ"
 
+# translation auto-copied from project Subscription Manager, version 1.8.X, document keys, author jassy
 msgid "Organization"
-msgstr ""
+msgstr "ਸੰਗਠਨ"
 
 msgid "Organization configuration"
 msgstr ""
@@ -3282,8 +3500,9 @@ msgstr ""
 msgid "Organization you had selected as your context has been deleted."
 msgstr ""
 
+# translation auto-copied from project Subscription Manager, version 1.8.X, document keys, author jassy
 msgid "Organizations"
-msgstr ""
+msgstr "ਸੰਗਠਨ"
 
 msgid "Organizations also work nicely in tandem with"
 msgstr ""
@@ -3309,8 +3528,9 @@ msgstr ""
 msgid "Override this value"
 msgstr ""
 
+# translation auto-copied from project Fedora Installation Guide, version f17-alt, document expert-quickstart
 msgid "Overview"
-msgstr ""
+msgstr "ਜਾਣ-ਪਛਾਣ"
 
 msgid "Overwrite"
 msgstr ""
@@ -3318,8 +3538,9 @@ msgstr ""
 msgid "Owned By"
 msgstr ""
 
+# translation auto-copied from project aeolus-conductor, version 0.5.0, document aeolus_conductor, author jassy
 msgid "Owner"
-msgstr ""
+msgstr "ਮਾਲਕ"
 
 msgid "Owner changed to %s"
 msgstr ""
@@ -3333,9 +3554,10 @@ msgstr ""
 msgid "PXE Default file has been deployed to all Smart Proxies"
 msgstr ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Parameter"
-msgstr ""
+msgstr "ਪੈਰਾਮੀਟਰ"
 
 msgid "Parameter name"
 msgstr ""
@@ -3343,8 +3565,9 @@ msgstr ""
 msgid "Parameter type"
 msgstr ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
 msgid "Parameters"
-msgstr ""
+msgstr "ਪੈਰਾਮੀਟਰ"
 
 msgid "Parameters that would be associated with hosts in this %s"
 msgstr ""
@@ -3379,8 +3602,9 @@ msgstr ""
 msgid "Partition tables"
 msgstr ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
 msgid "Password"
-msgstr "パスワード"
+msgstr "ਪਾਸਵਰਡ"
 
 msgid "Password should be 8 characters or more"
 msgstr ""
@@ -3388,8 +3612,9 @@ msgstr ""
 msgid "Password to authenticate with - used for SSH finish step."
 msgstr ""
 
+# translation auto-copied from project subscription-manager, version 1.11.X, document keys
 msgid "Path"
-msgstr ""
+msgstr "ਰਾਹ"
 
 msgid "Path to template, relative to datacenter (e.g. My templates/RHEL 6)"
 msgstr ""
@@ -3400,8 +3625,9 @@ msgstr ""
 msgid "Paused"
 msgstr ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
 msgid "Pending"
-msgstr ""
+msgstr "ਅਧੂਰੇ"
 
 msgid "Pending Hosts"
 msgstr ""
@@ -3416,13 +3642,23 @@ msgstr ""
 msgid "Pending|P"
 msgstr ""
 
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author jassy
+#. "Table name" or "Table name|Column name" for error messages
 msgid "Permission"
-msgstr ""
+msgstr "ਮਨਜੂਰੀ"
 
 msgid "Permission denied"
 msgstr ""
 
 msgid "Permissions must be of same resource type"
+msgstr ""
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Permission|Name"
+msgstr ""
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Permission|Resource type"
 msgstr ""
 
 msgid "Photo attribute"
@@ -3498,8 +3734,9 @@ msgstr ""
 msgid "Prepare post installation script for %s"
 msgstr ""
 
+# translation auto-copied from project Fedora Installation Guide, version f17-alt, document Ksconfig
 msgid "Preview"
-msgstr ""
+msgstr "ਸੰਖੇਪ"
 
 msgid "Primary"
 msgstr ""
@@ -3510,14 +3747,19 @@ msgstr ""
 msgid "Private"
 msgstr ""
 
+msgid "Private key that Foreman will use to encrypt websockets "
+msgstr ""
+
 msgid "Proceed to Edit"
 msgstr ""
 
+# translation auto-copied from project aeolus-conductor, version 0.5.0, document aeolus_conductor, author jassy
 msgid "Properties"
-msgstr ""
+msgstr "ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ"
 
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
 msgid "Provider"
-msgstr ""
+msgstr "ਪਰੋਵਾਈਡਰ"
 
 msgid "Provision"
 msgstr ""
@@ -3544,9 +3786,6 @@ msgid "Provisioning Templates"
 msgstr ""
 
 msgid "Provisioning templates"
-msgstr ""
-
-msgid "Proxies"
 msgstr ""
 
 #. "Table name" or "Table name|Column name" for error messages
@@ -3639,6 +3878,22 @@ msgid "Puppetclass"
 msgstr ""
 
 #. "Table name" or "Table name|Column name" for error messages
+msgid "Puppetclass|Global class params count"
+msgstr ""
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Puppetclass|Hostgroups count"
+msgstr ""
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Puppetclass|Hosts count"
+msgstr ""
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Puppetclass|Lookup keys count"
+msgstr ""
+
+#. "Table name" or "Table name|Column name" for error messages
 msgid "Puppetclass|Name"
 msgstr ""
 
@@ -3648,8 +3903,10 @@ msgstr ""
 msgid "Quota ID"
 msgstr ""
 
+# translation auto-copied from project aeolus-conductor, version 0.5.0, document aeolus_conductor, author jassy
+#. "Table name" or "Table name|Column name" for error messages
 msgid "Realm"
-msgstr ""
+msgstr "Realm"
 
 msgid "Realm Configuration"
 msgstr ""
@@ -3669,20 +3926,34 @@ msgstr ""
 msgid "Realm type"
 msgstr ""
 
+# translation auto-copied from project aeolus-conductor, version 0.5.0, document aeolus_conductor, author jassy
 msgid "Realms"
+msgstr "Realms"
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Realm|Hostgroups count"
 msgstr ""
 
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Realm|Hosts count"
+msgstr ""
+
+#. "Table name" or "Table name|Column name" for error messages
 msgid "Realm|Name"
 msgstr ""
 
-msgid ""
-"Rebuild %s on next reboot?\\nThis would also delete all of its current facts"
-" and reports"
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Realm|Realm type"
 msgstr ""
 
 msgid ""
-"Redirect your users to this url on logout (authorize_login_delegation should"
-" also be enabled)"
+"Rebuild %s on next reboot?\\nThis would also delete all of its current facts "
+"and reports"
+msgstr ""
+
+msgid ""
+"Redirect your users to this url on logout (authorize_login_delegation should "
+"also be enabled)"
 msgstr ""
 
 msgid "Refresh features"
@@ -3778,8 +4049,9 @@ msgstr ""
 msgid "Resolve"
 msgstr ""
 
+# translation auto-copied from project aeolus-conductor, version 0.5.0, document aeolus_conductor, author jassy
 msgid "Resource"
-msgstr ""
+msgstr "ਸਰੋਤ"
 
 msgid "Resources"
 msgstr ""
@@ -3803,12 +4075,14 @@ msgstr ""
 msgid "Revert to revision from: %s"
 msgstr ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
 msgid "Review"
-msgstr ""
+msgstr "ਦੁਹਰਾਈ"
 
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Role"
-msgstr ""
+msgstr "ਰੋਲ"
 
 msgid "Role cloned from role %{old_name}"
 msgstr ""
@@ -3816,8 +4090,9 @@ msgstr ""
 msgid "Role is in use"
 msgstr ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
 msgid "Roles"
-msgstr ""
+msgstr "ਰੋਲ"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Role|Builtin"
@@ -3840,6 +4115,7 @@ msgstr ""
 msgid "Run distribution in the last %s minute"
 msgid_plural "Run distribution in the last %s minutes"
 msgstr[0] ""
+msgstr[1] ""
 
 msgid "Run puppet"
 msgstr ""
@@ -3867,17 +4143,20 @@ msgstr ""
 msgid "SafeRender#parse_string was passed a %s instead of a string"
 msgstr ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
 msgid "Save"
-msgstr ""
+msgstr "ਸੰਭਾਲੋ"
 
 msgid "Save something and try again"
 msgstr ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
 msgid "Scope"
-msgstr ""
+msgstr "ਸਕੋਪ"
 
+# translation auto-copied from project Subscription Manager, version 1.8.X, document keys
 msgid "Search"
-msgstr ""
+msgstr "ਖੋਜ"
 
 msgid "Secret Key"
 msgstr ""
@@ -3891,8 +4170,9 @@ msgstr ""
 msgid "Select Action"
 msgstr ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
 msgid "Select All"
-msgstr ""
+msgstr "ਸਭ ਚੁਣੋ"
 
 msgid "Select Hosts"
 msgstr ""
@@ -3900,13 +4180,17 @@ msgstr ""
 msgid "Select Location"
 msgstr ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
 msgid "Select Organization"
-msgstr ""
+msgstr "ਸੰਗਠਨ ਚੁਣੋ"
 
 msgid "Select a period"
 msgstr ""
 
 msgid "Select all items in this page"
+msgstr ""
+
+msgid "Select capsules"
 msgstr ""
 
 msgid "Select compute resources"
@@ -3940,9 +4224,6 @@ msgid "Select organizations"
 msgstr ""
 
 msgid "Select realms"
-msgstr ""
-
-msgid "Select smart proxies"
 msgstr ""
 
 msgid "Select subnets"
@@ -3993,8 +4274,9 @@ msgstr ""
 msgid "Setting"
 msgstr ""
 
+# translation auto-copied from project aeolus-conductor, version 0.5.0, document aeolus_conductor, author jassy
 msgid "Settings"
-msgstr ""
+msgstr "ਸੈਟਿੰਗ"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Setting|Category"
@@ -4020,6 +4302,11 @@ msgstr ""
 msgid "Setting|Value"
 msgstr ""
 
+msgid ""
+"Should Foreman encrypt websockets (VNC console access). Choose on, off or "
+"auto."
+msgstr ""
+
 msgid "Show Diff"
 msgstr ""
 
@@ -4042,6 +4329,9 @@ msgid "Show distribution chart"
 msgstr ""
 
 msgid "Show host facts"
+msgstr ""
+
+msgid "Show linked external user groups"
 msgstr ""
 
 msgid "Show log messages:"
@@ -4075,16 +4365,7 @@ msgstr ""
 msgid "Smart Class Parameter"
 msgstr ""
 
-msgid "Smart Proxies"
-msgstr ""
-
-msgid "Smart Proxy"
-msgstr ""
-
 msgid "Smart Variables"
-msgstr ""
-
-msgid "Smart proxies"
 msgstr ""
 
 #. "Table name" or "Table name|Column name" for error messages
@@ -4092,9 +4373,6 @@ msgid "Smart proxy"
 msgstr ""
 
 msgid "Smart variables"
-msgstr ""
-
-msgid "Smart-Proxy Installation"
 msgstr ""
 
 #. "Table name" or "Table name|Column name" for error messages
@@ -4139,23 +4417,27 @@ msgstr ""
 msgid "Source|Value"
 msgstr ""
 
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello
 msgid "Start"
-msgstr ""
+msgstr "ਸ਼ੁਰੂ"
 
+# translation auto-copied from project aeolus-conductor, version 0.5.0, document aeolus_conductor, author jassy
 msgid "State"
-msgstr ""
+msgstr "ਸਟੇਟ"
 
 msgid "Statistics"
 msgstr ""
 
+# translation auto-copied from project Subscription Manager, version 1.8.X, document keys
 msgid "Status"
-msgstr ""
+msgstr "ਹਾਲਤ"
 
 msgid "Stop updating IP address and MAC values from Puppet facts"
 msgstr ""
 
+# translation auto-copied from project aeolus-conductor, version 0.5.0, document aeolus_conductor, author jassy
 msgid "Storage"
-msgstr ""
+msgstr "ਸਟੋਰੇਜ਼"
 
 msgid "Storage domain"
 msgstr ""
@@ -4213,19 +4495,14 @@ msgstr ""
 msgid "Subnet|Vlanid"
 msgstr ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
 msgid "Success"
-msgstr ""
+msgstr "ਸਫਲਤਾ"
 
 msgid "Successfully created %s."
 msgstr ""
 
-msgid "Successfully created puppetclass."
-msgstr ""
-
 msgid "Successfully deleted %s."
-msgstr ""
-
-msgid "Successfully destroyed puppetclass."
 msgstr ""
 
 msgid "Successfully destroyed report."
@@ -4243,31 +4520,36 @@ msgstr ""
 msgid "Successfully updated %s."
 msgstr ""
 
-msgid "Successfully updated puppetclass."
+msgid ""
+"Successfully updated environments and Puppet classes from the on-disk Puppet "
+"installation"
 msgstr ""
 
 msgid ""
-"Summary Puppet report from Foreman - F:%{failed} R:%{restarted} S:%{skipped}"
-" A:%{applied} FR:%{failed_restarts} T:%{total}"
+"Summary Puppet report from Foreman - F:%{failed} R:%{restarted} S:%{skipped} "
+"A:%{applied} FR:%{failed_restarts} T:%{total}"
 msgstr ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
 msgid "Support"
-msgstr ""
+msgstr "ਸਪੋਰਟ"
 
 #. host's status: first character of "sync" (out of sync)
 msgid "Sync|S"
 msgstr ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app
 msgid "System Information"
-msgstr ""
+msgstr "ਸਿਸਟਮ ਜਾਣਕਾਰੀ"
 
+# translation auto-copied from project CFSE, version sam-1.2, document app
 msgid "System Status"
+msgstr "ਸਿਸਟਮ ਸਥਿਤੀ"
+
+msgid "TFTP Capsule"
 msgstr ""
 
-msgid "TFTP Proxy"
-msgstr ""
-
-msgid "TFTP Proxy to use within this subnet"
+msgid "TFTP Capsule to use within this subnet"
 msgstr ""
 
 msgid "TFTP Settings for %s"
@@ -4286,11 +4568,19 @@ msgid "Taxonomy"
 msgstr ""
 
 #. "Table name" or "Table name|Column name" for error messages
+msgid "Taxonomy|Ancestry"
+msgstr ""
+
+#. "Table name" or "Table name|Column name" for error messages
 msgid "Taxonomy|Ignore types"
 msgstr ""
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Taxonomy|Name"
+msgstr ""
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "Taxonomy|Title"
 msgstr ""
 
 msgid "Template"
@@ -4319,18 +4609,20 @@ msgstr ""
 msgid "TemplateKind|Name"
 msgstr ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
 msgid "Templates"
-msgstr ""
+msgstr "ਟੈਂਪਲਿਟ"
 
 msgid "Tenant"
 msgstr ""
 
+# translation auto-copied from project aeolus-conductor, version 0.5.0, document aeolus_conductor, author jassy
 msgid "Test Connection"
-msgstr ""
+msgstr "ਕੁਨੈਕਸ਼ਨ ਜਾਂਚੋ"
 
 msgid ""
-"The <b>fullname</b> field is used for human readability in reports and other"
-" pages that refer to domains,\\n  and also available as an external node "
+"The <b>fullname</b> field is used for human readability in reports and other "
+"pages that refer to domains,\\n  and also available as an external node "
 "parameter"
 msgstr ""
 
@@ -4389,8 +4681,8 @@ msgid "The file path where your p12 file is located"
 msgstr ""
 
 msgid ""
-"The final entry, Operating System default, can be set by editing the %s "
-"page."
+"The final entry, Operating System default, can be set by editing the %s page."
+""
 msgstr ""
 
 msgid ""
@@ -4457,19 +4749,19 @@ msgid "The order in which values are resolved"
 msgstr ""
 
 msgid ""
-"The path to the medium, can be a URL or a valid NFS server (exclusive of the"
-" architecture).\\n          for example "
-"<em>http://mirror.centos.org/centos/$version/os/$arch</em> where "
-"<strong>$arch</strong> will be substituted for the host's actual OS "
-"architecture and <strong>$version</strong>, <strong>$major</strong> and "
-"<strong>$minor</strong> will be substituted for the version of the operating"
-" system. Solaris and Debian media may also use <strong>$release</strong>."
+"The path to the medium, can be a URL or a valid NFS server (exclusive of the "
+"architecture).\\n          for example <em>http://mirror.centos.org/centos/"
+"$version/os/$arch</em> where <strong>$arch</strong> will be substituted for "
+"the host's actual OS architecture and <strong>$version</strong>, "
+"<strong>$major</strong> and <strong>$minor</strong> will be substituted for "
+"the version of the operating system. Solaris and Debian media may also use "
+"<strong>$release</strong>."
 msgstr ""
 
 msgid ""
 "The remote system presented a public key signed by an unidentified "
-"certificate authority. If you are sure the remote system is authentic, go to"
-" the compute resource edit page, press the 'Test Connection' or 'Load "
+"certificate authority. If you are sure the remote system is authentic, go to "
+"the compute resource edit page, press the 'Test Connection' or 'Load "
 "Datacenters' button and submit"
 msgstr ""
 
@@ -4484,8 +4776,11 @@ msgid "The selected hosts will execute a build operation on next reboot"
 msgstr ""
 
 msgid ""
-"The user that is used to ssh into the instance, normally cloud-user, "
-"ec2-user, ubuntu, root etc"
+"The user that is used to ssh into the instance, normally cloud-user, ec2-"
+"user, ubuntu, root etc"
+msgstr ""
+
+msgid "The virtual machine is being deleted."
 msgstr ""
 
 msgid "There are two strategies when using host groups."
@@ -4494,6 +4789,7 @@ msgstr ""
 msgid "There is"
 msgid_plural "There are"
 msgstr[0] ""
+msgstr[1] ""
 
 msgid "There was an error creating the PXE Default file: %s"
 msgstr ""
@@ -4575,14 +4871,13 @@ msgid ""
 msgstr ""
 
 msgid ""
-"To start collecting trend data, set a cron job to execute 'rake "
-"trends:counter' every Puppet Interval (%s minutes)."
+"To start collecting trend data, set a cron job to execute '%{command}' every "
+"Puppet Interval (%{minutes} minutes)"
 msgstr ""
 
 msgid ""
-"To start collecting trend data, set a cron job to execute <span "
-"class='black'>RAILS_ENV=production bundle exec rake trends:counter</span> "
-"every Puppet Interval (%s minutes)"
+"To start collecting trend data, set a cron job to execute '%{command}' every "
+"Puppet Interval (%{minutes} minutes)."
 msgstr ""
 
 msgid ""
@@ -4608,15 +4903,17 @@ msgstr ""
 msgid "Token|Value"
 msgstr ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
 msgid "Total"
-msgstr ""
+msgstr "ਕੁੱਲ"
 
 msgid "Total Hosts: %s"
 msgstr ""
 
+# translation auto-copied from project Katello, version 1.0, document app, author jassy
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Trend"
-msgstr ""
+msgstr "ਟਰੈਂਡ"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Trend counter"
@@ -4657,14 +4954,16 @@ msgstr ""
 msgid "Troubleshooting"
 msgstr ""
 
+# translation auto-copied from project Fedora Installation Guide, version f17-alt, document Disk_Partitioning_Graphical_common-variablelist-1
 msgid "Type"
+msgstr "ਕਿਸਮ"
+
+msgid "Type of realm, e.g. Red Hat Identity Management"
 msgstr ""
 
-msgid "Type of realm, e.g. FreeIPA"
-msgstr ""
-
+# translation auto-copied from project Fedora Installation Guide, version f17-alt, document Graphical_Installation_x86-Installation-methods
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 msgid ""
 "URL hosts will retrieve templates from during build (normally http as many "
@@ -4676,8 +4975,9 @@ msgid ""
 "unattended_url)"
 msgstr ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
 msgid "UUID"
-msgstr ""
+msgstr "UUID"
 
 msgid "Unable to access key"
 msgstr ""
@@ -4724,7 +5024,7 @@ msgid "Unable to detect features"
 msgstr ""
 
 msgid ""
-"Unable to determine the host's boot server. The DHCP smart proxy failed to "
+"Unable to determine the host's boot server. The DHCP Capsule failed to "
 "provide this information and this subnet is not provided with TFTP services."
 msgstr ""
 
@@ -4818,8 +5118,9 @@ msgstr ""
 msgid "Undo remove"
 msgstr ""
 
+# translation auto-copied from project Subscription Manager, version 1.8.X, document keys, author jassy
 msgid "Unknown"
-msgstr ""
+msgstr "ਅਣਜਾਣ"
 
 msgid "Unknown Power State"
 msgstr ""
@@ -4842,8 +5143,9 @@ msgstr ""
 msgid "Unsupported report status format"
 msgstr ""
 
+# translation auto-copied from project Subscription Manager, version 1.8.X, document keys
 msgid "Update"
-msgstr ""
+msgstr "ਅੱਪਡੇਟ"
 
 msgid "Update realm entry for %s"
 msgstr ""
@@ -4851,8 +5153,9 @@ msgstr ""
 msgid "Update:"
 msgstr ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
 msgid "Updated"
-msgstr ""
+msgstr "ਅੱਪਡੇਟ ਹੋ ਗਏ"
 
 msgid "Updated all hosts!"
 msgstr ""
@@ -4882,9 +5185,10 @@ msgstr ""
 msgid "Useful template functions and macros"
 msgstr ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
 #. "Table name" or "Table name|Column name" for error messages
 msgid "User"
-msgstr ""
+msgstr "ਯੂਜ਼ਰ"
 
 msgid "User Authentication"
 msgstr ""
@@ -4900,6 +5204,10 @@ msgid "User groups"
 msgstr ""
 
 #. "Table name" or "Table name|Column name" for error messages
+msgid "User role"
+msgstr ""
+
+#. "Table name" or "Table name|Column name" for error messages
 msgid "UserFact|Andor"
 msgstr ""
 
@@ -4909,6 +5217,10 @@ msgstr ""
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "UserFact|Operator"
+msgstr ""
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "UserRole|Owner type"
 msgstr ""
 
 #. "Table name" or "Table name|Column name" for error messages
@@ -4924,17 +5236,30 @@ msgid "UsergroupMember|Member type"
 msgstr ""
 
 #. "Table name" or "Table name|Column name" for error messages
-msgid "Usergroup|Name"
+msgid "Usergroup|Admin"
 msgstr ""
 
-msgid "Username"
-msgstr "ユーザー名"
-
-msgid "Users"
+msgid "Usergroup|Auth source"
 msgstr ""
 
 #. "Table name" or "Table name|Column name" for error messages
+msgid "Usergroup|Name"
+msgstr ""
+
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
+msgid "Username"
+msgstr "ਯੂਜ਼ਰ-ਨਾਂ"
+
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
+msgid "Users"
+msgstr "ਯੂਜ਼ਰ"
+
+#. "Table name" or "Table name|Column name" for error messages
 msgid "User|Admin"
+msgstr ""
+
+#. "Table name" or "Table name|Column name" for error messages
+msgid "User|Avatar hash"
 msgstr ""
 
 #. "Table name" or "Table name|Column name" for error messages
@@ -5002,8 +5327,8 @@ msgid "User|Subscribe to all hostgroups"
 msgstr ""
 
 msgid ""
-"Using the organization system provides a way to group resources together for"
-" easy management."
+"Using the organization system provides a way to group resources together for "
+"easy management."
 msgstr ""
 
 msgid "VCPU(s)"
@@ -5042,8 +5367,9 @@ msgstr ""
 msgid "Validation types"
 msgstr ""
 
+# translation auto-copied from project Subscription Manager, version 1.8.X, document keys
 msgid "Value"
-msgstr ""
+msgstr "ਮੁੱਲ"
 
 msgid "Value to use when there is no match"
 msgstr ""
@@ -5060,13 +5386,14 @@ msgstr ""
 msgid "Verify"
 msgstr ""
 
+# translation auto-copied from project Subscription Manager, version 1.8.X, document keys
 msgid "Version"
-msgstr ""
+msgstr "ਵਰਜਨ"
 
 msgid "Version %{version}"
 msgstr ""
 
-msgid "Version %{version}  © 2009-%{year} Paul Kelly and %{author}"
+msgid "Version %{version} © 2014 Red Hat Inc."
 msgstr ""
 
 msgid "View Diff"
@@ -5093,11 +5420,9 @@ msgstr ""
 msgid "Wait for %s to come online"
 msgstr ""
 
+# translation auto-copied from project Fedora Installation Guide, version f17-alt, document Automatic_Partitioning_common-varlistentry-1
 msgid "Warning"
-msgstr ""
-
-msgid "Warning!"
-msgstr ""
+msgstr "ਚੇਤਾਵਨੀ"
 
 msgid "Warnings and errors"
 msgstr ""
@@ -5111,6 +5436,9 @@ msgid "Welcome"
 msgstr ""
 
 msgid "Welcome to Foreman"
+msgstr ""
+
+msgid "Welcome to Satellite"
 msgstr ""
 
 msgid ""
@@ -5130,8 +5458,8 @@ msgstr ""
 
 msgid ""
 "When editing a Template, you must assign a list of Operating Systems which "
-"this Template can be used with. Optionally, you can restrict a template to a"
-" list of Hostgroups and/or Environments"
+"this Template can be used with. Optionally, you can restrict a template to a "
+"list of Hostgroups and/or Environments"
 msgstr ""
 
 msgid ""
@@ -5155,8 +5483,8 @@ msgid "YAML"
 msgstr ""
 
 msgid ""
-"You Are about to change the default PXE menu on all configured TFTP servers "
-"- continue ?"
+"You Are about to change the default PXE menu on all configured TFTP servers -"
+" continue ?"
 msgstr ""
 
 msgid ""
@@ -5167,9 +5495,6 @@ msgstr ""
 msgid "You are about to override the editor content, are you sure?"
 msgstr ""
 
-msgid "You are currently logged in, suicidal?"
-msgstr ""
-
 msgid "You are not authorized to perform this action"
 msgstr ""
 
@@ -5177,18 +5502,21 @@ msgid "You are using an unsupported browser."
 msgstr ""
 
 msgid ""
-"You can find The Foreman on the %{freenode} (irc.freenode.net) network.  For"
-" general support, please visit #theforeman and for development specific "
+"You can find The Foreman on the %{freenode} (irc.freenode.net) network.  For "
+"general support, please visit #theforeman and for development specific "
 "related chat, please visit #theforeman-dev."
 msgstr ""
 
-msgid "You can find details of how to set up the proxy at"
+msgid "You can find details of how to set up the capsule at"
 msgstr ""
 
 msgid "You can't assign some of roles you selected"
 msgstr ""
 
 msgid "You can't change Administrator flag"
+msgstr ""
+
+msgid "You cannot delete this user while logged in as this user."
 msgstr ""
 
 msgid "You cannot remove %s that are used by hosts or inherited."
@@ -5204,8 +5532,8 @@ msgid "You don't seem to have any Hosts, for more information see"
 msgstr ""
 
 msgid ""
-"You don't seem to have any facts yet. If you wish to configure fact pushing,"
-" please follow"
+"You don't seem to have any facts yet. If you wish to configure fact pushing, "
+"please follow"
 msgstr ""
 
 msgid ""
@@ -5227,11 +5555,11 @@ msgid "You may also find the"
 msgstr ""
 
 msgid ""
-"You may create puppet classes that represent high-level host configurations,"
-" for example, a <b>host-type-ldap-server</b> class, which includes all the "
-"required functionality from other modules or you may decide to create a host"
-" group called <b>host-type-ldap-server</b> and add the required classes into"
-" the host group configuration."
+"You may create puppet classes that represent high-level host configurations, "
+"for example, a <b>host-type-ldap-server</b> class, which includes all the "
+"required functionality from other modules or you may decide to create a host "
+"group called <b>host-type-ldap-server</b> and add the required classes into "
+"the host group configuration."
 msgstr ""
 
 msgid ""
@@ -5242,8 +5570,8 @@ msgid ""
 msgstr ""
 
 msgid ""
-"You may optionally wish to generate the online documentation for your puppet"
-" classes"
+"You may optionally wish to generate the online documentation for your puppet "
+"classes"
 msgstr ""
 
 msgid "You must create a location before continuing."
@@ -5301,8 +5629,9 @@ msgstr ""
 msgid "already in use"
 msgstr ""
 
+# translation auto-copied from project Fedora Installation Guide, version f17-alt, document Boot_Init_Shutdown
 msgid "and"
-msgstr ""
+msgstr "ਅਤੇ"
 
 msgid "and relevant log entries."
 msgstr ""
@@ -5320,6 +5649,15 @@ msgid "can't be blank or contain white spaces."
 msgstr ""
 
 msgid "can't contain white spaces"
+msgstr ""
+
+msgid "cannot be changed on an internal protected account"
+msgstr ""
+
+msgid "cannot be removed from an internal protected account"
+msgstr ""
+
+msgid "cannot be removed from the last admin account"
 msgstr ""
 
 msgid "cant be blank unless a custom partition has been defined"
@@ -5361,7 +5699,7 @@ msgstr ""
 msgid "e.g. https://identity.api.rackspacecloud.com/v2.0"
 msgstr ""
 
-msgid "e.g. https://ovirt.example.com:8443/api"
+msgid "e.g. https://ovirt.example.com/api"
 msgstr ""
 
 msgid "e.g. jpegPhoto"
@@ -5427,6 +5765,9 @@ msgstr ""
 msgid "in %s"
 msgstr ""
 
+msgid "in Progress"
+msgstr ""
+
 msgid "included already from parent"
 msgstr ""
 
@@ -5472,8 +5813,9 @@ msgstr ""
 msgid "is an unsupported provisioning method"
 msgstr ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app, author jassy
 msgid "is invalid"
-msgstr ""
+msgstr "ਯੋਗ ਹੈ"
 
 msgid "is invalid %s"
 msgstr ""
@@ -5485,6 +5827,9 @@ msgid "is invalid: %s"
 msgstr ""
 
 msgid "is not allowed to change"
+msgstr ""
+
+msgid "is not permitted"
 msgstr ""
 
 msgid "is unknown"
@@ -5499,6 +5844,10 @@ msgstr ""
 msgid "last %s day"
 msgid_plural "last %s days"
 msgstr[0] ""
+msgstr[1] ""
+
+msgid "link external user group with this user group"
+msgstr ""
 
 #. Provide locale name in native language (e.g. English, Deutsch or Português)
 msgid "locale_name"
@@ -5555,8 +5904,9 @@ msgstr ""
 msgid "no value"
 msgstr ""
 
+# translation auto-copied from project Satellite6 Katello, version Sam-1.3.0, document katello, author jassy
 msgid "none"
-msgstr ""
+msgstr "ਕੋਈ ਨਹੀਂ"
 
 msgid "off"
 msgstr ""
@@ -5564,8 +5914,9 @@ msgstr ""
 msgid "on"
 msgstr ""
 
+# translation auto-copied from project CFSE, version sam-1.2, document app
 msgid "organization"
-msgstr ""
+msgstr "ਸੰਗਠਨ"
 
 msgid "organizations"
 msgstr ""
@@ -5576,7 +5927,9 @@ msgstr ""
 msgid "override"
 msgstr ""
 
-msgid "parameters require an associated domain, host or host group"
+msgid ""
+"parameters require an associated domain, operating system, host or host "
+"group"
 msgstr ""
 
 msgid "parsing settings type '%s' from string is not defined"

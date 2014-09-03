@@ -14,7 +14,7 @@
 %endif
 
 Name:   foreman
-Version: 1.6.0.42
+Version: 1.6.0.43
 Release: 1%{?dist}
 Summary:Systems Management web application
 
@@ -589,6 +589,10 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Wed Sep 03 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.43-1
+- Pull in new translations for Foreman and update to four digit locale.
+  (walden@redhat.com)
+
 * Wed Aug 27 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.42-1
 - fix apipie-rails dependency version in rpm spec (jmontleo@redhat.com)
 - Fixes #7028 - completing api docs for taxonomies (tstrachota@redhat.com)

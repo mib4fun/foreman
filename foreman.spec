@@ -14,7 +14,7 @@
 %endif
 
 Name:   foreman
-Version: 1.6.0.43
+Version: 1.6.0.44
 Release: 1%{?dist}
 Summary:Systems Management web application
 
@@ -589,6 +589,12 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Thu Sep 04 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.44-1
+- Add rails locale configs for new languages. (walden@redhat.com)
+- Update foreman translations and match directory to language in po file.
+  (walden@redhat.com)
+- Add .zanata-cache to .gitignore. (walden@redhat.com)
+
 * Wed Sep 03 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.43-1
 - Pull in new translations for Foreman and update to four digit locale.
   (walden@redhat.com)

@@ -13,7 +13,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2014-08-27 08:01-0400\n"
+"PO-Revision-Date: 2014-09-04 08:44-0400\n"
 "Last-Translator: gcintra <gcintra@fedoraproject.org>\n"
 "Language-Team: Portuguese (Brazil)\n"
 "Language: pt-BR\n"
@@ -931,19 +931,19 @@ msgid "Canvas not supported."
 msgstr "Canvas não é suportada"
 
 msgid "Capsule"
-msgstr "Capsule"
+msgstr "Capsula"
 
 msgid "Capsule Installation"
-msgstr "Instalação da Capsule"
+msgstr "Instalação da Capsula"
 
 msgid "Capsules"
-msgstr "Capsules"
+msgstr "Capsulas"
 
 msgid "Capsule|Name"
-msgstr "Capsule|Name"
+msgstr "Capsula|Name"
 
 msgid "Capsule|Url"
-msgstr "Capsule|Url"
+msgstr "Capsula|Url"
 
 msgid "Certificate Name"
 msgstr "Certificate Name"
@@ -1251,10 +1251,10 @@ msgid "Custom LDAP search filter, <i>optional</i>"
 msgstr " Filtro de busca doLDAP padronizado, <i>optional</i>"
 
 msgid "DHCP Capsule"
-msgstr "DHCP Capsule"
+msgstr "DHCP Capsula"
 
 msgid "DHCP Capsule to use within this subnet"
-msgstr "DHCP Capsule a usar dentro desta subnet"
+msgstr "DHCP Capsula a usar dentro desta subnet"
 
 msgid "DHCP conflicts removal for %s"
 msgstr "Remoção de conflitos do DHCP para %s"
@@ -1275,13 +1275,13 @@ msgid "DNS A Records %s already exists"
 msgstr "Histórico do DNS  %s já existe"
 
 msgid "DNS Capsule"
-msgstr "DNS Capsule"
+msgstr "DNS Capsula"
 
 msgid "DNS Capsule to use within this domain"
-msgstr "Capsule do DNS  a utilizar dentro deste domínio"
+msgstr "Capsula do DNS  a utilizar dentro deste domínio"
 
 msgid "DNS Capsule to use within this subnet"
-msgstr "DNS Capsule a usar dentro desta subnet"
+msgstr "DNS Capsula a usar dentro desta subnet"
 
 msgid "DNS PTR Records %s already exists"
 msgstr "Histórico do PTR  %s já existe"
@@ -1291,7 +1291,7 @@ msgstr "Nome do DNS"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app
 msgid "Dashboard"
-msgstr "Dashboard"
+msgstr "Painel"
 
 msgid "Data store"
 msgstr "Data store"
@@ -1512,7 +1512,7 @@ msgid "Edit Bookmark"
 msgstr "Editar o marcador"
 
 msgid "Edit Capsule"
-msgstr "Editar Capsule"
+msgstr "Editar Capsula"
 
 msgid "Edit Compute profile"
 msgstr "Editar Computar perfil"
@@ -2090,7 +2090,7 @@ msgid ""
 msgstr ""
 "Foreman suporta a criação automatica de entradas de territórios para novos "
 "hosts. Quando um campo é selecionado para um host, Foreman entra em contato "
-"com o Capsule do território relevante para criar uma entrada para o host e "
+"com o Capsula do território relevante para criar uma entrada para o host e "
 "recuperar sua senha de registro de única vez ."
 
 msgid "Foreman ticketing system"
@@ -2130,9 +2130,9 @@ msgid ""
 "Foreman will map users by username in request-header. If this is set to "
 "false, OAuth requests will have admin rights."
 msgstr ""
-"O Foreman irá mapear usuários pelo username no cabecalho de requisição. Caso "
-"isto seja definido para falso, as requisições do OAuth terão direitos de "
-"admin."
+"O Foreman irá mapear usuários pelo nome de usuário no cabecalho de "
+"requisição. Caso isto seja definido para falso, as requisições do OAuth "
+"terão direitos de admin."
 
 msgid "Foreman will parse ERB in parameters value in the ENC output"
 msgstr ""
@@ -2268,7 +2268,7 @@ msgid "Hardware Models"
 msgstr "Modelos de Hardware"
 
 msgid "Hardware models"
-msgstr "Modelso de hardware"
+msgstr "Modelo de hardware"
 
 # translation auto-copied from project Indic On-screen Keyboard, version f18-1, document iok
 msgid "Help"
@@ -2664,7 +2664,7 @@ msgstr "Image|User data"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Image|Username"
-msgstr "Image|Username"
+msgstr "Imagem|Nome de Usuário"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Image|Uuid"
@@ -4890,10 +4890,10 @@ msgid "System Status"
 msgstr "Status de Sistema"
 
 msgid "TFTP Capsule"
-msgstr "TFTP Capsule"
+msgstr "TFTP Capsula"
 
 msgid "TFTP Capsule to use within this subnet"
-msgstr "TFTP Capsule a usar dentro desta subnet"
+msgstr "TFTP Capsula a usar dentro desta subnet"
 
 msgid "TFTP Settings for %s"
 msgstr "Configurações de TFTP para %s"
@@ -5029,7 +5029,7 @@ msgid "The default administrator email address"
 msgstr "O endereço de email do administrador padrão"
 
 msgid "The default username and password are <b>admin</b> and <b>changeme</b>"
-msgstr "O username e senha padrão são <b>admin</b> e <b>changeme</b>"
+msgstr "O nome de usuário e senha padrão são <b>admin</b> e <b>changeme</b>"
 
 msgid ""
 "The dynamic partitioning style is currently only available for the Red Hat "
@@ -5693,7 +5693,7 @@ msgstr "Usergroup|Name"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author gcintra
 msgid "Username"
-msgstr "Username"
+msgstr "Nome de usuário"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app
 msgid "Users"

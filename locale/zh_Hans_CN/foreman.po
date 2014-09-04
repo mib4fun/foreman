@@ -20,7 +20,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2014-08-28 02:21-0400\n"
+"PO-Revision-Date: 2014-09-04 01:33-0400\n"
 "Last-Translator: leahliu <lliu@redhat.com>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/projects/p/foreman/"
 "language/zh_CN/)\n"
@@ -32,19 +32,19 @@ msgid " Remove"
 msgstr "删除"
 
 msgid "%s - Press Shift-F12 to release the cursor."
-msgstr "%s - 点击 Shift-F12 刷新。"
+msgstr "%s - 点击 Shift-F12 释放光标。"
 
 msgid "%s - The following hosts are about to be changed"
-msgstr "%s - 以下的主机将要发生更改"
+msgstr "%s - 将更改以下主机"
 
 msgid "%s Distribution"
-msgstr "%s 分布式"
+msgstr "%s 分布"
 
 msgid "%s Host"
 msgstr "%s 主机"
 
 msgid "%s Parameters updated, see below for more information"
-msgstr "%s 参数已变更，详情如下"
+msgstr "已更改 %s 参数，详情如下"
 
 msgid "%s Template"
 msgstr "%s 模板"
@@ -58,7 +58,7 @@ msgid "%s ago"
 msgstr "%s 前"
 
 msgid "%s console is not supported at this time"
-msgstr "%s 的控制台不支持"
+msgstr "现在不支持 %s 的控制台"
 
 msgid "%s core"
 msgid_plural "%s cores"
@@ -69,13 +69,13 @@ msgid_plural "%s days ago"
 msgstr[0] "%s 天前"
 
 msgid "%s has been disassociated from VM"
-msgstr "已将 %s 断开与 VM 的关联"
+msgstr "已断开 %s 与 VM 的关联"
 
 msgid "%s is an unknown attribute"
 msgstr "%s 为未知属性"
 
 msgid "%s is not in environment"
-msgstr "%s 未知环境中"
+msgstr "%s 未在环境中"
 
 msgid "%s minute ago"
 msgid_plural "%s minutes ago"
@@ -115,7 +115,7 @@ msgid "%{host} is about to %{action}"
 msgstr "%{host} 要执行 %{action}。"
 
 msgid "%{host} now boots from %{device}"
-msgstr "%{host} 现在从 %{device} 引导。"
+msgstr "%{host} 现在使用 %{device} 引导。"
 
 msgid "%{id} plugin requires Foreman %{matcher} but current is %{current}"
 msgstr "%{id} 插件需要 Foreman %{matcher}，但目前为 %{current}。"
@@ -135,16 +135,16 @@ msgid "%{match} does not match an existing host group"
 msgstr "%{match} 与现有主机组不映射。"
 
 msgid "%{name} changed from %{label1} to %{label2}"
-msgstr "%{name} 从 %{label1} 变更为%{label2}"
+msgstr "%{name} 从 %{label1} 改为%{label2}"
 
 msgid "%{record} is used by %{what}"
-msgstr "%{record} 被 %{what} 使用"
+msgstr "%{record} 已被 %{what} 使用"
 
 msgid "%{record} is used by host in build mode %{what}"
 msgstr "%{record} 是主机在构建模块 %{what} 时使用"
 
 msgid "%{task} task failed with the following error: %{e}"
-msgstr "%{task} 任务错误信息如: %{e}"
+msgstr "%{task} 任务错误信息如下：%{e}"
 
 msgid "%{value} does not belong to %{os} operating system"
 msgstr "%{value} 不属于 %{os} 操作系统"
@@ -165,33 +165,33 @@ msgid "&raquo;"
 msgstr "&raquo;"
 
 msgid "'%{host}' could be deleted or '%{resource}' is not responding."
-msgstr "'%{host}' 不能删除或者 '%{resource}' 无响应。"
+msgstr "不能删除 '%{host}' 或者 '%{resource}' 未响应。"
 
 msgid "'%{host}' not found on '%{resource}'"
-msgstr "'%{host}' 在'%{resource}'中未发现"
+msgstr "未在'%{resource}'中未找到 '%{host}' "
 
 msgid "(Miscellaneous)"
 msgstr "（其他）"
 
 msgid "(optional) IAM Role for Fog to use when creating this image."
-msgstr "（自选）Fog 在生成这个影象时使用的 IAM 角色。"
+msgstr "（自选）Fog 在创建这个映像时使用的 IAM 角色。"
 
 msgid "*Clear environment*"
-msgstr "*环境清除*"
+msgstr "*清理环境*"
 
 msgid "*Clear host group*"
-msgstr "*主机组清除*"
+msgstr "*清理主机组*"
 
 msgid "*Inherit from host group*"
-msgstr "*继承主机组*"
+msgstr "*从主机组继承*"
 
 msgid "<b class='select_count'>0</b> selected"
-msgstr "<b class='select_count'>0</b> 选中"
+msgstr "已选择 <b class='select_count'>0</b>"
 
 msgid ""
 "<b>Description:</b> %{desc}<br><b>Type:</b> %{type}<br> <b>Matcher:</b> "
 "%{matcher}"
-msgstr "<b>描述:</b> %{desc}<br><b>类型:</b> %{type}<br> <b>匹配:</b> %{matcher}"
+msgstr "<b>描述:</b> %{desc}<br><b>类型:</b> %{type}<br> <b>映射器:</b> %{matcher}"
 
 msgid "<b>Source:</b> %s"
 msgstr "<b>源:</b> %s"
@@ -292,7 +292,7 @@ msgid "Add Matcher-Value"
 msgstr "添加匹配值"
 
 msgid "Add Parameter"
-msgstr "增加参数"
+msgstr "添加参数"
 
 msgid "Add Trend Counter"
 msgstr "添加趋势统计"
@@ -350,7 +350,7 @@ msgid "Alerts disabled"
 msgstr "已禁用警告"
 
 msgid "All Puppet Classes for %s"
-msgstr "%s 所有的puppet 类"
+msgstr "%s 所有 puppet  类别"
 
 msgid "All Reports"
 msgstr "所有的报告"
@@ -374,7 +374,7 @@ msgid "All hosts"
 msgstr "所有主机"
 
 msgid "All hosts data matches configurations for locations and organizations."
-msgstr "该位置和组织下所有配置的主机"
+msgstr "与位置和机构项下配置匹配的所有的主机数据"
 
 msgid "All hosts previously with no %{single} are now assigned to %{name}"
 msgstr "所有之前为 %{single} 而现在被命名为 %{name} 的主机"
@@ -396,7 +396,7 @@ msgid ""
 msgstr "所有主机与位置/机构间的不匹配已被修复"
 
 msgid "All realms"
-msgstr "所有 realm"
+msgstr "所有范围"
 
 msgid "All subnets"
 msgstr "所有子网"
@@ -437,7 +437,7 @@ msgid "Any Location"
 msgstr "任意位置"
 
 msgid "Any Organization"
-msgstr "任意组织"
+msgstr "任意机构"
 
 msgid "Applicable<br>Operating Systems"
 msgstr "适用的<br>操作系统"
@@ -495,7 +495,7 @@ msgid "Assign Location"
 msgstr "指定位置"
 
 msgid "Assign Organization"
-msgstr "指定组织"
+msgstr "分配机构"
 
 msgid "Assign Selected Hosts"
 msgstr "指定选定的主机"
@@ -535,7 +535,7 @@ msgstr "必须为基于映像的 provisioning 指定至少一个卷。"
 msgid ""
 "At present, authentication is performed against the internal Database or a "
 "LDAP service provided by one or more LDAP servers."
-msgstr "对内部数据库或LDAP服务提供者的一个或多个LDAP服务器进行认证。"
+msgstr "目前可根据一个或者多个 LDAP 服务器提供的内部数据库或 LDAP 服务进行认证。"
 
 msgid ""
 "Attempting to construct an operating system image filename but %s cannot be "
@@ -613,19 +613,19 @@ msgstr "姓"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "AuthSource|Attr lastname"
-msgstr "属性名"
+msgstr "姓氏属性"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "AuthSource|Attr login"
-msgstr "属性登录"
+msgstr "登录名属性"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "AuthSource|Attr mail"
-msgstr "属性邮箱"
+msgstr "邮箱属性"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "AuthSource|Attr photo"
-msgstr "属性照片"
+msgstr "照片属性"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "AuthSource|Base dn"
@@ -707,7 +707,7 @@ msgid "BMC"
 msgstr "BMC"
 
 msgid "Back"
-msgstr "后退"
+msgstr "返回"
 
 msgid "Back to host"
 msgstr "转到主机"
@@ -1110,7 +1110,7 @@ msgid "Configure"
 msgstr "配置"
 
 msgid "Configure instance %s via SSH"
-msgstr "通过SSH配置%s"
+msgstr "使用 SSH 配置%s"
 
 msgid "Conflict - %s"
 msgstr "冲突 - %s"
@@ -1146,7 +1146,7 @@ msgstr "每个插槽的 core"
 msgid ""
 "Could not find a Configuration Template with the name \"PXELinux global "
 "default\", please create one."
-msgstr "无法找到名为 \"PXELinux global default\" 的配置模板，请生成模板。"
+msgstr "无法找到名为 \"PXELinux global default\" 的配置模板，请创建模板。"
 
 msgid "Create %s"
 msgstr "新建 %s"
@@ -1161,10 +1161,10 @@ msgid "Create Reverse DNS record for %s"
 msgstr "为 %s 新建反向解析DNS记录"
 
 msgid "Create a Capsule"
-msgstr "生成 Capsule"
+msgstr "创建 Capsule"
 
 msgid "Create realm entry for %s"
-msgstr "为 %s 生成 realm 条目"
+msgstr "为 %s 创建 realm 条目"
 
 msgid "Ctrl-Alt-Del"
 msgstr "Ctrl-Alt-Del"
@@ -1346,13 +1346,13 @@ msgstr "显示类型"
 
 msgid "Displaying <b>%{count}</b> entry"
 msgid_plural "Displaying <b>all %{count}</b> entries"
-msgstr[0] "显示 <b>%{count}</b> 项"
+msgstr[0] "显示全部 <b>%{count}</b> 条目"
 
 msgid "Displaying entries <b>%{from} - %{to}</b> of <b>%{count}</b> in total"
 msgstr "显示  <b>%{count}</b> 中的 <b>%{from} - %{to}</b> 总条目"
 
 msgid "Document root where puppetdoc files should be created"
-msgstr "Document root where puppetdoc files should be created"
+msgstr "应创建 puppetdoc 文件的文档 root"
 
 # translation auto-copied from project Publican - Fedora brand, version 3, document Logos, author leahliu
 msgid "Documentation"
@@ -1475,7 +1475,7 @@ msgid "Edit Puppet Class %s"
 msgstr "编辑 Puppet 类别 %s"
 
 msgid "Edit Realm"
-msgstr "编辑 Realm"
+msgstr "编辑范围"
 
 msgid "Edit Roles"
 msgstr "编辑角色"
@@ -1513,7 +1513,7 @@ msgid ""
 "the class <strong>%{name}</strong>s declaration is accessible via the "
 "modulepath associated with <strong>%{environment}</strong>."
 msgstr ""
-"可能您没有生成 puppetdocs（请查看 <a rel=\"external\" href=\"%{url}\">这里</a>），或者无法在 "
+"可能您没有创建 puppetdocs（请查看 <a rel=\"external\" href=\"%{url}\">这里</a>），或者无法在 "
 "<strong>%{environment}</strong><br/> 中找到类别 <strong>%{name}</strong>。请确定可通过与 "
 "<strong>%{environment}</strong> 关联的模块路径访问类别 <strong>%{name}</strong> 声明。"
 
@@ -1527,7 +1527,7 @@ msgid "Enable Notifications"
 msgstr "启用提醒"
 
 msgid "Enable alerts for selected hosts"
-msgstr "启用选择主机的告警"
+msgstr "为选择主机启用警告"
 
 msgid "Enable certificate generation for %s"
 msgstr "为 %s 生成证书"
@@ -1583,7 +1583,7 @@ msgstr "环境和文档"
 msgid ""
 "Environments may be manually created and only require the name of the "
 "environment to be declared."
-msgstr "可手动生成环境，只需要提供要说明的环境名称。"
+msgstr "可手动创建环境，只需要提供要说明的环境名称。"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Environment|Hostgroups count"
@@ -1745,7 +1745,7 @@ msgid "Failed to fetch: "
 msgstr "无法获取："
 
 msgid "Failed to generate %{template_kind} template: %{e}"
-msgstr "生成 %{template_kind} template: %{e} 失败"
+msgstr "创建 %{template_kind} template: %{e} 失败"
 
 msgid "Failed to get IP for %{name}: %{e}"
 msgstr "获取 %{name} IP 失败：%{e}"
@@ -1821,10 +1821,10 @@ msgstr "提取TFTP引导文件：%s"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Filter"
-msgstr "筛选"
+msgstr "过滤器"
 
 msgid "Filter %s"
-msgstr "筛选 %s"
+msgstr "过滤器 %s"
 
 msgid "Filter classes"
 msgstr "过滤器类别"
@@ -1892,7 +1892,7 @@ msgid ""
 "$arch'</em>"
 msgstr ""
 "例如：如果将一些 Red Hat 发行磁盘复制到目录结构中，并将这些磁盘映像命名为 5.8 或者 6.2，且每个映像都包含 x86_64 及 i386 "
-"二进制格式，那么您\\n就可以生成一个描述它们的介质条目。\\n可将该条目命名为 'Red Hat'，也可以包含路径，比如 <em>'http://"
+"二进制格式，那么您\\n就可以创建一个描述它们的介质条目。\\n可将该条目命名为 'Red Hat'，也可以包含路径，比如 <em>'http://"
 "server/redhat/$version/$arch'</em>。"
 
 msgid ""
@@ -1942,7 +1942,7 @@ msgid "Foreman now no longer manages the build cycle for %s"
 msgstr "Foreman 现在不再管理 %s 的构建循环"
 
 msgid "Foreman report creation time is <em>%s</em>"
-msgstr "Foreman 报告生成时间为 <em>%s</em>"
+msgstr "Foreman 报告创建时间为 <em>%s</em>"
 
 msgid "Foreman smart variables will be exposed via the ENC yaml output"
 msgstr "将通过 ENC yaml 输出显示 Foreman 智能变量"
@@ -1953,8 +1953,8 @@ msgid ""
 "create an entry for the host and retrieve it's one-time registration "
 "password."
 msgstr ""
-"Foreman 支持为新主机自动生成 realm 条目。为主机选择 realm 后，Foreman 会联络相关 realm "
-"Capsule，为主机生成一个条目，并检索中注册时生成的一次性密码。"
+"Foreman 支持为新主机自动创建 realm 条目。为主机选择 realm 后，Foreman 会联络相关 realm "
+"Capsule，为主机创建一个条目，并检索中注册时创建的一次性密码。"
 
 msgid "Foreman ticketing system"
 msgstr "Foreman ticketing 系统"
@@ -2069,7 +2069,7 @@ msgid "Generated %s ago"
 msgstr "%s 前产生"
 
 msgid "Generated at %s"
-msgstr "通过 %s 产生"
+msgstr "于 %s 生成"
 
 # translation auto-copied from project aeolus-conductor, version 1.1.1, document defaults, author leahliu
 msgid "Global"
@@ -2085,7 +2085,7 @@ msgid "Global variable or class Parameter, not both"
 msgstr "全局变量或类的参数，而不是两个"
 
 msgid "Good host reports in the last %s"
-msgstr "在过去 %s 内的报告良好的主机"
+msgstr "在过去 %s 内的良好主机报告"
 
 msgid "Google Project ID"
 msgstr "Google Project ID"
@@ -2309,23 +2309,23 @@ msgstr "发现主机"
 msgid ""
 "Hosts created after a puppet run that did not send a location fact will be "
 "placed in this location"
-msgstr "会将在运行 puppet 之后生成且未发送位置信息的主机放在这个位置"
+msgstr "会将在运行 puppet 之后创建且未发送位置信息的主机放在这个位置"
 
 msgid ""
 "Hosts created after a puppet run that did not send a organization fact will "
 "be placed in this organization"
-msgstr "会将在运行 puppet 之后生成且未发送机构信息的主机放在这个位置"
+msgstr "会将在运行 puppet 之后创建且未发送机构信息的主机放在这个位置"
 
 msgid ""
 "Hosts created after a puppet run will be placed in the location this fact "
 "dictates. The content of this fact should be the full label of the location."
-msgstr "会将在运行 puppet 后生成的主机放在这个详情描述的位置。这个详情的内容应为该位置的完整标签。"
+msgstr "会将在运行 puppet 后创建的主机放在这个详情描述的位置。这个详情的内容应为该位置的完整标签。"
 
 msgid ""
 "Hosts created after a puppet run will be placed in the organization this "
 "fact dictates. The content of this fact should be the full label of the "
 "organization."
-msgstr "会将在运行 puppet 后生成的主机放在这个详情描述的机构。这个详情的内容应为该机构的完整标签。"
+msgstr "会将在运行 puppet 后创建的主机放在这个详情描述的机构。这个详情的内容应为该机构的完整标签。"
 
 msgid "Hosts in error state"
 msgstr "主机处于错误状态"
@@ -2345,7 +2345,7 @@ msgid "Hosts which didn't run puppet in the last %s"
 msgstr "没有在上一个 %s 中运行 puppet 的主机"
 
 msgid "Hosts with alerts disabled"
-msgstr "主机告警禁用"
+msgstr "禁用警告的主机"
 
 msgid "Hosts with errors"
 msgstr "主机有错误"
@@ -2392,7 +2392,7 @@ msgstr ""
 msgid ""
 "If checked, will raise an error if there is no default value and no matcher "
 "provide a value."
-msgstr "检查后，如果没有默认值，且没有映射程序提供数值，则会生成出错信息。"
+msgstr "检查后，如果没有默认值，且没有映射程序提供数值，则会创建出错信息。"
 
 msgid ""
 "If you are already using puppet you should consider using some of the rake "
@@ -2491,7 +2491,7 @@ msgid "Imported Subnets"
 msgstr "导入子网"
 
 msgid "Importing Puppet Facts"
-msgstr "导入Puppet详情"
+msgstr "导入Puppet 详情"
 
 msgid "Importing Puppet classes and environments"
 msgstr "导入 Puppet 类别和环境"
@@ -2518,7 +2518,7 @@ msgid "Includes Foreman © 2009-%{year} Paul Kelly and %{author}"
 msgstr "包含 Foreman © 2009-%{year} Paul Kelly 及 %{author}"
 
 msgid "Incorrect username or password"
-msgstr "非法用户名或者密码"
+msgstr "错误用户名或者密码"
 
 msgid "Infrastructure"
 msgstr "架构"
@@ -2616,7 +2616,7 @@ msgstr "LDAP 服务器"
 msgid ""
 "LDAP users will have their Foreman account automatically created the first "
 "time they log into Foreman"
-msgstr "LDAP 用户会在其首次使用 Foreman 时自动生成其 Foreman 帐户。"
+msgstr "LDAP 用户会在其首次使用 Foreman 时自动创建其 Foreman 帐户。"
 
 # translation auto-copied from project System-config-language, version f19, document system-config-language
 msgid "Language"
@@ -2687,7 +2687,7 @@ msgid "Location you had selected as your context has been deleted."
 msgstr "已删除选为上下文的位置。"
 
 msgid "Location/Organization"
-msgstr "位置/组织"
+msgstr "位置/机构"
 
 msgid "Locations"
 msgstr "位置"
@@ -2701,7 +2701,7 @@ msgid "Log out idle users after a certain number of minutes"
 msgstr "在一定时间后退出闲置用户"
 
 msgid "Logged out - See you soon"
-msgstr "登出"
+msgstr "已退出 - 再见"
 
 msgid "Logged-in"
 msgstr "登录"
@@ -2807,7 +2807,7 @@ msgid "Manage Locations"
 msgstr "管理位置"
 
 msgid "Manage Organizations"
-msgstr "管理组织"
+msgstr "管理机构"
 
 msgid "Manage host"
 msgstr "管理主机"
@@ -2971,7 +2971,7 @@ msgid ""
 "users (see authorize_login_delegation) should be created (keep unset to "
 "prevent the autocreation)"
 msgstr ""
-"外部认证源名称，可用来生成未知外部认证的用户（请查看 authorize_login_delegation），保持为未设置以便防止自动生成。"
+"外部认证源名称，可用来创建未知外部认证的用户（请查看 authorize_login_delegation），保持为未设置以便防止自动创建。"
 
 msgid "Nest"
 msgstr "嵌套"
@@ -3091,7 +3091,7 @@ msgid "New Puppet Environment"
 msgstr "新建 Puppet 环境"
 
 msgid "New Puppet class"
-msgstr "新建Puppet类"
+msgstr "新建 Puppet 类别"
 
 # translation auto-copied from project aeolus-conductor, version 1.1.0, document defaults
 msgid "New Realm"
@@ -3226,7 +3226,7 @@ msgid "No hosts were found with that id or name"
 msgstr "没有发现该ID或者名称的主机"
 
 msgid "No interesting reports received in the last week"
-msgstr "上周没有收到任何有意思的报告"
+msgstr "上周没有收到任何需要查看的报告"
 
 msgid "No networks"
 msgstr "没有网络"
@@ -3376,7 +3376,7 @@ msgid "OK|O"
 msgstr "O"
 
 msgid "OS Distribution"
-msgstr "系统分发"
+msgstr "OS 分布"
 
 msgid "OS Family"
 msgstr "操作系统集"
@@ -3532,16 +3532,16 @@ msgid "Order"
 msgstr "订购"
 
 msgid "Organization"
-msgstr "组织"
+msgstr "机构"
 
 msgid "Organization configuration"
-msgstr "组织配置"
+msgstr "机构配置"
 
 msgid "Organization you had selected as your context has been deleted."
 msgstr "已删除选为上下文的机构。"
 
 msgid "Organizations"
-msgstr "组织"
+msgstr "机构"
 
 msgid "Organizations also work nicely in tandem with"
 msgstr "机构还可以与之良好合作"
@@ -3878,7 +3878,7 @@ msgid "Puppet Reports integration"
 msgstr "Puppet 整合报告"
 
 msgid "Puppet class"
-msgstr "Puppet 类"
+msgstr "Puppet 类别"
 
 msgid "Puppet classes"
 msgstr "Puppet 类别"
@@ -3946,22 +3946,22 @@ msgid "Realm"
 msgstr "范围"
 
 msgid "Realm Configuration"
-msgstr "Realm 配置"
+msgstr "范围 配置"
 
 msgid "Realm name, e.g. EXAMPLE.COM"
-msgstr "Realm 名称，例如：EXAMPLE.COM"
+msgstr "范围名称，例如：EXAMPLE.COM"
 
 msgid "Realm proxy"
-msgstr "Realm 代理服务器"
+msgstr "范围代理服务器"
 
 msgid "Realm proxy did not return a one-time password"
-msgstr "Realm 代理服务器没有返回一次性密码"
+msgstr "范围代理服务器没有返回一次性密码"
 
 msgid "Realm proxy to use within this realm"
-msgstr "这个 realm 中使用的 realm 代理服务器"
+msgstr "这个范围 中使用的范围代理服务器"
 
 msgid "Realm type"
-msgstr "Realm 类型"
+msgstr "范围 类型"
 
 # translation auto-copied from project aeolus-conductor, version 1.1.0, document defaults
 msgid "Realms"
@@ -3981,7 +3981,7 @@ msgstr "名称"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Realm|Realm type"
-msgstr "Realm 类型"
+msgstr "范围类型"
 
 msgid ""
 "Rebuild %s on next reboot?\\nThis would also delete all of its current facts "
@@ -4151,7 +4151,7 @@ msgstr "在以下主机中运行 Puppet"
 
 msgid "Run distribution in the last %s minute"
 msgid_plural "Run distribution in the last %s minutes"
-msgstr[0] "在过去 %s 分钟内并发数分布"
+msgstr[0] "在过去 %s 分钟内运行分布"
 
 msgid "Run puppet"
 msgstr "运行 puppet"
@@ -4191,7 +4191,7 @@ msgid "Scope"
 msgstr "范围"
 
 msgid "Search"
-msgstr "搜"
+msgstr "搜索"
 
 msgid "Secret Key"
 msgstr "Secret 密钥"
@@ -4216,13 +4216,13 @@ msgid "Select Location"
 msgstr "选择位置"
 
 msgid "Select Organization"
-msgstr "选择组织"
+msgstr "选择机构"
 
 msgid "Select a period"
 msgstr "选择一个时期"
 
 msgid "Select all items in this page"
-msgstr "选择本页所有对象"
+msgstr "选择本页所有项目"
 
 msgid "Select capsules"
 msgstr "选择 capsule"
@@ -4258,7 +4258,7 @@ msgid "Select organizations"
 msgstr "选择机构"
 
 msgid "Select realms"
-msgstr "选择 realm"
+msgstr "选择范围"
 
 msgid "Select subnets"
 msgstr "选择子网"
@@ -4286,7 +4286,7 @@ msgid "Selected image does not belong to %s"
 msgstr "所选映像不属于 %s"
 
 msgid "Selected items"
-msgstr "所选项目"
+msgstr "已选项目"
 
 msgid ""
 "Selected resource type does not support granular filtering, therefore you "
@@ -4300,7 +4300,7 @@ msgid "Selecting a file will override the editor and load the file instead"
 msgstr "选择要覆盖编辑器的文件并载入文件"
 
 msgid "Set a randomly generated password on the display connection"
-msgstr "在显示连接中设定随机生成的密码"
+msgstr "在显示连接中设定随机创建的密码"
 
 msgid "Set up compute instance %s"
 msgstr "设定计算实例 %s"
@@ -4696,7 +4696,7 @@ msgid ""
 "The authentication process currently requires an LDAP provider, such as "
 "<em>OpenLDAP</em> or <em>Microsoft's Active Directory</em>."
 msgstr ""
-"目前认证过程需要 LDAP 供应商，比如 <em>OpenLDAP</em> 或者 <em>微软的 Active Directory</em>。"
+"目前，认证过程需要 LDAP 供应商，比如 <em>OpenLDAP</em> 或者 <em>微软的 Active Directory</em>。"
 
 msgid ""
 "The class of CPU supplied in this machine. This is primarily used by Sparc "
@@ -5052,7 +5052,7 @@ msgid "Unable to create default TFTP boot menu"
 msgstr "无法创建默认 TFTP 引导菜单"
 
 msgid "Unable to create realm entry"
-msgstr "无法创建范围条目"
+msgstr "无法创建 realm 条目"
 
 msgid "Unable to create the anonymous role."
 msgstr "无法创建匿名角色。"
@@ -5108,7 +5108,7 @@ msgid "Unable to find templates as this host has no operating system"
 msgstr "无法找到模板，因为这台主机没有操作系统。"
 
 msgid "Unable to generate output, Check log files\\n"
-msgstr "无法生成输出，请检查日志文件\\n"
+msgstr "无法创建输出，请检查日志文件\\n"
 
 msgid "Unable to get BMC providers"
 msgstr "无法获取 BMC 供应商"
@@ -5205,7 +5205,7 @@ msgid "Update"
 msgstr "更新"
 
 msgid "Update realm entry for %s"
-msgstr "更新 %s 范围条目"
+msgstr "更新 %s realm 条目"
 
 msgid "Update:"
 msgstr "更新："
@@ -5369,7 +5369,7 @@ msgstr "邮箱"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "User|Organizations andor"
-msgstr "组织"
+msgstr "机构和（/或者）"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "User|Password hash"
@@ -5641,7 +5641,7 @@ msgstr ""
 msgid ""
 "You may optionally wish to generate the online documentation for your puppet "
 "classes"
-msgstr "还可以自选为您的 puppet 类别生成在线文档"
+msgstr "还可以自选为您的 puppet 类别创建在线文档"
 
 msgid "You must create a location before continuing."
 msgstr "继续前必须创建位置。"
@@ -5845,13 +5845,13 @@ msgid "invalid"
 msgstr "无效"
 
 msgid "invalid IP address"
-msgstr "非法IP地址"
+msgstr "无效 IP 地址"
 
 msgid "invalid LDAP filter syntax"
 msgstr "无效 LDAP 过滤器语法"
 
 msgid "invalid architecture for %s"
-msgstr " %s 是非法结构"
+msgstr " %s 的无效结构"
 
 msgid "invalid host list"
 msgstr "无效主机列表"
@@ -5863,7 +5863,7 @@ msgid "invalid method %s"
 msgstr "%s 的无效方法"
 
 msgid "invalid path"
-msgstr "非法路径"
+msgstr "无效路径"
 
 msgid "invalid time range"
 msgstr "时间区间错误"
@@ -5967,7 +5967,7 @@ msgid "new"
 msgstr "新建"
 
 msgid "no puppet proxy defined - cant continue"
-msgstr "未定义 puppet proxy - 停止"
+msgstr "未定义 puppet proxy - 无法继续"
 
 msgid "no value"
 msgstr "未提供值"
@@ -5983,10 +5983,10 @@ msgid "on"
 msgstr "打开"
 
 msgid "organization"
-msgstr "组织"
+msgstr "机构"
 
 msgid "organizations"
-msgstr "组织"
+msgstr "机构"
 
 msgid "os"
 msgstr "os"

@@ -12,7 +12,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2014-08-28 08:16-0400\n"
+"PO-Revision-Date: 2014-09-03 03:46-0400\n"
 "Last-Translator: tchuang <tchuang@redhat.com>\n"
 "Language-Team: Chinese (Traditional, Taiwan)\n"
 "Language: zh-Hant-TW\n"
@@ -177,7 +177,7 @@ msgid "*Inherit from host group*"
 msgstr "*從主機群組繼承*"
 
 msgid "<b class='select_count'>0</b> selected"
-msgstr "已選擇了 <b class='select_count'>0</b>"
+msgstr "已選擇了 <b class='select_count'>0</b> 個"
 
 msgid ""
 "<b>Description:</b> %{desc}<br><b>Type:</b> %{type}<br> <b>Matcher:</b> "
@@ -669,7 +669,7 @@ msgid ""
 msgstr "以 API 調用的 REMOTE_USER 環境變數來允許登錄委派"
 
 msgid "Authorized by"
-msgstr "經...許可"
+msgstr "授權單位"
 
 msgid "Autosign"
 msgstr "Autosign"
@@ -1168,7 +1168,7 @@ msgid "Ctrl-Alt-Del"
 msgstr "Ctrl-Alt-Del"
 
 msgid "Custom LDAP search filter, <i>optional</i>"
-msgstr "自訂的 LDAP 搜尋篩選器，<i>optional</i>"
+msgstr "自訂的 LDAP 搜尋篩選器，<i>選用性</i>"
 
 msgid "DHCP Capsule"
 msgstr "DHCP Capsule"
@@ -2711,7 +2711,7 @@ msgstr "已登入"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app
 msgid "Login"
-msgstr "登錄"
+msgstr "登入"
 
 # translation auto-copied from project Zanata server, version master, document zanata-war/src/main/resources/messages, author tchuang
 msgid "Logout"
@@ -5247,10 +5247,10 @@ msgid "Updated hosts: changed host group"
 msgstr "已更新主機：已更改的主機群組"
 
 msgid "Use Signo SSO for login"
-msgstr "使用 Signo SSO 來登錄"
+msgstr "使用 Signo SSO 來進行登錄"
 
 msgid "Use this account to authenticate, <i>optional</i>"
-msgstr "使用此帳號來進行認證，<i>optional</i>"
+msgstr "使用此帳號來進行認證，<i>選用性</i>"
 
 msgid "Use this puppet server as a CA server"
 msgstr "使用此 puppet 伺服器來作為 CA 伺服器"

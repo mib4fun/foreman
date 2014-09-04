@@ -36,7 +36,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2014-09-02 03:24-0400\n"
+"PO-Revision-Date: 2014-09-04 02:24-0400\n"
 "Last-Translator: jcarbone <jcarbone@redhat.com>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/foreman/language/"
 "fr/)\n"
@@ -327,7 +327,7 @@ msgid "Active|A"
 msgstr "A"
 
 msgid "Add Bookmark"
-msgstr "Ajouter un marque-pages"
+msgstr "Ajouter un marque-page"
 
 msgid "Add Interface"
 msgstr "Ajouter une interface"
@@ -700,7 +700,7 @@ msgstr "Attribut identifiant"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "AuthSource|Attr mail"
-msgstr "Attribut adresse postale"
+msgstr "Attribut adresse électronique"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "AuthSource|Attr photo"
@@ -1002,7 +1002,7 @@ msgid "Check/Uncheck all"
 msgstr "Tout cocher/décocher"
 
 msgid "Check/Uncheck all %s changes"
-msgstr "Cocher/décocher tous les %s changements"
+msgstr "Cocher/décocher les %s changements"
 
 msgid "Check/Uncheck new"
 msgstr "Cocher/décocher les nouveaux"
@@ -1269,7 +1269,7 @@ msgid "Ctrl-Alt-Del"
 msgstr "Ctrl-Alt-Suppr"
 
 msgid "Custom LDAP search filter, <i>optional</i>"
-msgstr "Filtre LDAP search spécifique, <i>facultatif</i>"
+msgstr "Filtre de recherche LDAP personnalisé, <i>facultatif</i>"
 
 msgid "DHCP Capsule"
 msgstr "Capsule DHCP"
@@ -1892,8 +1892,8 @@ msgid ""
 "Failed to import %{klass} for %{name}: doesn't exists in our database - "
 "ignoring"
 msgstr ""
-"Échec lors de l'import de %{klass} pour %{name} : l'entrée n'existe pas dans "
-"la base de données -  ignoré"
+"Échec lors de l'importation de %{klass} pour %{name} : l'entrée n'existe pas "
+"dans la base de données -  ignoré"
 
 msgid "Failed to initialize the PuppetCA proxy: %s"
 msgstr "Échec d'initialisation du proxy PuppetCA : %s"
@@ -1988,18 +1988,18 @@ msgid "Filter|Permissions"
 msgstr "Filtre|Permissions"
 
 msgid "Filter|Resource"
-msgstr "Filtre|Ressource"
+msgstr "Ressource"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Filter|Search"
-msgstr "Filtre|Recherche"
+msgstr "Recherche"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Filter|Taxonomy search"
-msgstr "Filtre|Recherche taxonomique"
+msgstr "Recherche taxonomique"
 
 msgid "Filter|Unlimited"
-msgstr "Filtre|Illimité"
+msgstr "Illimité"
 
 # translation auto-copied from project oVirt, version rhevm-3.2, document frontend/webadmin/modules/webadmin/src/main/resources/org/ovirt/engine/ui/frontend/org.ovirt.engine.ui.webadmin.ApplicationConstants, author croe
 msgid "Fingerprint"
@@ -2076,7 +2076,7 @@ msgid ""
 "Foreman comes with some importers to ease the burden of entering loads of "
 "data about your current installation."
 msgstr ""
-"Foreman fournit des scripts d'import pour faciliter l'ajout massif de "
+"Foreman fournit des scripts d'importation pour faciliter l'ajout massif de "
 "données depuis votre installation actuelle."
 
 msgid ""
@@ -2708,16 +2708,16 @@ msgstr "UUID"
 
 # translation auto-copied from project Subscription Manager, version 1.8.X, document keys, author samfreemanz
 msgid "Import"
-msgstr "Import"
+msgstr "Importation"
 
 msgid "Import from %s"
-msgstr "Import depuis %s"
+msgstr "Importation depuis %s"
 
 msgid "Import subnets"
 msgstr "Importer les sous-réseaux"
 
 msgid "Import your data"
-msgstr "Import de vos données"
+msgstr "Importation de vos données"
 
 # translation auto-copied from project Fedora Installation Guide, version f17-alt, document X86_Uninstall-msdos
 msgid "Important"
@@ -2727,10 +2727,10 @@ msgid "Imported Subnets"
 msgstr "Sous-réseaux importés"
 
 msgid "Importing Puppet Facts"
-msgstr "Import des Puppet facts"
+msgstr "Importation des Puppet facts"
 
 msgid "Importing Puppet classes and environments"
-msgstr "Import des classes et environnements Puppet"
+msgstr "Importation des classes et environnements Puppet"
 
 msgid ""
 "In addition to defining which puppet classes get included when building this "
@@ -3264,10 +3264,10 @@ msgstr "Réseaux"
 
 # translation auto-copied from project oVirt, version rhevm-3.2, document frontend/webadmin/modules/webadmin/src/main/resources/org/ovirt/engine/ui/frontend/org.ovirt.engine.ui.webadmin.ApplicationConstants, author croe
 msgid "New"
-msgstr "Nouveau"
+msgstr "Création"
 
 msgid "New %s"
-msgstr "Nouveau %s"
+msgstr "Création %s"
 
 msgid "New Architecture"
 msgstr "Nouvelle architecture"
@@ -3513,7 +3513,7 @@ msgstr ""
 "Aucun paramètre n'a été alloué à cet hôte, impossible d'assigner en masse."
 
 msgid "No plugins found"
-msgstr "Aucun greffon trouvé"
+msgstr "Aucun plug-in trouvé"
 
 msgid "No preference"
 msgstr "Aucune préférence"
@@ -3997,7 +3997,7 @@ msgid "Permission|Resource type"
 msgstr "Type de ressource"
 
 msgid "Photo attribute"
-msgstr "Attribut de photo"
+msgstr "Attribut photo"
 
 msgid "Physical (Bridge)"
 msgstr "Physique (Pont)"
@@ -4060,7 +4060,7 @@ msgid "Please wait..."
 msgstr "Patientez s'il vous plaît ..."
 
 msgid "Plugins"
-msgstr "Greffons"
+msgstr "Plug-ins"
 
 msgid "Power"
 msgstr "Alimentation"
@@ -4537,7 +4537,7 @@ msgstr "Choisir l'action"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app, author samfreemanz
 msgid "Select All"
-msgstr "Tout choisir"
+msgstr "Tout sélectionner"
 
 msgid "Select Hosts"
 msgstr "Choisir les hôtes"
@@ -5339,9 +5339,9 @@ msgid ""
 "To enable a provider, either install the OS package (e.g. foreman-libvirt) "
 "or enable the bundler group for development setup (e.g. ovirt)."
 msgstr ""
-"Pour activer un fournisseur, soit installer le paquet logiciel (p. ex. "
-"foreman-libvirt) ou activer le groupe bundler pour les configurations de "
-"développement (p. ex. ovirt)"
+"Pour activer un fournisseur, installer le paquet logiciel (par ex. foreman-"
+"libvirt) ou activer le groupe bundler pour les configurations de "
+"développement (par ex. ovirt)."
 
 msgid ""
 "To start collecting trend data, set a cron job to execute '%{command}' every "
@@ -5666,7 +5666,7 @@ msgid "Use Signo SSO for login"
 msgstr "Utiliser Signo SSO pour l'authentification"
 
 msgid "Use this account to authenticate, <i>optional</i>"
-msgstr "Utiliser ce compte pour l'authentification, <i>optionnel</i>"
+msgstr "Utiliser ce compte pour l'authentification, <i>facultatif</i>"
 
 msgid "Use this puppet server as a CA server"
 msgstr "Utiliser ce Puppet Server comme Serveur CA"
@@ -5804,7 +5804,7 @@ msgstr "Nom d'utilisateur"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "User|Mail"
-msgstr "Mail"
+msgstr "E-mail"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "User|Organizations andor"
@@ -6250,7 +6250,7 @@ msgid "e.g. admin@internal"
 msgstr "Ex: admin@interne"
 
 msgid "e.g. givenName"
-msgstr "Ex: givenName"
+msgstr "Ex : prénom"
 
 msgid "e.g. http://openstack:5000/v2.0/tokens"
 msgstr "Ex: http://openstack:5000/v2.0/tokens"
@@ -6268,7 +6268,7 @@ msgid "e.g. karmic, lucid, hw0910 etc"
 msgstr "Ex: karmic, lucid, hw0910, etc"
 
 msgid "e.g. mail"
-msgstr "Ex: mail"
+msgstr "Ex: E-mail"
 
 msgid "e.g. qemu://host.example.com/system"
 msgstr "Ex: qemu://host.example.com/system"
@@ -6411,7 +6411,7 @@ msgstr "lie le groupe d'utilisateur externe avec ce groupe d'utilisateur"
 
 #. Provide locale name in native language (e.g. English, Deutsch or Português)
 msgid "locale_name"
-msgstr "Français"
+msgstr "français"
 
 msgid "location"
 msgstr "Localisation"

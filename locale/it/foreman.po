@@ -10,7 +10,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2014-08-28 08:25-0400\n"
+"PO-Revision-Date: 2014-09-04 12:45-0400\n"
 "Last-Translator: fvalen <fvalen@fedoraproject.org>\n"
 "Language-Team: Italian\n"
 "Language: it\n"
@@ -94,8 +94,8 @@ msgstr "%{cores} Core e %{memory} di memoria"
 
 msgid "%{count} host with no %{taxonomy_single} assigned"
 msgid_plural "%{count} hosts with no %{taxonomy_single} assigned"
-msgstr[0] "%{count} host senza alcun %{taxonomy_single} assegnato"
-msgstr[1] "%{count} host senza alcun %{taxonomy_single} assegnato"
+msgstr[0] "%{count} host senza %{taxonomy_single}"
+msgstr[1] "%{count} host senza %{taxonomy_single} "
 
 msgid "%{cpus} CPUs and %{memory} MB memory"
 msgstr "%{cpus} CPU e %{memory} MB di memoria"
@@ -1009,7 +1009,7 @@ msgid ""
 "Click on the link of a compute resource to edit its default VM attributes."
 msgstr ""
 "Selezionare il link di una risorsa di calcolo per modificarne l'attributo "
-"della VM predefinito."
+"predefinito della VM."
 
 msgid "Click to add %s"
 msgstr "Seleziona per aggiungere %s"
@@ -1429,8 +1429,7 @@ msgstr[0] "Visualizzazione <b>%{count}</b> voce"
 msgstr[1] "Visualizzazione <b>%{count}</b> voci"
 
 msgid "Displaying entries <b>%{from} - %{to}</b> of <b>%{count}</b> in total"
-msgstr ""
-"Visualizzazione voci <b>%{from} - %{to}</b> di <b>%{count}</b> in totale"
+msgstr "Visualizzazione voci <b>%{from} - %{to}</b> di <b>%{count}</b> totale"
 
 msgid "Document root where puppetdoc files should be created"
 msgstr "Root del documento dove creare i file puppetdoc"
@@ -1459,7 +1458,7 @@ msgid "Domains"
 msgstr "Domini"
 
 msgid "Domains in which this subnet is part"
-msgstr "Domini ai quali fa parte questa sottorete"
+msgstr "Domini di appartenenza di questa sottorete"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Domain|Fullname"
@@ -1743,7 +1742,7 @@ msgstr "Gruppo di utenti esterno"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "External usergroup"
-msgstr "Usergroup esterno"
+msgstr "Gruppo utenti esterno"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "ExternalUsergroup|Name"
@@ -2843,7 +2842,7 @@ msgid "Last report"
 msgstr "Ultimo riporto"
 
 msgid "Last updated %s ago"
-msgstr "Ultimo aggiornato %s fa"
+msgstr "Ultimo aggiornamento %s fa"
 
 msgid "Latest Events"
 msgstr "Ultimissimi eventi"
@@ -3237,7 +3236,7 @@ msgid "New"
 msgstr "Nuovo"
 
 msgid "New %s"
-msgstr "Nuovo %s"
+msgstr "Creazione %s"
 
 msgid "New Architecture"
 msgstr "Nuova architettura"
@@ -4231,16 +4230,16 @@ msgid "Realm"
 msgstr "Area di autenticazione"
 
 msgid "Realm Configuration"
-msgstr "Configurazione del realm"
+msgstr "Configurazione area di autenticazione"
 
 msgid "Realm name, e.g. EXAMPLE.COM"
-msgstr "Nome del realm, es. EXAMPLE.COM"
+msgstr "Nome area di autenticazione, es. EXAMPLE.COM"
 
 msgid "Realm proxy"
-msgstr "Proxy del realm"
+msgstr "Proxy area di autenticazione"
 
 msgid "Realm proxy did not return a one-time password"
-msgstr "Il proxy del realm"
+msgstr "Il proxy area di autenticazione"
 
 msgid "Realm proxy to use within this realm"
 msgstr "Proxy area di autenticazione da usare all'interno di quest'area"
@@ -4250,23 +4249,23 @@ msgstr "Tipo di area di autenticazione"
 
 # translation auto-copied from project aeolus-conductor, version 1.1.0, document defaults
 msgid "Realms"
-msgstr "Realm"
+msgstr "Aree di autenticazione"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Realm|Hostgroups count"
-msgstr "Numero di Hostgroups"
+msgstr "Area di autenticazione | Numero di gruppi host "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Realm|Hosts count"
-msgstr "Numero di host"
+msgstr "Area di autenticazione | Numero di host"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Realm|Name"
-msgstr "Nome"
+msgstr "Area di autenticazione | Nome"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Realm|Realm type"
-msgstr "Tipo di area di autenticazione"
+msgstr "Area di autenticazione | Tipo di area di autenticazione"
 
 msgid ""
 "Rebuild %s on next reboot?\\nThis would also delete all of its current facts "
@@ -5213,7 +5212,7 @@ msgstr "Quando si utilizzano i gruppi di host sono disponibili due strategie."
 
 msgid "There is"
 msgid_plural "There are"
-msgstr[0] "È presente un"
+msgstr[0] "È presente"
 msgstr[1] "Sono presenti"
 
 msgid "There was an error creating the PXE Default file: %s"
@@ -5701,11 +5700,11 @@ msgstr "Tipo di proprietario"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Usergroup"
-msgstr "Usergroup"
+msgstr "Gruppo utenti"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Usergroup member"
-msgstr "Membro usergroup"
+msgstr "Membro gruppo utenti"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "UsergroupMember|Member type"

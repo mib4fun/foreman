@@ -27,7 +27,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2014-09-02 12:07-0400\n"
+"PO-Revision-Date: 2014-09-04 01:55-0400\n"
 "Last-Translator: hedda <hedda@fedoraproject.org>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/foreman/language/"
 "de/)\n"
@@ -253,9 +253,9 @@ msgid ""
 "creation of a new host and ensures that the host is configured in one of "
 "your pre-defined states."
 msgstr ""
-"Eine Hostgruppe ähnelt einer vererbten Knotendeklaration insofern, als es "
+"Eine Hostgruppe ähnelt einer geerbten Knotendeklaration insofern, als es "
 "sich um eine Gruppierung von Klassen handelt, die als Einheit benannt und "
-"verwendet werden können. Diese wird dann als Vorlage verwendet und kann bei "
+"verwendet werden kann. Diese wird dann als Vorlage verwendet und kann bei "
 "der Erstellung eines neuen Hosts ausgewählt werden, um sicherzustellen, dass "
 "der Host in den vordefinierten Zustand konfiguriert wird."
 
@@ -273,7 +273,7 @@ msgid "A partition table entry represents either"
 msgstr "Ein Eintrag in der Partitionstabelle repräsentiert entweder"
 
 msgid "A script to dynamically calculate the desired sizes. E.G."
-msgstr "Ein Skript, das dynamisch die gewünschten Größen ermittelt, z.B."
+msgstr "Ein Skript, das dynamisch die gewünschten Größen ermittelt, z. B."
 
 msgid "A user group already exists with this name"
 msgstr "Es existiert bereits eine Benutzergruppe mit diesem Namen"
@@ -286,7 +286,7 @@ msgstr "API-Schlüssel"
 
 # translation auto-copied from project Indic On-screen Keyboard, version f18-1, document iok
 msgid "About"
-msgstr "Über"
+msgstr "Info"
 
 msgid "Access Key"
 msgstr "Zugriffsschlüssel"
@@ -415,7 +415,7 @@ msgstr "Alle Hosts"
 
 msgid "All hosts data matches configurations for locations and organizations."
 msgstr ""
-"Alle Host-Daten stimmen mit Konfigurationen für Standorte und Organisationen "
+"Alle Hostdaten stimmen mit Konfigurationen für Standorte und Organisationen "
 "überein."
 
 msgid "All hosts previously with no %{single} are now assigned to %{name}"
@@ -470,7 +470,7 @@ msgstr ""
 "ausgewählten Subnetz eine DHCP-fähige Capsule befindet.<br/><br/>Die IP-"
 "Adresse kann leer gelassen werden, falls:<br/><ul><li>Tokens zur "
 "Bereitstellung aktiviert sind</li><li>die Domain keinen DNS verwaltet</"
-"li><li>das Subnetz keinen ungekehrten DNS verwaltet</li><li>und das Subnetz "
+"li><li>das Subnetz keinen umgekehrten DNS verwaltet</li><li>und das Subnetz "
 "keine DHCP-Reservierungen verwaltet</li></ul>"
 
 msgid "An explicit layout for the partitions of your hard drive(s). E.G."
@@ -609,7 +609,7 @@ msgstr ""
 "kann nicht aus einem Image erstellt werden"
 
 msgid "Attribute mappings"
-msgstr "Attributzuodnungen"
+msgstr "Attributzuordnungen"
 
 msgid "Audit Comment"
 msgstr "Prüfungskommentar"
@@ -667,31 +667,31 @@ msgstr "Authentifizierungsquelle"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "AuthSource|Account"
-msgstr "Account"
+msgstr "Account-Benutzername"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "AuthSource|Account password"
-msgstr "Accountpasswort"
+msgstr "Account-Passwort"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "AuthSource|Attr firstname"
-msgstr "Vorname"
+msgstr "Vorname-Attribut"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "AuthSource|Attr lastname"
-msgstr "Nachname"
+msgstr "Nachname-Attribut"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "AuthSource|Attr login"
-msgstr "Benutzername1"
+msgstr "Benutzername-Attribut"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "AuthSource|Attr mail"
-msgstr "E-Mail"
+msgstr "E-Mail-Adress-Attribut"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "AuthSource|Attr photo"
-msgstr "Photo"
+msgstr "Foto-Attribut"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "AuthSource|Base dn"
@@ -699,7 +699,7 @@ msgstr "Basis-DN"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "AuthSource|Host"
-msgstr "Host"
+msgstr "Server"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "AuthSource|Ldap filter"
@@ -711,7 +711,7 @@ msgstr "Name"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "AuthSource|Onthefly register"
-msgstr "Onthefly-Registrierung"
+msgstr "Accounts automatisch in Foreman erstellen"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "AuthSource|Port"
@@ -729,8 +729,7 @@ msgid "Author"
 msgstr "Autor"
 
 msgid "Authorize login delegation with REMOTE_USER environment variable"
-msgstr ""
-"Autorisiere die Anmeldedelegation mit der Umgebungsvariable REMOTE_USER"
+msgstr "Anmeldedelegation mit der Umgebungsvariable REMOTE_USER autorisieren"
 
 msgid ""
 "Authorize login delegation with REMOTE_USER environment variable for API "
@@ -767,7 +766,7 @@ msgid "Average memory usage"
 msgstr "Durchschnittliche Speicherauslastung"
 
 msgid "Average swap usage"
-msgstr "Durchschnittliche Verwendung von Swap"
+msgstr "Durchschnittliche Swap-Verwendung"
 
 msgid "BIOS"
 msgstr "BIOS"
@@ -1011,7 +1010,7 @@ msgid "Choose a family"
 msgstr "Familie auswählen"
 
 msgid "Choose a provider"
-msgstr "Provider auswählen"
+msgstr "Anbieter auswählen"
 
 # translation auto-copied from project oVirt Engine jrs Branding, version JRS-5.5-branded, document jasperserver_messages
 msgid "Class"
@@ -1429,7 +1428,7 @@ msgstr "Festplatte"
 
 # translation auto-copied from project CFSE, version sam-1.2, document app
 msgid "Display"
-msgstr "Anzeigen"
+msgstr "Anzeige"
 
 # translation auto-copied from project oVirt Engine jrs Branding, version JRS-5.1, document querybuilder_messages
 msgid "Display Name"
@@ -1484,7 +1483,7 @@ msgstr "Domains, denen dieses Subnetz angehört"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Domain|Fullname"
-msgstr "Vollständiger Name"
+msgstr "Beschreibung"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Domain|Hostgroups count"
@@ -1496,7 +1495,7 @@ msgstr "Hostanzahl"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Domain|Name"
-msgstr "Name"
+msgstr "DNS-Domain"
 
 msgid "EC2"
 msgstr "EC2"
@@ -1671,7 +1670,7 @@ msgid "Environment"
 msgstr "Umgebung"
 
 msgid "Environment only"
-msgstr "Nur für Umgebung"
+msgstr "Nur Umgebung"
 
 msgid ""
 "Environment variable containing the subject DN from a client SSL certificate"
@@ -1961,7 +1960,7 @@ msgid "Filter %s"
 msgstr "%s filtern"
 
 msgid "Filter classes"
-msgstr "Filterklassen"
+msgstr "Klassen filtern"
 
 # translation auto-copied from project Subscription Manager, version 1.8.X, document keys
 msgid "Filters"
@@ -2361,7 +2360,7 @@ msgstr "Die Systemzeit des Hosts scheint abzuweichen!"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Host::Base|Build"
-msgstr "Build"
+msgstr "Build-Modus"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Host::Base|Certname"
@@ -2373,7 +2372,7 @@ msgstr "Kommentar"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Host::Base|Disk"
-msgstr "Disk"
+msgstr "Benutzerdefinierte Partitionstabelle"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Host::Base|Enabled"
@@ -2389,7 +2388,7 @@ msgstr "Installiert am"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Host::Base|Ip"
-msgstr "IP"
+msgstr "IP-Adresse"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Host::Base|Last compile"
@@ -2405,7 +2404,7 @@ msgstr "Letzter Bericht"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Host::Base|Mac"
-msgstr "MAC"
+msgstr "MAC-Adresse"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Host::Base|Managed"
@@ -2747,7 +2746,7 @@ msgid "Infrastructure"
 msgstr "Infrastruktur"
 
 msgid "Inherit parent (%s)"
-msgstr "Übergeordnetes Objekt erben (%s)"
+msgstr "Von übergeordnetem Objekt erben (%s)"
 
 msgid "Installation Media"
 msgstr "Installationsmedien"
@@ -2856,7 +2855,7 @@ msgid "Last updated %s ago"
 msgstr "Zuletzt aktualisiert vor %s"
 
 msgid "Latest Events"
-msgstr "Letzte Ereignisse"
+msgstr "Neueste Ereignisse"
 
 # translation auto-copied from project DocBook locales, version 1, document locale
 msgid "Level"
@@ -3246,7 +3245,7 @@ msgid "New"
 msgstr "Neu"
 
 msgid "New %s"
-msgstr "Neuer %s"
+msgstr "%s erstellen"
 
 msgid "New Architecture"
 msgstr "Neue Architektur"
@@ -3742,11 +3741,11 @@ msgstr "Hostanzahl"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Operatingsystem|Major"
-msgstr "Haupt"
+msgstr "Hauptversion"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Operatingsystem|Minor"
-msgstr "Neben"
+msgstr "Nebenversion"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Operatingsystem|Name"
@@ -4217,7 +4216,7 @@ msgstr "Suchschlüsselanzahl"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Puppetclass|Name"
-msgstr "Name"
+msgstr "Klassenname"
 
 msgid "Query instance details for %s"
 msgstr "Instanzendetails für %s abfragen"
@@ -4337,7 +4336,7 @@ msgid "Report Status"
 msgstr "Berichtsstatus"
 
 msgid "Reported at"
-msgstr "Berichtet um"
+msgstr "Berichtet"
 
 msgid "Reported at %s "
 msgstr "Berichtet um %s "
@@ -4358,7 +4357,7 @@ msgstr "Metriken"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Report|Reported at"
-msgstr "Berichtet um"
+msgstr "Berichtet"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Report|Status"
@@ -4443,8 +4442,8 @@ msgstr "Puppet auf den folgenden Hosts  starten"
 
 msgid "Run distribution in the last %s minute"
 msgid_plural "Run distribution in the last %s minutes"
-msgstr[0] "Run-Verteilung in der vergangenen Minute"
-msgstr[1] "Run-Verteilung in den vergangenen %s Minuten"
+msgstr[0] "Verteilung der Durchläufe in der vergangenen Minute"
+msgstr[1] "Verteilung der Durchläufe in den vergangenen %s Minuten"
 
 msgid "Run puppet"
 msgstr "Puppet starten"
@@ -4487,7 +4486,7 @@ msgid "Save something and try again"
 msgstr "Speichern und erneut versuchen"
 
 msgid "Scope"
-msgstr "Umfang"
+msgstr "Reichweite"
 
 # translation auto-copied from project Subscription Manager, version 1.1.X, document keys
 msgid "Search"
@@ -4507,7 +4506,7 @@ msgstr "Aktion auswählen"
 
 # translation auto-copied from project oVirt Engine jrs Branding, version JRS-5.1, document adhoc_messages
 msgid "Select All"
-msgstr "Alles auswählen"
+msgstr "Alle auswählen"
 
 msgid "Select Hosts"
 msgstr "Hosts auswählen"
@@ -4647,7 +4646,7 @@ msgid ""
 "auto."
 msgstr ""
 "Verschlüsselung von Websockets durch Foreman (VNC-Konsolenzugriff). Wählen "
-"Sie an, aus oder automatisch."
+"Sie on, off oder auto."
 
 msgid "Show Diff"
 msgstr "Unterschied anzeigen"
@@ -4810,23 +4809,23 @@ msgstr "Subnetze"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Subnet|Dns primary"
-msgstr "Primärer DNS"
+msgstr "Primärer DNS-Server"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Subnet|Dns secondary"
-msgstr "Sekundärer DNS"
+msgstr "Sekundärer DNS-Server"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Subnet|From"
-msgstr "Von"
+msgstr "Beginn des IP-Bereichs"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Subnet|Gateway"
-msgstr "Gateway"
+msgstr "Gateway-Adresse"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Subnet|Mask"
-msgstr "Maske"
+msgstr "Netzwerkmaske"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Subnet|Name"
@@ -4834,7 +4833,7 @@ msgstr "Name"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Subnet|Network"
-msgstr "Netzwerk"
+msgstr "Netzwerkadresse"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Subnet|Priority"
@@ -4842,7 +4841,7 @@ msgstr "Priorität"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Subnet|To"
-msgstr "Bis"
+msgstr "Ende des IP-Bereichs"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Subnet|Vlanid"
@@ -4891,7 +4890,7 @@ msgstr ""
 "%{restarted} Ü:%{skipped} A:%{applied} NF:%{failed_restarts} I:%{total}"
 
 msgid "Support"
-msgstr "Unterstützung"
+msgstr "Support"
 
 #. host's status: first character of "sync" (out of sync)
 msgid "Sync|S"
@@ -4999,7 +4998,7 @@ msgid ""
 "The IP address that should be used for the console listen address when "
 "provisioning new virtual machines via Libvirt"
 msgstr ""
-"Die IP-Adresse, auf als Überwachungsadresse für die Konsole verwendet wird, "
+"Die IP-Adresse, die als Überwachungsadresse für die Konsole verwendet wird, "
 "wenn neue virtuelle Maschinen mittels Libvirt bereitgestellt werden"
 
 msgid "The NFS path to the image directory."
@@ -5019,7 +5018,7 @@ msgid ""
 "<em>OpenLDAP</em> or <em>Microsoft's Active Directory</em>."
 msgstr ""
 "Der Authentifizierungsprozess benötigt einen LDAP-Anbieter, zum Beispiel "
-"<em>OpenLDAP</em> oder <em>Microsofts Active Directory</em>."
+"<em>OpenLDAP</em> oder <em>Active Directory</em> von Microsoft."
 
 msgid ""
 "The class of CPU supplied in this machine. This is primarily used by Sparc "
@@ -5063,8 +5062,8 @@ msgid ""
 "The final entry, Operating System default, can be set by editing the %s page."
 ""
 msgstr ""
-"Der letzte Eintrag, der Betriebssystemstandard, kann auf der Seite %s "
-"geändert werden."
+"Der letzte Punkt, der Betriebssystemstandard, kann auf der Seite %s geändert "
+"werden."
 
 msgid ""
 "The following entries were found conflicting with what foreman wanted to "
@@ -5331,8 +5330,8 @@ msgid ""
 "To update the class signature, go to the Puppet Classes page and select "
 "\"Import\"."
 msgstr ""
-"Öffnen Sie die Puppet-Klassenseite und wählen Sie \"Import\" aus, um die "
-"Klassensignatur zu aktualisieren."
+"Öffnen Sie die Puppet-Klassenseite und wählen Sie \"Importieren\" aus, um "
+"die Klassensignatur zu aktualisieren."
 
 msgid "Toggle"
 msgstr "Ändern"
@@ -5394,7 +5393,7 @@ msgstr "Name"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Trend|Trendable type"
-msgstr "Trendbare Typen"
+msgstr "Trendtyp"
 
 msgid "Trigger a puppetrun on a node; requires that puppet run is enabled"
 msgstr ""
@@ -5642,7 +5641,7 @@ msgid ""
 "Use this puppet server as an initial Puppet Server or to execute puppet runs"
 msgstr ""
 "Diesen Puppet-Server als ersten Puppet-Server oder zur Ausführung von Puppet-"
-"Runs verwenden"
+"Durchläufen verwenden"
 
 msgid "Useful template functions and macros"
 msgstr "Hilfreiche Vorlagenfunktionen und Makros"
@@ -5748,7 +5747,7 @@ msgstr "Hostgruppen und/oder"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "User|Last login on"
-msgstr "Letzte Anmeldung am"
+msgstr "Letzte Anmeldung"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "User|Lastname"
@@ -5764,7 +5763,7 @@ msgstr "Standorte und/oder"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "User|Login"
-msgstr "Benutzername3"
+msgstr "Benutzername"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "User|Mail"
@@ -5844,7 +5843,7 @@ msgid "Variables"
 msgstr "Variablen"
 
 msgid "Vendor class"
-msgstr "Herstellerklassen"
+msgstr "Herstellerklasse"
 
 msgid "Verify"
 msgstr "Bestätigen"
@@ -5914,10 +5913,10 @@ msgid ""
 "disk layout options If you want to use the partition table option, delete "
 "all of the text from this field"
 msgstr ""
-"Der hier angegebene Text (oder ERB-Vorlage) wird als Optionen zum "
-"Betriebssystemfestplatten-Layout verwendet. Falls Sie die "
-"Partitionstabellenoption verwenden möchten, müssen Sie sämtlichen Text aus "
-"diesem Feld löschen"
+"In diesem Feld können Sie Text oder eine ERB-Vorlage angeben, die als "
+"Optionen zum Betriebssystem-Festplattenlayout verwendet werden. Falls Sie "
+"die Partitionstabellenoption verwenden möchten, müssen Sie sämtlichen Text "
+"aus diesem Feld löschen"
 
 msgid "What is a <a href=\"%s\" rel=\"external\">Smart variable</a>?"
 msgstr "Was ist eine <a href=\"%s\" rel=\"external\">Smart-Variable</a>?"
@@ -5936,7 +5935,7 @@ msgid ""
 "this Template can be used with. Optionally, you can restrict a template to a "
 "list of Hostgroups and/or Environments"
 msgstr ""
-"Beim Bearbeiten einer Vorlage müssen Sie Liste von Betriebssystemen "
+"Beim Bearbeiten einer Vorlage müssen Sie eine Liste von Betriebssystemen "
 "zuweisen, mit denen diese Vorlage verwendet werden kann. Optional können Sie "
 "die Vorlage auf eine Liste von Hostgruppen und/oder Umgebungen beschränken."
 
@@ -6052,7 +6051,7 @@ msgid ""
 "table or alternatively set this up later on the %s page"
 msgstr ""
 "Sie können eines oder mehrere Betriebssysteme mit dieser Partitionstabelle "
-"verknüpfen oder dies alternativ später unter %s einrichten"
+"verknüpfen oder dies alternativ später unter %s einrichten."
 
 msgid "You may also find the"
 msgstr "Die folgenden"
@@ -6065,7 +6064,7 @@ msgid ""
 "the host group configuration."
 msgstr ""
 "Sie können Puppet-Klassen erstellen, die allgemeine Hostkonfigurationen "
-"repräsentieren, z. B. eine <b>host-type-ldap-server</b> Klasse, die "
+"repräsentieren, z. B. eine Klasse <b>host-type-ldap-server</b>, die "
 "sämtliche erforderliche Funktionalität von anderen Modulen beinhaltet. Oder "
 "Sie können eine Hostgruppe namens <b>host-type-ldap-server</b> erstellen und "
 "die erforderlichen Klassen zur Hostgruppenkonfiguration hinzufügen."
@@ -6215,7 +6214,7 @@ msgid "e.g. admin@internal"
 msgstr "z. B. admin@internal"
 
 msgid "e.g. givenName"
-msgstr "z. B. Vorname"
+msgstr "z. B. givenName"
 
 msgid "e.g. http://openstack:5000/v2.0/tokens"
 msgstr "z. B. http://openstack:5000/v2.0/tokens"
@@ -6227,22 +6226,22 @@ msgid "e.g. https://ovirt.example.com/api"
 msgstr "z. B. https://ovirt.example.com/api"
 
 msgid "e.g. jpegPhoto"
-msgstr "z. B. jpeg-Photo"
+msgstr "z. B. jpegPhoto"
 
 msgid "e.g. karmic, lucid, hw0910 etc"
 msgstr "z. B. karmic, lucid, hw0910, usw."
 
 msgid "e.g. mail"
-msgstr "z. B. E-Mail"
+msgstr "z. B. mail"
 
 msgid "e.g. qemu://host.example.com/system"
 msgstr "z. B. qemu://host.example.com/system"
 
 msgid "e.g. sn"
-msgstr "z. B. Nachname"
+msgstr "z. B. sn"
 
 msgid "e.g. uid"
-msgstr "z. B. UID"
+msgstr "z. B. uid"
 
 msgid "failed to %{action} %{vm}"
 msgstr "Fehler beim %{action} von %{vm}"

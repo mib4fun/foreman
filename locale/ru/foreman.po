@@ -20,7 +20,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2014-09-01 10:01-0400\n"
+"PO-Revision-Date: 2014-09-04 12:15-0400\n"
 "Last-Translator: ypoyarko <ypoyarko@redhat.com>\n"
 "Language-Team: Russian (http://www.transifex.com/projects/p/foreman/language/"
 "ru/)\n"
@@ -111,9 +111,15 @@ msgstr "Ядра: %{cores}, память: %{memory}"
 
 msgid "%{count} host with no %{taxonomy_single} assigned"
 msgid_plural "%{count} hosts with no %{taxonomy_single} assigned"
-msgstr[0] "%{count} узел без %{taxonomy_single}"
-msgstr[1] "%{count} узла без %{taxonomy_single}"
-msgstr[2] "%{count} узлов без %{taxonomy_single}"
+msgstr[0] ""
+"%{count} узел с отсутствующими настройками. Необходимо настроить: "
+"%{taxonomy_single}"
+msgstr[1] ""
+"%{count} узла  с отсутствующими настройками. Необходимо настроить: "
+"%{taxonomy_single}"
+msgstr[2] ""
+"%{count} узлов с отсутствующими настройками. Необходимо настроить: "
+"%{taxonomy_single}"
 
 msgid "%{cpus} CPUs and %{memory} MB memory"
 msgstr "CPU: %{cpus}, память: %{memory} МБ"
@@ -720,7 +726,7 @@ msgstr ""
 "REMOTE_USER"
 
 msgid "Authorized by"
-msgstr "Авторизовано:"
+msgstr "Авторизован"
 
 msgid "Autosign"
 msgstr "Autosign"
@@ -861,8 +867,8 @@ msgid ""
 "search field. If filter remains unlimited (this field is checked) it applies "
 "on all resources of the selected type"
 msgstr ""
-"Чтобы определить критерии поиска, снимите этот флажок. Установленный флажок "
-"снимает ограничения и позволяет выбрать все ресурсы заданного типа."
+"Снимите флажок, чтобы добавить фильтр. Установленный флажок позволяет "
+"применить разрешения ко всем объектам выбранного типа."
 
 msgid "CA Certificate"
 msgstr "Сертификат центра сертификации"
@@ -1559,10 +1565,10 @@ msgstr "Изменить динамику %s"
 
 # translation auto-copied from project aeolus-conductor, version 1.1.1, document defaults, author ypoyarko
 msgid "Edit User"
-msgstr "Изменить пользователя"
+msgstr "Параметры пользователя"
 
 msgid "Edit User group"
-msgstr "Изменить группу пользователей"
+msgstr "Параметры группы пользователей"
 
 msgid "Edit compute profile on %s"
 msgstr "Изменить профиль на %s"
@@ -2202,7 +2208,7 @@ msgid "Global variable or class Parameter, not both"
 msgstr "Глобальная переменная или параметр класса (одно из двух)"
 
 msgid "Good host reports in the last %s"
-msgstr "Действительные отчеты узла за %s"
+msgstr "Действительные отчеты за %s"
 
 msgid "Google Project ID"
 msgstr "Google Project ID"
@@ -2662,7 +2668,7 @@ msgid "Includes Foreman © 2009-%{year} Paul Kelly and %{author}"
 msgstr "Включает Foreman © 2009-%{year} Paul Kelly, %{author}"
 
 msgid "Incorrect username or password"
-msgstr "Неверное имя пользователя или пароль"
+msgstr "Неверное имя или пароль"
 
 msgid "Infrastructure"
 msgstr "Инфраструктура"
@@ -2975,7 +2981,7 @@ msgid "Manually Assign"
 msgstr "Выбрать вручную"
 
 msgid "Manually select and assign hosts with no %s"
-msgstr "Вручную выбрать и назначить узлы при отсутствии %s"
+msgstr "Если %s не задан, выбрать узлы вручную"
 
 msgid "Matcher"
 msgstr "Подстановка"
@@ -3671,12 +3677,11 @@ msgid ""
 "Optional parameter without value.<br/><i>Won't be given to Puppet.</i> "
 "<br><br><b>Description:</b> %s"
 msgstr ""
-"Значение дополнительного параметра не определено.<br/><i>Не будет "
-"передаваться Puppet.</i> <br><br><b>Описание:</b> %s"
+"Дополнительный параметр не определен.<br/><i>Не будет передаваться Puppet.</"
+"i> <br><br><b>Описание:</b> %s"
 
 msgid "Optional: Ending IP Address for IP auto suggestion"
-msgstr ""
-"Дополнительно: конечный IP-адрес диапазона для автоматического подбора"
+msgstr "Дополнительно: конечный IP-адрес для автоматического подбора"
 
 msgid "Optional: Gateway for this subnet"
 msgstr "Дополнительно: шлюз подсети"
@@ -3688,8 +3693,7 @@ msgid "Optional: Secondary DNS for this subnet"
 msgstr "Дополнительный DNS-сервер для этой подсети"
 
 msgid "Optional: Starting IP Address for IP auto suggestion"
-msgstr ""
-"Дополнительно: начальный IP-адрес диапазона для автоматического подбора"
+msgstr "Дополнительно: начальный IP-адрес для автоматического подбора"
 
 msgid "Optional: VLAN ID for this subnet"
 msgstr "Дополнительно: VLAN ID для этой подсети"
@@ -3869,7 +3873,7 @@ msgstr "Имя"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Permission|Resource type"
-msgstr "Тип ресурса"
+msgstr "Тип"
 
 msgid "Photo attribute"
 msgstr "Фотография"
@@ -3962,7 +3966,7 @@ msgid "Private key that Foreman will use to encrypt websockets "
 msgstr "Закрытый ключ для шифрования веб-сокетов"
 
 msgid "Proceed to Edit"
-msgstr "Продолжить редактирование"
+msgstr "Пропустить"
 
 # translation auto-copied from project aeolus-conductor, version 1.1.1, document defaults
 msgid "Properties"
@@ -4230,10 +4234,10 @@ msgid "Report Status"
 msgstr "Статус отчета"
 
 msgid "Reported at"
-msgstr "Сообщено:"
+msgstr "Время"
 
 msgid "Reported at %s "
-msgstr "Сообщено в %s"
+msgstr "Получен %s"
 
 msgid "Reporting"
 msgstr "Отчетность"
@@ -4250,7 +4254,7 @@ msgstr "Метрика"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Report|Reported at"
-msgstr "Создан"
+msgstr "Время"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Report|Status"
@@ -4433,7 +4437,7 @@ msgid "Select host groups"
 msgstr "Выберите группы"
 
 msgid "Select hosts to assign to %s"
-msgstr "Выберите узлы для %s"
+msgstr "Выбрать узлы для %s"
 
 msgid "Select locations"
 msgstr "Выберите участки"
@@ -4463,7 +4467,7 @@ msgid "Select this since it belongs to a host"
 msgstr "Выберите, так как это принадлежит узлу"
 
 msgid "Select users"
-msgstr "Выберите пользователей"
+msgstr "Выберите"
 
 msgid "Selected hosts are now assigned to %s"
 msgstr "Выбранные узлы назначены %s"
@@ -4477,10 +4481,10 @@ msgstr "Выбранные"
 msgid ""
 "Selected resource type does not support granular filtering, therefore you "
 "can't configure granularity"
-msgstr "Этот тип ресурса не поддерживает фрагментарную фильтрацию"
+msgstr "Для этого типа фильтры недоступны"
 
 msgid "Selected role"
-msgstr "Выбранная роль"
+msgstr "Роль"
 
 msgid "Selecting a file will override the editor and load the file instead"
 msgstr "При выборе файла параметры в окне редактора будут переопределены"
@@ -4576,7 +4580,7 @@ msgid "Size (GB)"
 msgstr "Размер (ГБ)"
 
 msgid "Skip assign hosts and proceed to edit %s settings"
-msgstr "Пропустить выбор узлов и перейти к изменению параметров %s"
+msgstr "Пропустить выбор узлов и настроить %s"
 
 msgid "Skipped"
 msgstr "Пропущено"
@@ -4729,10 +4733,10 @@ msgid "Success"
 msgstr "Успешно"
 
 msgid "Successfully created %s."
-msgstr "Создание %s завершено."
+msgstr "%s создан(о)."
 
 msgid "Successfully deleted %s."
-msgstr "Удаление %s завершено."
+msgstr "%s удален(о)."
 
 msgid "Successfully destroyed report."
 msgstr "Отчет удален."
@@ -5211,7 +5215,7 @@ msgid "Total"
 msgstr "Всего"
 
 msgid "Total Hosts: %s"
-msgstr "Всего узлов: %s"
+msgstr "Всего: %s"
 
 # translation auto-copied from project Katello, version 1.0, document app, author ypoyarko
 #. "Table name" or "Table name|Column name" for error messages
@@ -5618,7 +5622,7 @@ msgstr "Имя входа"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "User|Mail"
-msgstr "Почта"
+msgstr "Электронная почта"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "User|Organizations andor"
@@ -5926,10 +5930,10 @@ msgid "You must create an organization before continuing."
 msgstr "Для продолжения необходимо создать организацию."
 
 msgid "You must create at least one location before continuing."
-msgstr "Для продолжения необходим хотя бы один участок."
+msgstr "Для продолжения необходимо создать участок."
 
 msgid "You must create at least one organization before continuing."
-msgstr "Для продолжения необходимо наличие организаций."
+msgstr "Для продолжения необходимо создать организацию."
 
 msgid ""
 "You must decide how you wish to use the software, and update the primary "
@@ -5939,7 +5943,7 @@ msgstr ""
 "Откорректируйте <b>config/settings.yaml</b> и"
 
 msgid "You must select at least one permission"
-msgstr "Необходимо выбрать хотя бы одно разрешение"
+msgstr "Необходимо выбрать разрешение"
 
 msgid ""
 "You would need to enable login in your settings.yml file first and restart "

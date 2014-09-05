@@ -23,7 +23,7 @@
     <locale>ru</locale>
     <locale map-from="ta_IN">ta-IN</locale>
     <locale>te</locale>
-    <locale map-from="zh_Hans_CN">zh-Hans-CN</locale>
-    <locale map-from="zh_Hant_TW">zh-Hant-TW</locale>
+    <locale map-from="zh_CN">zh-Hans-CN</locale>
+    <locale map-from="zh_TW">zh-Hant-TW</locale>
   </locales>
 </config>

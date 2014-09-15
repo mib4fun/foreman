@@ -825,7 +825,7 @@ class HostTest < ActiveSupport::TestCase
 
     # search hosts by hostgroup label
     hosts = Host.search_for("hostgroup_title = #{hostgroup.title}")
-    assert_equal hosts.count, 1  #host_db in hosts.yml
+    assert_equal 1, hosts.count  #host_db in hosts.yml
     assert_equal hosts.first.hostgroup_id, hostgroup.id
   end
 

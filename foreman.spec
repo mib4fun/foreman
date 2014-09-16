@@ -14,7 +14,7 @@
 %endif
 
 Name:   foreman
-Version: 1.6.0.45
+Version: 1.6.0.46
 Release: 1%{?dist}
 Summary:Systems Management web application
 
@@ -589,6 +589,14 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Tue Sep 16 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.46-1
+- Revert "Merge branch 'BZ1126937' into 'SATELLITE-6.0.4'"
+  (jmontleo@redhat.com)
+- Revert "Merge branch 'BZ1135973' into 'SATELLITE-6.0.4'"
+  (jmontleo@redhat.com)
+- Revert "Merge branch 'SATELLITE-6.0.4' into 'SATELLITE-6.0.4'"
+  (jmontleo@redhat.com)
+
 * Mon Sep 15 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.45-1
 - Adding updated translations for es-ES. (walden@redhat.com)
 - Use the correct locale code for both Chinese locales. (walden@redhat.com)

@@ -3,19 +3,19 @@
 myrealm:
   name: myrealm.net
   realm_proxy: realm
-  realm_type: Red Hat Identity Management
+  realm_type: Red Hat Directory Server
 
 yourrealm:
   name: yourrealm.net
   realm_proxy: realm
-  realm_type: Red Hat Identity Management
+  realm_type: Red Hat Directory Server
 
 unusedrealm:
   name: unused.net
   realm_proxy: realm
-  realm_type: Red Hat Identity Management
+  realm_type: Red Hat Directory Server
 
 useless:
   name: useless.net
   realm_proxy: realm
-  realm_type: Red Hat Identity Management
+  realm_type: Red Hat Directory Server

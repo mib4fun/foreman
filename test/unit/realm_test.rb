@@ -38,7 +38,7 @@ class RealmTest < ActiveSupport::TestCase
     location2 = Location.create :name => "Switzerland"
     assert location2.save!
 
-    realm = Realm.create :name => "test.net", :realm_proxy => smart_proxies(:realm), :realm_type => "Red Hat Identity Management"
+    realm = Realm.create :name => "test.net", :realm_proxy => smart_proxies(:realm), :realm_type => "Red Hat Directory Server"
     realm.locations.destroy_all
     realm.locations.push location1
     realm.locations.push location2

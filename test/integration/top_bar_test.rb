@@ -5,7 +5,7 @@ class TopBarTest < ActionDispatch::IntegrationTest
   test "top bar links" do
     visit root_path
     within("div.navbar-outer") do
-      assert page.has_css?("a[href='/'] img")
+      assert page.has_link?("Foreman", :href => "/")
     end
     within("div.navbar-inner") do
       assert page.has_link?("Dashboard", :href => "/dashboard")

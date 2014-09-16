@@ -113,18 +113,18 @@ class SeedsTest < ActiveSupport::TestCase
 
   test "doesn't add a template back that was deleted" do
     seed
-    assert_equal 1, ConfigTemplate.destroy_all(:name => 'Kickstart default PXELinux').size
+    assert_equal 1, ConfigTemplate.destroy_all(:name => 'Kickstart default').size
     seed
-    refute ConfigTemplate.find_by_name('Kickstart default PXELinux')
+    refute ConfigTemplate.find_by_name('Kickstart default')
   end
 
   test "doesn't add a template back that was renamed" do
     seed
-    tmpl = ConfigTemplate.find_by_name('Kickstart default PXELinux')
+    tmpl = ConfigTemplate.find_by_name('Kickstart default')
     tmpl.name = 'test'
     tmpl.save!
     seed
-    refute ConfigTemplate.find_by_name('Kickstart default PXELinux')
+    refute ConfigTemplate.find_by_name('Kickstart default')
   end
 
   test "no audits are recorded" do

@@ -6,7 +6,7 @@ module Foreman
     ALLOWED_HELPERS = [ :foreman_url, :grub_pass, :snippet, :snippets,
 			:snippet_if_exists, :ks_console, :root_pass,
 			:multiboot, :jumpstart_path, :install_path, :miniroot,
-			:media_path, :param_true?, :param_false?, :indent ]
+			:media_path, :param_true?, :param_false? ]
 
     ALLOWED_VARIABLES = [ :arch, :host, :osver, :mediapath, :static,
                           :repos, :dynamic, :kernel, :initrd,
@@ -65,12 +65,6 @@ module Foreman
 
     def snippet_if_exists name
       snippet name, :silent => true
-    end
-
-    def indent(count)
-      return unless block_given? && text=yield.to_s
-      prefix = " " * count
-      prefix + text.gsub(/\n/, "\n#{prefix}")
     end
 
     def unattended_render template

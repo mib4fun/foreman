@@ -14,7 +14,7 @@
 %endif
 
 Name:   foreman
-Version: 1.6.0.44
+Version: 1.6.0.45
 Release: 1%{?dist}
 Summary:Systems Management web application
 
@@ -589,6 +589,24 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Mon Sep 15 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.45-1
+- Adding updated translations for es-ES. (walden@redhat.com)
+- Use the correct locale code for both Chinese locales. (walden@redhat.com)
+- fixes #6618 - provide an indentation helper for provisioning templates
+  (stbenjam@redhat.com)
+- refs BZ1126937 - template change required for hostgroup provisioning
+  (stbenjam@redhat.com)
+- Fixes BZ #1135586 - Fix about page tests broken in c14d50a82
+  (gsutclif@redhat.com)
+- Refs BZ #1135586 - update topbar integration test for sat6 branding
+  (gsutclif@redhat.com)
+- Refs BZ #1135586 - update to functional test (maria.nita.dn@gmail.com)
+- Refs BZ #1135586 - Clean up templates to match commented-out seed
+  (gsutclif@redhat.com)
+- Refs BZ #1135586 - Line up realm type with realm tests (gsutclif@redhat.com)
+- Refs BZ #1135586 - Cherry-pick cloning of vm compute-attributes
+  (dmitri@appliedlogic.ca)
+
 * Thu Sep 04 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.44-1
 - Add rails locale configs for new languages. (walden@redhat.com)
 - Update foreman translations and match directory to language in po file.

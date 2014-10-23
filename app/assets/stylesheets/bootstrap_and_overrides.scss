@@ -222,3 +222,10 @@ span.btn a{ text-decoration: none; color: #333333}
   }
 }
 
+.has-error {
+  color: #a94442
+}
+
+body.modal-open {
+  overflow: visible;
+}

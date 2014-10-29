@@ -14,7 +14,7 @@
 %endif
 
 Name:   foreman
-Version: 1.6.0.46
+Version: 1.6.0.47
 Release: 1%{?dist}
 Summary:Systems Management web application
 
@@ -589,6 +589,12 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Wed Oct 29 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.47-1
+- Merge branch 'BZ1135973' into 'SATELLITE-6.0.4' (jmontleo@redhat.com)
+- Merge branch 'SATELLITE-6.0.4' into 'SATELLITE-6.0.4' (jmontleo@redhat.com)
+- fixes #4375: provisioning no longer loops when using oVirt + compute profile
+  (dmitri@appliedlogic.ca)
+
 * Tue Sep 16 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.46-1
 - Revert "Merge branch 'BZ1126937' into 'SATELLITE-6.0.4'"
   (jmontleo@redhat.com)

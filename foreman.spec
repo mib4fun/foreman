@@ -14,7 +14,7 @@
 %endif
 
 Name:   foreman
-Version: 1.6.0.47
+Version: 1.6.0.48
 Release: 1%{?dist}
 Summary:Systems Management web application
 
@@ -589,6 +589,10 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Thu Nov 06 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.48-1
+- rel-eng: Bumping version to 6.0.6 to match current errata release
+  (mmccune@redhat.com)
+
 * Wed Oct 29 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.47-1
 - Merge branch 'BZ1135973' into 'SATELLITE-6.0.4' (jmontleo@redhat.com)
 - Merge branch 'SATELLITE-6.0.4' into 'SATELLITE-6.0.4' (jmontleo@redhat.com)

@@ -14,7 +14,7 @@
 %endif
 
 Name:   foreman
-Version: 1.6.0.48
+Version: 1.6.0.49
 Release: 1%{?dist}
 Summary:Systems Management web application
 
@@ -589,6 +589,10 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Fri Nov 07 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.49-1
+- Refs #4375 - fix issues after incorrect cherry-pick conflict resolution
+  (inecas@redhat.com)
+
 * Thu Nov 06 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.48-1
 - rel-eng: Bumping version to 6.0.6 to match current errata release
   (mmccune@redhat.com)

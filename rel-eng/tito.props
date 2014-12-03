@@ -1,0 +1,4 @@
+[buildconfig]
+builder = tito.distributionbuilder.DistributionBuilder
+tagger = tito.tagger.ReleaseTagger
+tag_suffix = -sat

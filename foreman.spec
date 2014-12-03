@@ -20,7 +20,7 @@
 
 Name:   foreman
 Version: 1.7.0
-Release: 1.2%{?dotalphatag}%{?dist}
+Release: 1.1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
 Group:  Applications/System
@@ -659,16 +659,9 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
-* Wed Dec 03 2014 Jason Montleon <jmontleo@redhat.com> 1.7.0-1.2
-- fix tagger (jmontleo@redhat.com)
-
 * Wed Dec 03 2014 Jason Montleon <jmontleo@redhat.com> 1.7.0-1.1
-- change source to gz for DistributionBuilder and switch to from Upstream to
-  DistributionBuilder (jmontleo@redhat.com)
-- Automatic commit of package [foreman] minor release [1.7.0-1.1-sat].
-  (jmontleo@redhat.com)
-- update release version (jmontleo@redhat.com)
-- add additional source files (jmontleo@redhat.com)
+- Add rel-eng files, change tito Builder, add other source files, update rpm
+  spec (jmontleo@redhat.com)
 
 * Wed Dec 03 2014 Jason Montleon <jmontleo@redhat.com> 1.7.0-1
 - new package built with tito

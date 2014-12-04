@@ -20,7 +20,7 @@
 
 Name:   foreman
 Version: 1.7.0.0
-Release: 1.1%{?dotalphatag}%{?dist}
+Release: 1.2%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
 Group:  Applications/System
@@ -659,6 +659,9 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Thu Dec 04 2014 Jason Montleon <jmontleo@redhat.com> 1.7.0.0-1.2
+- fix gpg file name (jmontleo@redhat.com)
+
 * Thu Dec 04 2014 Jason Montleon <jmontleo@redhat.com> 1.7.0.0-1.1
 - add a zero to version number. Our source differs from upstream source
   (jmontleo@redhat.com)

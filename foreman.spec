@@ -465,7 +465,7 @@ install -Dp -m0644 foreman.tmpfiles %{buildroot}%{_prefix}/lib/tmpfiles.d/%{name
 install -Dpm0644 foreman.repo %{buildroot}%{_sysconfdir}/yum.repos.d/%{name}.repo
 install -Dpm0644 foreman-plugins.repo %{buildroot}%{_sysconfdir}/yum.repos.d/%{name}-plugins.repo
 sed "s/\$DIST/$(echo %{?dist} | sed 's/^\.//')/g" -i %{buildroot}%{_sysconfdir}/yum.repos.d/%{name}*.repo
-install -Dpm0644 foreman-plugins.gpg %{buildroot}%{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-foreman
+install -Dpm0644 foreman.gpg %{buildroot}%{_sysconfdir}/pki/rpm-gpg/RPM-GPG-KEY-foreman
 
 cp -p Gemfile.in %{buildroot}%{_datadir}/%{name}/Gemfile.in
 cp -p -r app bundler.d config config.ru extras lib locale Rakefile script %{buildroot}%{_datadir}/%{name}

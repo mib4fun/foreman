@@ -19,7 +19,7 @@
 #global dashalphatag -%{alphatag}
 
 Name:   foreman
-Version: 1.7.0.0
+Version: 1.7.0.1
 Release: 1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
@@ -659,6 +659,9 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Mon Dec 08 2014 Jason Montleon <jmontleo@redhat.com> 1.7.0.1-1
+- update version and rebuild (jmontleo@redhat.com)
+
 * Thu Dec 04 2014 Jason Montleon <jmontleo@redhat.com> 1.7.0.0-1.2
 - fix gpg file name (jmontleo@redhat.com)
 

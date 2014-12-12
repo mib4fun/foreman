@@ -14,7 +14,7 @@
 %endif
 
 Name:   foreman
-Version: 1.6.0.50
+Version: 1.6.0.51
 Release: 1%{?dist}
 Summary:Systems Management web application
 
@@ -589,6 +589,9 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Thu Dec 11 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.51-1
+- bump version to 6.0.7 (jmontleo@redhat.com)
+
 * Tue Dec 09 2014 Jason Montleon <jmontleo@redhat.com> 1.6.0.50-1
 - Fixes #7522 - made CA textarea editable for oVirt/RHEV (lzap+git@redhat.com)
 

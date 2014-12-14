@@ -44,7 +44,7 @@ module Foreman::Model
     end
 
     def clusters
-      dc.clusters
+      dc.clusters.map(&:full_path).sort
     end
 
     def folders

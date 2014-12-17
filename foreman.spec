@@ -19,7 +19,7 @@
 #global dashalphatag -%{alphatag}
 
 Name:   foreman
-Version: 1.7.1.0
+Version: 1.7.1.1
 Release: 1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
@@ -659,6 +659,44 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Wed Dec 17 2014 Jason Montleon <jmontleo@redhat.com> 1.7.1.1-1
+- update version to 1.7.1. (jmontleo@redhat.com)
+- Merge tag '1.7.1' into SATELLITE-6.1.0 (jmontleo@redhat.com)
+- Release 1.7.1 (dcleal@redhat.com)
+- i18n - extracting new, updating rails, pulling from tx (dcleal@redhat.com)
+- fixes #8685 - include netmask in ENC output (dcleal@redhat.com)
+- i18n - extracting new, updating rails, pulling from tx (dcleal@redhat.com)
+- fixes #8627 - add host comment field to API documentation (dcleal@redhat.com)
+- fixes #8591 - explicitly set where to subnets.id (shlomi@ben-hanna.com)
+- fixes #8590 - handle missing 'config' when listing vSphere VMs
+  (dcleal@redhat.com)
+- fixes #8592 - allow plug-ins to modify multiple hosts actions
+  (slukasik@redhat.com)
+- Fixes #8416 - Fix Puppet classes form n+1 queries (elobatocs@gmail.com)
+- Fixes #8551 - use most specific matcher for inherited hostgroups
+  (orabin@redhat.com)
+- Fixes #8401: n+1 query on group parameters host edit (elobatocs@gmail.com)
+- fixes #8228 - add a config_templates concern to serve config_templates
+  controllers (shlomi@ben-hanna.com)
+- fixes #5841 - use inner query when retrieving reports for subset of
+  authorised hosts (dcleal@redhat.com)
+- Fixes #5999 - vpc + pub ip -> attach pub ip (henrik@haf.se)
+- Fixes #8546 - Namespace interfaces and subnets to avoid a facts clash
+  (gsutclif@redhat.com)
+- fixes #8513 - removing n+1 query from images#index (tcaspy@gmail.com)
+- fixes #8526 - file uploads are now possible via two_pane.
+  (ohadlevy@gmail.com)
+- fixes #8221 - search for subnet with taxonomy scope (shlomi@ben-hanna.com)
+- Fixes #8536 - can update and delete media with dot in name
+  (orabin@redhat.com)
+- Fixes #7525 - don't fail on structured facts (lzap+git@redhat.com)
+- Fixes #6872 - Add title to new compute resource page (tbrisker@gmail.com)
+- Fixes #7440 - correctly autocomplete current_user (tbrisker@gmail.com)
+- Fixes #6765 - correct wrong validation on media name (tbrisker@gmail.com)
+- fixes #8363 - Sort VMware attributes alphabetically (shlomi@ben-hanna.com)
+- fixes #4463 - use unattended URL for hostgroup provisioning
+  (stbenjam@redhat.com)
+
 * Mon Dec 08 2014 Jason Montleon <jmontleo@redhat.com> 1.7.0.1-1
 - update version and rebuild (jmontleo@redhat.com)
 

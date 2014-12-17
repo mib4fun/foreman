@@ -22,9 +22,13 @@ class Host::Managed < Host::Base
   has_one :token, :foreign_key => :host_id, :dependent => :destroy
 
   def self.complete_for(query, opts = {})
-    matcher = /(((user\.[a-z]+)|owner)\s*[=~])\s*\S+\s*\z/
-    output = super(query)
-    output << output.last.sub(matcher,'\1 current_user') if not output.empty? and output.last =~ matcher
+    matcher = /(\s*(?:(?:user\.[a-z]+)|owner)\s*[=~])\s*(\S*)\s*\z/
+    matches = matcher.match(query)
+    output = super(query, opts)
+    if matches.present? && 'current_user'.starts_with?(matches[2])
+      current_user_result = query.sub(matcher, '\1 current_user')
+      output = [current_user_result] + output
+    end
     output
   end
 
@@ -368,8 +372,8 @@ class Host::Managed < Host::Base
       param["ip"]  = ip
       param["mac"] = mac
     end
-    param['subnets'] = (([subnet] + interfaces.map(&:subnet)).compact.map(&:to_enc)).uniq
-    param['interfaces'] =
+    param['foreman_subnets'] = (([subnet] + interfaces.map(&:subnet)).compact.map(&:to_enc)).uniq
+    param['foreman_interfaces'] =
         [Nic::Managed.new(:ip => ip, :mac => mac, :identifier => primary_interface, :subnet => subnet).to_enc] +
         interfaces.map(&:to_enc)
     param.update self.params

@@ -502,17 +502,18 @@ context "location or organizations are not enabled" do
       "parameters"=> {"puppetmaster"=>"puppet", "MYVAR"=>"value", "port" => "80",
         "ssl_port" => "443", "foreman_env"=> "production", "owner_name"=>"Admin User",
         "root_pw"=>"xybxa6JUkz63w", "owner_email"=>"admin@someware.com",
-        "subnets"=>
+        "foreman_subnets"=>
           [{"network"=>"2.3.4.0",
             "name"=>"one",
             "gateway"=>nil,
+            "mask"=>"255.255.255.0",
             "dns_primary"=>nil,
             "dns_secondary"=>nil,
             "from"=>nil,
             "to"=>nil,
             "boot_mode"=>"Static",
             "ipam"=>"DHCP"}],
-         "interfaces"=>
+         "foreman_interfaces"=>
           [{"mac"=>"aa:bb:ac:dd:ee:ff",
             "ip"=>"2.3.4.12",
             "type"=>"Interface",
@@ -523,6 +524,7 @@ context "location or organizations are not enabled" do
             "identifier"=>nil,
             "managed"=>true,
             "subnet"=> {"network"=>"2.3.4.0",
+                        "mask"=>"255.255.255.0",
                         "name"=>"one",
                         "gateway"=>nil,
                         "dns_primary"=>nil,

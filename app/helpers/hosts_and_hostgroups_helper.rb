@@ -28,7 +28,8 @@ module HostsAndHostgroupsHelper
 
   def domain_subnets(domain = @domain)
     return [] if domain.blank?
-    domain.subnets.with_taxonomy_scope_override(@location,@organization).order(:name)
+    ids = domain.subnets.pluck('subnets.id')
+    accessible_subnets.where('subnets.id' => ids)
   end
 
   def arch_oss

@@ -8,12 +8,10 @@ class AboutTest < ActionDispatch::IntegrationTest
     assert page.has_selector?('h4', :text => "System Status"), "System Status was expected in the <h4> tag, but was not found"
     assert page.has_selector?('h4', :text => "Support"), "Support was expected in the <h4> tag, but was not found"
     assert page.has_selector?('h4', :text => "System Information"), "System Information was expected in the <h4> tag, but was not found"
-    assert page.has_link?("Smart Proxies", :href => "#smart_proxies")
+    assert page.has_link?("Capsules", :href => "#smart_proxies")
     assert page.has_link?("Compute Resources", :href => "#compute_resources")
-    assert page.has_link?("Foreman Users", :href => "http://groups.google.com/group/foreman-users")
-    assert page.has_link?("Foreman Developers", :href => "http://groups.google.com/group/foreman-dev")
-    assert page.has_link?("issue tracker", :href => "http://projects.theforeman.org/projects/foreman/issues")
-    assert page.has_link?("Wiki", :href => "http://projects.theforeman.org")
+    assert page.has_link?("Red Hat Satellite Blog", :href => "https://access.redhat.com/blogs/1169563")
+    assert page.has_link?("User Guide", :href => "https://access.redhat.com/documentation/en-US/Red_Hat_Satellite/6.0/html/User_Guide/index.html")
     assert page.has_link?("Ohad Levy", :href => "mailto:ohadlevy@gmail.com")
     assert page.has_content?("Version")
   end

@@ -49,7 +49,7 @@ namespace :smartproxy do
         if proxy.include?(fqpm)
           # The proxy's name or puppet alias is the same as the fully qualified puppetmaster_name
           host.update_attribute(:puppet_proxy_id, proxy.id)
-          puts "Updated #{host.name} to use the #{proxy.name} smart proxy"
+          puts "Updated #{host.name} to use the #{proxy.name} Capsule"
         end
       end
       puts "Failed to map #{host.name}'s puppetmaster(#{host.pm_fqdn}) to a smart proxy" if host.puppet_proxy.nil?

@@ -16,7 +16,7 @@
         <li class="active"><a href="#users" data-toggle="tab"><%= _("Users") %></a></li>
       <% end %>
       <% if User.current.allowed_to?(:view_smart_proxies) %>
-        <li><a href="#smart_proxies" data-toggle="tab"><%= _("Smart Proxies") %></a></li>
+        <li><a href="#smart_proxies" data-toggle="tab"><%= _("Capsules") %></a></li>
       <% end %>
       <% if SETTINGS[:unattended] %>
         <% if User.current.allowed_to?(:view_subnets) %>

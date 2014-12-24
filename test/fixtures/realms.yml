@@ -3,19 +3,19 @@
 myrealm:
   name: myrealm.net
   realm_proxy: realm
-  realm_type: FreeIPA
+  realm_type: Red Hat Identity Management
 
 yourrealm:
   name: yourrealm.net
   realm_proxy: realm
-  realm_type: FreeIPA
+  realm_type: Red Hat Identity Management
 
 unusedrealm:
   name: unused.net
   realm_proxy: realm
-  realm_type: FreeIPA
+  realm_type: Red Hat Identity Management
 
 useless:
   name: useless.net
   realm_proxy: realm
-  realm_type: FreeIPA
+  realm_type: Red Hat Identity Management

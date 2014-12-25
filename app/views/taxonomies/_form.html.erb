@@ -59,7 +59,6 @@
                        :'data-url' => (controller_name == 'organizations' ? parent_taxonomy_selected_organization_path(taxonomy.id) :
                                parent_taxonomy_selected_location_path(taxonomy.id))
                      }) if show_parent?(taxonomy) %>
-
         <%= text_f f, :name %>
         <%= textarea_f f, :description, :rows => 5 %>
       </div>

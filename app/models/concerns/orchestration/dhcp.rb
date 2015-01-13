@@ -47,7 +47,7 @@ module Orchestration::DHCP
     ip = to_ip_address(bs) if bs.present?
     return ip unless ip.nil?
 
-    failure _("Unable to determine the host's boot server. The DHCP smart proxy failed to provide this information and this subnet is not provided with TFTP services.")
+    failure _("Unable to determine the host's boot server. The DHCP Capsule failed to provide this information and this subnet is not provided with TFTP services.")
   rescue => e
     failure _("failed to detect boot server: %s") % e
   end

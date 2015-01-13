@@ -32,11 +32,11 @@ module Api
         param :compute_resource, Hash, :required => true, :action_aware => true do
           param :name, String, :required => true
           param :provider, String, :desc => N_("Providers include %{providers}") # values are defined in apipie initializer
-          param :url, String, :required => true, :desc => N_("URL for Libvirt, Ovirt, and Openstack")
+          param :url, String, :required => true, :desc => N_("URL for Libvirt, RHEV, and Openstack")
           param :description, String
-          param :user, String, :desc => N_("Username for Ovirt, EC2, Vmware, Openstack. Access Key for EC2.")
-          param :password, String, :desc => N_("Password for Ovirt, EC2, Vmware, Openstack. Secret key for EC2")
-          param :uuid, String, :desc => N_("for Ovirt, Vmware Datacenter")
+          param :user, String, :desc => N_("Username for RHEV, EC2, Vmware, Openstack. Access Key for EC2.")
+          param :password, String, :desc => N_("Password for RHEV, EC2, Vmware, Openstack. Secret key for EC2")
+          param :uuid, String, :desc => N_("for RHEV, Vmware Datacenter")
           param :region, String, :desc => N_("for EC2 only")
           param :tenant, String, :desc => N_("for Openstack only")
           param :server, String, :desc => N_("for Vmware")

@@ -4,7 +4,7 @@ class Realm < ActiveRecord::Base
   friendly_id :name
   include Taxonomix
 
-  TYPES = ["FreeIPA", "Active Directory"]
+  TYPES = ["Red Hat Identity Management", "Active Directory"]
 
   validates_lengths_from_database
   audited :allow_mass_assignment => true

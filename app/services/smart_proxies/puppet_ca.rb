@@ -13,7 +13,7 @@ class SmartProxies::PuppetCA
     class << self
 
       def all(proxy)
-        raise ::Foreman::Exception.new(N_("Must specify a Smart Proxy to use")) if proxy.nil?
+        raise ::Foreman::Exception.new(N_("Must specify a Capsule to use")) if proxy.nil?
 
         unless (certs = Rails.cache.read("ca_#{proxy.id}"))
           api = ProxyAPI::Puppetca.new({:url => proxy.url})

@@ -19,7 +19,7 @@
 #global dashalphatag -%{alphatag}
 
 Name:   foreman
-Version: 1.7.1.1
+Version: 1.7.1.2
 Release: 1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
@@ -659,6 +659,13 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Tue Jan 13 2015 Jason Montleon <jmontleo@redhat.com> 1.7.1.2-1
+- [DOWNSTREAM] updated patternfly and fonts (ohadlevy@gmail.com)
+- [DOWNSTREAM] brand patternfly css and fonts (sshtein@redhat.com)
+- Fixes #8804 - Align the dashboard to bootstrap columns (sshtein@redhat.com)
+- Fixes #8785 - HTML syntax fixes - add thead/tbody, fix formatting
+  (sshtein@redhat.com)
+
 * Wed Dec 17 2014 Jason Montleon <jmontleo@redhat.com> 1.7.1.1-1
 - update version to 1.7.1. (jmontleo@redhat.com)
 - Merge tag '1.7.1' into SATELLITE-6.1.0 (jmontleo@redhat.com)

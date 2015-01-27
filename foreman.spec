@@ -19,7 +19,7 @@
 #global dashalphatag -%{alphatag}
 
 Name:   foreman
-Version: 1.7.2.0
+Version: 1.7.2.1
 Release: 1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
@@ -659,6 +659,45 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Tue Jan 27 2015 Jason Montleon <jmontleo@redhat.com> 1.7.2.1-1
+- Merge remote-tracking branch 'upstream/1.7-stable' into SATELLITE-6.1.0
+  (jmontleo@redhat.com)
+- Release 1.7.2 (dcleal@redhat.com)
+- Fixes #9097 - Fix typo in value_to_sql method (daviddavis@redhat.com)
+- fixes #6362 - correct menu dividers if user isn't auth for some actions
+  (stbenjam@redhat.com)
+- Fixes #2948 - added sp_* host attributes to safe mode (lzap+git@redhat.com)
+- Refs #9049 - fix log message formatting (jistr@redhat.com)
+- Fixes #9049 - Log exceptions when triggering a Puppet run (jistr@redhat.com)
+- fixes #9084 - catch net-ldap 0.11's specific invalid filter exception
+  (dcleal@redhat.com)
+- Fixes #8821 - Handle unnamed OpenStack images in images form
+  (elobatocs@gmail.com)
+- fixes #9025 - reflect on association for _name(s) methods
+  (stbenjam@redhat.com)
+- fixes #8993 - handle FreeBSD patch releases better (kvedulv@kvedulv.de)
+- fixes #8402 - Reports from the last xx Days not displaying day filter option
+  (david.levene@netspot.com.au)
+- fixes #8925 - support plugin asset manifests beneath app root
+  (dcleal@redhat.com)
+- Fixes #8930 - Incorrect html caused a typo on the trends page
+  (bkearney@redhat.com)
+- fixes #8885 - pin google-api-client to retain Ruby 1.9 support
+  (dcleal@redhat.com)
+- Fixes #8851 - support seed files of plugin with dash in name
+  (mhulan@redhat.com)
+- Fixes #8786 - Show override button after removing overridden parameter
+  (ripcurld.github@gmail.com)
+- fixes #8791 - pin i18n gem (kvedulv@kvedulv.de)
+- fixes #6540, #8335 - Add error to vmware when no datacenter, save password
+  when testing connection (shlomi@ben-hanna.com)
+- fixes #8638 - ensure that a redirect to hosts index after host destroy
+  (shlomi@ben-hanna.com)
+- Fixes #7165 - Correct cursor behaviour on delete links for firefox
+  (tbrisker@gmail.com)
+- fixes #8735 - enable config drive on Rackspace servers (dcleal@redhat.com)
+- fixes #8366 - add parameter type to unique index (dcleal@redhat.com)
+
 * Tue Jan 13 2015 Jason Montleon <jmontleo@redhat.com> 1.7.1.2-1
 - [DOWNSTREAM] updated patternfly and fonts (ohadlevy@gmail.com)
 - [DOWNSTREAM] brand patternfly css and fonts (sshtein@redhat.com)

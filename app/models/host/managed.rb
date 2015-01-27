@@ -56,11 +56,12 @@ class Host::Managed < Host::Base
   include HostCommon
 
   class Jail < ::Safemode::Jail
-    allow :name, :diskLayout, :puppetmaster, :puppet_ca_server, :operatingsystem, :os, :environment, :ptable, :hostgroup, :location,
+    allow :name, :diskLayout, :puppetmaster, :puppet_ca_server, :operatingsystem, :os, :environment, :ptable, :hostgroup,
       :organization, :url_for_boot, :params, :info, :hostgroup, :compute_resource, :domain, :ip, :mac, :shortname, :architecture,
       :model, :certname, :capabilities, :provider, :subnet, :token, :location, :organization, :provision_method,
       :image_build?, :pxe_build?, :otp, :realm, :param_true?, :param_false?, :nil?, :indent, :primary_interface, :interfaces,
-      :has_primary_interface?, :bond_interfaces, :interfaces_with_identifier, :managed_interfaces
+      :has_primary_interface?, :bond_interfaces, :interfaces_with_identifier, :managed_interfaces, :facts, :facts_hash,
+      :sp_name, :sp_ip, :sp_mac, :sp_subnet
   end
 
   attr_reader :cached_host_params
@@ -604,6 +605,8 @@ class Host::Managed < Host::Base
     ProxyAPI::Puppet.new({:url => puppet_proxy.url}).run fqdn
   rescue => e
     errors.add(:base, _("failed to execute puppetrun: %s") % e)
+    logger.warn "unable to execute puppet run: #{e}"
+    logger.debug e.backtrace.join("\n")
     false
   end
 

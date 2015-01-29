@@ -19,7 +19,7 @@
 #global dashalphatag -%{alphatag}
 
 Name:   foreman
-Version: 1.7.2.1
+Version: 1.7.2.2
 Release: 1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
@@ -659,6 +659,10 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Thu Jan 29 2015 Jason Montleon <jmontleo@redhat.com> 1.7.2.2-1
+- fixes #8581 - [vmware] use cluster full path to create vm (shlomi@ben-
+  hanna.com)
+
 * Tue Jan 27 2015 Jason Montleon <jmontleo@redhat.com> 1.7.2.1-1
 - Merge remote-tracking branch 'upstream/1.7-stable' into SATELLITE-6.1.0
   (jmontleo@redhat.com)

@@ -56,6 +56,7 @@ ConfigTemplate.without_auditing do
     { :name => 'fix_hosts', :source => 'snippets/_fix_hosts.erb', :snippet => true },
     { :name => 'freeipa_register', :source => 'snippets/_freeipa_register.erb', :snippet => true },
     { :name => 'http_proxy', :source => 'snippets/_http_proxy.erb', :snippet => true },
+    { :name => 'kickstart_networking_setup', :source => 'snippets/_kickstart_networking_setup.erb', :snippet => true },
     { :name => 'puppet.conf', :source => 'snippets/_puppet.conf.erb', :snippet => true },
     { :name => 'redhat_register', :source => 'snippets/_redhat_register.erb', :snippet => true },
     { :name => 'saltstack_minion', :source => 'snippets/_saltstack_minion.erb', :snippet => true }

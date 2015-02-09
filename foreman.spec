@@ -14,7 +14,7 @@
 %endif
 
 Name:   foreman
-Version: 1.6.0.52
+Version: 1.6.0.53
 Release: 1%{?dist}
 Summary:Systems Management web application
 
@@ -589,6 +589,9 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Mon Feb 09 2015 Jason Montleon <jmontleo@redhat.com> 1.6.0.53-1
+- bump version to 6.0.8 (jmontleo@redhat.com)
+
 * Thu Jan 29 2015 Jason Montleon <jmontleo@redhat.com> 1.6.0.52-1
 - fixes #8581 - [vmware] use cluster full path to create vm (shlomi@ben-
   hanna.com)

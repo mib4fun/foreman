@@ -19,7 +19,7 @@
 #global dashalphatag -%{alphatag}
 
 Name:   foreman
-Version: 1.7.2.3
+Version: 1.7.2.4
 Release: 1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
@@ -659,6 +659,9 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Tue Feb 10 2015 Jason Montleon <jmontleo@redhat.com> 1.7.2.4-1
+- Fixes #7462 - new UI for network interfaces (tstrachota@redhat.com)
+
 * Thu Feb 05 2015 Jason Montleon <jmontleo@redhat.com> 1.7.2.3-1
 - Fixes BZ#1186321 - Add kickstart networking setup snippet (mhulan@redhat.com)
 

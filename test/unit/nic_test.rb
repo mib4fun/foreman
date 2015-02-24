@@ -139,6 +139,100 @@ class NicTest < ActiveSupport::TestCase
         @interface.proxy
       end
     end
+
+    test "bmc requires MAC address if managed" do
+      bmc = FactoryGirl.build(:nic_bmc, :managed => true, :mac => '')
+      refute bmc.valid?
+      assert_includes bmc.errors.keys, :mac
+    end
+
+    test "bmc does not require MAC address if unmanaged" do
+      bmc = FactoryGirl.build(:nic_bmc, :managed => false, :mac => '')
+      bmc.valid?
+      refute_includes bmc.errors.keys, :mac
+    end
+
+    context "on managed host" do
+      setup do
+        @host = FactoryGirl.create(:host, :managed, :ip => '127.0.0.1')
+      end
+
+      test "we can't destroy primary interface of managed host" do
+        interface = @host.primary_interface
+        refute interface.destroy
+        assert_includes interface.errors.keys, :primary
+      end
+
+      test "we can destroy non primary interface of managed host" do
+        interface = FactoryGirl.create(:nic_managed, :primary => false, :host => @host)
+        assert interface.destroy
+      end
+
+      test "we can destroy primary interface when deleting the host" do
+        interface = @host.primary_interface
+        refute interface.destroy
+
+        # we must reload the object (interface contains validation errors preventing deletion)
+        @host.reload
+        assert @host.destroy
+      end
+
+      test "we can't destroy provision interface of managed host" do
+        interface = @host.provision_interface
+        refute interface.destroy
+        assert_includes interface.errors.keys, :provision
+      end
+
+      test "we can destroy non provision interface of managed host" do
+        interface = FactoryGirl.create(:nic_managed, :provision => false, :host => @host)
+        assert interface.destroy
+      end
+
+      test "we can destroy provision interface when deleting the host" do
+        interface = @host.provision_interface
+        refute interface.destroy
+
+        # we must reload the object (interface contains validtion errors preventin deletion)
+        @host.reload
+        assert @host.destroy
+      end
+    end
+
+    context "on unmanaged host" do
+      setup do
+        @host = FactoryGirl.create(:host)
+      end
+
+      test "we can destroy any interface of unmanaged host" do
+        interface = @host.primary_interface
+        assert interface.destroy
+      end
+
+      test "we can destroy any interface of unmanaged host" do
+        interface = @host.provision_interface
+        assert interface.destroy
+      end
+
+      test "host can have one primary interface at most" do
+        # factory already created primary interface
+        interface = FactoryGirl.build(:nic_managed, :primary => true, :host => @host)
+        refute interface.save
+        assert_includes interface.errors.keys, :primary
+
+        interface.primary = false
+        interface.name = ''
+        assert interface.save
+      end
+
+      test "provision flag is set for primary interface automatically" do
+        primary = FactoryGirl.build(:nic_managed, :primary => true, :provision => false,
+                                    :domain => FactoryGirl.build(:domain))
+        @host.interfaces = [primary]
+        assert @host.save
+        primary.reload
+        assert_equal primary, @host.provision_interface
+      end
+    end
   end
 
   context "allowed type registration" do

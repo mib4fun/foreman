@@ -19,7 +19,7 @@
 #global dashalphatag -%{alphatag}
 
 Name:   foreman
-Version: 1.7.2.5
+Version: 1.7.2.6
 Release: 1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
@@ -675,6 +675,16 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Tue Feb 24 2015 Jason Montleon <jmontleo@redhat.com> 1.7.2.6-1
+- update foreman.spec for BZ1134109 (jmontleo@redhat.com)
+- Refs #8710 - moved proxy related info from foreman-debug
+  (lzap+git@redhat.com)
+- Fixes #9458 - process only executable debug extensions (lzap+git@redhat.com)
+- Fixes #3278 - Correctly extract "New %%s" strings (tbrisker@gmail.com)
+- Fixes #5998 - add taxonomy tabs to config_template#edit (tbrisker@gmail.com)
+- Fixes #9496 - Adds popover help to IPAM field in Subnet form
+  (mhulan@redhat.com)
+
 * Fri Feb 20 2015 Jason Montleon <jmontleo@redhat.com> 1.7.2.5-1
 - Fixes #8052 - allows erb in array and hash params (mhulan@redhat.com)
 

@@ -41,13 +41,17 @@ Requires: %{?scl_prefix}ruby(abi) = 1.9.1
 Requires: %{scl_ruby}
 Requires: %{?scl_prefix}rubygems
 Requires: %{?scl_prefix}facter
-Requires: wget rsync
+Requires: wget
 Requires: /etc/cron.d
 Requires(pre):  shadow-utils
 Requires(post): chkconfig
 Requires(preun): chkconfig
 Requires(preun): initscripts
 Requires(postun): initscripts
+
+# Subpackages
+Requires: %{name}-debug
+
 Requires: %{?scl_prefix}rubygem(json)
 Requires: %{?scl_prefix}rubygem(rails) >= 3.2.8
 Requires: %{?scl_prefix}rubygem(rails) < 3.3.0
@@ -160,6 +164,18 @@ Requires: rubygem(hammer_cli_foreman)
 Meta Package to install hammer rubygems and its dependencies
 
 %files cli
+
+%package debug
+Summary: Foreman debug utilities
+Group: Applications/System
+Requires: rsync
+
+%description debug
+Useful utilities for debug info collection
+
+%files debug
+%{_sbindir}/%{name}-debug
+%{_datadir}/%{name}/script/%{name}-debug.d
 
 %package release
 Summary:        Foreman repository files
@@ -571,8 +587,8 @@ rm -rf %{buildroot}
 %attr(700,%{name},%{name}) %{_datadir}/%{name}/.ssh
 %{_datadir}/%{name}/plugins
 %exclude %{_datadir}/%{name}/app/assets
+%exclude %{_datadir}/%{name}/script/%{name}-debug.d
 %{_initrddir}/%{name}
-%{_sbindir}/%{name}-debug
 %{_sbindir}/%{name}-rake
 %{_sbindir}/%{name}-tail
 %{_mandir}/man8

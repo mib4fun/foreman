@@ -511,7 +511,7 @@ context "location or organizations are not enabled" do
             "dns_secondary"=>nil,
             "from"=>nil,
             "to"=>nil,
-            "boot_mode"=>"Static",
+            "boot_mode"=>"DHCP",
             "ipam"=>"DHCP"}],
          "foreman_interfaces"=>
           [{"mac"=>"aa:bb:ac:dd:ee:ff",
@@ -531,7 +531,7 @@ context "location or organizations are not enabled" do
                         "dns_secondary"=>nil,
                         "from"=>nil,
                         "to"=>nil,
-                        "boot_mode"=>"Static",
+                        "boot_mode"=>"DHCP",
                         "ipam"=>"DHCP"}}]},
       "classes"=>{"apache"=>{"custom_class_param"=>"abcdef"}, "base"=>{"cluster"=>"secret"}} }
 

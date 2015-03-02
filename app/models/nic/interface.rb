@@ -19,6 +19,9 @@ module Nic
               :allow_blank => true,
               :format => {:with => Net::Validations::HOST_REGEXP}
 
+    # aliases and vlans require identifiers so we can differentiate and properly configure them
+    validates :identifier, :presence => true, :if => Proc.new { |o| o.virtual? && o.managed? && o.instance_of?(Nic::Managed) }
+
     belongs_to :subnet
     belongs_to :domain
 

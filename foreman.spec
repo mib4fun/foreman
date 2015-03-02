@@ -19,7 +19,7 @@
 #global dashalphatag -%{alphatag}
 
 Name:   foreman
-Version: 1.7.2.6
+Version: 1.7.2.7
 Release: 1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
@@ -675,6 +675,27 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Mon Mar 02 2015 Jason Montleon <jmontleo@redhat.com> 1.7.2.7-1
+- Merge branch 'SATELLITE-6.1.0' of
+  gitlab.sat.lab.tlv.redhat.com:satellite6/foreman into SATELLITE-6.1.0
+  (jmontleo@redhat.com)
+- Merge branch 'bz1191953' into 'SATELLITE-6.1.0' (jmontleo@redhat.com)
+- Fixes #9592 - unfold external user groups on error (mhulan@redhat.com)
+- Merge branch 'SATELLITE-6.1.0' of
+  gitlab.sat.lab.tlv.redhat.com:satellite6/foreman into SATELLITE-6.1.0
+  (jmontleo@redhat.com)
+- Merge branch 'bz1195602' into 'SATELLITE-6.1.0' (jmontleo@redhat.com)
+- fixes #7764 - add quirks mode to JSON.dump (shlomi@ben-hanna.com)
+- fixes #6044 - production.log should have timestamps in it
+  (jswensso@redhat.com)
+- fixes #9334 - reverse the order of 'hosts/provisioning setup' sub-menu
+  (shlomi@ben-hanna.com)
+- Fixes #9461 - Update subnets on domain change in hostgroup
+  (tbrisker@gmail.com)
+- Fixes #9429 - identifier is required for Alias and VLAN (mhulan@redhat.com)
+- Fixes BZ#1195602 - configure gateway on subnet with static bootmode
+  (mhulan@redhat.com)
+
 * Tue Feb 24 2015 Jason Montleon <jmontleo@redhat.com> 1.7.2.6-1
 - update foreman.spec for BZ1134109 (jmontleo@redhat.com)
 - Refs #8710 - moved proxy related info from foreman-debug

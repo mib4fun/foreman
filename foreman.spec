@@ -19,7 +19,7 @@
 #global dashalphatag -%{alphatag}
 
 Name:   foreman
-Version: 1.7.2.7
+Version: 1.7.2.8
 Release: 1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
@@ -675,6 +675,17 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Tue Mar 03 2015 Jason Montleon <jmontleo@redhat.com> 1.7.2.8-1
+- Merge branch 'bz_1195628_nic_modal_window' into 'SATELLITE-6.1.0'
+  (jmontleo@redhat.com)
+- Merge branch 'bz1194641' into 'SATELLITE-6.1.0' (jmontleo@redhat.com)
+- Merge branch 'bz1194627' into 'SATELLITE-6.1.0' (jmontleo@redhat.com)
+- Fixes #9325 - preserve compute resource attrs after NIC modal is closed
+  (tstrachota@redhat.com)
+- Fixes #9547 - DHCP is default subnet boot mode (mhulan@redhat.com)
+- Fixes #9495 - Require identifier for managed bonds (mhulan@redhat.com)
+- Fixes BZ#1194641 (mhulan@redhat.com)
+
 * Mon Mar 02 2015 Jason Montleon <jmontleo@redhat.com> 1.7.2.7-1
 - Merge branch 'SATELLITE-6.1.0' of
   gitlab.sat.lab.tlv.redhat.com:satellite6/foreman into SATELLITE-6.1.0

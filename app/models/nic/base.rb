@@ -43,7 +43,7 @@ module Nic
     class Jail < ::Safemode::Jail
       allow :managed?, :subnet, :virtual?, :mac, :ip, :identifier, :attached_to,
             :link, :tag, :domain, :vlanid, :bond_options, :attached_devices, :mode,
-            :attached_devices_identifiers
+            :attached_devices_identifiers, :inheriting_mac
     end
 
     def type_name
@@ -66,6 +66,16 @@ module Nic
 
     def self.allowed_types
       @allowed_types ||= []
+    end
+
+    # if this interface does not have MAC and is attached to other interface,
+    # we can fetch mac from this other interface
+    def inheriting_mac
+      if self.mac.nil? || self.mac.empty?
+        self.host.interfaces.detect { |i| i.identifier == self.attached_to }.try(:mac)
+      else
+        self.mac
+      end
     end
 
     protected

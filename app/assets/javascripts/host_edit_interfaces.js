@@ -33,6 +33,9 @@ function close_interface_modal() {
   var modal_window = $('#interfaceModal');
   var interface_id = modal_window.data('current-id');
 
+  // mark the selected values to preserve them for form hiding
+  modal_window.find('option:selected').attr('selected', 'selected');
+
   var interface_row = get_interface_row(interface_id);
   update_interface_row(interface_row, modal_window);
 

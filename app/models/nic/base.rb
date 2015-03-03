@@ -16,8 +16,10 @@ module Nic
 
     before_validation :normalize_mac
 
-    validates :mac, :uniqueness => {:scope => :virtual}, :unless => :virtual?
-    validates :mac, :presence => true, :unless => :virtual?
+    validates :mac, :uniqueness => {:scope => :virtual},
+              :if => Proc.new { |nic| nic.managed? && nic.host && nic.host.managed? && !nic.host.compute? && !nic.virtual? }, :allow_blank => true
+    validates :mac, :presence => true,
+              :if => Proc.new { |nic| nic.managed? && nic.host && nic.host.managed? && !nic.host.compute? &&!nic.virtual? }
     validates :mac, :mac_address => true, :allow_blank => true
 
     validate :uniq_with_hosts

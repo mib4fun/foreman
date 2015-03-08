@@ -8,7 +8,7 @@ class Setting::General < Setting
     domain = Facter.value(:domain) || SETTINGS[:domain]
     administrator = "root@#{domain}"
     foreman_url = "#{protocol}://#{Facter.value(:fqdn) || SETTINGS[:fqdn]}"
-    email_reply_address = "Foreman-noreply@#{domain}"
+    email_reply_address = "Satellite-noreply@#{domain}"
 
     self.transaction do
       [

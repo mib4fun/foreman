@@ -1,6 +1,6 @@
 class ApplicationMailer < ActionMailer::Base
 
-  default :from => Setting[:email_reply_address] || "noreply@foreman.example.org"
+  default :from => Setting[:email_reply_address] || "noreply@satellite.example.org"
 
   private
 

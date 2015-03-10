@@ -19,7 +19,7 @@
 #global dashalphatag -%{alphatag}
 
 Name:   foreman
-Version: 1.7.2.8
+Version: 1.7.2.9
 Release: 1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
@@ -675,6 +675,20 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Tue Mar 10 2015 Jason Montleon <jmontleo@redhat.com> 1.7.2.9-1
+- Merge branch 'BZ1161809' into 'SATELLITE-6.1.0' (jmontleo@redhat.com)
+- Merge branch '1192329' into 'SATELLITE-6.1.0' (jmontleo@redhat.com)
+- Merge branch 'SATELLITE-6.1.0' of
+  gitlab.sat.lab.tlv.redhat.com:satellite6/foreman into SATELLITE-6.1.0
+  (jmontleo@redhat.com)
+- Fixes #7954 - When creating a host cant is spelled wrong under partition
+  table side note (yejiayily@gmail.com)
+- Fixes #9435 - adds tooltip for interface identifier (mhulan@redhat.com)
+- BZ1161809 - ensure Foreman notifications are branded (stbenjam@redhat.com)
+- Fixes #9615 - Adds inheriting_mac method (mhulan@redhat.com)
+- Refs Bz#1192329 - description for organization moved to foreman
+  (orabin@redhat.com)
+
 * Tue Mar 03 2015 Jason Montleon <jmontleo@redhat.com> 1.7.2.8-1
 - Merge branch 'bz_1195628_nic_modal_window' into 'SATELLITE-6.1.0'
   (jmontleo@redhat.com)

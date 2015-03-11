@@ -19,7 +19,7 @@
 #global dashalphatag -%{alphatag}
 
 Name:   foreman
-Version: 1.7.2.9
+Version: 1.7.2.10
 Release: 1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
@@ -675,6 +675,10 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Wed Mar 11 2015 Mike McCune <mmccune@redhat.com> 1.7.2.10-1
+- Revert "Fixes #9461 - Update subnets on domain change in hostgroup"
+  (mmccune@redhat.com)
+
 * Tue Mar 10 2015 Jason Montleon <jmontleo@redhat.com> 1.7.2.9-1
 - Merge branch 'BZ1161809' into 'SATELLITE-6.1.0' (jmontleo@redhat.com)
 - Merge branch '1192329' into 'SATELLITE-6.1.0' (jmontleo@redhat.com)

@@ -100,6 +100,42 @@ class ClassificationTest < ActiveSupport::TestCase
     assert_equal({lkey.id => {lkey.key => {:value => 'overridden value', :element => 'comment', :element_name => 'override'}}}, classparam.send(:values_hash))
   end
 
+  test "#values_hash should treat yaml and json parameters as string" do
+    env = FactoryGirl.create(:environment)
+    pc = FactoryGirl.create(:puppetclass, :environments => [env])
+    yaml_lkey = FactoryGirl.create(:lookup_key, :as_smart_class_param, :with_override,
+                              :puppetclass => pc, :key_type => 'yaml', :default_value => '',
+                              :overrides => {"comment=override" => 'a: b'})
+    json_lkey = FactoryGirl.create(:lookup_key, :as_smart_class_param, :with_override,
+                                   :puppetclass => pc, :key_type => 'json', :default_value => '',
+                                   :overrides => {"comment=override" => '{"a": "b"}'})
+    classparam = Classification::ClassParam.new
+
+    classparam.expects(:environment_id).returns(env.id)
+    classparam.expects(:puppetclass_ids).returns(Array.wrap(pc).map(&:id))
+    classparam.expects(:attr_to_value).with('comment').returns('override')
+    values_hash = classparam.send(:values_hash)
+
+    assert_includes values_hash[yaml_lkey.id][yaml_lkey.key][:value], 'a: b'
+    assert_includes values_hash[json_lkey.id][json_lkey.key][:value], '{"a":"b"}'
+  end
+
+  test "#value_of_key should correctly typecast JSON and YAML default values" do
+    env = FactoryGirl.create(:environment)
+    pc = FactoryGirl.create(:puppetclass, :environments => [env])
+    yaml_lkey = FactoryGirl.create(:lookup_key, :as_smart_class_param,
+                                   :puppetclass => pc, :key_type => 'yaml', :default_value => 'a: b')
+    json_lkey = FactoryGirl.create(:lookup_key, :as_smart_class_param,
+                                   :puppetclass => pc, :key_type => 'json', :default_value => '{"a": "b"}')
+    classparam = Classification::ClassParam.new
+
+    yaml_value = classparam.send(:value_of_key, yaml_lkey, {})
+    json_value = classparam.send(:value_of_key, json_lkey, {})
+
+    assert_equal yaml_value, {'a' => 'b'}
+    assert_equal json_value, {'a' => 'b'}
+  end
+
   test 'smart class parameter of array with avoid_duplicates should return lookup_value array without duplicates' do
 
     key = FactoryGirl.create(:lookup_key, :as_smart_class_param,

@@ -19,7 +19,7 @@
 #global dashalphatag -%{alphatag}
 
 Name:   foreman
-Version: 1.7.2.11
+Version: 1.7.2.12
 Release: 1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
@@ -675,6 +675,12 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Tue Mar 17 2015 Jason Montleon <jmontleo@redhat.com> 1.7.2.12-1
+- Merge branch 'bkearney/foreman-61strings' into SATELLITE-6.1.0
+  (jmontleo@redhat.com)
+- remove builder line from releasers.conf (jmontleo@redhat.com)
+- Add some initial strings for 6.1 GA. (bkearney@redhat.com)
+
 * Tue Mar 17 2015 Jason Montleon <jmontleo@redhat.com> 1.7.2.11-1
 - Fixes #9723 - missing owner_type in host api docs (tstrachota@redhat.com)
 - Fixes #9678 - Can't update admin flag for users via API

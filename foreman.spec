@@ -19,7 +19,7 @@
 #global dashalphatag -%{alphatag}
 
 Name:   foreman
-Version: 1.7.2.12
+Version: 1.7.2.13
 Release: 1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
@@ -675,6 +675,10 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Tue Mar 17 2015 Jason Montleon <jmontleo@redhat.com> 1.7.2.13-1
+- Fixes #5701 - removed extra id/name HTML attributes (lzap+git@redhat.com)
+- Fixes #9693 - Clarify bond identifier BSD info (mhulan@redhat.com)
+
 * Tue Mar 17 2015 Jason Montleon <jmontleo@redhat.com> 1.7.2.12-1
 - Merge branch 'bkearney/foreman-61strings' into SATELLITE-6.1.0
   (jmontleo@redhat.com)

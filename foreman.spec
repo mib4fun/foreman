@@ -19,7 +19,7 @@
 #global dashalphatag -%{alphatag}
 
 Name:   foreman
-Version: 1.7.2.10
+Version: 1.7.2.11
 Release: 1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
@@ -675,6 +675,20 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Tue Mar 17 2015 Jason Montleon <jmontleo@redhat.com> 1.7.2.11-1
+- Fixes #9723 - missing owner_type in host api docs (tstrachota@redhat.com)
+- Fixes #9678 - Can't update admin flag for users via API
+  (tstrachota@redhat.com)
+- fixes #9335 - adds toggle to puppet classes list & better ui (shlomi@ben-
+  hanna.com)
+- Merge branch 'BZ1200881' into 'SATELLITE-6.1.0' (jmontleo@redhat.com)
+- Merge branch 'SATELLITE-6.1.0' of
+  gitlab.sat.lab.tlv.redhat.com:satellite6/foreman into SATELLITE-6.1.0
+  (jmontleo@redhat.com)
+- Fixes #9606 - ANSI color codes should not be used in production log
+  (orabin@redhat.com)
+- fixes #8331 - provide some tools for filtering mail (stbenjam@redhat.com)
+
 * Wed Mar 11 2015 Mike McCune <mmccune@redhat.com> 1.7.2.10-1
 - Revert "Fixes #9461 - Update subnets on domain change in hostgroup"
   (mmccune@redhat.com)

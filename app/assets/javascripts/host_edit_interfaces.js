@@ -27,6 +27,8 @@ function show_interface_modal(modal_content) {
   modal_window.find('.modal-body').append(modal_content.contents());
   modal_window.find('.modal-title').html(__('Interface') + ' ' + String(identifier));
   modal_window.modal({'show': true});
+
+  modal_window.find('a[rel="popover-modal"]').popover({html: true});
 }
 
 function close_interface_modal() {

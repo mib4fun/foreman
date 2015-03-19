@@ -15,13 +15,13 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2015-03-16 01:35+0000\n"
+"PO-Revision-Date: 2015-03-18 02:16+0000\n"
 "Last-Translator: eukim <eukim@redhat.com>\n"
 "Language-Team: Korean (http://www.transifex.com/projects/p/foreman/language/"
 "ko/)\n"
 "Language: ko\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Zanata 3.5.1\n"
+"X-Generator: Zanata 3.6.0\n"
 
 msgid " Remove"
 msgstr "삭제 "
@@ -1928,13 +1928,13 @@ msgid "Enabled"
 msgstr "활성화됨 "
 
 msgid "Enabled %s for reboot and rebuild"
-msgstr ""
+msgstr "다시 부팅하고 다시 빌드하기 위해 %s을(를) 활성화 "
 
 msgid "Enabled %s for rebuild on next boot"
 msgstr "다음 부팅시 다시 빌드하기 위해 %s 활성화 "
 
 msgid "Ending IP Address for IP auto suggestion"
-msgstr ""
+msgstr "IP 자동 제안의 종료 IP 주소 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Environment"
@@ -2001,7 +2001,7 @@ msgid "Errors"
 msgstr "오류"
 
 msgid "Errors occurred, build may fail"
-msgstr ""
+msgstr "오류가 발생했습니다. 빌드에 실패할 수 있습니다 "
 
 msgid "Errors only"
 msgstr "오류만 "
@@ -2030,10 +2030,10 @@ msgid "Expires"
 msgstr "만료 "
 
 msgid "Explain matchers"
-msgstr ""
+msgstr "매처 (Matcher) 설명 "
 
 msgid "Explain use Puppet default"
-msgstr ""
+msgstr "Puppet 기본값 사용 설명 "
 
 msgid "External IP"
 msgstr "외부 IP"
@@ -2236,10 +2236,10 @@ msgid "Failed|F"
 msgstr "F"
 
 msgid "Failure deploying via smart proxy %{proxy}: %{error}."
-msgstr ""
+msgstr "스마트 프록시 %{proxy}를 통한 배포 실패: %{error}"
 
 msgid "Failure parsing %{template}: %{error}."
-msgstr ""
+msgstr "%{template} 구문 분석 실패: %{error}"
 
 # translation auto-copied from project pulseaudio, version 3.0, document pulseaudio, author eukim
 msgid "Failure: %s"
@@ -2320,7 +2320,7 @@ msgid "Folder"
 msgstr "폴더 "
 
 msgid "Follow %{href} on how to describe your controllers."
-msgstr ""
+msgstr "컨트롤러 설명 방법은 %{href}을(를) 따르십시오. "
 
 msgid "For Roles and permissions, see the %s page"
 msgstr "역할 및 권한의 경우 %s 페이지를 참조하십시오  "
@@ -2347,7 +2347,7 @@ msgid "For internal Users, simply create a new user at the %s page"
 msgstr "내부 사용자의 경우 %s 페이지에서 새로운 사용자를 생성합니다 "
 
 msgid "Force a Puppet agent run on the host"
-msgstr ""
+msgstr "호스트에서 Puppet 에이전트 실행을 강제합니다 "
 
 msgid "Foreman Developers"
 msgstr "Foreman 개발자 "
@@ -2416,6 +2416,8 @@ msgid ""
 "Foreman v2 is stable and recommended for use. You may use v2 by either "
 "passing 'version=2' in the Accept Header or using api/v2/ in the URL."
 msgstr ""
+"Foreman v2는 안정적이므로 사용 권장됩니다. Accept 헤더에 'version=2'를 전달하거나 URL에 api/v2/를 "
+"사용하여 v2를 사용할 수 있습니다."
 
 msgid "Foreman will automate certificate signing upon provision of new host"
 msgstr "Foreman은 새 호스트의 프로비저닝에서 인증서 서명을 자동화합니다 "
@@ -2532,10 +2534,10 @@ msgid "Generated at %s"
 msgstr "%s에 생성 "
 
 msgid "Get dashboard details"
-msgstr ""
+msgstr "대시보드 상세 정보 얻기 "
 
 msgid "Get statistics"
-msgstr ""
+msgstr "통계 검색 "
 
 msgid "Get status of host"
 msgstr "호스트 상태 가져오기 "
@@ -2559,7 +2561,7 @@ msgid "Google Project ID"
 msgstr "글로벌 프로젝트 ID"
 
 msgid "Groups base DN"
-msgstr ""
+msgstr "그룹의 기본 DN "
 
 msgid "Guest OS"
 msgstr "게스트 OS"
@@ -2577,13 +2579,13 @@ msgid "Hardware models"
 msgstr "하드웨어 모델 "
 
 msgid "Hash function to use. Change takes effect for new or updated hosts."
-msgstr ""
+msgstr "사용할 해시 함수입니다. 새로운 또는 업데이트된 호스트의 변경 사항이 적용됩니다. "
 
 msgid "Hash of report metrics, can be just {}"
-msgstr ""
+msgstr "보고서 메트릭스의 해시는 {}이 될 수 있습니다 "
 
 msgid "Hash of status type totals"
-msgstr ""
+msgstr "상태 유형의 해시 합계 "
 
 msgid "Help"
 msgstr "도움말"
@@ -2957,12 +2959,12 @@ msgstr "IP 주소"
 msgid ""
 "IP Address auto suggestion mode for this subnet, DHCP works with DHCP proxy "
 "only"
-msgstr ""
+msgstr "이 서브넷의 IP 주소 자동 추천 모드입니다. DHCP는 DHCP 프록시와만 작동합니다 "
 
 msgid ""
 "IP Address auto suggestion mode for this subnet, valid values are \"DHCP\", "
 "\"Internal DB\", \"None\""
-msgstr ""
+msgstr "이 서브넷의 IP 주소 자동 추천 모드입니다. 유효한 값은 \"DHCP\", \"내부 DB\", \"없음\"입니다 "
 
 msgid "IP address auto-suggest"
 msgstr "IP 주소 자동 제시 "
@@ -2980,17 +2982,17 @@ msgid "IRC"
 msgstr "IRC"
 
 msgid "Identifier of the interface to which this interface belongs, e.g. eth1"
-msgstr ""
+msgstr "이 인터페이스가 속한 인터페이스의 ID (예: eth1) "
 
 msgid ""
 "Identifier of the interface to which this interface belongs, e.g. eth1. Only "
 "for virtual interfaces."
-msgstr ""
+msgstr "이 인터페이스가 속한 인터페이스의 ID (예: eth1) 가상 인터페이스의 경우에만 사용할 수 있습니다. "
 
 msgid ""
 "Identifiers of slave interfaces, e.g. `['eth1', 'eth2']`. Only for bond "
 "interfaces."
-msgstr ""
+msgstr "슬레이브 인터페이스의 ID (예: `['eth1', 'eth2']`). 본드 인터페이스의 경우에만 사용할 수 있습니다. "
 
 msgid ""
 "If Foreman is running behind Passenger or a remote load balancer, the IP "
@@ -3034,7 +3036,7 @@ msgid ""
 "If you're planning to do anything more than just handle reports, you'll be "
 "in need of a smart proxy - either on this machine or elsewhere on your "
 "network."
-msgstr ""
+msgstr "보고서 처리 이상의 작업을 실행하고자 할 경우 이 컴퓨터 또는 네트워크의 어느곳에 스마트 프록시가 필요합니다. "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Image"
@@ -3142,7 +3144,7 @@ msgid "Inherit parent (%s)"
 msgstr "부모 상속 (%s)"
 
 msgid "Inherits from subnet VLAN ID if not set"
-msgstr ""
+msgstr "설정되어 있지 않은 경우 서브넷 VLAN에서 상속 "
 
 msgid "Installation Media"
 msgstr "설치 미디어 "
@@ -3164,7 +3166,7 @@ msgid "Interface name"
 msgstr "인터페이스 이름 "
 
 msgid "Interface provider, e.g. IPMI. Only for BMC interfaces."
-msgstr ""
+msgstr "인터페이스 공급자 (예: IPMI). BMC 인터페이스의 경우에만 사용할 수 있습니다. "
 
 msgid "Interface type, e.g: bmc"
 msgstr "인터페이스 유형. 예: bmc"
@@ -3176,7 +3178,7 @@ msgid "Internal network"
 msgstr "내부 네트워크 "
 
 msgid "Invalid %s selection, you must select at least one of yours"
-msgstr ""
+msgstr "잘못된 %s 선택. 최소 하나 이상을 선택해야 합니다 "
 
 msgid "Invalid Host"
 msgstr "잘못된 호스트 "
@@ -3201,7 +3203,7 @@ msgid "Invalid search query: %s"
 msgstr "잘못된 검색 쿼리: %s"
 
 msgid "Invalid type for host creation via facts: %s"
-msgstr ""
+msgstr "팩트를 통한 호스트 생성의 잘못된 유형: %s"
 
 msgid "Inventory browser"
 msgstr "인벤토리 브라우저 "
@@ -3454,10 +3456,10 @@ msgid "List all smart variables"
 msgstr "모든 스마트 매개 변수 나열 "
 
 msgid "List all tasks for a given orchestration event"
-msgstr ""
+msgstr "지정된 오케스트레이션 이벤트의 모든 작업을 나열 "
 
 msgid "List all template kinds"
-msgstr ""
+msgstr "모든 템플릿 종류를 나열 "
 
 msgid "List all user groups"
 msgstr "모든 사용자 그룹 나열 "
@@ -3553,10 +3555,10 @@ msgid "List of mail notifications"
 msgstr "메일 통지 목록 "
 
 msgid "List of override values for a specific smart class parameter"
-msgstr ""
+msgstr "특정 스마트 클래스 매개 변수의 덮어쓰기 값 목록 "
 
 msgid "List of override values for a specific smart variable"
-msgstr ""
+msgstr "특정 스마트 변수의 덮어쓰기 값 목록 "
 
 msgid "List of realms"
 msgstr "영역 목록 "
@@ -3600,7 +3602,7 @@ msgid "List of subnets per organization"
 msgstr "조직별 서브넷 목록"
 
 msgid "List operating systems where this template is set as a default"
-msgstr ""
+msgstr "템플릿이 기본값으로 설정되는 운영 체제를 나열 "
 
 msgid "List provisioning templates"
 msgstr "프로비저닝 템플릿 목록 나열 "
@@ -3730,7 +3732,7 @@ msgstr "검색 값 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "LookupKey|Avoid duplicates"
-msgstr ""
+msgstr "중복 무시 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "LookupKey|Default value"
@@ -3758,7 +3760,7 @@ msgstr "검색 값 수 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "LookupKey|Merge overrides"
-msgstr ""
+msgstr "덮어쓰기 병합 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "LookupKey|Override"
@@ -3774,7 +3776,7 @@ msgstr "필수 사항 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "LookupKey|Use puppet default"
-msgstr ""
+msgstr "Puppet 기본값 사용 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "LookupKey|Validator rule"
@@ -3790,7 +3792,7 @@ msgstr "일치 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "LookupValue|Use puppet default"
-msgstr ""
+msgstr "Puppet 기본값 사용"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "LookupValue|Value"
@@ -3806,7 +3808,7 @@ msgid "MAC address for this host"
 msgstr "호스트의 MAC 주소 "
 
 msgid "MAC address of interface"
-msgstr ""
+msgstr "인터페이스의 MAC 주소"
 
 msgid "Machine Type"
 msgstr "시스템 유형 "
@@ -3823,31 +3825,31 @@ msgstr "메일은 필수 사항입니다 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Mail notification"
-msgstr ""
+msgstr "메일 알림 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "MailNotification|Default interval"
-msgstr ""
+msgstr "기본 간격 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "MailNotification|Description"
-msgstr ""
+msgstr "설명 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "MailNotification|Mailer"
-msgstr ""
+msgstr "메일러 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "MailNotification|Method"
-msgstr ""
+msgstr "방식 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "MailNotification|Name"
-msgstr ""
+msgstr "이름 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "MailNotification|Subscriptable"
-msgstr ""
+msgstr "등록 가능 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "MailNotification|Subscription type"
@@ -3907,13 +3909,13 @@ msgid "Max days for Trends graphs"
 msgstr "트랜드 그래프의 최대 기간 "
 
 msgid "Max timeout for REST client requests to smart-proxy"
-msgstr ""
+msgstr "스마트 프록시에 REST 클라이언트 요청의 최대 대기 시간 "
 
 msgid "Media"
 msgstr "미디어 "
 
 msgid "Media IDs"
-msgstr ""
+msgstr "미디어 ID "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Medium"
@@ -3966,7 +3968,7 @@ msgid "Metadata"
 msgstr "메타 데이터"
 
 msgid "Method %{method} not found for resource %{resource}."
-msgstr ""
+msgstr "리소스 %{resource}의 방식 %{method}을(를) 찾을 수 없습니다. "
 
 msgid "Metrics"
 msgstr "메트릭스 "
@@ -4014,7 +4016,7 @@ msgid "Monitor"
 msgstr "모니터"
 
 msgid "Monthly"
-msgstr ""
+msgstr "매달"
 
 msgid "Must provide an operating systems"
 msgstr "운영 체제를 지정해야 합니다 "
@@ -4023,10 +4025,10 @@ msgid "Must provide template kind"
 msgstr "템플릿 종류를 지정해야 합니다 "
 
 msgid "Must specify a Smart Proxy to use"
-msgstr ""
+msgstr "사용할 스마트 프록시를 지정해야 합니다 "
 
 msgid "Must specify a user with email enabled"
-msgstr ""
+msgstr "이메일이 활성화된 사용자를 지정해야 합니다 "
 
 msgid "My account"
 msgstr "내 계정 "
@@ -4047,7 +4049,7 @@ msgid "Name"
 msgstr "이름 "
 
 msgid "Name of media"
-msgstr ""
+msgstr "미디어 이름"
 
 msgid ""
 "Name of the external auth source where unknown externally authentication "
@@ -4160,7 +4162,7 @@ msgid "New Partition Table"
 msgstr "새 파티션 테이블 "
 
 msgid "New Proxy"
-msgstr ""
+msgstr "새 프록시 "
 
 msgid "New Puppet Environment"
 msgstr "새 Puppet 환경 "
@@ -4172,7 +4174,7 @@ msgid "New Role"
 msgstr "새 역할 "
 
 msgid "New Smart Proxy"
-msgstr ""
+msgstr "새 스마트 프록시 "
 
 msgid "New Subnet"
 msgstr "새 서브넷 "
@@ -4221,11 +4223,11 @@ msgstr "새 창 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Nic::Base|Attached devices"
-msgstr ""
+msgstr "할당된 장치 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Nic::Base|Attached to"
-msgstr ""
+msgstr "할당 대상 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Nic::Base|Attrs"
@@ -4233,11 +4235,11 @@ msgstr "속성 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Nic::Base|Bond options"
-msgstr ""
+msgstr "본드 옵션 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Nic::Base|Identifier"
-msgstr ""
+msgstr "식별자 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Nic::Base|Ip"
@@ -4245,7 +4247,7 @@ msgstr "IP"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Nic::Base|Link"
-msgstr ""
+msgstr "링크 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Nic::Base|Mac"
@@ -4253,11 +4255,11 @@ msgstr "MAC"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Nic::Base|Managed"
-msgstr ""
+msgstr "관리"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Nic::Base|Mode"
-msgstr ""
+msgstr "모드 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Nic::Base|Name"
@@ -4265,23 +4267,23 @@ msgstr "이름 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Nic::Base|Password"
-msgstr ""
+msgstr "암호 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Nic::Base|Provider"
-msgstr ""
+msgstr "공급자 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Nic::Base|Tag"
-msgstr ""
+msgstr "태그"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Nic::Base|Username"
-msgstr ""
+msgstr "사용자 이름"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Nic::Base|Virtual"
-msgstr ""
+msgstr "가상 "
 
 msgid ""
 "No %{template_kind} templates were found for this host, make sure you define "
@@ -4309,13 +4311,13 @@ msgid "No compute resource to show"
 msgstr "표시할 컴퓨터 리소스가 없음 "
 
 msgid "No documentation found"
-msgstr ""
+msgstr "문서를 찾을 수 없음"
 
 msgid "No domains"
 msgstr "도메인 없음 "
 
 msgid "No emails"
-msgstr ""
+msgstr "이메일이 없음"
 
 msgid "No entries found"
 msgstr "항목을 찾을 수 없음 "
@@ -4361,7 +4363,7 @@ msgid "No new subnets found"
 msgstr "새 서브넷을 찾을 수 없음 "
 
 msgid "No parameters to override for Puppet class %s"
-msgstr ""
+msgstr "Puppet 클래스 %s에 덮어쓰기할 매개 변수가 없음 "
 
 msgid "No parameters were allocated to the selected hosts, can't mass assign."
 msgstr "선택한 호스트에 매개 변수가 할당되어 있지 않기 때문에 대량 할당할 수 없습니다. "
@@ -4375,7 +4377,7 @@ msgstr "설정이 없습니다 "
 msgid ""
 "No proxy found to import classes from, ensure that the smart proxy has the "
 "Puppet feature enabled."
-msgstr ""
+msgstr "클래스를 가져오기할 프록시를 찾을 수 없습니다. 스마트 프록시에서 Puppet 기능이 활성화되어 있는지 확인합니다. "
 
 msgid "No puppet activity for this host in the last %s days"
 msgstr "지난 %s 일 동안 이 호스트의 puppet 활동이 없습니다 "
@@ -4391,10 +4393,10 @@ msgid "No reports|N"
 msgstr "N"
 
 msgid "No smart proxies found."
-msgstr ""
+msgstr "스마트 프록시를 찾을 수 없습니다. "
 
 msgid "No smart proxies to show"
-msgstr ""
+msgstr "표시할 스마트 프록시가 없음 "
 
 msgid ""
 "No smart proxy was found to import environments from, ensure that at least "
@@ -4413,7 +4415,7 @@ msgid "No template found"
 msgstr "템플릿을 찾을 수 없음 "
 
 msgid "No templates found for this host."
-msgstr ""
+msgstr "이 호스트의 템플릿을 찾을 수 없습니다."
 
 msgid "No templates found!"
 msgstr "템플릿을 찾을 수 없습니다! "
@@ -4459,10 +4461,10 @@ msgid "Not relevant for snippet"
 msgstr "조각 모음과 관련이 없습니다 "
 
 msgid "Note: %s "
-msgstr ""
+msgstr "알림: %s "
 
 msgid "Nothing to restore"
-msgstr ""
+msgstr "복구할 사항이 없음 "
 
 msgid "Nothing to show"
 msgstr "표시할 것이 없습니다 "
@@ -4501,13 +4503,13 @@ msgid "Number of values"
 msgstr "값의 수 "
 
 msgid "Numerical ID or domain name"
-msgstr ""
+msgstr "숫자로된 ID 또는 도메인 이름 "
 
 msgid "Numerical ID or mail notification name"
-msgstr ""
+msgstr "숫자로된 ID 또는 메일 알림 이름 "
 
 msgid "Numerical ID or realm name"
-msgstr ""
+msgstr "숫자로된 ID 또는 영역 이름 "
 
 msgid "OAuth consumer key"
 msgstr "인증 컨슈머 키 "
@@ -4563,7 +4565,7 @@ msgstr ""
 "dir)"
 
 msgid "Only for BMC interfaces."
-msgstr ""
+msgstr "BMC 인터페이스만 해당합니다."
 
 msgid ""
 "Only known Smart Proxies with the Puppet feature can access fact/report "
@@ -4583,7 +4585,7 @@ msgid "Oops"
 msgstr "오류 "
 
 msgid "Oops!!"
-msgstr ""
+msgstr "죄송합니다!"
 
 msgid "Oops, we're sorry but something went wrong"
 msgstr "오류. 문제가 발생했습니다 "
@@ -4610,13 +4612,13 @@ msgid "Operating system"
 msgstr "운영 체제 "
 
 msgid "Operating system IDs"
-msgstr ""
+msgstr "운영 체제 ID "
 
 msgid "Operating system default"
 msgstr "기본값 운영 체제 "
 
 msgid "Operating system family, available values: %{operatingsystem_families}"
-msgstr ""
+msgstr "운영 체제 제품군. 사용 가능한 값: %{operatingsystem_families}"
 
 msgid "Operating systems"
 msgstr "운영 체제 "
@@ -4655,7 +4657,7 @@ msgstr "이름 표시기 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Operatingsystem|Password hash"
-msgstr ""
+msgstr "암호 해시 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Operatingsystem|Release name"
@@ -4663,7 +4665,7 @@ msgstr "릴리즈 이름 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Operatingsystem|Title"
-msgstr ""
+msgstr "제목 "
 
 msgid "Operation"
 msgstr "작업 "
@@ -4672,15 +4674,17 @@ msgid "Operators"
 msgstr "운영자 "
 
 msgid "Optional array of log hashes"
-msgstr ""
+msgstr "로그 해시 옵션 배열 "
 
 msgid ""
 "Optional comma-delimited string containing either 'new', 'updated', or "
 "'obsolete' that is used to limit the imported Puppet classes"
 msgstr ""
+"가져오기한 Puppet 클래스를 제한하는데 사용하는 'new', 'updated', 'obsolete' 중 하나가 포함된 콤마로 구분된 "
+"문자열 옵션 "
 
 msgid "Optional input validator"
-msgstr ""
+msgstr "입력 유효성 검증 옵션 "
 
 msgid ""
 "Optional parameter without value.<br/><i>Won't be given to Puppet.</i> "
@@ -4711,6 +4715,8 @@ msgid ""
 "self-signed CA will be populated automatically by the server during the "
 "first request."
 msgstr ""
+"옵션으로 CA 또는 올바르게 정렬된 CA 체인을 지정합니다. 빈 칸으로 두면 처음 요청시 서버가 자동 서명된 CA를 자동으로 설정하게 "
+"됩니다."
 
 msgid "Order"
 msgstr "순서"
@@ -4749,13 +4755,13 @@ msgid "Override a Puppetclass Parameter"
 msgstr "Puppetclass 매개 변수 덮어쓰기 "
 
 msgid "Override all parameters"
-msgstr ""
+msgstr "모든 매개 변수 덮어쓰기 "
 
 msgid "Override this value"
 msgstr "이 값 덮어쓰기 "
 
 msgid "Override value for specific hosts"
-msgstr ""
+msgstr "특정 호스트의 값을 덮어쓰기 "
 
 msgid "Overview"
 msgstr "개요 "
@@ -4782,7 +4788,7 @@ msgid "PXE Default file has been deployed to all Smart Proxies"
 msgstr "PXE 기본값 파일은 모든 스마트 프록시에 배포되었습니다 "
 
 msgid "Param name"
-msgstr ""
+msgstr "매개 변수 이름 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Parameter"
@@ -4795,7 +4801,7 @@ msgid "Parameter type"
 msgstr "매개 변수 유형 "
 
 msgid "Parameter types"
-msgstr ""
+msgstr "매개 변수 유형 "
 
 msgid "Parameters"
 msgstr "매개 변수 "
@@ -4805,7 +4811,7 @@ msgstr "%s에서 호스트와 연관된 매개 변수 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Parameter|Hidden value"
-msgstr ""
+msgstr "숨겨진 값 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Parameter|Name"
@@ -4820,7 +4826,7 @@ msgid "Parameter|Value"
 msgstr "값 "
 
 msgid "Params"
-msgstr ""
+msgstr "매개 변수 "
 
 msgid "Parent"
 msgstr "부모 "
@@ -4844,10 +4850,10 @@ msgid "Password"
 msgstr "암호 "
 
 msgid "Password for Ovirt, EC2, Vmware, Openstack. Secret key for EC2"
-msgstr ""
+msgstr "Ovirt, EC2, Vmware, Openstack의 암호입니다. EC2의 비밀키 "
 
 msgid "Password must be 8 characters or more"
-msgstr ""
+msgstr "암호는 8자 이상이어야 합니다 "
 
 msgid "Password to authenticate with - used for SSH finish step."
 msgstr "인증에 사용될 암호 - SSH 마지막 단계에서 사용됩니다."
@@ -4923,13 +4929,13 @@ msgid "Please delete all nested groups before deleting it."
 msgstr "제거하기 전에 중첩된 모든 그룹을 삭제하십시오. "
 
 msgid "Please enable JavaScript to view the %{comments_href}."
-msgstr ""
+msgstr "%{comments_href}을(를) 표시하기 위해 JavaScript를 활성화하십시오. "
 
 msgid "Please ensure the following parameters name are unique"
-msgstr ""
+msgstr "다음 매개 변수 이름이 고유한 것인지 확인하십시오 "
 
 msgid "Please login to %{foreman_url} to change your password"
-msgstr ""
+msgstr "%{foreman_url}에 로그인하여 암호를 변경하십시오 "
 
 msgid "Please request the required privileges from a foreman administrator"
 msgstr "foreman 관리자에게 필요한 권한을 요청하십시오 "
@@ -4943,10 +4949,10 @@ msgid "Please save the Operating System first and try again."
 msgstr "운영 체제를 저장하고 다시 시도하십시오. "
 
 msgid "Please save the role first. You can edit it later to add filters"
-msgstr ""
+msgstr "먼저 역할을 저장하십시오. 필터를 추가하기 위해 나중에 편집할 수 있습니다 "
 
 msgid "Please save the user first before assigning mail notifications."
-msgstr ""
+msgstr "메일 알림을 할당하기 전 먼저 사용자를 저장하십시오."
 
 msgid "Please select"
 msgstr "선택하십시오"
@@ -4984,7 +4990,7 @@ msgid "Power%s"
 msgstr "전원%s"
 
 msgid "Preallocate disk"
-msgstr ""
+msgstr "디스크 사전 할당 "
 
 msgid "Prepare post installation script for %s"
 msgstr "%s의 설치 후 스크립트 준비 "
@@ -4996,7 +5002,7 @@ msgid "Primary"
 msgstr "기본 "
 
 msgid "Primary DNS for this subnet"
-msgstr ""
+msgstr "서브넷의 1차 DNS"
 
 msgid "Primary Interface"
 msgstr "기본 인터페이스 "
@@ -5017,7 +5023,7 @@ msgid "Provider"
 msgstr "공급자 "
 
 msgid "Providers include %{providers}"
-msgstr ""
+msgstr "공급자에 %{providers}이(가) 포함되어 있습니다"
 
 msgid "Provision"
 msgstr "프로비저닝 "
@@ -5044,16 +5050,16 @@ msgid "Provisioning Templates"
 msgstr "프로비저닝 템플릿 "
 
 msgid "Provisioning template IDs"
-msgstr ""
+msgstr "프로비저닝 템플릿 ID "
 
 msgid "Provisioning templates"
 msgstr "프로비저닝 템플릿 "
 
 msgid "Proxies"
-msgstr ""
+msgstr "프록시 "
 
 msgid "Proxy to use for this realm"
-msgstr ""
+msgstr "이 영역에 사용할 프록시 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Ptable"
@@ -5171,10 +5177,10 @@ msgid "Quota ID"
 msgstr "쿼터 ID"
 
 msgid "REPLACE locations with given ids"
-msgstr ""
+msgstr "지정된 ID로 위치를 변경합니다 "
 
 msgid "REPLACE organizations with given ids."
-msgstr ""
+msgstr "지정된 ID로 조직을 변경합니다 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Realm"
@@ -5184,7 +5190,7 @@ msgid "Realm Configuration"
 msgstr "영역 설정 "
 
 msgid "Realm IDs"
-msgstr ""
+msgstr "영역 ID "
 
 msgid "Realm name, e.g. EXAMPLE.COM"
 msgstr "영역 이름 예: EXAMPLE.COM"
@@ -5202,7 +5208,7 @@ msgid "Realm type"
 msgstr "영역 유형 "
 
 msgid "Realm type, e.g. FreeIPA or Active Directory"
-msgstr ""
+msgstr "영역 유형. 예: FreeIPA 또는 활성 디렉토리 "
 
 msgid "Realms"
 msgstr "영역 "
@@ -5224,10 +5230,10 @@ msgid "Realm|Realm type"
 msgstr "영역 유형 "
 
 msgid "Reboot and build"
-msgstr ""
+msgstr "다시 시작 및 빌드 "
 
 msgid "Reboot now"
-msgstr ""
+msgstr "지금 다시 시작 "
 
 msgid ""
 "Redirect your users to this url on logout (authorize_login_delegation should "
@@ -5246,7 +5252,7 @@ msgid "Refresh features"
 msgstr "기능 새로 고침 "
 
 msgid "Refresh smart proxy features"
-msgstr ""
+msgstr "스마트 프록시 기능 새로고침 "
 
 msgid "Region"
 msgstr "지역 "
@@ -5267,10 +5273,10 @@ msgid "Remove Reverse DNS record for %s"
 msgstr "%s의 역방향 DNS 기록 삭제 "
 
 msgid "Remove a Puppet class from host"
-msgstr ""
+msgstr "호스트에 Puppet 클래스 삭제 "
 
 msgid "Remove a Puppet class from host group"
-msgstr ""
+msgstr "호스트 그룹에서 Puppet 클래스 삭제 "
 
 msgid "Remove conflicting DNS record for %s"
 msgstr "%s의 충돌하는 DNS 기록 삭제 "
@@ -5307,7 +5313,7 @@ msgid "Report Status"
 msgstr "보고서 상태 "
 
 msgid "Report summary"
-msgstr ""
+msgstr "보고서 요약 "
 
 msgid "Reported at"
 msgstr "보고 "
@@ -5342,7 +5348,7 @@ msgid ""
 msgstr "값이 없는 필수 매개 변수입니다. <br/><b>덮어쓰기하십시오!</b> <br><br><b>상세 정보:</b>: %s"
 
 msgid "Reset to default"
-msgstr ""
+msgstr "기본값으로 다시 설정 "
 
 msgid "Reset zoom"
 msgstr "줌 재설정 "
@@ -5354,10 +5360,10 @@ msgid "Resource"
 msgstr "리소스 "
 
 msgid "Resource %{resource_name} not found by id '%{id}'"
-msgstr ""
+msgstr "리소스 %{resource_name}을(를) ID '%{id}'로 찾을 수 없습니다 "
 
 msgid "Resource %{res} not found."
-msgstr ""
+msgstr "리소스 %{res}을(를) 찾을 수 없습니다."
 
 msgid "Resources"
 msgstr "리소스"
@@ -5373,7 +5379,7 @@ msgid "Restarted|R"
 msgstr "R"
 
 msgid "Restore widgets"
-msgstr ""
+msgstr "위젯 복구 "
 
 msgid "Resume"
 msgstr "다시 시작 "
@@ -5388,7 +5394,7 @@ msgid "Review"
 msgstr "확인 "
 
 msgid "Review build status for %s"
-msgstr ""
+msgstr "%s의 빌드 상태 확인 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Role"
@@ -5416,10 +5422,10 @@ msgid "Role|Permissions"
 msgstr "권한 "
 
 msgid "Root password hash"
-msgstr ""
+msgstr "Root 암호 해시 "
 
 msgid "Root password hash function to use, one of MD5, SHA256, SHA512"
-msgstr ""
+msgstr "사용할 Root 암호 해시 함수입니다. MD5, SHA256, SHA512 중 하나입니다 "
 
 msgid "Run Puppet"
 msgstr "Puppet 실행 "
@@ -5428,7 +5434,7 @@ msgid "Run Puppet on the following hosts"
 msgstr "다음 호스트에서 Puppet을 실행합니다 "
 
 msgid "Run a power operation on host"
-msgstr ""
+msgstr "호스트에서 전원 작업을 실행합니다 "
 
 msgid "Run distribution in the last %s minute"
 msgid_plural "Run distribution in the last %s minutes"
@@ -5464,7 +5470,7 @@ msgid "Save"
 msgstr "저장"
 
 msgid "Save dashboard"
-msgstr ""
+msgstr "대시보드 저장 "
 
 msgid "Save something and try again"
 msgstr "저장 후 다시 시도하십시오 "
@@ -5473,16 +5479,16 @@ msgid "Scope"
 msgstr "범위 "
 
 msgid "Scope by locations"
-msgstr ""
+msgstr "위치 별 범위 "
 
 msgid "Scope by organizations"
-msgstr ""
+msgstr "조직 별 범위 "
 
 msgid "Search"
 msgstr "검색 "
 
 msgid "Secondary DNS for this subnet"
-msgstr ""
+msgstr "서브넷의 2차 DNS "
 
 msgid "Secret Key"
 msgstr "비밀 키 "
@@ -5548,7 +5554,7 @@ msgid "Select realms"
 msgstr "영역 선택 "
 
 msgid "Select smart proxies"
-msgstr ""
+msgstr "스마트 프록시 선택 "
 
 msgid "Select subnets"
 msgstr "서브넷 선택 "
@@ -5589,16 +5595,16 @@ msgid "Selecting a file will override the editor and load the file instead"
 msgstr "파일을 선택하면 편집기가 덮어쓰기되고 대신 파일이 로드됩니다 "
 
 msgid "Send a welcome mail including username and URL to new users"
-msgstr ""
+msgstr "새 사용자에게 사용자 이름 및 URL을 포함하여 환영 이메일을 전송합니다 "
 
 msgid "Server type"
-msgstr ""
+msgstr "서버 유형 "
 
 msgid "Set a randomly generated password on the display connection"
 msgstr "디스플레이 연결 시 임의로 생성된 암호를 설정합니다"
 
 msgid "Set parameters to defaults"
-msgstr ""
+msgstr "매개 변수를 기본값으로 설정 "
 
 msgid "Set up compute instance %s"
 msgstr "컴퓨터 인스턴스 %s 설정 "
@@ -5642,32 +5648,34 @@ msgstr "Foreman이 websocket (VNC 콘솔 액세스)을 암호화해야 합니다
 msgid ""
 "Should the `foreman-rake db:migrate` be executed on the next run of the "
 "installer modules?"
-msgstr ""
+msgstr "다음번 설치 프로그램 모듈 실행 시 `foreman-rake db:migrate`를 실행해야 합니까? "
 
 msgid ""
 "Should the `foreman-rake db:seed` be executed on the next run of the "
 "installer modules?"
-msgstr ""
+msgstr "다음번 설치 프로그램 모듈 실행 시 `foreman-rake db:seed`를 실행해야 합니까? "
 
 msgid "Should the matched result avoid duplicate values (only array type)."
-msgstr ""
+msgstr "일치한 결과가 중복된 값을 피해야 합니다 (배열 유형만). "
 
 msgid ""
 "Should the matchers continue to look for matches after first find (only "
 "array/hash type). Note: merging overrides ignores all matchers that use "
 "Puppet default"
 msgstr ""
+"매처 (Matcher)는 처음 검색 후 계속해야 일치 항목을 검색해야 합니다 (배열/해시 유형만). 알림: 덮어쓰기를 병합하면 "
+"Puppet 기본값을 사용하는 모든 매처가 무시됩니다"
 
 msgid ""
 "Should this interface be managed via DHCP and DNS smart proxy and should it "
 "be configured during provisioning?"
-msgstr ""
+msgstr "이 인터페이스는 DHCP 및 DNS 스마트 프록시를 통해 관리하고 프로비저닝 동안 설정해야 합니까? "
 
 msgid "Show %{host} facts"
-msgstr ""
+msgstr "%{host} 팩트 표시 "
 
 msgid "Show :a_resource"
-msgstr ""
+msgstr ":a_resource 표시 "
 
 msgid "Show Diff"
 msgstr "다른점 표시 "
@@ -5679,109 +5687,109 @@ msgid "Show Trends"
 msgstr "트렌드 표시 "
 
 msgid "Show a Puppet class"
-msgstr ""
+msgstr "Puppet 클래스 표시 "
 
 msgid "Show a Puppet class for a host group"
-msgstr ""
+msgstr "호스트 그룹의 Puppet 클래스 표시 "
 
 msgid "Show a Puppet class for an environment"
-msgstr ""
+msgstr "환경의 Puppet 클래스 표시 "
 
 msgid "Show a Puppet class for host"
-msgstr ""
+msgstr "호스트의 Puppet 클래스 표시 "
 
 msgid "Show a bookmark"
-msgstr ""
+msgstr "북마크 표시 "
 
 msgid "Show a compute profile"
-msgstr ""
+msgstr "컴퓨터 프로파일 표시 "
 
 msgid "Show a compute resource"
-msgstr ""
+msgstr "컴퓨터 리소스 표시 "
 
 msgid "Show a config group"
-msgstr ""
+msgstr "설정 그룹 표시 "
 
 msgid "Show a default template combination for an operating system"
-msgstr ""
+msgstr "운영 체제의 기본값 템플릿 조합 표시 "
 
 msgid "Show a domain"
-msgstr ""
+msgstr "도메인 표시 "
 
 msgid "Show a filter"
-msgstr ""
+msgstr "필터 표시 "
 
 msgid "Show a global parameter"
-msgstr ""
+msgstr "글로벌 매개 변수 표시 "
 
 msgid "Show a hardware model"
-msgstr ""
+msgstr "하드웨어 모델 표시 "
 
 msgid "Show a host"
-msgstr ""
+msgstr "호스트 표시 "
 
 msgid "Show a host group"
-msgstr ""
+msgstr "호스트 그룹 표시 "
 
 msgid "Show a mail notification"
-msgstr ""
+msgstr "메일 알림 표시 "
 
 msgid "Show a medium"
-msgstr ""
+msgstr "미디어 표시 "
 
 msgid "Show a nested parameter for a domain"
-msgstr ""
+msgstr "도메인의 중첩된 매개 변수 표시 "
 
 msgid "Show a nested parameter for a host"
-msgstr ""
+msgstr "호스트의 중첩된 매개 변수 표시 "
 
 msgid "Show a nested parameter for a host group"
-msgstr ""
+msgstr "호스트 그룹의 중첩된 매개 변수 표시 "
 
 msgid "Show a nested parameter for a location"
-msgstr ""
+msgstr "위치의 중첩된 매개 변수 표시 "
 
 msgid "Show a nested parameter for an operating system"
-msgstr ""
+msgstr "운영 체제의 중첩된 매개 변수 표시 "
 
 msgid "Show a nested parameter for an organization"
-msgstr ""
+msgstr "조직의 중첩된 매개 변수 표시 "
 
 msgid "Show a partition table"
-msgstr ""
+msgstr "파티션 테이블 표시"
 
 msgid "Show a permission"
-msgstr ""
+msgstr "권한 표시 "
 
 msgid "Show a realm"
-msgstr ""
+msgstr "영역 표시 "
 
 msgid "Show a report"
-msgstr ""
+msgstr "보고서 표시 "
 
 msgid "Show a role"
-msgstr ""
+msgstr "역할 표시 "
 
 msgid "Show a setting"
-msgstr ""
+msgstr "설정 표시"
 
 msgid "Show a smart class parameter"
-msgstr ""
+msgstr "스마트 클래스 매개 변수 표시"
 
 msgid "Show a smart proxy"
-msgstr ""
+msgstr "스마트 프록시 표시"
 
 msgid "Show a smart variable"
-msgstr ""
+msgstr "스마트 변수 표시 "
 
 msgid "Show a subnet"
-msgstr ""
+msgstr "서브넷 표시"
 
 msgid "Show a user"
-msgstr ""
+msgstr "사용자 표시 "
 
 msgid "Show a user group"
-msgstr ""
+msgstr "사용자 그룹 표시"
 
 msgid "Show all %s children fact values"
 msgstr "모든 %s 자식 정보 값 표시 "
@@ -5793,41 +5801,41 @@ msgid "Show all %{name} facts where they are equal to %{value}"
 msgstr "%{value}와 동일한 모든 %{name} 정보 표시 "
 
 msgid "Show an LDAP authentication source"
-msgstr ""
+msgstr "LDAP 인증 소스 표시"
 
 msgid "Show an architecture"
-msgstr ""
+msgstr "아키텍처 표시"
 
 msgid "Show an audit"
-msgstr ""
+msgstr "감사 보기 "
 
 # translation auto-copied from project Satellite6 Katello, version 6.1, document katello
 msgid "Show an environment"
 msgstr "환경 표시 "
 
 msgid "Show an external user group for LDAP authentication source"
-msgstr ""
+msgstr "LDAP 인증 소스에 대한 모든 외부 사용자 그룹 표시 "
 
 msgid "Show an external user group for user group"
-msgstr ""
+msgstr "사용자 그룹에 대한 외부 사용자 그룹 표시"
 
 msgid "Show an image"
-msgstr ""
+msgstr "이미지 보기 "
 
 msgid "Show an interface for host"
-msgstr ""
+msgstr "호스트의 인터페이스 표시 "
 
 msgid "Show an operating system"
-msgstr ""
+msgstr "운영 체제 표시 "
 
 msgid "Show an override value for a specific smart class parameter"
-msgstr ""
+msgstr "특정 스마트 클래스 매개 변수의 덮어쓰기 값 표시 "
 
 msgid "Show an override value for a specific smart variable"
-msgstr ""
+msgstr "특정 스마트 매개 변수의 덮어쓰기 값 표시 "
 
 msgid "Show available API links"
-msgstr ""
+msgstr "사용 가능한 API 링크 표시"
 
 msgid "Show distribution chart"
 msgstr "배포 차트 표시 "
@@ -5839,16 +5847,16 @@ msgid "Show log messages:"
 msgstr "로그 메세지 표시: "
 
 msgid "Show provisioning template details"
-msgstr ""
+msgstr "프로비저닝 템플릿 상세 정보 표시 "
 
 msgid "Show status"
-msgstr ""
+msgstr "상태 표시 "
 
 msgid "Show template combination"
-msgstr ""
+msgstr "템플릿 조합 표시 "
 
 msgid "Show the last report for a host"
-msgstr ""
+msgstr "호스트의 마지막 보고서 표시"
 
 msgid "Sign"
 msgstr "로그인 "
@@ -5873,7 +5881,7 @@ msgid "Smart Class Parameter"
 msgstr "스마트 클래스 매개 변수 "
 
 msgid "Smart Proxies"
-msgstr ""
+msgstr "스마트 프록시 "
 
 # translation auto-copied from project PressGang CCMS topics, version 1, document 30851-704293, author eukim
 msgid "Smart Proxy"
@@ -5890,13 +5898,13 @@ msgid "Smart proxy"
 msgstr "스마트 프록시 "
 
 msgid "Smart proxy IDs"
-msgstr ""
+msgstr "스마트 프록시 ID "
 
 msgid "Smart variables"
 msgstr "스마트 매개 변수 "
 
 msgid "Smart-Proxy Installation"
-msgstr ""
+msgstr "스마트 프록시 설치 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "SmartProxy|Name"
@@ -5941,19 +5949,19 @@ msgid "Source|Value"
 msgstr "값 "
 
 msgid "Space separated options, e.g. miimon=100. Only for bond interfaces."
-msgstr ""
+msgstr "공백으로 구분된 옵션 (예: miimon=100). 본드 인터페이스의 경우에만 사용합니다. "
 
 msgid "Start"
 msgstr "시작 "
 
 msgid "Starting IP Address for IP auto suggestion"
-msgstr ""
+msgstr "IP 자동 제안의 시작 IP 주소 "
 
 msgid "State"
 msgstr "상태 "
 
 msgid "Static"
-msgstr ""
+msgstr "고정 "
 
 msgid "Statistics"
 msgstr "통계"
@@ -5962,10 +5970,10 @@ msgid "Status"
 msgstr "상태 "
 
 msgid "Status chart"
-msgstr ""
+msgstr "상태 차트 "
 
 msgid "Status table"
-msgstr ""
+msgstr "상태 표 "
 
 msgid "Stop updating IP address and MAC values from Puppet facts"
 msgstr "Puppet 정보에서 IP 주소 및 MAC 값 업데이트 중지 "
@@ -5991,23 +5999,23 @@ msgid "Subnet"
 msgstr "서브넷"
 
 msgid "Subnet IDs"
-msgstr ""
+msgstr "서브넷 ID "
 
 msgid "Subnet name"
 msgstr "서브넷 이름 "
 
 msgid "Subnet network"
-msgstr ""
+msgstr "서브넷 네트워크 "
 
 msgid "Subnet numeric identifier"
-msgstr ""
+msgstr "숫자로된 서브넷 식별자 "
 
 msgid "Subnets"
 msgstr "서브넷 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Subnet|Boot mode"
-msgstr ""
+msgstr "부트 모드 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Subnet|Dns primary"
@@ -6027,7 +6035,7 @@ msgstr "게이트웨이 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Subnet|Ipam"
-msgstr ""
+msgstr "Ipam"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Subnet|Mask"
@@ -6054,7 +6062,7 @@ msgid "Subnet|Vlanid"
 msgstr "Vlanid"
 
 msgid "Subscribe"
-msgstr ""
+msgstr "등록 "
 
 msgid "Success"
 msgstr "성공 "
@@ -6075,14 +6083,14 @@ msgid "Successfully executed, check reports and/or log files for more details"
 msgstr "성공적으로 실행했습니다. 보다 자세한 내용은 보고서 또는 로그 파일을 확인하십시오 "
 
 msgid "Successfully overridden all parameters of Puppet class %s"
-msgstr ""
+msgstr "Puppet 클래스 %s의 모든 매개 변수를 성공적으로 덮어쓰기했습니다  "
 
 msgid "Successfully refreshed features from %s."
 msgstr "%s에서 기능을 성공적으로 새로고침했습니다. "
 
 msgid ""
 "Successfully reset all parameters of Puppet class %s to their default values"
-msgstr ""
+msgstr "Puppet 클래스 %s의 모든 매개 변수를 기본값으로 성공적으로 덮어쓰기했습니다 "
 
 msgid "Successfully updated %s."
 msgstr "%s을(를) 성공적으로 업데이트했습니다. "
@@ -6093,7 +6101,7 @@ msgid ""
 msgstr "온디스크 Puppet 설치에서 환경 및 Puppet 클래스를 성공적으로 업데이트했습니다 "
 
 msgid "Suggest new"
-msgstr ""
+msgstr "새 제안 "
 
 msgid ""
 "Summary Puppet report from Foreman - F:%{failed} R:%{restarted} S:%{skipped} "
@@ -6106,10 +6114,10 @@ msgid "Support"
 msgstr "지원"
 
 msgid "Supported Formats"
-msgstr ""
+msgstr "지원되는 형식 "
 
 msgid "Synchronize group from authentication source"
-msgstr ""
+msgstr "인증 소스에서 그룹 동기화 "
 
 #. host's status: first character of "sync" (out of sync)
 msgid "Sync|S"
@@ -6122,10 +6130,10 @@ msgid "System Status"
 msgstr "시스템 상태 "
 
 msgid "TFTP Proxy"
-msgstr ""
+msgstr "TFTP 프록시 "
 
 msgid "TFTP Proxy to use within this subnet"
-msgstr ""
+msgstr "이 서브넷에서 사용할 TFTP 프록시 "
 
 msgid "TFTP Settings for %s"
 msgstr "%s의 TFTP 설정 "
@@ -6162,7 +6170,7 @@ msgid "Template"
 msgstr "템플릿"
 
 msgid "Template %s is empty."
-msgstr ""
+msgstr "템플릿 %s이 비어있습니다. "
 
 msgid "Template / Compute Profile to use"
 msgstr "사용할 컴퓨터 프로파일 "
@@ -6184,10 +6192,10 @@ msgid "Template kind"
 msgstr "템플릿 유형 "
 
 msgid "Template locked"
-msgstr ""
+msgstr "템플릿 잠금 "
 
 msgid "Template unlocked"
-msgstr ""
+msgstr "템플릿 잠금 해제 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "TemplateKind|Name"
@@ -6283,7 +6291,7 @@ msgid ""
 msgstr "다음 항목은 foreman이 적용하려고 한 내용과 충돌하는 것으로 발견되었습니다. "
 
 msgid "The following errors may prevent a successful build:"
-msgstr ""
+msgstr "다음과 같은 오류로 인해 빌드가 정상적으로 진행되지 않을 수 있습니다: "
 
 msgid "The following fields would need reviewing"
 msgstr "다음 필드를 확인해야 합니다 "
@@ -6308,7 +6316,7 @@ msgid "The following subnets have been found"
 msgstr "다음과 같은 서브넷이 검색되었습니다 "
 
 msgid "The full DNS domain name"
-msgstr ""
+msgstr "전체 DNS 도메인 이름 "
 
 msgid ""
 "The host group's classes and the host group's variables are included in the "
@@ -6368,7 +6376,7 @@ msgstr ""
 "<strong>$release</strong>를 사용할 수 있습니다. "
 
 msgid "The realm name, e.g. EXAMPLE.COM"
-msgstr ""
+msgstr "영역 이름 예: EXAMPLE.COM"
 
 msgid ""
 "The remote system presented a public key signed by an unidentified "
@@ -6433,7 +6441,7 @@ msgid "This group has nested groups!"
 msgstr "이 그룹에는 중첩된 그룹이 있습니다! "
 
 msgid "This host's stored facts and reports will be deleted too."
-msgstr ""
+msgstr "호스트의 저장된 팩트 및 보고서도 삭제됩니다. "
 
 msgid ""
 "This information is commonly imported from a pre-existing puppet "
@@ -6474,25 +6482,25 @@ msgid ""
 msgstr "이 설정은 설정 파일 'settings.yaml'에 정의되는 읽기 전용 설정입니다. "
 
 msgid "This template is locked and may not be removed."
-msgstr ""
+msgstr "템플릿이 잠겨 있어 삭제할 수 없습니다. "
 
 msgid "This template is locked for editing."
-msgstr ""
+msgstr "이 템플릿은 편집 용으로 잠금되어 있습니다. "
 
 msgid ""
 "This template is locked. Please clone it to a new template to customize."
-msgstr ""
+msgstr "이 템플릿은 잠겨 있습니다. 사용자 정의하려면 이를 새 템플릿에 복제하십시오. "
 
 msgid "This template is owned by %s and may not be unlocked."
-msgstr ""
+msgstr "이 템플릿은 %s에 의해 소유되고 잠금 해제할 수 없습니다."
 
 msgid ""
 "This will reset parameters of the class %s to their default values. "
 "Continue?"
-msgstr ""
+msgstr "이는 클래스 %s의 매개 변수를 기본값으로 재설정합니다. 계속 진행하시겠습니까? "
 
 msgid "This will set all parameters of the class %s as overridden. Continue?"
-msgstr ""
+msgstr "이는 클래스 %s의 모든 매개 변수를 덮어쓰기된 것으로 설정합니다. 계속 진행하시겠습니까? "
 
 msgid "Time in Seconds"
 msgstr "시간 (초) "
@@ -6517,12 +6525,16 @@ msgid ""
 "To start collecting trend data, set a cron job to execute 'foreman-rake "
 "trends:counter' every Puppet Interval (%s minutes)."
 msgstr ""
+"트렌드 데이터 수집을 시작하려면 Puppet 간격 (%s 분)마다 'foreman-rake trends:counter'를 실행하도록 "
+"cron 작업을 설정합니다. "
 
 msgid ""
 "To start collecting trend data, set a cron job to execute <span class="
 "'black'>foreman-rake trends:counter</span> every Puppet Interval (%s "
 "minutes)"
 msgstr ""
+"트렌드 데이터 수집을 시작하려면 Puppet 간격 (%s 분)마다 <span class='black'>foreman-rake trends:"
+"counter</span>를 실행하도록 cron 작업을 설정합니다 "
 
 msgid ""
 "To update the class signature, go to the Puppet Classes page and select "
@@ -6545,7 +6557,7 @@ msgid "Token|Value"
 msgstr "값 "
 
 msgid "Too many repetitions"
-msgstr ""
+msgstr "반복이 너무 많습니다 "
 
 msgid "Total"
 msgstr "합계 "
@@ -6600,21 +6612,23 @@ msgid ""
 "True/False flag whether a host is managed or unmanaged. Note: this value "
 "also determines whether several parameters are required or not"
 msgstr ""
+"호스트를 관리할 지 또는 관리하지 않을지에 대한 True/False 플래그입니다. 알림: 이 값은 여러 매개 변수가 필요할 지 또는 "
+"필요하지 않을 지에 대한 여부를 결정합니다 "
 
 msgid "Try going to %{href}"
-msgstr ""
+msgstr "%{href}로 전환 시도 "
 
 msgid "Type"
 msgstr "유형"
 
 msgid "Type of realm, e.g. FreeIPA"
-msgstr ""
+msgstr "영역 유형 (예: FreeIPA) "
 
 msgid "URL"
 msgstr "URL"
 
 msgid "URL for Libvirt, Ovirt, and Openstack"
-msgstr ""
+msgstr "Libvirt, Ovirt, Openstack의 URL "
 
 msgid ""
 "URL hosts will retrieve templates from during build (normally http as many "
@@ -6628,7 +6642,7 @@ msgid ""
 msgstr "Foreman 인스턴스가 도달할 수 있는 URL (프로비저닝 > unattended_url 참조)"
 
 msgid "UTC time of report"
-msgstr ""
+msgstr "보고서의 UTC 시간"
 
 msgid "UUID"
 msgstr "UUID"
@@ -6642,7 +6656,7 @@ msgid "Unable to access key"
 msgstr "액세스할 수 없음 "
 
 msgid "Unable to authenticate user %s"
-msgstr ""
+msgstr "사용자 %s을(를) 인증할 수 없습니다 "
 
 msgid ""
 "Unable to change VM display listen address, make sure the display is not "
@@ -6689,6 +6703,8 @@ msgid ""
 "Unable to determine the host's boot server. The DHCP smart proxy failed to "
 "provide this information and this subnet is not provided with TFTP services."
 msgstr ""
+"호스트의 부팅 서버를 지정할 수 없습니다. DHCP 스마트 프록시가 이 정보 제공에 실패했기 때문에 이 서브넷에 TFTP 서비스가 "
+"제공되지 않습니다. "
 
 msgid "Unable to execute Puppet run"
 msgstr "Puppet run을 실행할 수 없습니다 "
@@ -6790,13 +6806,13 @@ msgid "Unknown action name for success message: %s"
 msgstr "성공 메세지의 알 수 없는 동작 이름: %s"
 
 msgid "Unknown device: available devices are %s"
-msgstr ""
+msgstr "알 수 없는 장치: 사용 가능한 장치는 %s입니다 "
 
 msgid "Unknown interface type, must be one of [%s]"
-msgstr ""
+msgstr "알 수 없는 인터페이스 유형. [%s] 중 하나이어야 합니다 "
 
 msgid "Unknown power action: available methods are %s"
-msgstr ""
+msgstr "알 수 없는 전원 동작:  사용 가능한 방법은 %s입니다 "
 
 msgid "Unknown power management support - can't continue"
 msgstr "알 수 없는 전력 관리 지원 - 계속 진행할 수 없음 "
@@ -6809,7 +6825,7 @@ msgid "Unmanage host"
 msgstr "관리되지 않는 호스트 "
 
 msgid "Unsupported password hash function '%s'"
-msgstr ""
+msgstr "지원되지 않는 암호 해시 함수 '%s'"
 
 msgid "Unsupported report status format"
 msgstr "지원되지 않는 보고서 상태 형식 "
@@ -6822,135 +6838,135 @@ msgid "Update"
 msgstr "업데이트 "
 
 msgid "Update :a_resource"
-msgstr ""
+msgstr ":a_resource 업데이트 "
 
 msgid "Update a Puppet class"
-msgstr ""
+msgstr "Puppet 클래스 업데이트 "
 
 msgid "Update a bookmark"
-msgstr ""
+msgstr "북마크 업데이트 "
 
 msgid "Update a compute attributes set"
-msgstr ""
+msgstr "컴퓨팅 속성 세트 업데이트 "
 
 msgid "Update a compute profile"
-msgstr ""
+msgstr "컴퓨터 프로파일 업데이트 "
 
 msgid "Update a compute resource"
-msgstr ""
+msgstr "컴퓨터 리소스 업데이트 "
 
 msgid "Update a config group"
-msgstr ""
+msgstr "설정 그룹 업데이트 "
 
 msgid "Update a default template combination for an operating system"
-msgstr ""
+msgstr "운영 체제의 기본값 템플릿 조합 업데이트 "
 
 msgid "Update a domain"
-msgstr ""
+msgstr "도메인 업데이트 "
 
 # translation auto-copied from project Satellite6 Katello, version 6.1, document katello
 msgid "Update a filter"
 msgstr "필터 업데이트 "
 
 msgid "Update a global parameter"
-msgstr ""
+msgstr "글로벌 매개 변수 업데이트 "
 
 msgid "Update a hardware model"
-msgstr ""
+msgstr "하드웨어 모델 업데이트 "
 
 msgid "Update a host"
-msgstr ""
+msgstr "호스트 업데이트 "
 
 msgid "Update a host group"
-msgstr ""
+msgstr "호스트 그룹 업데이트 "
 
 msgid "Update a host's interface"
-msgstr ""
+msgstr "호스트 인터페이스 업데이트 "
 
 msgid "Update a medium"
-msgstr ""
+msgstr "미디어 업데이트 "
 
 msgid "Update a nested parameter for a domain"
-msgstr ""
+msgstr "도메인의 중첩된 매개 변수 업데이트 "
 
 msgid "Update a nested parameter for a host"
-msgstr ""
+msgstr "호스트의 중첩된 매개 변수 업데이트 "
 
 msgid "Update a nested parameter for a host group"
-msgstr ""
+msgstr "호스트 그룹의 중첩된 매개 변수 업데이트 "
 
 msgid "Update a nested parameter for a location"
-msgstr ""
+msgstr "위치의 중첩된 매개 변수 업데이트 "
 
 msgid "Update a nested parameter for an operating system"
-msgstr ""
+msgstr "운영 체제의 중첩된 매개 변수 업데이트 "
 
 msgid "Update a nested parameter for an organization"
-msgstr ""
+msgstr "조직의 중첩된 매개 변수 업데이트 "
 
 msgid "Update a partition table"
-msgstr ""
+msgstr "파티션 테이블 업데이트 "
 
 msgid "Update a provisioning template"
-msgstr ""
+msgstr "프로비저닝 템플릿 업데이트 "
 
 msgid "Update a realm"
-msgstr ""
+msgstr "영역 업데이트 "
 
 msgid "Update a role"
-msgstr ""
+msgstr "역할 업데이트 "
 
 msgid "Update a setting"
-msgstr ""
+msgstr "설정 업데이트 "
 
 msgid "Update a smart class parameter"
-msgstr ""
+msgstr "스마트 클래스 매개 변수 업데이트 "
 
 msgid "Update a smart proxy"
-msgstr ""
+msgstr "스마트 프록시 업데이트 "
 
 msgid "Update a smart variable"
-msgstr ""
+msgstr "스마트 변수 업데이트 "
 
 msgid "Update a subnet"
-msgstr ""
+msgstr "서브넷 업데이트 "
 
 msgid "Update a user"
-msgstr ""
+msgstr "사용자 업데이트"
 
 msgid "Update a user group"
-msgstr ""
+msgstr "사용자 그룹 업데이트 "
 
 msgid "Update an LDAP authentication source"
-msgstr ""
+msgstr "LDAP 인증 소스 업데이트 "
 
 msgid "Update an architecture"
-msgstr ""
+msgstr "아키텍처 업데이트 "
 
 # translation auto-copied from project Satellite6 Katello, version 6.1, document katello
 msgid "Update an environment"
 msgstr "환경 업데이트 "
 
 msgid "Update an image"
-msgstr ""
+msgstr "이미지 업데이트 "
 
 msgid "Update an operating system"
-msgstr ""
+msgstr "운영 체제 업데이트 "
 
 msgid "Update an override value for a specific smart class parameter"
-msgstr ""
+msgstr "특정 스마트 클래스 매개 변수의 덮어쓰기 값 업데이트  "
 
 msgid "Update an override value for a specific smart variable"
-msgstr ""
+msgstr "특정 스마트 매개 변수의 덮어쓰기 값 업데이트 "
 
 msgid "Update external user group"
-msgstr ""
+msgstr "외부 사용자 그룹 업데이트 "
 
 msgid "Update realm entry for %s"
 msgstr "%s의 영역 항목 업데이트 "
 
 msgid "Update the default PXE menu on all configured TFTP servers"
-msgstr ""
+msgstr "설정된 모든 TFTP 서버에 있는 기본 PXE 메뉴 업데이트 "
 
 msgid "Update:"
 msgstr "업데이트: "
@@ -6975,10 +6991,10 @@ msgid "Upload facts for a host, creating the host if required"
 msgstr "호스트의 팩트를 업로드하고 필요한 경우 호스트를 생성합니다 "
 
 msgid "Use Puppet default"
-msgstr ""
+msgstr "Puppet 기본값 사용 "
 
 msgid "Use different character classes"
-msgstr ""
+msgstr "다른 문자 클래스 사용 "
 
 msgid "Use this account to authenticate, <i>optional</i>"
 msgstr "인증을 위해 이 계정을 사용합니다. <i>옵션</i>"
@@ -7004,17 +7020,17 @@ msgid "User Groups"
 msgstr "사용자 그룹"
 
 msgid "User IDs"
-msgstr ""
+msgstr "사용자 ID"
 
 msgid "User group"
-msgstr ""
+msgstr "사용자 그룹 "
 
 msgid "User groups"
 msgstr "사용자 그룹 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "User mail notification"
-msgstr ""
+msgstr "사용자 메일 알림 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "User role"
@@ -7022,11 +7038,11 @@ msgstr "사용자 역할 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "UserMailNotification|Interval"
-msgstr ""
+msgstr "간격 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "UserMailNotification|Last sent"
-msgstr ""
+msgstr "최종 전송 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "UserRole|Owner type"
@@ -7059,7 +7075,7 @@ msgid "Username"
 msgstr "사용자 이름 "
 
 msgid "Username for Ovirt, EC2, Vmware, Openstack. Access Key for EC2."
-msgstr ""
+msgstr "Ovirt, EC2, Vmware, Openstack의 사용자 이름입니다. EC2의 액세스 키."
 
 msgid "Users"
 msgstr "사용자 "
@@ -7094,7 +7110,7 @@ msgstr "로그인 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "User|Lower login"
-msgstr ""
+msgstr "Lower 로그인 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "User|Mail"
@@ -7102,7 +7118,7 @@ msgstr "메일 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "User|Mail enabled"
-msgstr ""
+msgstr "메일 활성화 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "User|Password hash"
@@ -7113,7 +7129,7 @@ msgid "User|Password salt"
 msgstr "암호 salt"
 
 msgid "Uses thin provisioning if unchecked"
-msgstr ""
+msgstr "선택 해제되어 있을 경우 씬 프로비저닝을 사용합니다 "
 
 msgid ""
 "Using the organization system provides a way to group resources together for "
@@ -7127,12 +7143,12 @@ msgid "VCenter/Server"
 msgstr "VCenter/서버"
 
 msgid "VLAN ID for this subnet"
-msgstr ""
+msgstr "서브넷의 VLAN ID"
 
 msgid ""
 "VLAN tag, this attribute has precedence over the subnet VLAN ID. Only for "
 "virtual interfaces."
-msgstr ""
+msgstr "VLAN 태그입니다. 이 속성은 서브넷 VLAN ID 보다 우선합니다. 가상 인터페이스의 경우에만 사용됩니다. "
 
 msgid "VM"
 msgstr "VM"
@@ -7165,7 +7181,7 @@ msgid "Validation types"
 msgstr "검증 유형 "
 
 msgid "Validator type"
-msgstr ""
+msgstr "유효성 검사기 유형 "
 
 msgid "Value"
 msgstr "값"
@@ -7192,10 +7208,10 @@ msgid "Version %{version}"
 msgstr "버전 %{version}"
 
 msgid "Version %{version}  © 2009-%{year} Paul Kelly and %{author}"
-msgstr ""
+msgstr "버전 %{version}  © 2009-%{year} Paul Kelly 및 %{author}"
 
 msgid "Very Strong"
-msgstr ""
+msgstr "아주 강함 "
 
 msgid "View Diff"
 msgstr "차이점 표시 "
@@ -7207,7 +7223,7 @@ msgid "Virtual (NAT)"
 msgstr "가상 (NAT)"
 
 msgid "Virtual H/W version"
-msgstr ""
+msgstr "가상 H/W 버전 "
 
 msgid "Virtual Machine"
 msgstr "가상머신"
@@ -7219,7 +7235,7 @@ msgid "Virtual Machines on %s"
 msgstr "%s 상의 가상 머신 "
 
 msgid "Virtual NIC"
-msgstr ""
+msgstr "가상 NIC"
 
 msgid "Volumes"
 msgstr "볼륨"
@@ -7231,21 +7247,21 @@ msgid "Warning"
 msgstr "경고 "
 
 msgid "Warning!"
-msgstr ""
+msgstr "경고!"
 
 msgid ""
 "Warning: This template is locked. You may only change the associations. "
 "Please %s it to customize."
-msgstr ""
+msgstr "경고: 이 템플릿은 잠겨 있습니다. 연결 사항만 변경할 수 있습니다. 사용자 정의하려면 %s을(를) 실행하십시오. "
 
 msgid "Warning: This will delete this host and all of its data!"
-msgstr ""
+msgstr "경고: 이 호스트와 호스트의 데이터가 모두 삭제됩니다!"
 
 msgid "Warnings and errors"
 msgstr "경고 및 오류 "
 
 msgid "We have not found any documentation for your API."
-msgstr ""
+msgstr "귀하의 API에 대한 문서를 찾을 수 없습니다. "
 
 msgid ""
 "We use Redmine to report and track bugs and feature requests, which can be "
@@ -7303,10 +7319,10 @@ msgstr ""
 "Solaris 운영 체제 (및 복제)의 호스트 설치를 자동화할 수 있습니다. 다음을 참조하십시오 "
 
 msgid "Whether or not the template is locked for editing"
-msgstr ""
+msgstr "편집을 위한 템플릿의 잠금 여부 "
 
 msgid "Whether the smart variable value is managed by Foreman"
-msgstr ""
+msgstr "Foreman이 스마트 변수 값을 관리하는 지에 대한 여부 "
 
 msgid "Which is an offset of <b>%s</b>"
 msgstr "<b>%s</b>의 오프셋 "
@@ -7315,7 +7331,7 @@ msgid "Wiki"
 msgstr "Wiki"
 
 msgid "X509 Certification Authorities"
-msgstr ""
+msgstr "X509 인증 기관 "
 
 msgid "YAML"
 msgstr "YAML"
@@ -7336,13 +7352,13 @@ msgstr "편집기의 컨텐츠를 덮어쓰기하려고 합니다. 정말로 실
 msgid ""
 "You are about to unlock a locked template -- this is for every organization "
 "and location that uses it. Continue?"
-msgstr ""
+msgstr "잠긴 템플릿을 잠금 해제하려 합니다 -- 이는 이를 사용하는 모든 조직 및 위치에 해당합니다. 계속 진행하시겠습니까? "
 
 msgid "You are not authorized to perform this action"
 msgstr "이 작업을 수행할 권한이 없습니다 "
 
 msgid "You are trying to delete your own account"
-msgstr ""
+msgstr "자신의 계정을 삭제하려 하고 있습니다 "
 
 msgid "You are using an unsupported browser."
 msgstr "지원되지 않는 브라우저를 사용하고 있습니다."
@@ -7356,13 +7372,13 @@ msgstr ""
 "#theforeman으로 개발에 관련된 대화를 하고자 할 경우 #theforeman-dev로 가십시오. "
 
 msgid "You can find details of how to set up the proxy at"
-msgstr ""
+msgstr "프록시 설정 방법에 대한 상세 정보를 확인할 수 있습니다 "
 
 msgid "You can't assign locations to this resource"
-msgstr ""
+msgstr "이 리소스에 위치를 할당할 수 없습니다 "
 
 msgid "You can't assign organizations to this resource"
-msgstr ""
+msgstr "이 리소스에 조직을 할당할 수 없습니다 "
 
 msgid "You cannot delete this user while logged in as this user."
 msgstr "이 사용자로 로그인하는 동안 사용자를 삭제할 수 없습니다."
@@ -7454,16 +7470,16 @@ msgid "You would probably need to attach the"
 msgstr "다음을 첨부해야 합니다 "
 
 msgid "Your Foreman user account has been created:"
-msgstr ""
+msgstr "Foreman 사용자 계정이 생성되었습니다: "
 
 msgid "Your password cannot contain your username"
-msgstr ""
+msgstr "암호에 사용자 이름을 포함시킬 수 없습니다 "
 
 msgid "Your password contains sequences"
-msgstr ""
+msgstr "암호에 시퀀스가 포함되어 있습니다 "
 
 msgid "Your password is too short"
-msgstr ""
+msgstr "암호가 너무 짧습니다"
 
 msgid "Your session has expired, please login again"
 msgstr "세션이 만료되었습니다. 다시 로그인하십시오 "
@@ -7472,7 +7488,7 @@ msgid "Zone"
 msgstr "영역 "
 
 msgid "a location"
-msgstr ""
+msgstr "위치 "
 
 msgid "a script as well"
 msgstr "스크립트 "
@@ -7496,7 +7512,7 @@ msgid "already in use"
 msgstr "이미 사용되고 있습니다 "
 
 msgid "an organization"
-msgstr ""
+msgstr "조직 "
 
 msgid "and"
 msgstr "및 "
@@ -7505,31 +7521,31 @@ msgid "and relevant log entries."
 msgstr "관련 로그 항목입니다. "
 
 msgid "array"
-msgstr ""
+msgstr "어레이 "
 
 msgid "belongs to config group"
 msgstr "설정 그룹에 속합니다 "
 
 msgid "boolean"
-msgstr ""
+msgstr "부울 "
 
 msgid "boot device, valid devices are disk, cdrom, pxe, bios"
-msgstr ""
+msgstr "부팅 장치, 유효한 장치는 디스크, CDROM, PXE, BIOS입니다"
 
 msgid "can only be set for array or hash"
-msgstr ""
+msgstr "배열 또는 해시에만 설정할 수 있습니다 "
 
 msgid "can only be set for arrays that have merge_overrides set to true"
-msgstr ""
+msgstr "merge_overrides가  True로 설정된 배열에만 설정할 수 있습니다 "
 
 msgid "can't be bigger than to range"
 msgstr "범위보다 클 수 없습니다 "
 
 msgid "can't be updated after host is provisioned"
-msgstr ""
+msgstr "호스트를 프로비저닝한 후 업데이트할 수 없습니다 "
 
 msgid "can't contain trailing white spaces."
-msgstr ""
+msgstr "뒤에 붙은 공백을 포함할 수 없습니다 "
 
 msgid "can't contain white spaces"
 msgstr "공백을 포함할 수 없습니다 "
@@ -7539,10 +7555,10 @@ msgid "can't contain white spaces."
 msgstr "공백을 포함할 수 없습니다. "
 
 msgid "can't use the same value as the primary interface"
-msgstr ""
+msgstr "주요 인터페이스와 같은 값을 사용할 수 없습니다 "
 
 msgid "cannot be changed"
-msgstr ""
+msgstr "변경할 수 없습니다 "
 
 msgid "cannot be changed on an internal protected account"
 msgstr "내부적으로 보안된 계정을 변경할 수 없습니다 "
@@ -7557,13 +7573,13 @@ msgid "cant be blank unless a custom partition has been defined"
 msgstr "사용자 정의 파티션을 정의하지 않으면 비워둘 수 없습니다 "
 
 msgid "clone"
-msgstr ""
+msgstr "복제 "
 
 msgid "comma separated interface identifiers"
-msgstr ""
+msgstr "콤마로 구분된 인터페이스 ID "
 
 msgid "comments powered by %{disqus}"
-msgstr ""
+msgstr "%{disqus}에서 제공하는 코멘트 "
 
 msgid "common"
 msgstr "일반 "
@@ -7572,13 +7588,13 @@ msgid "cycle"
 msgstr "사이클 "
 
 msgid "default locations need to be user locations first"
-msgstr ""
+msgstr "기본값 위치는 먼저 사용자 위치가 되어야 합니다 "
 
 msgid "default organizations need to be user organizations first"
-msgstr ""
+msgstr "기본값 조직은 먼저 사용자 조직이 되어야 합니다  "
 
 msgid "defaults to 389"
-msgstr ""
+msgstr "389로 기본 설정 "
 
 msgid "does not appear to be a valid nfs mount path"
 msgstr "유효한 NFS 마운트 경로가 표시되지 않습니다 "
@@ -7587,7 +7603,7 @@ msgid "does not belong to subnet"
 msgstr "서브넷에 속해 있지 않습니다 "
 
 msgid "does not match selected subnet"
-msgstr ""
+msgstr "선택한 서브넷과 일치하지 않습니다 "
 
 msgid "domain"
 msgstr "도메인 "
@@ -7658,19 +7674,19 @@ msgid "filter results"
 msgstr "필터 결과 "
 
 msgid "for EC2 only"
-msgstr ""
+msgstr "EC2의 경우에만"
 
 msgid "for Libvirt and Vmware only"
-msgstr ""
+msgstr "Libvirt 및 Vmware의 경우에만 "
 
 msgid "for Openstack only"
-msgstr ""
+msgstr "Openstack의 경우에만 "
 
 msgid "for Ovirt, Vmware Datacenter"
-msgstr ""
+msgstr "Ovirt, Vmware Datacenter의 경우 "
 
 msgid "for Vmware"
-msgstr ""
+msgstr "Vmware의 경우 "
 
 msgid "for more details."
 msgstr "상세 정보 "
@@ -7685,7 +7701,7 @@ msgid "free swap"
 msgstr "여유 swap "
 
 msgid "further instructions"
-msgstr ""
+msgstr "추가 지침 "
 
 # translation auto-copied from project Satellite6 Katello, version 6.1, document katello
 msgid "has already been taken"
@@ -7695,25 +7711,25 @@ msgid "has this role already"
 msgstr "이미 이 역할이 있습니다 "
 
 msgid "hash"
-msgstr ""
+msgstr "해시"
 
 msgid "hash containing the facts for the host"
-msgstr ""
+msgstr "호스트의 팩트가 포함된 해시 "
 
 msgid "here"
 msgstr "여기 "
 
 msgid "hide"
-msgstr ""
+msgstr "숨기기"
 
 msgid "host group id"
-msgstr ""
+msgstr "호스트 그룹 ID "
 
 msgid "hostgroup"
 msgstr "호스트그룹 "
 
 msgid "hostname of the host"
-msgstr ""
+msgstr "호스트의 호스트 이름 "
 
 msgid "in %s"
 msgstr "%s"
@@ -7729,7 +7745,7 @@ msgid "integer"
 msgstr "정수  "
 
 msgid "interface information"
-msgstr ""
+msgstr "인터페이스 정보 "
 
 msgid "invalid"
 msgstr "유효하지 않음 "
@@ -7756,7 +7772,7 @@ msgid "invalid path"
 msgstr "잘못된 경로 "
 
 msgid "invalid search query: %s"
-msgstr ""
+msgstr "잘못된 검색 쿼리: %s"
 
 msgid "invalid time range"
 msgstr "잘못된 시간 범위 "
@@ -7774,7 +7790,7 @@ msgid "is already used by a user account"
 msgstr "사용자 계정에 의해 이미 사용되고 있습니다 "
 
 msgid "is an admin account"
-msgstr ""
+msgstr "관리자 계정입니다 "
 
 msgid "is an unsupported provisioning method"
 msgstr "지원되지 않는 프로비저닝 방식입니다 "
@@ -7799,17 +7815,17 @@ msgid "is not allowed to change"
 msgstr "변경할 수 없음 "
 
 msgid "is not found in the authentication source"
-msgstr ""
+msgstr "인증 소스에서 찾을 수 없습니다 "
 
 msgid "is not permitted"
 msgstr "권한 없음 "
 
 msgid "is too long (maximum is 1 character)"
 msgid_plural "is too long (maximum is %s characters)"
-msgstr[0] ""
+msgstr[0] "너무 깁니다 (최대 %s 자) "
 
 msgid "is too long (maximum is 15 characters)"
-msgstr ""
+msgstr "너무 깁니다 (최대 15자) "
 
 msgid "is unknown"
 msgstr "알 수 없음 "
@@ -7821,7 +7837,7 @@ msgid "items selected. Uncheck to Clear"
 msgstr "항목이 선택되어 있습니다. 삭제하려면 선택 해제합니다 "
 
 msgid "json"
-msgstr ""
+msgstr "json"
 
 msgid "last %s day"
 msgid_plural "last %s days"
@@ -7881,10 +7897,10 @@ msgid "new"
 msgstr "새 "
 
 msgid "nil allowed"
-msgstr ""
+msgstr "nil이 허용됩니다 "
 
 msgid "nil means host is bare metal"
-msgstr ""
+msgstr "nil은 호스트가 베어 메탈임을 의미합니다 "
 
 msgid "no puppet proxy defined - cant continue"
 msgstr "puppet 프록시가 정의되어 있지 않습니다 - 계속 진행할 수 없습니다 "
@@ -7896,7 +7912,7 @@ msgid "none"
 msgstr "없음 "
 
 msgid "not relevant for snippet"
-msgstr ""
+msgstr "조각 모음과 관련이 없습니다 "
 
 # translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery, author eukim
 msgid "not required if using a subnet with DHCP proxy"
@@ -7958,6 +7974,8 @@ msgid ""
 "power action, valid actions are (on/start), (off/stop), (soft/reboot), "
 "(cycle/reset), (state/status)"
 msgstr ""
+"전원 동작, 유효한 동작은 (on/start), (off/stop), (soft/reboot), (cycle/reset), (state/"
+"status)입니다."
 
 msgid "poweroff"
 msgstr "전원 끄기 "
@@ -7969,13 +7987,13 @@ msgid "ready?"
 msgstr "준비되셨습니까? "
 
 msgid "real"
-msgstr ""
+msgstr "실제 "
 
 msgid "reboot"
 msgstr "재부팅 "
 
 msgid "regexp"
-msgstr ""
+msgstr "정규식 "
 
 # translation auto-copied from project pulseaudio, version 3.0, document pulseaudio, author eukim
 msgid "remove"
@@ -7991,34 +8009,34 @@ msgid "remove volume"
 msgstr "볼륨 삭제 "
 
 msgid "required"
-msgstr ""
+msgstr "필수 "
 
 msgid ""
 "required for managed host that is bare metal, not required if it's a virtual "
 "machine"
-msgstr ""
+msgstr "관리 호스트가 베어 메탈일 경우 필요하지만 가상 머신일 경우 필요하지 않습니다 "
 
 msgid "required if host is managed and custom partition has not been defined"
-msgstr ""
+msgstr "호스트가 관리되고 있으며 사용자 정의 파티션이 정의되고 있지 않은 경우에 필요합니다 "
 
 msgid "required if host is managed and value is not inherited from host group"
-msgstr ""
+msgstr "호스트가 관리되고 있으며 값이 호스트 그룹에서 상속되지 않은 경우에 필요합니다 "
 
 msgid ""
 "required if host is managed and value is not inherited from host group or "
 "default password in settings"
-msgstr ""
+msgstr "호스트가 관리되고 있으며 값이 호스트 그룹이나 설정의 기본값 암호에서 상속되지 않은 경우에 필요합니다 "
 
 msgid "required if locations are enabled"
-msgstr ""
+msgstr "위치가 활성화되어 있을 경우 필요합니다  "
 
 msgid ""
 "required if not imaged based provisioning and host is managed and value is "
 "not inherited from host group"
-msgstr ""
+msgstr "이미지 기반의 프로비저닝이 아니고 호스트가 관리되어 값이 호스트 그룹에서 상속되지 않은 경우에 필요합니다 "
 
 msgid "required if onthefly_register is true"
-msgstr ""
+msgstr "onthefly_register가 Ture인 경우 필요합니다 "
 
 msgid "required if organizations are enabled"
 msgstr "조직이 활성화되어 있을 경우 필요함 "
@@ -8058,7 +8076,7 @@ msgid "sort results"
 msgstr "결과 정렬 "
 
 msgid "space separated options, e.g. miimon=100"
-msgstr ""
+msgstr "공백으로 구분된 옵션 (예: miimon=100)"
 
 msgid "start"
 msgstr "시작 "
@@ -8132,13 +8150,13 @@ msgid "yaml"
 msgstr "yaml"
 
 msgid "you can't assign some of roles you selected"
-msgstr ""
+msgstr "선택한 역할의 일부를 할당할 수 없습니다 "
 
 msgid "you can't change administrator flag"
-msgstr ""
+msgstr "관리자 플래그를 변경할 수 없습니다 "
 
 msgid "you cannot remove %s that are used by hosts or inherited."
-msgstr ""
+msgstr "호스트가 사용하거나 상속된 %s을(를) 삭제할 수 없습니다. "
 
 msgid "you may use %s"
 msgstr "%s을(를) 사용할 수 있습니다 "

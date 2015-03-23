@@ -3,7 +3,6 @@ require_dependency File.join(Rails.root, "app/models/nic/base")
 module Api
   module V2
     class InterfacesController < V2::BaseController
-
       include Api::Version2
       include Api::TaxonomyScope
 
@@ -41,8 +40,8 @@ module Api
           param :ip, String, :required => true, :desc => N_("IP address of interface")
           param :type, InterfacesController::ALLOWED_TYPE_NAMES, :required => true, :desc => N_("Interface type, e.g: bmc")
           param :name, String, :required => true, :desc => N_("Interface name")
-          param :subnet_id, Fixnum, :desc => N_("Foreman subnet ID of interface")
-          param :domain_id, Fixnum, :desc => N_("Foreman domain ID of interface")
+          param :subnet_id, Fixnum, :desc => N_("Satellite subnet ID of interface")
+          param :domain_id, Fixnum, :desc => N_("Satellite domain ID of interface")
           param :identifier, String, :desc => N_("Device identifier, e.g. eth0 or eth1.1")
           param :managed, :bool, :desc => N_("Should this interface be managed via DHCP and DNS smart proxy and should it be configured during provisioning?")
           #bmc specific parameters
@@ -111,7 +110,6 @@ module Api
             }
         end
       end
-
     end
   end
 end

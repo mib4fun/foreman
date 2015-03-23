@@ -21,13 +21,13 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2015-03-15 11:18+0000\n"
+"PO-Revision-Date: 2015-03-16 11:49+0000\n"
 "Last-Translator: fvalen <fvalen@redhat.com>\n"
 "Language-Team: Italian (http://www.transifex.com/projects/p/foreman/language/"
 "it/)\n"
 "Language: it\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Zanata 3.5.1\n"
+"X-Generator: Zanata 3.6.0\n"
 
 msgid " Remove"
 msgstr " Rimuovi"
@@ -7702,9 +7702,8 @@ msgid "User|Login"
 msgstr "User|Accedi"
 
 #. "Table name" or "Table name|Column name" for error messages
-#, fuzzy
 msgid "User|Lower login"
-msgstr "User|Lower login"
+msgstr "User|Nome utente in minuscolo"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "User|Mail"

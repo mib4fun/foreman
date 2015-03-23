@@ -34,13 +34,13 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2015-03-16 06:30+0000\n"
+"PO-Revision-Date: 2015-03-18 05:09+0000\n"
 "Last-Translator: hpeters <hpeters@redhat.com>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/foreman/language/"
 "de/)\n"
 "Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Zanata 3.5.1\n"
+"X-Generator: Zanata 3.6.0\n"
 
 msgid " Remove"
 msgstr "Entfernen"
@@ -4663,13 +4663,11 @@ msgstr "Kein Trendzähler definiert."
 msgid "No trend counter found."
 msgstr "Kein Trendzähler gefunden."
 
-#, fuzzy
 msgid "No value error"
-msgstr "Kein-Wert-Fehler"
+msgstr "Fehler durch fehlenden Wert"
 
-#, fuzzy
 msgid "No value warning"
-msgstr "Kein-Wert-Warnung"
+msgstr "Warnung durch fehlenden Wert"
 
 msgid "None"
 msgstr "Keine"
@@ -4916,14 +4914,13 @@ msgstr "Operatoren"
 msgid "Optional array of log hashes"
 msgstr "Optionales Array mit Protokoll-Hashes"
 
-#, fuzzy
 msgid ""
 "Optional comma-delimited string containing either 'new', 'updated', or "
 "'obsolete' that is used to limit the imported Puppet classes"
 msgstr ""
-"Optionale, kommagetrennte Zeichenkette mit entweder \"new\", \"updated\" "
-"oder \"obsolete\", anhand derer die importierten Puppet-Klassen "
-"eingeschränkt werden"
+"Optionale, kommagetrennte Zeichenkette mit entweder \"neu\", "
+"\"aktualisiert\" oder \"veraltet\", anhand derer die importierten Puppet-"
+"Klassen eingeschränkt werden"
 
 msgid "Optional input validator"
 msgstr "Optionale Eingabeprüfung"
@@ -5951,15 +5948,14 @@ msgstr ""
 msgid "Should the matched result avoid duplicate values (only array type)."
 msgstr "Ob das Ergebnis doppelte Werte vermeiden soll (nur Array-Typ)."
 
-#, fuzzy
 msgid ""
 "Should the matchers continue to look for matches after first find (only "
 "array/hash type). Note: merging overrides ignores all matchers that use "
 "Puppet default"
 msgstr ""
 "Ob die Prüfwerte nach dem ersten Treffer nach weiteren Treffern suchen "
-"sollen (nur Array-/Hash-Typ). Hinweis: merging overrides ignores all "
-"matchers that use Puppet default"
+"sollen (nur Array-/Hash-Typ). Hinweis: Das Zusammenlegen von "
+"Überschreibungen ignoriert alle Prüfwerte, die den Puppet-Standard verwenden"
 
 msgid ""
 "Should this interface be managed via DHCP and DNS smart proxy and should it "
@@ -6592,7 +6588,7 @@ msgid ""
 "family of operating systems, all others must provide an explicit list of "
 "partitions and sizes."
 msgstr ""
-"Die dynamische Partitionierung ist derzeit nur für Red Hat-Betriebssysteme "
+"Die dynamische Partitionierung ist derzeit nur für Red Hat Betriebssysteme "
 "verfügbar, alle anderen Betriebssysteme müssen eine Liste der Partitionen "
 "und Größen angeben."
 
@@ -7496,7 +7492,7 @@ msgstr "Benutzername"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "User|Lower login"
-msgstr ""
+msgstr "Lower login"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "User|Mail"

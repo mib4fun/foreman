@@ -15,7 +15,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2015-03-18 02:16+0000\n"
+"PO-Revision-Date: 2015-03-23 03:33+0000\n"
 "Last-Translator: eukim <eukim@redhat.com>\n"
 "Language-Team: Korean (http://www.transifex.com/projects/p/foreman/language/"
 "ko/)\n"
@@ -1702,10 +1702,10 @@ msgstr "유형 표시 "
 
 msgid "Displaying <b>%{count}</b> entry"
 msgid_plural "Displaying <b>all %{count}</b> entries"
-msgstr[0] "<b>%{count}</b> 항목 표시 중 "
+msgstr[0] "<b>%{count}</b> 항목 표시 "
 
 msgid "Displaying entries <b>%{from} - %{to}</b> of <b>%{count}</b> in total"
-msgstr "총 <b>%{count}</b> 중 <b>%{from} - %{to}</b> 항목 표시 중 "
+msgstr "총 <b>%{count}</b> 중 <b>%{from} - %{to}</b> 항목 표시"
 
 msgid "Distribution chart"
 msgstr "배포 차트 "
@@ -2513,7 +2513,7 @@ msgid "Full trace"
 msgstr "전체 추적 "
 
 msgid "Gateway"
-msgstr "케이트웨이"
+msgstr "게이트웨이"
 
 # translation auto-copied from project nm-applet, version 0.8.1, document nm-applet, author eukim
 msgid "General"
@@ -2555,7 +2555,7 @@ msgid "Global variable or class Parameter, not both"
 msgstr "글로벌 변수 또는 클래스 매개 변수 (둘 중 하나)"
 
 msgid "Good host reports in the last %s"
-msgstr "지난 %s의 호스트 보고서 "
+msgstr "지난 %s 동안 양호한 상태에 있는 호스트 보고서 "
 
 msgid "Google Project ID"
 msgstr "글로벌 프로젝트 ID"
@@ -5328,7 +5328,7 @@ msgid "Reports"
 msgstr "보고서 "
 
 msgid "Reports from the last %{days} days - %{count} reports found"
-msgstr "지난 %{days} 일의  보고서 - %{count} 개의 보고서 검색 "
+msgstr "지난 %{days} 일 동안의  보고서 - %{count} 개의 보고서 검색 "
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Report|Metrics"
@@ -5438,7 +5438,7 @@ msgstr "호스트에서 전원 작업을 실행합니다 "
 
 msgid "Run distribution in the last %s minute"
 msgid_plural "Run distribution in the last %s minutes"
-msgstr[0] "마지막 %s 분에 배표판을 실행합니다 "
+msgstr[0] "마지막 %s 분에 배포판을 실행합니다 "
 
 msgid "Run puppet"
 msgstr "Puppet 실행 "
@@ -7217,7 +7217,7 @@ msgid "View Diff"
 msgstr "차이점 표시 "
 
 msgid "View last report details"
-msgstr "최종 보고소 상세 정보 표시 "
+msgstr "최종 보고서 상세 정보 표시 "
 
 msgid "Virtual (NAT)"
 msgstr "가상 (NAT)"
@@ -8039,7 +8039,7 @@ msgid "required if onthefly_register is true"
 msgstr "onthefly_register가 Ture인 경우 필요합니다 "
 
 msgid "required if organizations are enabled"
-msgstr "조직이 활성화되어 있을 경우 필요함 "
+msgstr "조직이 활성화되어 있을 경우 필요합니다 "
 
 msgid "reset"
 msgstr "재설정 "

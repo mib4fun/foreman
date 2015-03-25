@@ -11,6 +11,7 @@
 # Tomoyuki KATO <tomo@dream.daynight.jp>, 2014
 # Ykatabam <ykatabam@redhat.com>, 2015. #zanata
 # asasaki <asasaki@redhat.com>, 2015. #zanata
+# bkearney <bkearney@redhat.com>, 2015. #zanata
 # myamamot <myamamot@redhat.com>, 2015. #zanata
 msgid ""
 msgstr ""
@@ -20,8 +21,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2015-03-18 04:09+0000\n"
-"Last-Translator: asasaki <asasaki@redhat.com>\n"
+"PO-Revision-Date: 2015-03-25 03:25+0000\n"
+"Last-Translator: bkearney <bkearney@redhat.com>\n"
 "Language-Team: Japanese (http://www.transifex.com/projects/p/foreman/"
 "language/ja/)\n"
 "Language: ja\n"
@@ -38,7 +39,7 @@ msgid "%s - The following hosts are about to be changed"
 msgstr "%s - 以下のホストはすぐに変更されます"
 
 msgid "%s Distribution"
-msgstr "%s 分布"
+msgstr "%s のディストリビューション"
 
 msgid "%s Parameters updated, see below for more information"
 msgstr "%s パラメーターが更新されました。詳細は以下を参照してください"
@@ -502,7 +503,7 @@ msgid "Architecture"
 msgstr "アーキテクチャー"
 
 msgid "Architecture Distribution"
-msgstr "アーキテクチャー分布"
+msgstr "アーキテクチャーのディストリビューション"
 
 msgid "Architecture configuration"
 msgstr "アーキテクチャー設定"
@@ -523,13 +524,13 @@ msgid "Architecture|Name"
 msgstr "名前"
 
 msgid "Are you sure you want to %{act} %{vm}?"
-msgstr "本当に %{vm} の %{act} を実行してもよいですか?"
+msgstr "%{vm} の %{act} を実行してもよいですか?"
 
 msgid "Are you sure you want to power %{act} %{vm}?"
-msgstr "本当に %{vm} の %{act} を実行してもよいですか?"
+msgstr "%{vm} の %{act} を実行してもよいですか?"
 
 msgid "Are you sure?"
-msgstr "本当によいですか?"
+msgstr "実行してもよろしいですか?"
 
 msgid "Array of operating system IDs to associate with the template"
 msgstr "テンプレートに関連付けるオペレーティングシステム ID の配列"
@@ -668,12 +669,14 @@ msgid "AuthSource|Account password"
 msgstr "アカウントパスワード"
 
 #. "Table name" or "Table name|Column name" for error messages
+#, fuzzy
 msgid "AuthSource|Attr firstname"
-msgstr "ファーストネーム属性"
+msgstr "名"
 
 #. "Table name" or "Table name|Column name" for error messages
+#, fuzzy
 msgid "AuthSource|Attr lastname"
-msgstr "ラストネーム属性"
+msgstr "姓"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "AuthSource|Attr login"
@@ -741,7 +744,7 @@ msgid ""
 msgstr "API 呼び出しの REMOTE_USER 環境変数によるログイン委任の承認"
 
 msgid "Authorized by"
-msgstr "認証元"
+msgstr "認証先"
 
 msgid "Autosign"
 msgstr "自動署名"
@@ -841,7 +844,7 @@ msgstr "所有者タイプ"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Bookmark|Public"
-msgstr "パブリック"
+msgstr "公開"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Bookmark|Query"
@@ -999,7 +1002,7 @@ msgid "Choose a server type"
 msgstr "サーバータイプの選択"
 
 msgid "Class Distribution"
-msgstr "クラス分布"
+msgstr "クラスのディストリビューション"
 
 msgid "Classes"
 msgstr "クラス"
@@ -1883,7 +1886,7 @@ msgid "Edit Template"
 msgstr "テンプレートの編集"
 
 msgid "Edit Trend %s"
-msgstr "トレンド %s の編集"
+msgstr "%sトレンド  の編集"
 
 msgid "Edit User"
 msgstr "ユーザーの編集"
@@ -1974,7 +1977,7 @@ msgid "Environments"
 msgstr "環境"
 
 msgid "Environments Distribution"
-msgstr "環境分布"
+msgstr "環境のディストリビューション"
 
 msgid "Environments and documentation"
 msgstr "環境およびドキュメント"
@@ -2425,8 +2428,9 @@ msgstr ""
 "Foreman は、新規ホストのレルムエントリーの自動作成に対応します。レルムがホスト用に選択されると、Foreman "
 "は関連するレルムのスマートプロキシーに接続してホストのエントリーを作成し、そのワンタイム登録パスワードを取得します。"
 
+#, fuzzy
 msgid "Foreman ticketing system"
-msgstr "Foreman チケット作成システム"
+msgstr "Foreman チケットシステム"
 
 msgid ""
 "Foreman v2 is stable and recommended for use. You may use v2 by either "
@@ -2637,7 +2641,7 @@ msgid "Host Parameters"
 msgstr "ホストパラメーター"
 
 msgid "Host audit entries"
-msgstr "ホスト監査項目"
+msgstr "ホスト監査エントリー"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Host config group"
@@ -3042,7 +3046,7 @@ msgstr "LDAP 認証を使用することを選択した場合、%s ページに�
 msgid ""
 "If you feel this is an error with Foreman itself, please open a new issue "
 "with"
-msgstr "これが Foreman 自体のエラーであると思われる場合は、新規の問題として提出してください"
+msgstr "これが Foreman 自体のエラーであると思われる場合は、新規の問題として提出してください。"
 
 msgid ""
 "If you wish to track the actions of a particular user then it is possible to "
@@ -3248,7 +3252,7 @@ msgstr "名前"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "KeyPair|Public"
-msgstr "パブリック"
+msgstr "公開"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "KeyPair|Secret"
@@ -3657,13 +3661,13 @@ msgid "Load zones"
 msgstr "ゾーンのロード"
 
 msgid "Loading"
-msgstr "読み込み中"
+msgstr "ロード中"
 
 msgid "Loading ..."
-msgstr "読み込み中 ..."
+msgstr "ロード中 ..."
 
 msgid "Loading BMC information ..."
-msgstr "BMC 情報の読み込み中 ..."
+msgstr "BMC 情報のロード中 ..."
 
 msgid "Loading Images information"
 msgstr "イメージ情報をロード中です"
@@ -3678,7 +3682,7 @@ msgid "Loading host information ..."
 msgstr "ホスト情報をロード中です ..."
 
 msgid "Loading parameters..."
-msgstr "パラメーターの読み込み中..."
+msgstr "パラメーターのロード中..."
 
 msgid "Loading power state ..."
 msgstr "パワー状態をロード中です..."
@@ -4480,7 +4484,7 @@ msgid "Not relevant for snippet"
 msgstr "スニペットと関連がありません"
 
 msgid "Note: %s "
-msgstr "注記: %s "
+msgstr "注意: %s "
 
 msgid "Nothing to restore"
 msgstr "復元するものがありません"
@@ -4544,7 +4548,7 @@ msgid "OK|O"
 msgstr "O"
 
 msgid "OS Distribution"
-msgstr "OS 分布"
+msgstr "OS のディストリビューション"
 
 msgid "OS Family"
 msgstr "OS 種別"
@@ -4732,7 +4736,7 @@ msgid ""
 "self-signed CA will be populated automatically by the server during the "
 "first request."
 msgstr ""
-"オプションで CA または正しく順序付けられた CA チェーンを指定します。空白のままにされると、最初の要求時にサーバーによって自動署名された CA "
+"オプションで CA または正しく順序付けられた CA チェーンを指定します。空白のままにすると、最初の要求時にサーバーによって自動署名された CA "
 "が自動的に設定されます。"
 
 msgid "Order"
@@ -5026,10 +5030,10 @@ msgid "Primary Interface"
 msgstr "主インターフェース"
 
 msgid "Private"
-msgstr "プライベート"
+msgstr "秘密"
 
 msgid "Private key that Foreman will use to encrypt websockets "
-msgstr "Foreman で websocket を暗号化するために使用するプライベートキー"
+msgstr "Foreman で websocket を暗号化するために使用する秘密鍵"
 
 msgid "Proceed to Edit"
 msgstr "編集に進む"
@@ -5096,7 +5100,7 @@ msgid "Ptable|Os family"
 msgstr "OS 種別"
 
 msgid "Public"
-msgstr "パブリック"
+msgstr "公開"
 
 msgid "Puppet"
 msgstr "Puppet"
@@ -5332,7 +5336,7 @@ msgid "Report Status"
 msgstr "レポートの状態"
 
 msgid "Report summary"
-msgstr "レポートサマリー"
+msgstr "レポート要約"
 
 msgid "Reported at"
 msgstr "レポート日時"
@@ -5480,7 +5484,7 @@ msgstr "Foreman がプロキシーと通信するために使用する SSL 証�
 
 msgid ""
 "SSL Private Key file that Foreman will use to communicate with its proxies"
-msgstr "Foreman がプロキシーと通信するために使用する SSL プライベート鍵"
+msgstr "Foreman がプロキシーと通信するために使用する SSL 秘密鍵"
 
 msgid "SafeRender#parse_string was passed a %s instead of a string"
 msgstr "SafeRender#parse_string は文字列の代わりに %s を渡しました"
@@ -5510,7 +5514,7 @@ msgid "Secondary DNS for this subnet"
 msgstr "このサブネットのセカンダリー DNS"
 
 msgid "Secret Key"
-msgstr "秘密鍵"
+msgstr "シークレットキー"
 
 msgid "Security group"
 msgstr "セキュリティーグループ"
@@ -6047,7 +6051,7 @@ msgstr "セカンダリー DNS"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Subnet|From"
-msgstr "起点"
+msgstr "開始アドレス"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Subnet|Gateway"
@@ -6075,11 +6079,12 @@ msgstr "優先度"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Subnet|To"
-msgstr "終点"
+msgstr "終了アドレス"
 
 #. "Table name" or "Table name|Column name" for error messages
+#, fuzzy
 msgid "Subnet|Vlanid"
-msgstr "Vlanid"
+msgstr "終了アドレス"
 
 # translation auto-copied from project Customer Portal Translations, version 006_DrupalPO, document interface, author asasaki
 msgid "Subscribe"
@@ -6128,7 +6133,7 @@ msgid ""
 "Summary Puppet report from Foreman - F:%{failed} R:%{restarted} S:%{skipped} "
 "A:%{applied} FR:%{failed_restarts} T:%{total}"
 msgstr ""
-"Foreman からの Puppet レポートのサマリー - F:%{failed} R:%{restarted} S:%{skipped} A:"
+"Foreman からの Puppet レポートの要約 - F:%{failed} R:%{restarted} S:%{skipped} A:"
 "%{applied} FR:%{failed_restarts} T:%{total}"
 
 msgid "Support"
@@ -6274,7 +6279,7 @@ msgid ""
 "be determined on Solaris via uname -m"
 msgstr ""
 "このマシンで提供されている CPU のクラスです。これは主に Sparc Solaris "
-"ビルドによって使用され、他のアーキテクチャーの場合は空白のままにされます。値は uname -m により Solaris 上で判別できます。"
+"ビルドによって使用され、他のアーキテクチャーの場合は空白のままにできます。値は uname -m により Solaris 上で判別できます。"
 
 msgid ""
 "The class of the machine reported by the Open Boot Prom. This is primarily "
@@ -6282,7 +6287,7 @@ msgid ""
 "The value can be determined on Solaris via uname -i|cut -f2 -d,"
 msgstr ""
 "Open Boot Prom でレポートされるマシンのクラスです。これは主に Sparc Solaris "
-"ビルドによって使用され、他のアーキテクチャーの場合は空白のままにされます。値は、uname -i|cut -f2 -d, により Solaris "
+"ビルドによって使用され、他のアーキテクチャーの場合は空白のままにできます。値は、uname -i|cut -f2 -d, により Solaris "
 "上で判別できます。"
 
 msgid "The default administrator email address"
@@ -6625,7 +6630,7 @@ msgid "Trend|Trendable type"
 msgstr "トレンドタイプ"
 
 msgid "Trigger a puppetrun on a node; requires that puppet run is enabled"
-msgstr "ノードで puppetrun をトリガーします。puppet run を有効にする必要があります"
+msgstr "ノードで puppetrun をトリガーします。puppet run を有効にする必要があります。"
 
 msgid "Troubleshooting"
 msgstr "トラブルシューティング"
@@ -7221,7 +7226,7 @@ msgid "Vendor class"
 msgstr "ベンダークラス"
 
 msgid "Verify"
-msgstr "検証"
+msgstr "確認"
 
 msgid "Version"
 msgstr "バージョン"
@@ -7367,10 +7372,10 @@ msgstr "デフォルトの PXE メニューをすべての設定済み TFTP サ�
 msgid ""
 "You are about to override the editor content with a previous version, are "
 "you sure?"
-msgstr "エディターのコンテンツを直前のバージョンで上書きしようとしています。本当に実行してもよいですか?"
+msgstr "エディターのコンテンツを直前のバージョンで上書きしようとしています。実行してもよろしいですか?"
 
 msgid "You are about to override the editor content, are you sure?"
-msgstr "エディターのコンテンツを上書きしようとしています。本当に実行してもよいですか?"
+msgstr "エディターのコンテンツを上書きしようとしています。実行してもよろしいですか?"
 
 msgid ""
 "You are about to unlock a locked template -- this is for every organization "
@@ -7492,7 +7497,7 @@ msgid ""
 msgstr "まず settings.yml ファイルでログインを有効にし、foreman を再起動する必要があります"
 
 msgid "You would probably need to attach the"
-msgstr "おそらく以下を追加する必要があります"
+msgstr "以下を添付する必要があります:"
 
 msgid "Your Foreman user account has been created:"
 msgstr "Foreman ユーザーアカウントが作成されました:"
@@ -7544,7 +7549,7 @@ msgid "and"
 msgstr "および"
 
 msgid "and relevant log entries."
-msgstr "および関連するログエントリーです。"
+msgstr "と関連するログエントリー。"
 
 msgid "array"
 msgstr "配列"
@@ -8009,7 +8014,7 @@ msgid "puppet class browser"
 msgstr "puppet クラスのブラウザー"
 
 msgid "ready?"
-msgstr "準備完了ですか?"
+msgstr "実行しますか?"
 
 msgid "real"
 msgstr "実数"
@@ -8051,7 +8056,7 @@ msgstr "ホストが管理されており、値がホストグループから継
 msgid ""
 "required if host is managed and value is not inherited from host group or "
 "default password in settings"
-msgstr "ホストが管理されており、値がホストグループから継承されていないか、または設定のデフォルトパスワードである場合に必須です。"
+msgstr "ホストが管理されており、値がホストグループから継承されていないか、または設定済みのデフォルトパスワードである場合に必須です。"
 
 msgid "required if locations are enabled"
 msgstr "ロケーションが有効にされている場合に必須です。"
@@ -8071,7 +8076,7 @@ msgid "reset"
 msgstr "リセット"
 
 msgid "revoked"
-msgstr "取り消し済み"
+msgstr "取り消し"
 
 msgid "select an owner"
 msgstr "所有者の選択"
@@ -8139,7 +8144,7 @@ msgid "to point Foreman at it."
 msgstr "Foreman をこれにポイントします"
 
 msgid "unable to find recipients"
-msgstr "受信者が見つかりません"
+msgstr "宛先が見つかりません"
 
 msgid "unable to sign a non pending certificate"
 msgstr "保留中ではない証明書に署名できません"

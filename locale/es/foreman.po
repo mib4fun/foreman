@@ -35,7 +35,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2015-03-18 05:41+0000\n"
+"PO-Revision-Date: 2015-03-25 05:27+0000\n"
 "Last-Translator: gguerrer <gguerrer@redhat.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/foreman/language/"
 "es/)\n"
@@ -837,7 +837,7 @@ msgid "Available Classes"
 msgstr "Clases disponibles"
 
 msgid "Available Config Groups"
-msgstr "Conjuntos de configuración disponibles"
+msgstr "Grupos de configuración disponibles"
 
 msgid "Available Providers"
 msgstr "Proveedores disponibles"
@@ -1240,7 +1240,7 @@ msgid "Config group"
 msgstr "Grupo de configuración"
 
 msgid "Config groups"
-msgstr "Conjunto de configuración"
+msgstr "Grupos de configuración"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Config template"
@@ -1327,8 +1327,8 @@ msgid ""
 "Could not find a Configuration Template with the name \"PXELinux global "
 "default\", please create one."
 msgstr ""
-"No se pudo encontrar una plantilla de configuración con el nombre \"PXE "
-"Linux global default\", por favor cree una."
+"No se encontró ninguna plantilla de configuración con el nombre \"PXE Linux "
+"global default\", por favor cree una."
 
 msgid "Create %s"
 msgstr "Crear %s"
@@ -1540,7 +1540,7 @@ msgid "Daily"
 msgstr "A diario"
 
 msgid "Dashboard"
-msgstr "Cuadro de mandos"
+msgstr "Tablero de mandos"
 
 msgid "Data store"
 msgstr "Almacén de datos"
@@ -1765,7 +1765,7 @@ msgid "Description of the domain"
 msgstr "Descripción del dominio"
 
 msgid "Deselect All"
-msgstr "Borrar selección completa"
+msgstr "Desmarcar todas"
 
 msgid "Destroy"
 msgstr "Destruir"
@@ -1799,10 +1799,10 @@ msgid "Disabled|D"
 msgstr "D"
 
 msgid "Disassociate Hosts"
-msgstr "Desasociar Hosts"
+msgstr "Disociar Hosts"
 
 msgid "Disassociate host"
-msgstr "Desasociar host"
+msgstr "Disociar host"
 
 msgid "Disassociate the host from a VM"
 msgstr "Disociar el host de una máquinas virtuales"
@@ -2257,7 +2257,7 @@ msgid "Facts"
 msgstr "Eventos"
 
 msgid "Fail on Mismatch"
-msgstr "Fallo en Discordancia"
+msgstr "Error en discordancia"
 
 msgid "Failed"
 msgstr "Errores"
@@ -2273,19 +2273,19 @@ msgid "Failed connecting to %s"
 msgstr "Ha fallado la conexión %s"
 
 msgid "Failed restarts"
-msgstr "Fallos de reinicio"
+msgstr "Falló al reiniciar"
 
 msgid "Failed to %{action} %{host}: %{e}"
 msgstr "Ha fallado al %{action} %{host}: %{e}"
 
 msgid "Failed to cancel pending build for %s"
-msgstr "Fallo al cancelar instalación pendiente de %s"
+msgstr "Falló al cancelar instalación pendiente para  %s"
 
 msgid ""
 "Failed to clean any old certificates or add the autosign entry. Terminating "
 "the build!"
 msgstr ""
-"Fallo al limpiar certificados antiguos o al añadir la llave de autofirmado. "
+"Falló al limpiar certificados antiguos o al añadir la llave de autofirmado. "
 "¡Finalizando la instalación!"
 
 msgid "Failed to configure %{host} to boot from %{device}: %{e}"
@@ -2301,28 +2301,28 @@ msgid ""
 "Failed to create a compute %{compute_resource} instance %{name}: "
 "%{message}\\n "
 msgstr ""
-"Fallo al crear una instancia %{compute_resource} con el nombre %{name}: "
+"Falló al crear una instancia %{compute_resource} con el nombre %{name}: "
 "%{message}"
 
 msgid "Failed to destroy a compute %{compute_resource} instance %{name}: %{e}"
 msgstr ""
-"Fallo al destruir una instancia %{compute_resource} con el nombre %{name}: "
-"%{e}"
+"Falló al destruir una instancia de cómputo %{compute_resource} con el nombre "
+"%{name}: %{e}"
 
 msgid "Failed to enable %{host} for installation: %{errors}"
-msgstr "Fallo al habilitar la instalación de %{host}: %{errors}"
+msgstr "Falló al habilitar la instalación para %{host}: %{errors}"
 
 msgid "Failed to fetch boot files"
-msgstr "Fallo al recolectar los archivos de arranque"
+msgstr "Falló al extraer los archivos de arranque"
 
 msgid "Failed to fetch: "
-msgstr "Fallo al extraer: "
+msgstr "Falló al extraer: "
 
 msgid "Failed to generate %{template_kind} template: %{e}"
-msgstr "Fallo al generar el tipo de plantilla %{template_kind}: %{e}"
+msgstr "Falló al generar el tipo de plantilla %{template_kind}: %{e}"
 
 msgid "Failed to get IP for %{name}: %{e}"
-msgstr "Fallo al asignar la IP de ${name}: %{e}"
+msgstr "Falló al asignar la IP de ${name}: %{e}"
 
 msgid "Failed to get a new realm OTP. Terminating the build!"
 msgstr "Error al obtener un nuevo sector OTP. ¡Terminando la compilación!"
@@ -2331,48 +2331,49 @@ msgid ""
 "Failed to import %{klass} for %{name}: doesn't exists in our database - "
 "ignoring"
 msgstr ""
-"Fallo al importar %{klass} para %{name}: no existe en la base de datos - "
-"ignorando"
+"Falló al importar %{klass} para %{name}: no existe en la base de datos - se "
+"ignora."
 
 msgid "Failed to initialize the PuppetCA proxy: %s"
-msgstr "Fallo al inicializar el proxy PuppetCA: %s"
+msgstr "Falló al inicializar el proxy PuppetCA: %s"
 
 msgid "Failed to initialize the realm proxy: %s"
 msgstr "Error al iniciar el proxy de reino: %s"
 
 msgid "Failed to launch script on %{name}: %{e}"
-msgstr "Fallo al ejecutar script en %{name}: %{e}"
+msgstr "Falló al ejecutar script en %{name}: %{e}"
 
 msgid "Failed to load chart"
 msgstr "No se pudo cargar el gráfico"
 
 msgid "Failed to login via SSH to %{name}: %{e}"
-msgstr "Fallo al iniciar sesión SSH en %{name}: %{e}"
+msgstr "Falló al iniciar sesión SSH en %{name}: %{e}"
 
 msgid "Failed to modify the build cycle for %s"
-msgstr "Fallo al modificar el ciclo de construcción para %s"
+msgstr "Falló al modificar el ciclo de construcción para %s"
 
 msgid "Failed to perform rollback on %{task} - %{e}"
-msgstr "Fallo al dar marcha atrás en %{task} - %{e}"
+msgstr "Falló al recuperar %{task} - %{e}"
 
 msgid ""
 "Failed to power up a compute %{compute_resource} instance %{name}: %{e}"
 msgstr ""
-"Fallo al encender una instancia %{compute_resource} con el nombre %{name}: "
+"Falló al iniciar una instancia %{compute_resource} con el nombre %{name}: "
 "%{e}"
 
 msgid "Failed to reboot %s."
 msgstr "No se pudo reiniciar %s."
 
 msgid "Failed to remove certificates for %{name}: %{e}"
-msgstr "Fallo al borrar certificados de %{name}: %{e}"
+msgstr "Falló al retirar certificados de %{name}: %{e}"
 
 msgid "Failed to set console: %s"
-msgstr "Fallo al configurar terminal: %s"
+msgstr "Falló al configurar consola: %s"
 
 msgid "Failed to stop compute %{compute_resource} instance %{name}: %{e}"
 msgstr ""
-"Fallo al parar la instancia %{compute_resource} con el nombre %{name}: %{e}"
+"Falló al detener la instancia %{compute_resource} con el nombre %{name}: "
+"%{e}"
 
 msgid ""
 "Failed to undo update compute %{compute_resource} instance %{name}: %{e}"
@@ -2414,7 +2415,7 @@ msgid "Failure parsing %{template}: %{error}."
 msgstr "No se pudo analizar %{template}: %{error}."
 
 msgid "Failure: %s"
-msgstr "Fallo: %s"
+msgstr "Error: %s"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Feature"
@@ -2754,7 +2755,7 @@ msgid "Generated at %s"
 msgstr "Generado a las %s"
 
 msgid "Get dashboard details"
-msgstr "Detalles del cuadro de mando"
+msgstr "Detalles del tablero de mandos"
 
 msgid "Get statistics"
 msgstr "Estadísticas"
@@ -4183,7 +4184,7 @@ msgid "Manage Organizations"
 msgstr "Administrar organizaciones"
 
 msgid "Manage dashboard"
-msgstr "Administrar cuadro de mandos"
+msgstr "Administrar tablero de mandos"
 
 msgid "Manage host"
 msgstr "Administrar host"
@@ -5119,7 +5120,7 @@ msgid "Override value for specific hosts"
 msgstr "Sobrescribir  para hosts específicos"
 
 msgid "Overview"
-msgstr "Visión de conjunto"
+msgstr "Visión general"
 
 msgid "Overwrite"
 msgstr "Sobrescribir"
@@ -5206,7 +5207,7 @@ msgstr "Configuración de la tabla de particiones"
 
 # translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Partition tables"
-msgstr "Tablas de partición"
+msgstr "Tablas de particiones"
 
 # translation auto-copied from project Customer Portal Translations, version 006_DrupalPO, document interface, author gguerrer
 msgid "Password"
@@ -5273,33 +5274,32 @@ msgid "Permission|Resource type"
 msgstr "Tipo de recursos"
 
 msgid "Photo attribute"
-msgstr "Atributo de Foto"
+msgstr "Atributo de foto"
 
 msgid "Physical (Bridge)"
 msgstr "Físico (Puente)"
 
 # translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery
 msgid "Please Confirm"
-msgstr "Confirme, por favor"
+msgstr "Confirmar"
 
 msgid "Please Select"
-msgstr "Seleccione, por favor"
+msgstr "Seleccionar"
 
 msgid "Please Select an Image"
-msgstr "Seleccione una Imagen, por favor"
+msgstr "Seleccionar una Imagen"
 
 msgid "Please check the proxy is configured and running on the host."
-msgstr ""
-"Por favor, verifique si el Proxy está configurado y ejecutándose en el host."
+msgstr "Verificar si el Proxy está configurado y ejecutándose en el host."
 
 msgid "Please correct the error(s) below and submit your changes again."
 msgstr "Corrija los siguientes errores y reenvíe los cambios."
 
 msgid "Please delete all nested groups before deleting it."
-msgstr "Por favor, borre los grupos anidados antes de borrarlo."
+msgstr "Borre los grupos anidados antes de borrarlo."
 
 msgid "Please enable JavaScript to view the %{comments_href}."
-msgstr "Por favor active Javascript para visualizar %{comments_href}."
+msgstr "Active Javascript para visualizar %{comments_href}."
 
 msgid "Please ensure the following parameters name are unique"
 msgstr "Asegúrese de que los siguientes nombres de parámetros sean únicos"
@@ -5327,13 +5327,13 @@ msgid "Please save the user first before assigning mail notifications."
 msgstr "Guarde el usuario antes de asignar notificaciones de correo-e"
 
 msgid "Please select"
-msgstr "Por favor, selecciona"
+msgstr "Seleccione"
 
 msgid "Please select an environment first"
-msgstr "Por favor, selecciona primero un entorno"
+msgstr "Seleccione primero un entorno"
 
 msgid "Please select an image"
-msgstr "Por favor, seleccione una imagen"
+msgstr "Seleccione una imagen"
 
 msgid ""
 "Please specify volume size. You may optionally use suffix 'G' to specify "
@@ -5346,7 +5346,7 @@ msgid "Please try to update your request"
 msgstr "Por favor, intente actualizar su solicitud."
 
 msgid "Please wait..."
-msgstr "Por favor, espera..."
+msgstr "Por favor, espere..."
 
 msgid "Plugins"
 msgstr "Complementos"
@@ -5365,10 +5365,10 @@ msgid "Power%s"
 msgstr "Encienda %s"
 
 msgid "Preallocate disk"
-msgstr "Reservar espacio de disco"
+msgstr "Preasigne disco"
 
 msgid "Prepare post installation script for %s"
-msgstr "Preparar script de posinstalación para %s"
+msgstr "Prepare script de posinstalación para %s"
 
 # translation auto-copied from project control-center, version 3.8.6, document gnome-control-center-2.0
 msgid "Preview"
@@ -5601,7 +5601,7 @@ msgstr "Reinos"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Realm|Hostgroups count"
-msgstr "Conteo de Hostgroups"
+msgstr "Conteo de Grupos de hosts"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Realm|Hosts count"
@@ -5875,7 +5875,7 @@ msgid "Save"
 msgstr "Guardar"
 
 msgid "Save dashboard"
-msgstr "Guardar cuadro de mandos"
+msgstr "Guardar tablero de mandos"
 
 msgid "Save something and try again"
 msgstr "Guarde algo y reinténtelo"
@@ -6429,7 +6429,7 @@ msgid "Storage domain"
 msgstr "Dominio de almacenamiento"
 
 msgid "Storage pool"
-msgstr "Depósito de almacenamiento"
+msgstr "Grupo de almacenamiento"
 
 msgid "Strong"
 msgstr "Fuerte"
@@ -7378,7 +7378,7 @@ msgid "Update a bookmark"
 msgstr "Actualizar un marcador"
 
 msgid "Update a compute attributes set"
-msgstr "Actualizar un conjunto de atributos de computación"
+msgstr "Actualizar un grupo de atributos de computación"
 
 msgid "Update a compute profile"
 msgstr "Actualizar un perfil de computación"
@@ -8260,7 +8260,7 @@ msgid "failed to execute puppetrun: %s"
 msgstr "Falló al ejecutar puppetrun: %s"
 
 msgid "failed to process template: %s"
-msgstr "Falló el procesamiento de la plantilla: %s"
+msgstr "Falló al procesar plantilla: %s"
 
 msgid "failed to save %s"
 msgstr "No se ha podido guardar %s"

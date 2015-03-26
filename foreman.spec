@@ -19,7 +19,7 @@
 #global dashalphatag -%{alphatag}
 
 Name:   foreman
-Version: 1.7.2.14
+Version: 1.7.2.15
 Release: 1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
@@ -675,6 +675,9 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Thu Mar 26 2015 Jason Montleon <jmontleo@redhat.com> 1.7.2.15-1
+- Pull in japanese bugs from RHOSP (bkearney@redhat.com)
+
 * Tue Mar 24 2015 Jason Montleon <jmontleo@redhat.com> 1.7.2.14-1
 - 98+ percent on all strings (bkearney@redhat.com)
 

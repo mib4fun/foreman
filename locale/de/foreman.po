@@ -34,7 +34,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2015-03-18 05:09+0000\n"
+"PO-Revision-Date: 2015-03-25 03:58+0000\n"
 "Last-Translator: hpeters <hpeters@redhat.com>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/foreman/language/"
 "de/)\n"
@@ -1780,7 +1780,7 @@ msgid "Disk"
 msgstr "Festplatte"
 
 msgid "Display"
-msgstr "Anzeige"
+msgstr "Zeige"
 
 msgid "Display Name"
 msgstr "Anzeigename"
@@ -2470,8 +2470,9 @@ msgid ""
 "For example, there might be a data center in London and one in Virginia; "
 "these are locations. Locations also work nicely when used in tandem with "
 msgstr ""
-"Beispielsweise ein Data Center in London und eines in Virginia; dies sind "
-"Ihre Standorte. Standorte können sehr gut zusammen verwendet werden mit "
+"Angenommen es gibt ein Data Center in London und eines in Virginia; dies "
+"sind Ihre Standorte. Standorte können sehr gut zusammen verwendet werden mit "
+""
 
 msgid "For internal Users, simply create a new user at the %s page"
 msgstr ""
@@ -2601,7 +2602,7 @@ msgstr ""
 "dies auf \"false\" gesetzt, erhalten OAuth-Anfragen Administratorrechte."
 
 msgid "Foreman will parse ERB in parameters value in the ENC output"
-msgstr "oreman analysiert ERB in Parameterwerten in der ENC-Ausgabe"
+msgstr "Foreman analysiert ERB in Parameterwerten in der ENC-Ausgabe"
 
 msgid ""
 "Foreman will query the locally configured resolver instead of the SOA/NS "
@@ -3311,7 +3312,7 @@ msgid "Import subnets"
 msgstr "Subnetze importieren"
 
 msgid "Import your data"
-msgstr "Ihre Daten importieren"
+msgstr "Importieren Ihrer Daten"
 
 msgid "Important"
 msgstr "Wichtig"
@@ -3938,7 +3939,7 @@ msgid "Logged-in"
 msgstr "Angemeldet"
 
 msgid "Login"
-msgstr "Anmeldung"
+msgstr "Anmelden"
 
 msgid "Logout"
 msgstr "Abmelden"
@@ -4706,10 +4707,10 @@ msgid "Nothing to show"
 msgstr "Nichts anzuzeigen"
 
 msgid "Notice"
-msgstr "Nachricht"
+msgstr "Hinweis"
 
 msgid "Notice:"
-msgstr "Nachricht:"
+msgstr "Hinweis:"
 
 msgid "Notices, warnings and errors"
 msgstr "Hinweise, Warnungen und Fehler"
@@ -4718,7 +4719,7 @@ msgid "Notification disabled"
 msgstr "Benachrichtigung deaktiviert"
 
 msgid "Notifications"
-msgstr "Benarichtigungen"
+msgstr "Benachrichtigungen"
 
 msgid "Number Of Clients"
 msgstr "Anzahl der Clients"
@@ -5582,7 +5583,7 @@ msgid "Report summary"
 msgstr "Berichtszusammenfassung"
 
 msgid "Reported at"
-msgstr "Berichtet am"
+msgstr "Berichtet"
 
 msgid "Reported at %s "
 msgstr "Berichtet um %s "
@@ -6313,7 +6314,7 @@ msgstr "Subnetze"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Subnet|Boot mode"
-msgstr "Boot-Modus"
+msgstr "Bootmodus"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Subnet|Dns primary"
@@ -6345,7 +6346,7 @@ msgstr "Name"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Subnet|Network"
-msgstr "Netzwerk"
+msgstr "Netzwerkadresse"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Subnet|Priority"
@@ -8021,7 +8022,7 @@ msgid "default locations need to be user locations first"
 msgstr "Standardstandorte müssen zunächst Benutzerstandorte sein"
 
 msgid "default organizations need to be user organizations first"
-msgstr "Standardorganisationsn müssen zunächst Benutzerorganisationen sein"
+msgstr "Standardorganisationen müssen zunächst Benutzerorganisationen sein"
 
 msgid "defaults to 389"
 msgstr "standardmäßig 389"
@@ -8123,7 +8124,7 @@ msgid "for proxy"
 msgstr "für Proxy"
 
 msgid "free memory"
-msgstr "freier Arbeitsspeicher"
+msgstr "freier Speicher"
 
 msgid "free swap"
 msgstr "freier Swap"

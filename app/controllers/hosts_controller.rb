@@ -302,9 +302,9 @@ class HostsController < ApplicationController
   def toggle_manage
     if @host.toggle! :managed
       if @host.managed
-        msg = _("Foreman now manages the build cycle for %s") % (@host.name)
+        msg = _("Satellite now manages the build cycle for %s") % (@host.name)
       else
-        msg = _("Foreman now no longer manages the build cycle for %s") % (@host.name)
+        msg = _("Satellite now no longer manages the build cycle for %s") % (@host.name)
       end
       process_success :success_msg => msg, :success_redirect => :back
     else

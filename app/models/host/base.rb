@@ -16,7 +16,7 @@ module Host
     has_many :fact_names, :through => :fact_values
     has_many :interfaces, :dependent => :destroy, :inverse_of => :host, :class_name => 'Nic::Base',
              :foreign_key => :host_id, :order => 'identifier'
-    accepts_nested_attributes_for :interfaces, :reject_if => lambda { |a| a[:mac].blank? }, :allow_destroy => true
+    accepts_nested_attributes_for :interfaces, :allow_destroy => true
 
     alias_attribute :hostname, :name
     before_validation :normalize_name

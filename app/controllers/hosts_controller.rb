@@ -77,6 +77,8 @@ class HostsController < ApplicationController
   end
 
   def create
+    # remove parameters for hidden form that is used as a template for new interface form and used by JS
+    params.fetch(:host, {}).fetch(:interfaces_attributes, {}).delete(:new_interfaces)
     @host = Host.new(params[:host])
     @host.managed = true if (params[:host] && params[:host][:managed].nil?)
     forward_url_options
@@ -94,6 +96,8 @@ class HostsController < ApplicationController
   end
 
   def update
+    # remove parameters for hidden form that is used as a template for new interface form and used by JS
+    params.fetch(:host, {}).fetch(:interfaces_attributes, {}).delete(:new_interfaces)
     forward_url_options
     Taxonomy.no_taxonomy_scope do
       # remove from hash :root_pass and bmc :password if blank?

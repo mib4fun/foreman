@@ -19,7 +19,7 @@
 #global dashalphatag -%{alphatag}
 
 Name:   foreman
-Version: 1.7.2.15
+Version: 1.7.2.16
 Release: 1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
@@ -675,6 +675,36 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Tue Apr 21 2015 Mike McCune <mmccune@redhat.com> 1.7.2.16-1
+- fixes #9998 - Add styling to error reporting (shlomi@ben-hanna.com)
+- Fixes #5723 - Show host groups inherited via config groups in puppetclass
+  index
+- Fixes #844 #5725 - correct hosts count in puppetclass
+- fixes #9775 - always load Encryptable when key's missing, log runtime warning
+  (dcleal@redhat.com)
+- fixes #9795 - check if mail is enabled before sending a notification
+  (stbenjam@redhat.com)
+- Fixes #9878 - refresh external usergroup on API manipulation
+  (mhulan@redhat.com)
+- Fixes #9444 - prevent 404 error on current_parameters and domain_selected
+  (tbrisker@gmail.com)
+- fixes #9617 - rescue from empty vmware clusters (shlomi@ben-hanna.com)
+- Fixes #8764 - adds description to taxonomies (orabin@redhat.com)
+- Fixes #7615 - filter ignore current context (mhulan@redhat.com)
+- fixes #9856 - include locations and organizations in user output
+  (thomasmckay@redhat.com)
+- Fixes #9827 - compute resource info in API doesn't send provider type
+  (tstrachota@redhat.com)
+- Fixes #8284 - missing params in OS api docs (tstrachota@redhat.com)
+- Fixes #9947 - restrict user taxonomies if none is set (mhulan@redhat.com)
+- Fixes #bz1200037 - Changed another instance of "smart proxy" to "capsule"
+  (sshtein@redhat.com)
+- Fixes BZ#1194393 (mhulan@redhat.com)
+- Fixes #bz1129393 - Branding, Removed some references to Foreman
+  (sshtein@redhat.com)
+- Fixes BZ#1191913 - don't reject interfaces with blank mac (mhulan@redhat.com)
+- Backports modal window tooltips from #7456 (mhulan@redhat.com)
+
 * Thu Mar 26 2015 Jason Montleon <jmontleo@redhat.com> 1.7.2.15-1
 - Pull in japanese bugs from RHOSP (bkearney@redhat.com)
 

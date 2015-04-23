@@ -19,7 +19,7 @@
 #global dashalphatag -%{alphatag}
 
 Name:   foreman
-Version: 1.7.2.16
+Version: 1.7.2.17
 Release: 1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
@@ -675,6 +675,9 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Thu Apr 23 2015 Mike McCune <mmccune@redhat.com> 1.7.2.17-1
+- 1214314 - removed extra migration file (lzap+git@redhat.com)
+
 * Tue Apr 21 2015 Mike McCune <mmccune@redhat.com> 1.7.2.16-1
 - fixes #9998 - Add styling to error reporting (shlomi@ben-hanna.com)
 - Fixes #5723 - Show host groups inherited via config groups in puppetclass

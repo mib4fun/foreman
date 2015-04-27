@@ -993,13 +993,25 @@ context "location or organizations are not enabled" do
     assert_equal 'eth5.1', virtual.identifier
     assert_equal 'eth5', virtual.attached_to
   end
+  
+  test "host can't have more interfaces with same identifier" do
+    host = FactoryGirl.build(:host, :managed)
+    host.primary_interface.identifier = 'eth0'
+    nic = host.interfaces.build(:identifier => 'eth0')
+    refute host.valid?
+    assert_present nic.errors[:identifier]
+    assert_present host.errors[:interfaces]
+    nic.identifier = 'eth1'
+    host.valid?
+    refute_includes nic.errors.keys, :identifier
+    refute_includes host.errors.keys, :interfaces
+  end
 
   test "set_interfaces updates associated virtuals identifier even on primary interface" do
     host, parser = setup_host_with_nic_parser({:macaddress => '00:00:00:11:22:33', :ipaddress => '10.10.0.1', :virtual => false, :identifier => 'eth1'})
     host.update_attribute :primary_interface, 'eth0'
     host.update_attribute :mac, '00:00:00:11:22:33'
     virtual = FactoryGirl.create(:nic_managed, :host => host, :mac => '00:00:00:11:22:33', :virtual => true, :ip => '10.10.0.2', :identifier => 'eth0.1', :attached_to => 'eth0')
-
     host.set_interfaces(parser)
     virtual.reload
     assert_equal 'eth1.1', virtual.identifier
@@ -1161,7 +1173,8 @@ context "location or organizations are not enabled" do
     end
     h = FactoryGirl.create(:host, :managed)
     assert h.interfaces.create :mac => "cabbccddeeff", :host => h, :type => 'Nic::BMC',
-                               :provider => "IPMI", :username => "root", :password => "secret", :ip => "10.35.19.35"
+                               :provider => "IPMI", :username => "root", :password => "secret", :ip => "10.35.19.35",
+                               :identifier => 'eth2'
     as_user :one do
       assert h.update_attributes!("interfaces_attributes" => {"0" => {"mac"=>"59:52:10:1e:45:16"}})
     end

@@ -24,6 +24,7 @@ module Host
     validates :owner_type, :inclusion => { :in          => OWNER_TYPES,
                                            :allow_blank => true,
                                            :message     => (_("Owner type needs to be one of the following: %s") % OWNER_TYPES.join(', ')) }
+    validate :uniq_interfaces_identifiers
 
     attr_writer :updated_virtuals
     def updated_virtuals
@@ -240,6 +241,24 @@ module Host
         else
           Nic::Managed
       end
+    end
+
+    # we can't use standard unique validation on interface since we can't properly handle :scope => :host_id
+    # for new hosts host_id does not exist at that moment, validation would work only for persisted records
+    def uniq_interfaces_identifiers
+      success = true
+      identifiers = []
+      self.interfaces.each do |interface|
+        next if interface.identifier.blank?
+        if identifiers.include?(interface.identifier)
+          interface.errors.add :identifier, :taken
+          success = false
+        end
+        identifiers.push(interface.identifier)
+      end
+
+      errors.add(:interfaces, _('some of interfaces are invalid')) unless success
+      success
     end
   end
 end

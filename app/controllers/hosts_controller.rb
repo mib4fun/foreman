@@ -508,6 +508,9 @@ class HostsController < ApplicationController
   end
 
   def process_hostgroup
+    # remove parameters for hidden form that is used as a template for new interface form and used by JS
+    params.fetch(:host, {}).fetch(:interfaces_attributes, {}).delete(:new_interfaces)
+
     @hostgroup = Hostgroup.find(params[:host][:hostgroup_id]) if params[:host][:hostgroup_id].to_i > 0
     return head(:not_found) unless @hostgroup
 

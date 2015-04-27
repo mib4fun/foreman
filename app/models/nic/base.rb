@@ -43,7 +43,7 @@ module Nic
     class Jail < ::Safemode::Jail
       allow :managed?, :subnet, :virtual?, :mac, :ip, :identifier, :attached_to,
             :link, :tag, :domain, :vlanid, :bond_options, :attached_devices, :mode,
-            :attached_devices_identifiers, :inheriting_mac
+            :attached_devices_identifiers, :alias?, :inheriting_mac
     end
 
     def type_name

@@ -15,7 +15,10 @@ module Nic
     register_to_enc_transformation :type, lambda { |type| type.constantize.humanized_name }
 
     def proxy
-      proxy = bmc_proxy
+      if subnet.present?
+        proxy = subnet.proxies.select { |subnet_proxy| subnet_proxy.has_feature?('BMC') }.first
+      end
+      proxy ||= SmartProxy.with_features("BMC").first
       raise Foreman::Exception.new(N_('Unable to find a proxy with BMC feature')) if proxy.nil?
       ProxyAPI::BMC.new({ :host_ip  => ip,
                           :url      => proxy.url,

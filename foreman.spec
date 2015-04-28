@@ -19,7 +19,7 @@
 #global dashalphatag -%{alphatag}
 
 Name:   foreman
-Version: 1.7.2.17
+Version: 1.7.2.18
 Release: 1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
@@ -675,6 +675,15 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Tue Apr 28 2015 Mike McCune <mmccune@redhat.com> 1.7.2.18-1
+- fixes #9773 - correctly render template URL (stbenjam@redhat.com)
+- Add in strings from zanata. All but french are done (bkearney@redhat.com)
+- Fix BZ1191849 (tbrisker@gmail.com)
+- Fixes BZ#1215662 - ignore interface template attributes (mhulan@redhat.com)
+- Fixes #9618 - make identifier uniq per host (mhulan@redhat.com)
+- Fixes #9434 - managed alias accepts only static boot mode subnet
+  (mhulan@redhat.com)
+
 * Thu Apr 23 2015 Mike McCune <mmccune@redhat.com> 1.7.2.17-1
 - 1214314 - removed extra migration file (lzap+git@redhat.com)
 

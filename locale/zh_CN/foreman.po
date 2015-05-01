@@ -16,12 +16,13 @@ msgstr ""
 "Project-Id-Version: version 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-04-22 11:03-0400\n"
-"PO-Revision-Date: 2015-04-27 01:10+0000\n"
-"Last-Translator: Leah Liu <lliu@redhat.com>\n"
-"Language-Team: Chinese (China) (http://www.transifex.com/projects/p/foreman/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-04-27 01:10+0000\n"
+"Last-Translator: Leah Liu <lliu@redhat.com>\n"
+"Language-Team: Chinese (China) (http://www.transifex.com/projects/p/foreman/"
+"language/zh_CN/)\n"
 "Language: zh-CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Zanata 3.6.0\n"
@@ -180,8 +181,8 @@ msgid ""
 "'Content-Type: %s' is unsupported in API v2 for POST and PUT requests. "
 "Please use 'Content-Type: application/json'."
 msgstr ""
-"API v2 不支持 'Content-Type: %s' 的 POST 和 PUT 请求。请使用 'Content-Type: "
-"application/json'。"
+"API v2 不支持 'Content-Type: %s' 的 POST 和 PUT 请求。请使用 'Content-Type: application/"
+"json'。"
 
 msgid "(Miscellaneous)"
 msgstr "（其他）"
@@ -217,30 +218,29 @@ msgid ""
 "Validator rule field.</dd><dt>Regexp</dt> <dd>Validates the input with the "
 "regular expression in the Validator rule field.</dd></dl>"
 msgstr ""
-"<dl><dt>列表</dt> <dd>允许值的列表，指定验证规则。</dd><dt>正则表达式</dt> "
-"<dd>正则表达式验证输入验证规则。</dd></dl>"
+"<dl><dt>列表</dt> <dd>允许值的列表，指定验证规则。</dd><dt>正则表达式</dt> <dd>正则表达式验证输入验证规则。</"
+"dd></dl>"
 
 msgid ""
-"<dl><dt>String</dt> <dd>Everything is taken as a "
-"string.</dd><dt>Boolean</dt> <dd>Common representation of boolean values are"
-" accepted.</dd><dt>Integer</dt> <dd>Integer numbers only, can be "
-"negative.</dd><dt>Real</dt> <dd>Accept any numerical "
-"input.</dd><dt>Array</dt> <dd>A valid JSON or YAML input, that must evaluate"
-" to an array.</dd><dt>Hash</dt> <dd>A valid JSON or YAML input, that must "
-"evaluate to an object/map/dict/hash.</dd><dt>YAML</dt> <dd>Any valid YAML "
-"input.</dd><dt>JSON</dt> <dd>Any valid JSON input.</dd></dl>"
+"<dl><dt>String</dt> <dd>Everything is taken as a string.</dd><dt>Boolean</"
+"dt> <dd>Common representation of boolean values are accepted.</"
+"dd><dt>Integer</dt> <dd>Integer numbers only, can be negative.</dd><dt>Real</"
+"dt> <dd>Accept any numerical input.</dd><dt>Array</dt> <dd>A valid JSON or "
+"YAML input, that must evaluate to an array.</dd><dt>Hash</dt> <dd>A valid "
+"JSON or YAML input, that must evaluate to an object/map/dict/hash.</"
+"dd><dt>YAML</dt> <dd>Any valid YAML input.</dd><dt>JSON</dt> <dd>Any valid "
+"JSON input.</dd></dl>"
 msgstr ""
-"<dl><dt>字符串</dt> <dd>所有都视为字符串。</dd><dt>Boolean</dt> "
-"<dd>可接受布尔值的公共表示。</dd><dt>Integer</dt> <dd>只接受整数，可以是负数。</dd><dt>Real</dt> "
-"<dd>接受任意数字输入。</dd><dt>Array</dt> <dd>有效的 JSON 或者 YAML "
-"输入，但必须是一个阵列。</dd><dt>Hash</dt> <dd>有效 JSON 或者 YAML 输入，必须是 "
-"object/map/dict/hash。</dd><dt>YAML</dt> <dd>任意有效 YAML 输入。</dd><dt>JSON</dt> "
-"<dd>任意有效 JSON 输入。</dd></dl>"
+"<dl><dt>字符串</dt> <dd>所有都视为字符串。</dd><dt>Boolean</dt> <dd>可接受布尔值的公共表示。</"
+"dd><dt>Integer</dt> <dd>只接受整数，可以是负数。</dd><dt>Real</dt> <dd>接受任意数字输入。</"
+"dd><dt>Array</dt> <dd>有效的 JSON 或者 YAML 输入，但必须是一个阵列。</dd><dt>Hash</dt> <dd>有效 "
+"JSON 或者 YAML 输入，必须是 object/map/dict/hash。</dd><dt>YAML</dt> <dd>任意有效 YAML "
+"输入。</dd><dt>JSON</dt> <dd>任意有效 JSON 输入。</dd></dl>"
 
 msgid ""
 "A host group is in some ways similar to an inherited node declaration, in "
-"that it is a high level grouping of classes that can be named and treated as"
-" a unit. This is then treated as a template and  is selectable during the "
+"that it is a high level grouping of classes that can be named and treated as "
+"a unit. This is then treated as a template and  is selectable during the "
 "creation of a new host and ensures that the host is configured in one of "
 "your pre-defined states."
 msgstr ""
@@ -282,8 +282,7 @@ msgstr "关于"
 msgid "Access Key"
 msgstr "访问密钥"
 
-# translation auto-copied from project pulseaudio, version 3.0, document
-# pulseaudio
+# translation auto-copied from project pulseaudio, version 3.0, document pulseaudio
 msgid "Access denied"
 msgstr "拒绝访问"
 
@@ -367,8 +366,8 @@ msgid "Additional steps"
 msgstr "额外的步骤"
 
 msgid ""
-"Additionally, you may restrict user permissions based on many criteria, make"
-" sure you check the roles settings tab."
+"Additionally, you may restrict user permissions based on many criteria, make "
+"sure you check the roles settings tab."
 msgstr "此外，您可能会限制用户基于多个标准的权限，请检查的“角色设置“选项卡。"
 
 msgid "Admin permissions required"
@@ -456,14 +455,14 @@ msgstr "分配（GB）"
 
 msgid ""
 "An IP address will be auto-suggested if you have a DHCP-enabled Smart Proxy "
-"on the subnet selected above.<br/><br/>The IP address can be left blank "
-"when:<br/><ul><li>provisioning tokens are enabled</li><li>the domain does "
-"not manage DNS</li><li>the subnet does not manage reverse DNS</li><li>and "
-"the subnet does not manage DHCP reservations</li></ul>"
+"on the subnet selected above.<br/><br/>The IP address can be left blank when:"
+"<br/><ul><li>provisioning tokens are enabled</li><li>the domain does not "
+"manage DNS</li><li>the subnet does not manage reverse DNS</li><li>and the "
+"subnet does not manage DHCP reservations</li></ul>"
 msgstr ""
-"如果在以上所选子网中有启用了 DHCP 的智能代理服务器，就会自动建议 IP 地址。<br/><br/>在以下情况中可让 IP "
-"地址为空白：<br/><ul><li>启用供应标记</li><li>该域不管理 DNS</li><li>子网不管理逆向 "
-"DNS</li><li>子网不管理 DHCP 保留</li></ul>"
+"如果在以上所选子网中有启用了 DHCP 的智能代理服务器，就会自动建议 IP 地址。<br/><br/>在以下情况中可让 IP 地址为空白：<br/"
+"><ul><li>启用供应标记</li><li>该域不管理 DNS</li><li>子网不管理逆向 DNS</li><li>子网不管理 DHCP 保留</"
+"li></ul>"
 
 msgid "An explicit layout for the partitions of your hard drive(s). E.G."
 msgstr "明确硬盘分区。 E.G."
@@ -783,22 +782,20 @@ msgid "Base DN"
 msgstr "基础 DN"
 
 msgid ""
-"Before you can use Satellite 6 for the first time there are a few tasks that"
-" must be performed."
+"Before you can use Satellite 6 for the first time there are a few tasks that "
+"must be performed."
 msgstr "第一次使用 Satellite 6 前必须首先完成几个任务。"
 
 msgid ""
-"Before you proceed to using Satellite 6 you should provide information about"
-" one or more architectures."
+"Before you proceed to using Satellite 6 you should provide information about "
+"one or more architectures."
 msgstr "开始使用 Satellite 6 前，请提供一个或多个架构的信息。"
 
-# translation auto-copied from project evolution, version 3.8.5, document
-# evolution-3.8
+# translation auto-copied from project evolution, version 3.8.5, document evolution-3.8
 msgid "Blog"
 msgstr "Blog"
 
-# translation auto-copied from project nm-applet, version 0.8.1, document nm-
-# applet, author Leah Liu
+# translation auto-copied from project nm-applet, version 0.8.1, document nm-applet, author Leah Liu
 msgid "Bond"
 msgstr "捆绑"
 
@@ -879,9 +876,9 @@ msgid "Build|B"
 msgstr "B"
 
 msgid ""
-"By unchecking this you can specify filter using Satellite 6 search syntax in"
-" search field. If filter remains unlimited (this field is checked) it "
-"applies on all resources of the selected type"
+"By unchecking this you can specify filter using Satellite 6 search syntax in "
+"search field. If filter remains unlimited (this field is checked) it applies "
+"on all resources of the selected type"
 msgstr ""
 "取消选择这一项就可以指定在搜索栏执行 Satellite 6 搜索的过滤器。如果过滤器仍为无限（即选择这个字段），它会将其应用到所有所选类型资源。"
 
@@ -1006,8 +1003,7 @@ msgstr "选择一个提供者"
 msgid "Choose a server type"
 msgstr "选择服务器类型"
 
-# translation auto-copied from project policycoreutils, version 2.1.14,
-# document policycoreutils, author Leah Liu
+# translation auto-copied from project policycoreutils, version 2.1.14, document policycoreutils, author Leah Liu
 msgid "Class"
 msgstr "分类"
 
@@ -1046,9 +1042,9 @@ msgid "Client Email"
 msgstr "客户端电子邮件"
 
 msgid ""
-"Client SSL certificates are used to identify Smart Proxies accessing "
-"fact/report importers and ENC output over HTTPS (:require_ssl should also be"
-" enabled)"
+"Client SSL certificates are used to identify Smart Proxies accessing fact/"
+"report importers and ENC output over HTTPS (:require_ssl should also be "
+"enabled)"
 msgstr ""
 "客户端 SSL 证书是用于识别访问详情/报告导入程序及使用 HTTPS 的 ENC 输出的智能代理服务器（还应启用 :require_ssl）"
 
@@ -1352,8 +1348,7 @@ msgstr "生成 LDAP 认证源"
 msgid "Create an architecture"
 msgstr "生成架构"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1,
-# document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
 msgid "Create an environment"
 msgstr "生成环境"
 
@@ -1442,8 +1437,7 @@ msgstr "DNS名称"
 msgid "DNS proxy to use within this domain"
 msgstr "这个域中使用的 DNS 代理服务器"
 
-# translation auto-copied from project evolution, version 3.8.5, document
-# evolution-3.8
+# translation auto-copied from project evolution, version 3.8.5, document evolution-3.8
 msgid "Daily"
 msgstr "每天"
 
@@ -1518,8 +1512,7 @@ msgstr "删除选择系统的默认模板组合"
 msgid "Delete a domain"
 msgstr "删除域"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1,
-# document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
 msgid "Delete a filter"
 msgstr "删除过滤器"
 
@@ -1679,18 +1672,18 @@ msgstr "设备标识符"
 msgid ""
 "Device identifier for this interface. This may be different on various "
 "platforms and environments, here are some common examples.<br/><ul><li>Use "
-"the basic name for physical interface identifiers, e.g. "
-"<strong>eth0</strong> or <strong>em0</strong> with biosdevname.</li><li>For "
-"virtual interfaces, use either alias notation (<strong>eth0:1</strong>, "
-"name:index) or VLAN notation (<strong>eth0.15</strong>, "
-"name.tag).</li><li>For bonds it's common to use <strong>bond0</strong> on "
-"Linux, <strong>lagg0</strong> on FreeBSD systems.</li></ul>"
+"the basic name for physical interface identifiers, e.g. <strong>eth0</"
+"strong> or <strong>em0</strong> with biosdevname.</li><li>For virtual "
+"interfaces, use either alias notation (<strong>eth0:1</strong>, name:index) "
+"or VLAN notation (<strong>eth0.15</strong>, name.tag).</li><li>For bonds "
+"it's common to use <strong>bond0</strong> on Linux, <strong>lagg0</strong> "
+"on FreeBSD systems.</li></ul>"
 msgstr ""
-"这个接口的设备标识符。不同的平台和环境可能会有不同的标识符，这里是一些常用示例。<br/><ul><li>物理接口标识符使用的基本名称，例如：<strong>eth0</strong>"
-" 或 <strong>em0</strong> 附带 "
+"这个接口的设备标识符。不同的平台和环境可能会有不同的标识符，这里是一些常用示例。<br/"
+"><ul><li>物理接口标识符使用的基本名称，例如：<strong>eth0</strong> 或 <strong>em0</strong> 附带 "
 "biosdevname。</li><li>虚拟接口使用别名符号（<strong>eth0:1</strong>,，名称:索引）或者 VLAN "
-"符号（<strong>eth0.15</strong>，名称.标签）。</li><li>在绑定中通常在 Linux 中使用 "
-"<strong>bond0</strong>，在 FreeBSD 系统中使用 <strong>lagg0</strong>。</li></ul>"
+"符号（<strong>eth0.15</strong>，名称.标签）。</li><li>在绑定中通常在 Linux 中使用 <strong>bond0</"
+"strong>，在 FreeBSD 系统中使用 <strong>lagg0</strong>。</li></ul>"
 
 msgid "Device identifier, e.g. eth0 or eth1.1"
 msgstr "设备标识符，例如：eth0 或者 eth1.1。"
@@ -1749,13 +1742,13 @@ msgid "Distribution chart"
 msgstr "分布图"
 
 msgid ""
-"Do not send this parameter via the ENC. Puppet will use the value defined in"
-" the Puppet manifest for this parameter."
+"Do not send this parameter via the ENC. Puppet will use the value defined in "
+"the Puppet manifest for this parameter."
 msgstr "不使用 ENC 发送这个参数。Puppet 将在这个参数值使用 Puppet 清单中定义的数值。"
 
 msgid ""
-"Do not send this parameter via the ENC. Puppet will use the value defined in"
-" the puppet manifest for this parameter"
+"Do not send this parameter via the ENC. Puppet will use the value defined in "
+"the puppet manifest for this parameter"
 msgstr "不使用 ENC 发送这个参数。Puppet 将在这个参数值使用 Puppet 清单中定义的数值"
 
 msgid "Do not use your email as your password"
@@ -1802,8 +1795,7 @@ msgstr "主机计数"
 msgid "Domain|Name"
 msgstr "名称"
 
-# translation auto-copied from project empathy, version 3.8.3, document
-# empathy
+# translation auto-copied from project empathy, version 3.8.3, document empathy
 msgid "Down"
 msgstr "离线"
 
@@ -1811,8 +1803,8 @@ msgid "EC2"
 msgstr "EC2"
 
 msgid ""
-"Each architecture can also be associated with more than one operating system"
-" and a selector block is provided to allow you to select valid combinations."
+"Each architecture can also be associated with more than one operating system "
+"and a selector block is provided to allow you to select valid combinations."
 msgstr "每个架构可以与一个以上的操作系统有效组合。"
 
 msgid ""
@@ -1920,10 +1912,10 @@ msgid "Edit your host"
 msgstr "编辑主机"
 
 msgid ""
-"Either you didnt generate the puppetdocs (see <a rel=\"external\" "
-"href=\"%{url}\">here</a>) or the class <strong>%{name}</strong> could not be"
-" found in environment <strong>%{environment}</strong><br/> Please ensure "
-"that the class <strong>%{name}</strong>s declaration is accessible via the "
+"Either you didnt generate the puppetdocs (see <a rel=\"external\" href="
+"\"%{url}\">here</a>) or the class <strong>%{name}</strong> could not be "
+"found in environment <strong>%{environment}</strong><br/> Please ensure that "
+"the class <strong>%{name}</strong>s declaration is accessible via the "
 "modulepath associated with <strong>%{environment}</strong>."
 msgstr ""
 "可能您没有生成 puppetdocs（请查看 <a rel=\"external\" href=\"%{url}\">这里</a>），或者无法在 "
@@ -2032,8 +2024,7 @@ msgstr "在与 %{cr} 通讯时出错：%{e}"
 msgid "Error loading virtual machine information: %s"
 msgstr "载入虚拟机 %s 信息时出错"
 
-# translation auto-copied from project evolution, version el6, document
-# evolution-2.32
+# translation auto-copied from project evolution, version el6, document evolution-2.32
 msgid "Errors"
 msgstr "错误"
 
@@ -2260,8 +2251,8 @@ msgid ""
 msgstr "使用磁盘 Puppet 安装更新环境及 Puppet 类别失败：%s"
 
 msgid ""
-"Failed to update the environments and Puppet classes from the on-disk puppet"
-" installation: %s"
+"Failed to update the environments and Puppet classes from the on-disk puppet "
+"installation: %s"
 msgstr "使用磁盘 Puppet 安装更新环境及 Puppet 类别失败：%s"
 
 msgid "Failed to validate %{host}: %{error}"
@@ -2277,8 +2268,7 @@ msgstr "通过智能代理服务器 %{proxy} 部署失败： %{error}。"
 msgid "Failure parsing %{template}: %{error}."
 msgstr "解析 %{template} 失败： %{error}"
 
-# translation auto-copied from project pulseaudio, version 3.0, document
-# pulseaudio
+# translation auto-copied from project pulseaudio, version 3.0, document pulseaudio
 msgid "Failure: %s"
 msgstr "失败：%s"
 
@@ -2364,12 +2354,12 @@ msgid ""
 "directory structure where the disk images are named 5.8 or 6.2, and each "
 "contained both x86_64 and i386 binaries, then you\\n  could create a single "
 "medium entry describing them all.\\n  The entry, which could be just named "
-"'Red Hat' could contain a path like this "
-"<em>'http://server/redhat/$version/$arch'</em>"
+"'Red Hat' could contain a path like this <em>'http://server/redhat/$version/"
+"$arch'</em>"
 msgstr ""
 "例如：如果将一些 Red Hat 发行磁盘复制到目录结构中，并将这些磁盘映像命名为 5.8 或者 6.2，且每个映像都包含 x86_64 及 i386 "
-"二进制格式，那么您\\n就可以生成一个描述它们的介质条目。\\n可将该条目命名为 'Red Hat'，也可以包含路径，比如 "
-"<em>'http://server/redhat/$version/$arch'</em>。"
+"二进制格式，那么您\\n就可以生成一个描述它们的介质条目。\\n可将该条目命名为 'Red Hat'，也可以包含路径，比如 <em>'http://"
+"server/redhat/$version/$arch'</em>。"
 
 msgid ""
 "For example, there might be a data center in London and one in Virginia; "
@@ -2485,8 +2475,7 @@ msgstr "全跟踪"
 msgid "Gateway"
 msgstr "网关"
 
-# translation auto-copied from project nm-applet, version 0.8.1, document nm-
-# applet, author Leah Liu
+# translation auto-copied from project nm-applet, version 0.8.1, document nm-applet, author Leah Liu
 msgid "General"
 msgstr "常规"
 
@@ -2810,8 +2799,8 @@ msgid "Hosts that had performed modifications without error"
 msgstr "主机已进行了修改且未发生错误"
 
 msgid ""
-"Hosts that will be trusted in addition to Smart Proxies for access to "
-"fact/report importers and ENC output"
+"Hosts that will be trusted in addition to Smart Proxies for access to fact/"
+"report importers and ENC output"
 msgstr "除智能代理服务器外也可信任的主机，用来访问详情/报告导入程序及 ENC 输出结果。"
 
 msgid "Hosts which didn't run puppet in the last %s"
@@ -2963,8 +2952,7 @@ msgstr "IPAM"
 msgid "IRC"
 msgstr "IRC"
 
-# translation auto-copied from project anaconda, version 19.31.34, document
-# anaconda
+# translation auto-copied from project anaconda, version 19.31.34, document anaconda
 msgid "Identifier"
 msgstr "标示符"
 
@@ -2972,8 +2960,8 @@ msgid "Identifier of the interface to which this interface belongs, e.g. eth1"
 msgstr "这个接口所属接口识别符，例如：eth1"
 
 msgid ""
-"Identifier of the interface to which this interface belongs, e.g. eth1. Only"
-" for virtual interfaces."
+"Identifier of the interface to which this interface belongs, e.g. eth1. Only "
+"for virtual interfaces."
 msgstr "这个接口所属接口识别符，例如：eth1。仅用于虚拟接口。"
 
 msgid ""
@@ -3015,8 +3003,8 @@ msgid ""
 msgstr "如果您认为这是 Satellite 6 自身的错误，请提交新问题。"
 
 msgid ""
-"If you wish to track the actions of a particular user then it is possible to"
-" use an additional authentication stage and provide a user account."
+"If you wish to track the actions of a particular user then it is possible to "
+"use an additional authentication stage and provide a user account."
 msgstr "如果您要追踪某个具体用户的操作，则可以使用附加认证阶段并提供用户帐户。"
 
 msgid ""
@@ -3101,10 +3089,9 @@ msgid "Importing Puppet classes and environments"
 msgstr "正在导入 Puppet 分类和环境"
 
 msgid ""
-"In addition to defining which puppet classes get included when building this"
-" host type you are also able to assign variables and provisioning "
-"information to a host group to further refine the behavior of the puppet "
-"runtime."
+"In addition to defining which puppet classes get included when building this "
+"host type you are also able to assign variables and provisioning information "
+"to a host group to further refine the behavior of the puppet runtime."
 msgstr "除规定构建这个主机类型需要包含的 puppet 分类外，您还可以为主机组分配变量及置备信息，以便细化 puppet 运行时行为。"
 
 msgid "Include this host within Satellite 6 reporting"
@@ -3146,8 +3133,7 @@ msgstr "已安装"
 msgid "Interface"
 msgstr "接口"
 
-# translation auto-copied from project virt-manager, version 0.10.0, document
-# virt-manager
+# translation auto-copied from project virt-manager, version 0.10.0, document virt-manager
 msgid "Interface name"
 msgstr "接口名称"
 
@@ -3157,8 +3143,7 @@ msgstr "结构提供者，例如 IPMI。仅用于 BMC 接口。"
 msgid "Interface type, e.g: bmc"
 msgstr "接口类型，例如：bmc"
 
-# translation auto-copied from project firewalld, version 0.3.8, document
-# firewalld
+# translation auto-copied from project firewalld, version 0.3.8, document firewalld
 msgid "Interfaces"
 msgstr "接口"
 
@@ -3265,8 +3250,7 @@ msgstr "最新事件"
 msgid "Level"
 msgstr "阶段"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1,
-# document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
 msgid "List all :resource_id"
 msgstr "列出所有：resource_id"
 
@@ -3688,13 +3672,11 @@ msgid ""
 "system managed via Satellite 6 is housed."
 msgstr "使用位置管理和区分通过 Satellite 6 进行系统管理的实际位置。"
 
-# translation auto-copied from project authconfig, version 6.2.8, document
-# authconfig
+# translation auto-copied from project authconfig, version 6.2.8, document authconfig
 msgid "Lock"
 msgstr "锁定"
 
-# translation auto-copied from project control-center, version 3.8.6, document
-# gnome-control-center-2.0
+# translation auto-copied from project control-center, version 3.8.6, document gnome-control-center-2.0
 msgid "Log out"
 msgstr "注销"
 
@@ -3795,8 +3777,7 @@ msgstr "MAC"
 msgid "MAC Address"
 msgstr "MAC 地址"
 
-# translation auto-copied from project libvirt, version 1.1.1, document
-# libvirt
+# translation auto-copied from project libvirt, version 1.1.1, document libvirt
 msgid "MAC address"
 msgstr "MAC 地址"
 
@@ -3812,8 +3793,7 @@ msgstr "机器类型"
 msgid "Machine type"
 msgstr "机器类型"
 
-# translation auto-copied from project evolution, version 3.8.5, document
-# evolution-3.8
+# translation auto-copied from project evolution, version 3.8.5, document evolution-3.8
 msgid "Mail Preferences"
 msgstr "邮件首选项"
 
@@ -3882,8 +3862,8 @@ msgstr "匹配程序"
 msgid ""
 "Matcher is a combination of an attribute and its value, if they match, the "
 "value below would be provided.<br> You may use any attribute Satellite 6 "
-"knows about, such as facts etc for example: <code> domain = example.com "
-"</code> or <code> is_virtual = true</code>"
+"knows about, such as facts etc for example: <code> domain = example.com </"
+"code> or <code> is_virtual = true</code>"
 msgstr ""
 "映射器是属性及属性值的组合。如果它们匹配，则提供以下值。<br>您可以使用任意 Satellite 6 了解的属性，比如详情等等。例如：<code> "
 "domain = example.com </code> or <code> is_virtual = true</code>"
@@ -3946,8 +3926,7 @@ msgstr "精华"
 msgid "Message|Value"
 msgstr "值"
 
-# translation auto-copied from project shotwell-core, version 0.14.1, document
-# shotwell-core
+# translation auto-copied from project shotwell-core, version 0.14.1, document shotwell-core
 msgid "Metadata"
 msgstr "元数据"
 
@@ -4262,8 +4241,8 @@ msgid "Nic::Base|Virtual"
 msgstr "虚拟"
 
 msgid ""
-"No %{template_kind} templates were found for this host, make sure you define"
-" at least one in your %{os} settings"
+"No %{template_kind} templates were found for this host, make sure you define "
+"at least one in your %{os} settings"
 msgstr "没有找到这个主机的 %{template_kind} 模板，请确定在 %{os} 设置中至少设定一个模板。"
 
 msgid "No Capsules to show"
@@ -4413,8 +4392,7 @@ msgstr "无"
 msgid "None Found"
 msgstr "未发现"
 
-# translation auto-copied from project evolution, version 3.8.5, document
-# evolution-3.8
+# translation auto-copied from project evolution, version 3.8.5, document evolution-3.8
 msgid "Normal"
 msgstr "正常"
 
@@ -4529,8 +4507,7 @@ msgstr "过时的"
 msgid "Off"
 msgstr "关闭"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1,
-# document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
 msgid "Ok"
 msgstr "确定"
 
@@ -5095,11 +5072,11 @@ msgid "Puppet Reports integration"
 msgstr "Puppet 报告集合"
 
 msgid ""
-"Puppet Summary Report - F:%{failed} R:%{restarted} S:%{skipped} A:%{applied}"
-" FR:%{failed_restarts} T:%{total}"
-msgstr ""
-"Puppet 概要报告 - F:%{failed} R:%{restarted} S:%{skipped} A:%{applied} "
+"Puppet Summary Report - F:%{failed} R:%{restarted} S:%{skipped} A:%{applied} "
 "FR:%{failed_restarts} T:%{total}"
+msgstr ""
+"Puppet 概要报告 - F:%{failed} R:%{restarted} S:%{skipped} A:%{applied} FR:"
+"%{failed_restarts} T:%{total}"
 
 msgid "Puppet class"
 msgstr "Puppet 分类"
@@ -5227,20 +5204,18 @@ msgid "Red Hat Satellite Blog"
 msgstr "Red Hat Satellite 博客"
 
 msgid ""
-"Redirect your users to this url on logout (authorize_login_delegation should"
-" also be enabled)"
+"Redirect your users to this url on logout (authorize_login_delegation should "
+"also be enabled)"
 msgstr "退出时将您的用户重新指向这个 url（还应启用 authorize_login_delegation）"
 
-# translation auto-copied from project anaconda, version 19.31.34, document
-# anaconda
+# translation auto-copied from project anaconda, version 19.31.34, document anaconda
 msgid "Refresh"
 msgstr "刷新"
 
 msgid "Refresh Capsule features"
 msgstr "刷新 Capsule 功能"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman, author Leah Liu
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman, author Leah Liu
 msgid "Refresh external user group"
 msgstr "刷新外部用户组"
 
@@ -5470,33 +5445,32 @@ msgid ""
 msgstr "Satellite 6 自带一些导入程序以减轻当前安装的数据载入负担。"
 
 msgid ""
-"Satellite 6 considers a domain and a DNS zone as the same thing. That is, if"
-" you are planning to manage a site where all the machines are or the form "
-"<i>hostname</i>.<b>somewhere.com</b>\\n  then the domain is "
-"<b>somewhere.com</b>. This allows Satellite 6 to associate a puppet variable"
-" with a domain/site and automatically append this variable to all external "
-"node requests made\\n  by machines at that site."
+"Satellite 6 considers a domain and a DNS zone as the same thing. That is, if "
+"you are planning to manage a site where all the machines are or the form "
+"<i>hostname</i>.<b>somewhere.com</b>\\n  then the domain is <b>somewhere."
+"com</b>. This allows Satellite 6 to associate a puppet variable with a "
+"domain/site and automatically append this variable to all external node "
+"requests made\\n  by machines at that site."
 msgstr ""
-"Satellite 6 将域和 DNS 区域视为同样的内容。即如果您计划管理所有格式为 "
-"<i>hostname</i>.<b>somewhere.com</b> 的机器所在的网页，\\n那么该域即为 "
-"<b>somewhere.com</b>。这可让 Satellite 6 与使用域/网页的 puppet "
-"变量关联，并自动将这个变量添加到\\n那个网页中的机器发出请求的所有外部节点。"
+"Satellite 6 将域和 DNS 区域视为同样的内容。即如果您计划管理所有格式为 <i>hostname</i>.<b>somewhere."
+"com</b> 的机器所在的网页，\\n那么该域即为 <b>somewhere.com</b>。这可让 Satellite 6 与使用域/网页的 "
+"puppet 变量关联，并自动将这个变量添加到\\n那个网页中的机器发出请求的所有外部节点。"
 
 msgid "Satellite 6 report creation time is <em>%s</em>"
 msgstr "Satellite 6 报告生成时间为 <em>%s</em>"
 
 msgid ""
 "Satellite 6 supports automatically creating realm entries for new hosts.  "
-"When a realm is selected for a host, Satellite 6 contacts the relevant realm"
-" Capsule to create an entry for the host and retrieve it's one-time "
+"When a realm is selected for a host, Satellite 6 contacts the relevant realm "
+"Capsule to create an entry for the host and retrieve it's one-time "
 "registration password."
 msgstr ""
 "Satellite 6 支持为新主机自动生成范围条目。为主机选择范围后，Satellite 6 与相关范围 Capsule "
 "联络为该主机生成条目，并检索其一次性注册密码。"
 
 msgid ""
-"Satellite 6, by default, operates in anonymous mode where all operations are"
-" performed without reference to the user who is performing the task."
+"Satellite 6, by default, operates in anonymous mode where all operations are "
+"performed without reference to the user who is performing the task."
 msgstr "Satellite 6 默认情况下以匿名模式操作，即所有操作都不会显示执行该任务的用户信息。 "
 
 msgid "Satellite domain ID of interface"
@@ -5720,8 +5694,7 @@ msgstr "这个接口应由 DHCP 管理还是由 DNS 智能代理服务器管理�
 msgid "Show %{host} facts"
 msgstr "显示 %{host} 详情"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1,
-# document katello, author Leah Liu
+# translation auto-copied from project Satellite6 Katello, version 6.1, document katello, author Leah Liu
 msgid "Show :a_resource"
 msgstr "显示：a_resource"
 
@@ -5857,8 +5830,7 @@ msgstr "显示架构"
 msgid "Show an audit"
 msgstr "显示审核"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1,
-# document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
 msgid "Show an environment"
 msgstr "显示环境"
 
@@ -6029,8 +6001,7 @@ msgstr "存储域"
 msgid "Storage pool"
 msgstr "存储池"
 
-# translation auto-copied from project firstboot, version 19.6, document
-# firstboot
+# translation auto-copied from project firstboot, version 19.6, document firstboot
 msgid "Strong"
 msgstr "强"
 
@@ -6139,8 +6110,8 @@ msgid "Successfully updated %s."
 msgstr "成功更新 %s."
 
 msgid ""
-"Successfully updated environments and Puppet classes from the on-disk Puppet"
-" installation"
+"Successfully updated environments and Puppet classes from the on-disk Puppet "
+"installation"
 msgstr "成功使用磁盘 Puppet 安装更新环境及 Puppet 分类"
 
 msgid "Suggest new"
@@ -6250,8 +6221,8 @@ msgid "Test Connection"
 msgstr "测试连接"
 
 msgid ""
-"The <b>fullname</b> field is used for human readability in reports and other"
-" pages that refer to domains,\\n  and also available as an external node "
+"The <b>fullname</b> field is used for human readability in reports and other "
+"pages that refer to domains,\\n  and also available as an external node "
 "parameter"
 msgstr "使用 <b>fullname</b> 字段方便阅读报告和其他参考该域的页面，\\n  同时也可作为外部节点参数使用。"
 
@@ -6296,8 +6267,8 @@ msgid ""
 "used by Sparc Solaris builds and can be left blank for other architectures. "
 "The value can be determined on Solaris via uname -i|cut -f2 -d,"
 msgstr ""
-"Open Boot Prom 报告的这台机器的类别。主要由 Sparc Solaris 构建使用，并可为其他架构将其留为空白。在 Solaris 中使用"
-" uname -i|cut -f2 -d 决定它的值。"
+"Open Boot Prom 报告的这台机器的类别。主要由 Sparc Solaris 构建使用，并可为其他架构将其留为空白。在 Solaris 中使用 "
+"uname -i|cut -f2 -d 决定它的值。"
 
 msgid "The default administrator email address"
 msgstr "默认管理员邮箱"
@@ -6315,13 +6286,13 @@ msgid "The file path where your p12 file is located"
 msgstr "p12 文件的文件路径"
 
 msgid ""
-"The final entry, Operating System default, can be set by editing the %s "
-"page."
+"The final entry, Operating System default, can be set by editing the %s page."
+""
 msgstr "最后一个条目，默认为操作系统，可编辑 %s 页面设置它们。"
 
 msgid ""
-"The following entries were found conflicting with what Satellite 6 wanted to"
-" apply."
+"The following entries were found conflicting with what Satellite 6 wanted to "
+"apply."
 msgstr "发现以下条目与 Satellite 6 要应用的内容冲突。"
 
 msgid "The following errors may prevent a successful build:"
@@ -6365,8 +6336,8 @@ msgid ""
 "that the explicit partition table will be found at <b>/tmp/diskpart.cfg</b> "
 "during the build process."
 msgstr ""
-"在某行的开头添加关键字字符串  <b>#Dynamic</b>，以便让 Satellite 6 了解这不是明确指定的磁盘布局，且必须将其视为 shell"
-" 脚本，要在安装\\n进程开始前执行，并可在构建过程中在 <b>/tmp/diskpart.cfg</b> 中找到明确的分区表。"
+"在某行的开头添加关键字字符串  <b>#Dynamic</b>，以便让 Satellite 6 了解这不是明确指定的磁盘布局，且必须将其视为 shell "
+"脚本，要在安装\\n进程开始前执行，并可在构建过程中在 <b>/tmp/diskpart.cfg</b> 中找到明确的分区表。"
 
 msgid ""
 "The keywords <b>$version</b>, <b>$major</b> and <b>$minor</b> will be "
@@ -6392,27 +6363,26 @@ msgid "The order in which values are resolved"
 msgstr "解析数值的顺序"
 
 msgid ""
-"The path to the medium, can be a URL or a valid NFS server (exclusive of the"
-" architecture).\\n          for example "
-"<em>http://mirror.centos.org/centos/$version/os/$arch</em> where "
-"<strong>$arch</strong> will be substituted for the host's actual OS "
-"architecture and <strong>$version</strong>, <strong>$major</strong> and "
-"<strong>$minor</strong> will be substituted for the version of the operating"
-" system. Solaris and Debian media may also use <strong>$release</strong>."
+"The path to the medium, can be a URL or a valid NFS server (exclusive of the "
+"architecture).\\n          for example <em>http://mirror.centos.org/centos/"
+"$version/os/$arch</em> where <strong>$arch</strong> will be substituted for "
+"the host's actual OS architecture and <strong>$version</strong>, "
+"<strong>$major</strong> and <strong>$minor</strong> will be substituted for "
+"the version of the operating system. Solaris and Debian media may also use "
+"<strong>$release</strong>."
 msgstr ""
-"介质路径，可以是 URL 或者幼小 NFS 服务器（不包括架构）。\\n         例如： "
-"<em>http://mirror.centos.org/centos/$version/os/$arch</em>，其中使用主机实际操作系统架构替换 "
-"<strong>$arch</strong>，使用操作系统版本替换 <strong>$version</strong>, "
-"<strong>$major</strong> 和 <strong>$minor</strong>。Solaris 和 Debian 介质也可以使用 "
-"<strong>$release</strong>。"
+"介质路径，可以是 URL 或者幼小 NFS 服务器（不包括架构）。\\n         例如： <em>http://mirror.centos."
+"org/centos/$version/os/$arch</em>，其中使用主机实际操作系统架构替换 <strong>$arch</"
+"strong>，使用操作系统版本替换 <strong>$version</strong>, <strong>$major</strong> 和 "
+"<strong>$minor</strong>。Solaris 和 Debian 介质也可以使用 <strong>$release</strong>。"
 
 msgid "The realm name, e.g. EXAMPLE.COM"
 msgstr "范围名称，例如：EXAMPLE.COM"
 
 msgid ""
 "The remote system presented a public key signed by an unidentified "
-"certificate authority. If you are sure the remote system is authentic, go to"
-" the compute resource edit page, press the 'Test Connection' or 'Load "
+"certificate authority. If you are sure the remote system is authentic, go to "
+"the compute resource edit page, press the 'Test Connection' or 'Load "
 "Datacenters' button and submit"
 msgstr ""
 "显示由无法识别证书授权签名的公钥的远程系统。如果您确定该远程系统可信，请进入计算资源编辑页面，按“测试连接”或者“载入数据中心”按纽并提交。"
@@ -6430,8 +6400,8 @@ msgid "The selected hosts will execute a build operation on next reboot"
 msgstr "所选主机将在下次重启时执行构建操作。"
 
 msgid ""
-"The user that is used to ssh into the instance, normally cloud-user, "
-"ec2-user, ubuntu, root etc"
+"The user that is used to ssh into the instance, normally cloud-user, ec2-"
+"user, ubuntu, root etc"
 msgstr "使用 ssh 进入该实例的用户，通常为 cloud-user, ec2-user, ubuntu, root 等等。"
 
 msgid "The virtual machine is being deleted."
@@ -6551,12 +6521,13 @@ msgid ""
 "To start collecting trend data, set a cron job to execute 'foreman-rake "
 "trends:counter' every Puppet Interval (%s minutes)."
 msgstr ""
-"要开始收集趋势数据，请将 cron 任务设定为每个 Puppet 间隔（%s 分钟）执行一次 'foreman-rake trends:counter'"
-" 。"
+"要开始收集趋势数据，请将 cron 任务设定为每个 Puppet 间隔（%s 分钟）执行一次 'foreman-rake trends:counter' "
+"。"
 
 msgid ""
-"To start collecting trend data, set a cron job to execute <span class='black"
-"'>foreman-rake trends:counter</span> every Puppet Interval (%s minutes)"
+"To start collecting trend data, set a cron job to execute <span class="
+"'black'>foreman-rake trends:counter</span> every Puppet Interval (%s "
+"minutes)"
 msgstr ""
 "要开始收集趋势数据，请将 cron 任务设定为每个 Puppet 间隔（%s 分钟）执行一次 <span class='black'>foreman-"
 "rake trends:counter</span>。"
@@ -6672,8 +6643,7 @@ msgstr "报告的 UTC 时间"
 msgid "UUID"
 msgstr "UUID"
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version
-# 6.1, document foreman_discovery, author Leah Liu
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery, author Leah Liu
 msgid ""
 "UUID to track orchestration tasks status, GET /api/orchestration/:UUID/tasks"
 msgstr "用来跟踪复杂任务状态的 UUID，GET /api/orchestration/:UUID/tasks"
@@ -6891,8 +6861,7 @@ msgstr "更新操作系统的默认模板组合"
 msgid "Update a domain"
 msgstr "更新域"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1,
-# document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
 msgid "Update a filter"
 msgstr "更新过滤器"
 
@@ -6905,8 +6874,7 @@ msgstr "更新硬件型号"
 msgid "Update a host"
 msgstr "更新主机"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1,
-# document katello, author Leah Liu
+# translation auto-copied from project Satellite6 Katello, version 6.1, document katello, author Leah Liu
 msgid "Update a host group"
 msgstr "更新主机组"
 
@@ -6970,8 +6938,7 @@ msgstr "更新 LDAP 认证源"
 msgid "Update an architecture"
 msgstr "更新架构"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1,
-# document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
 msgid "Update an environment"
 msgstr "更新环境"
 
@@ -7014,8 +6981,7 @@ msgstr "已更新主机：更改环境"
 msgid "Updated hosts: changed host group"
 msgstr "已更新主机：更改主机组"
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version
-# 6.1, document foreman_discovery, author Leah Liu
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery, author Leah Liu
 msgid "Upload facts for a host, creating the host if required"
 msgstr "上传主机详情，如需要，请创建主机。"
 
@@ -7048,8 +7014,7 @@ msgstr "用户身份验证"
 msgid "User Groups"
 msgstr "用户组"
 
-# translation auto-copied from project Red Hat Satellite User Guide, version
-# 6.0, document Book_Info
+# translation auto-copied from project Red Hat Satellite User Guide, version 6.0, document Book_Info
 msgid "User Guide"
 msgstr "用户指南"
 
@@ -7166,8 +7131,8 @@ msgid "Uses thin provisioning if unchecked"
 msgstr "未选择就使用精简配置"
 
 msgid ""
-"Using the organization system provides a way to group resources together for"
-" easy management."
+"Using the organization system provides a way to group resources together for "
+"easy management."
 msgstr "使用机构系统提供将资源分组的方法以便于管理。"
 
 msgid "VCPU(s)"
@@ -7294,13 +7259,11 @@ msgstr "警告和错误"
 msgid "We have not found any documentation for your API."
 msgstr "未找到有关您 API 的任何文档。"
 
-# translation auto-copied from project firstboot, version 19.6, document
-# firstboot
+# translation auto-copied from project firstboot, version 19.6, document firstboot
 msgid "Weak"
 msgstr "弱"
 
-# translation auto-copied from project evolution, version 3.8.5, document
-# evolution-3.8
+# translation auto-copied from project evolution, version 3.8.5, document evolution-3.8
 msgid "Weekly"
 msgstr "每周"
 
@@ -7333,15 +7296,15 @@ msgstr "当主机需要一个模板时（比如在置备过程中），Foreman �
 
 msgid ""
 "When editing a Template, you must assign a list of Operating Systems which "
-"this Template can be used with. Optionally, you can restrict a template to a"
-" list of Hostgroups and/or Environments"
+"this Template can be used with. Optionally, you can restrict a template to a "
+"list of Hostgroups and/or Environments"
 msgstr "编辑模板时，您必须分配一个可在其中使用这个模板的操作系统列表。另外，您也可以将模板限制为主机组和（/或者）环境列表。"
 
 msgid ""
-"When operating in unattended mode Satellite 6 will require more information,"
-" so expect more questions, but it will be able to automate host "
-"installations for Red Hat, Debian, SUSE and Solaris operating systems (and "
-"their clones), see"
+"When operating in unattended mode Satellite 6 will require more information, "
+"so expect more questions, but it will be able to automate host installations "
+"for Red Hat, Debian, SUSE and Solaris operating systems (and their clones), "
+"see"
 msgstr ""
 "使用无人模式操作时，Satellite 6 将需要更多信息，就会提出更多问题，但仍可以自动托管 Red Hat、Debian、SUSE 和 "
 "Solaris 操作系统（及其克隆系统）的安装，请查看"
@@ -7362,8 +7325,8 @@ msgid "YAML"
 msgstr "YAML"
 
 msgid ""
-"You Are about to change the default PXE menu on all configured TFTP servers "
-"- continue ?"
+"You Are about to change the default PXE menu on all configured TFTP servers -"
+" continue ?"
 msgstr "您要在所有配置的 TFTP 服务器中更改默认 PXE 菜单，要继续吗？"
 
 msgid ""
@@ -7395,18 +7358,18 @@ msgid "You can find us on %{freenode} (irc.freenode.net) on #satellite6."
 msgstr "您可以在 #satellite6 中的 %{freenode} (irc.freenode.net) 找到我们。"
 
 msgid ""
-"You can select one of three possible IPAM "
-"modes:<br/><ul><li><strong>DHCP</strong> - will manage the IP on DHCP "
-"through assigned DHCP proxy, auto-suggested IPs come from "
-"DHCP</li><li><strong>Internal DB</strong> - use internal DB to auto-suggest "
-"free IP based on other interfaces on same subnet respecting range if "
-"specified, useful mainly with static boot mode</li><li><strong>None</strong>"
-" - leave IP management solely on user, no auto-suggestion</li></ul>"
+"You can select one of three possible IPAM modes:<br/><ul><li><strong>DHCP</"
+"strong> - will manage the IP on DHCP through assigned DHCP proxy, auto-"
+"suggested IPs come from DHCP</li><li><strong>Internal DB</strong> - use "
+"internal DB to auto-suggest free IP based on other interfaces on same subnet "
+"respecting range if specified, useful mainly with static boot mode</"
+"li><li><strong>None</strong> - leave IP management solely on user, no auto-"
+"suggestion</li></ul>"
 msgstr ""
 "您可以在三种可能的 IPAM 模式中选择一个：<br/><ul><li><strong>DHCP</strong> - 如果分配的 DHCP "
 "代理服务器管理 DHCP 中的 IP，来自 DHCP</li><li><strong>内部数据库</strong>的自动建议 IP - "
-"使用内部数据库根据同一子网中各自范围（若指定）的其他接口自动建议可用 "
-"IP，主要用于静态引导模式</li><li><strong>None</strong> - 仅由用户管理 IP，无自动建议</li></ul>"
+"使用内部数据库根据同一子网中各自范围（若指定）的其他接口自动建议可用 IP，主要用于静态引导模式</li><li><strong>None</"
+"strong> - 仅由用户管理 IP，无自动建议</li></ul>"
 
 msgid "You can't assign locations to this resource"
 msgstr "您无法将位置分配给这个资源"
@@ -7427,8 +7390,8 @@ msgid "You don't seem to have any Hosts, for more information see"
 msgstr "您好像没有任何主机，详情请查看"
 
 msgid ""
-"You don't seem to have any facts yet. If you wish to configure fact pushing,"
-" please follow"
+"You don't seem to have any facts yet. If you wish to configure fact pushing, "
+"please follow"
 msgstr "您好像还没有任何详情。如果要配置详情 pushing，请按照以下步骤操作"
 
 msgid ""
@@ -7450,11 +7413,11 @@ msgid "You may also find the"
 msgstr "您还会发现"
 
 msgid ""
-"You may create puppet classes that represent high-level host configurations,"
-" for example, a <b>host-type-ldap-server</b> class, which includes all the "
-"required functionality from other modules or you may decide to create a host"
-" group called <b>host-type-ldap-server</b> and add the required classes into"
-" the host group configuration."
+"You may create puppet classes that represent high-level host configurations, "
+"for example, a <b>host-type-ldap-server</b> class, which includes all the "
+"required functionality from other modules or you may decide to create a host "
+"group called <b>host-type-ldap-server</b> and add the required classes into "
+"the host group configuration."
 msgstr ""
 "您可以生成代表高端主机配置的 puppet 类别，例如：<b>host-type-ldap-server</b> "
 "类别，它包含所有其他模块所需功能，或者您也可以决定生成名为 <b>host-type-ldap-server</b> "
@@ -7466,12 +7429,12 @@ msgid ""
 "operation in which Satellite 6 creates and manages the configuration files "
 "necessary to completely configure a new host."
 msgstr ""
-"您可能会使用基本模式运行 Satellite 6，在这种模式中，它可作为报告和外部节点分类程序使用，或者您也可能打开无人操作模式，Satellite 6"
-" 可使用这个模式中生成并管理完成新主机配置所需配置文件。"
+"您可能会使用基本模式运行 Satellite 6，在这种模式中，它可作为报告和外部节点分类程序使用，或者您也可能打开无人操作模式，Satellite 6 "
+"可使用这个模式中生成并管理完成新主机配置所需配置文件。"
 
 msgid ""
-"You may optionally wish to generate the online documentation for your puppet"
-" classes"
+"You may optionally wish to generate the online documentation for your puppet "
+"classes"
 msgstr "还可以自选为您的 puppet 类别生成在线文档"
 
 msgid "You must create a location before continuing."
@@ -7544,8 +7507,7 @@ msgstr "已经存在"
 msgid "already in use"
 msgstr "使用中"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1,
-# document katello, author Leah Liu
+# translation auto-copied from project Satellite6 Katello, version 6.1, document katello, author Leah Liu
 msgid "an organization"
 msgstr "机构"
 
@@ -7588,8 +7550,7 @@ msgstr "结尾不能包含空白字段。"
 msgid "can't contain white spaces"
 msgstr "不能包含空白字段。"
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version
-# 6.1, document foreman_discovery, author Leah Liu
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery, author Leah Liu
 msgid "can't contain white spaces."
 msgstr "不能包含空白字段。"
 
@@ -7683,8 +7644,7 @@ msgstr "例如：sn"
 msgid "e.g. uid"
 msgstr "例如：uid"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1,
-# document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
 msgid "environment id"
 msgstr "环境 id"
 
@@ -7706,8 +7666,7 @@ msgstr "保存 %s失败"
 msgid "filter for %s role"
 msgstr "%s 角色的过滤器"
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version
-# 6.1, document foreman_discovery, author Leah Liu
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery, author Leah Liu
 msgid "filter results"
 msgstr "过滤结果"
 
@@ -7741,8 +7700,7 @@ msgstr "剩余 swap"
 msgid "further instructions"
 msgstr "进一步说明"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1,
-# document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
 msgid "has already been taken"
 msgstr "已提取"
 
@@ -7779,8 +7737,7 @@ msgstr "进行中"
 msgid "included already from parent"
 msgstr "已在上级包含"
 
-# translation auto-copied from project subscription-manager, version 1.10.10,
-# document keys
+# translation auto-copied from project subscription-manager, version 1.10.10, document keys
 msgid "integer"
 msgstr "整数"
 
@@ -7847,8 +7804,7 @@ msgstr "无效，只允许使用 http:// 和 https://。"
 msgid "is invalid: %s"
 msgstr "无效：%s"
 
-# translation auto-copied from project NetworkManager, version 0.9.9.0,
-# document NetworkManager, author Leah Liu
+# translation auto-copied from project NetworkManager, version 0.9.9.0, document NetworkManager, author Leah Liu
 msgid "is not a valid MAC address"
 msgstr "不是有效 MAC 地址"
 
@@ -7884,8 +7840,7 @@ msgstr[0] "最后 %s 天"
 msgid "link external user group with this user group"
 msgstr "将外部用户组与这个用户组关联"
 
-# translation auto-copied from project evolution, version 3.8.5, document
-# evolution-3.8
+# translation auto-copied from project evolution, version 3.8.5, document evolution-3.8
 msgid "list"
 msgstr "列表"
 
@@ -7953,13 +7908,11 @@ msgstr "无"
 msgid "not relevant for snippet"
 msgstr "与片段无关"
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version
-# 6.1, document foreman_discovery, author Leah Liu
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery, author Leah Liu
 msgid "not required if using a subnet with DHCP proxy"
 msgstr "如果使用附带 DHCP 代理服务器的子网则不需要"
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version
-# 6.1, document foreman_discovery, author Leah Liu
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery, author Leah Liu
 msgid "number of entries per request"
 msgstr "每个请求中的条目数"
 
@@ -7990,8 +7943,7 @@ msgstr "os"
 msgid "override"
 msgstr "覆盖"
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version
-# 6.1, document foreman_discovery, author Leah Liu
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery, author Leah Liu
 msgid "paginate results"
 msgstr "页数"
 
@@ -8016,8 +7968,8 @@ msgid ""
 "power action, valid actions are (on/start), (off/stop), (soft/reboot), "
 "(cycle/reset), (state/status)"
 msgstr ""
-"电源操作，有效操作为 (on/start), (off/stop), (soft/reboot), (cycle/reset), "
-"(state/status)。"
+"电源操作，有效操作为 (on/start), (off/stop), (soft/reboot), (cycle/reset), (state/"
+"status)。"
 
 msgid "poweroff"
 msgstr "关闭"
@@ -8053,8 +8005,8 @@ msgid "required"
 msgstr "必填项"
 
 msgid ""
-"required for managed host that is bare metal, not required if it's a virtual"
-" machine"
+"required for managed host that is bare metal, not required if it's a virtual "
+"machine"
 msgstr "如果管理的主机为裸机则需要填写，如果为虚拟机，则不需要。"
 
 msgid "required if host is managed and custom partition has not been defined"
@@ -8112,8 +8064,7 @@ msgstr "不应为空白 - 考虑设置全局或者主机组默认"
 msgid "soft"
 msgstr "软"
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version
-# 6.1, document foreman_discovery, author Leah Liu
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery, author Leah Liu
 msgid "sort results"
 msgstr "结果排序"
 
@@ -8132,8 +8083,7 @@ msgstr "状态"
 msgid "stop"
 msgstr "停止"
 
-# translation auto-copied from project libvirt, version 1.1.1, document
-# libvirt
+# translation auto-copied from project libvirt, version 1.1.1, document libvirt
 msgid "string"
 msgstr "字符串"
 

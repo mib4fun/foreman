@@ -18,12 +18,13 @@ msgstr ""
 "Project-Id-Version: version 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-04-22 11:03-0400\n"
-"PO-Revision-Date: 2015-04-28 12:49+0000\n"
-"Last-Translator: fvalen <fvalen@redhat.com>\n"
-"Language-Team: Italian (http://www.transifex.com/projects/p/foreman/language/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-04-28 12:49+0000\n"
+"Last-Translator: fvalen <fvalen@redhat.com>\n"
+"Language-Team: Italian (http://www.transifex.com/projects/p/foreman/language/"
+"it/)\n"
 "Language: it\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Zanata 3.6.0\n"
@@ -34,8 +35,7 @@ msgstr " Rimuovi"
 msgid "%s - Press Shift-F12 to release the cursor."
 msgstr "%s - Premere Shift-F12 per rilasciare il cursore."
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version
-# 6.1, document foreman_discovery
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery
 msgid "%s - The following hosts are about to be changed"
 msgstr "%s - I seguenti host stanno per essere modificati"
 
@@ -55,8 +55,7 @@ msgid_plural "%s VMs associated to hosts"
 msgstr[0] "%s VM associata con un host"
 msgstr[1] "%s VM associate all'host"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1,
-# document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
 msgid "%s ago"
 msgstr "%s fa"
 
@@ -138,8 +137,8 @@ msgid ""
 "%{id} plugin requires the %{plugin_name} plugin %{matcher} but current is "
 "%{plugin_version}"
 msgstr ""
-"Il plugin %{id} ha bisogno di %{plugin_name} %{matcher}, ma quello attuale è"
-" %{plugin_version}"
+"Il plugin %{id} ha bisogno di %{plugin_name} %{matcher}, ma quello attuale è "
+"%{plugin_version}"
 
 msgid "%{id} plugin requires the %{plugin_name} plugin, not found"
 msgstr ""
@@ -205,8 +204,7 @@ msgstr ""
 "'Content-Type: %s' non è supportato in API v2 per le richieste POST e PUT. "
 "Usare 'Content-Type: application/json'."
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "(Miscellaneous)"
 msgstr "(Altro)"
 
@@ -231,8 +229,8 @@ msgid ""
 "<b>Description:</b> %{desc}<br><b>Type:</b> %{type}<br> <b>Matcher:</b> "
 "%{matcher}"
 msgstr ""
-"<b>Descrizione:</b> %{desc}<br><b>Tipo:</b> %{type}<br> "
-"<b>Corrispondenza:</b> %{matcher}"
+"<b>Descrizione:</b> %{desc}<br><b>Tipo:</b> %{type}<br> <b>Corrispondenza:</"
+"b> %{matcher}"
 
 msgid "<b>Foreman</b> Puppet error report"
 msgstr "<b>Foreman</b> Notifica errore Puppet"
@@ -245,42 +243,42 @@ msgid ""
 "Validator rule field.</dd><dt>Regexp</dt> <dd>Validates the input with the "
 "regular expression in the Validator rule field.</dd></dl>"
 msgstr ""
-"<dl><dt>Elenco</dt> <dd>Un elenco di valori accettati, specificati nel campo"
-" Convalidatore regola.</dd><dt>Regexp</dt> <dd>Convalida l'input con "
+"<dl><dt>Elenco</dt> <dd>Un elenco di valori accettati, specificati nel campo "
+"Convalidatore regola.</dd><dt>Regexp</dt> <dd>Convalida l'input con "
 "l'espressione regolare nel campo Convalidatore regola.</dd></dl>"
 
 msgid ""
-"<dl><dt>String</dt> <dd>Everything is taken as a "
-"string.</dd><dt>Boolean</dt> <dd>Common representation of boolean values are"
-" accepted.</dd><dt>Integer</dt> <dd>Integer numbers only, can be "
-"negative.</dd><dt>Real</dt> <dd>Accept any numerical "
-"input.</dd><dt>Array</dt> <dd>A valid JSON or YAML input, that must evaluate"
-" to an array.</dd><dt>Hash</dt> <dd>A valid JSON or YAML input, that must "
-"evaluate to an object/map/dict/hash.</dd><dt>YAML</dt> <dd>Any valid YAML "
-"input.</dd><dt>JSON</dt> <dd>Any valid JSON input.</dd></dl>"
+"<dl><dt>String</dt> <dd>Everything is taken as a string.</dd><dt>Boolean</"
+"dt> <dd>Common representation of boolean values are accepted.</"
+"dd><dt>Integer</dt> <dd>Integer numbers only, can be negative.</dd><dt>Real</"
+"dt> <dd>Accept any numerical input.</dd><dt>Array</dt> <dd>A valid JSON or "
+"YAML input, that must evaluate to an array.</dd><dt>Hash</dt> <dd>A valid "
+"JSON or YAML input, that must evaluate to an object/map/dict/hash.</"
+"dd><dt>YAML</dt> <dd>Any valid YAML input.</dd><dt>JSON</dt> <dd>Any valid "
+"JSON input.</dd></dl>"
 msgstr ""
-"<dl><dt>Stringa</dt> <dd>Qualsiasi input viene accettato come "
-"stringa.</dd><dt>Booleano</dt> <dd>Viene accettata una rappresentazione "
-"comune dei valori booleani.</dd><dt>Intero</dt> <dd>È possibile usare solo "
-"valori interi, anche negativi.</dd><dt>Reale</dt> <dd>Accetta qualsiasi "
-"input numerico.</dd><dt>Array</dt> <dd>Un input JSON o YAML valido, che "
-"restituisca un array.</dd><dt>Hash</dt> <dd>Un input JSON o YAML valido, che"
-" restituisca un oggetto/mappa/dict/hash.</dd><dt>YAML</dt> <dd>Qualsiasi "
-"input YAML valido.</dd><dt>JSON</dt> <dd>Qualsiasi input JSON "
-"valido.</dd></dl>"
+"<dl><dt>Stringa</dt> <dd>Qualsiasi input viene accettato come stringa.</"
+"dd><dt>Booleano</dt> <dd>Viene accettata una rappresentazione comune dei "
+"valori booleani.</dd><dt>Intero</dt> <dd>È possibile usare solo valori "
+"interi, anche negativi.</dd><dt>Reale</dt> <dd>Accetta qualsiasi input "
+"numerico.</dd><dt>Array</dt> <dd>Un input JSON o YAML valido, che "
+"restituisca un array.</dd><dt>Hash</dt> <dd>Un input JSON o YAML valido, che "
+"restituisca un oggetto/mappa/dict/hash.</dd><dt>YAML</dt> <dd>Qualsiasi "
+"input YAML valido.</dd><dt>JSON</dt> <dd>Qualsiasi input JSON valido.</dd></"
+"dl>"
 
 msgid ""
 "A host group is in some ways similar to an inherited node declaration, in "
-"that it is a high level grouping of classes that can be named and treated as"
-" a unit. This is then treated as a template and  is selectable during the "
+"that it is a high level grouping of classes that can be named and treated as "
+"a unit. This is then treated as a template and  is selectable during the "
 "creation of a new host and ensures that the host is configured in one of "
 "your pre-defined states."
 msgstr ""
-"Un gruppo di host può essere simile a una dichiarazione di nodo ereditato, e"
-" cioè un raggruppamento di classi di alto livello al quale conferire un nome"
-" e trattato come unità, utilizzabile come modello e selezionabile durante la"
-" creazione di un nuovo host. Così facendo l'host potrà essere configurato in"
-" uno degli stati predefiniti."
+"Un gruppo di host può essere simile a una dichiarazione di nodo ereditato, e "
+"cioè un raggruppamento di classi di alto livello al quale conferire un nome "
+"e trattato come unità, utilizzabile come modello e selezionabile durante la "
+"creazione di un nuovo host. Così facendo l'host potrà essere configurato in "
+"uno degli stati predefiniti."
 
 msgid ""
 "A medium represents the source of one or more operating system's "
@@ -288,8 +286,8 @@ msgid ""
 "mirror from the internet or a copy of one or more CD or DVDs."
 msgstr ""
 "Un supporto rappresenta il sorgente di uno o più file d'installazione del "
-"sistema operativo, accessibile per mezzo della rete.\\n Può essere un mirror"
-" di internet o una copia di uno o più CD o DVD."
+"sistema operativo, accessibile per mezzo della rete.\\n Può essere un mirror "
+"di internet o una copia di uno o più CD o DVD."
 
 msgid "A partition table entry represents either"
 msgstr "Una voce per la tabella delle partizioni può rappresentare"
@@ -315,34 +313,29 @@ msgstr "API Key"
 msgid "API documentation"
 msgstr "Documentazione API"
 
-# translation auto-copied from project Customer Portal Translations, version
-# management_page, document Management_Prototype.html, author fvalen
+# translation auto-copied from project Customer Portal Translations, version management_page, document Management_Prototype.html, author fvalen
 msgid "About"
 msgstr "Informazioni"
 
 msgid "Access Key"
 msgstr "Chiave d'accesso"
 
-# translation auto-copied from project libvirt, version 1.1.1, document
-# libvirt
+# translation auto-copied from project libvirt, version 1.1.1, document libvirt
 msgid "Access denied"
 msgstr "Accesso negato"
 
-# translation auto-copied from project Customer Portal Translations, version
-# management_page, document Management_Prototype.html, author fvalen
+# translation auto-copied from project Customer Portal Translations, version management_page, document Management_Prototype.html, author fvalen
 msgid "Account"
 msgstr "Account"
 
 msgid "Acquire IP address for %s"
 msgstr "Acquisizione indirizzo IP per %s"
 
-# translation auto-copied from project policycoreutils, version 2.1.14,
-# document policycoreutils, author fvalen
+# translation auto-copied from project policycoreutils, version 2.1.14, document policycoreutils, author fvalen
 msgid "Action"
 msgstr "Azione"
 
-# translation auto-copied from project file-roller, version 3.8.3, document
-# file-roller
+# translation auto-copied from project file-roller, version 3.8.3, document file-roller
 msgid "Actions"
 msgstr "Azioni"
 
@@ -365,8 +358,7 @@ msgstr "Aggiungi interfaccia"
 msgid "Add Matcher-Value"
 msgstr "Aggiungi Corrispondenza-Valore"
 
-# translation auto-copied from project Red Hat Satellite User Guide, version
-# 6.0, document Host_Groups
+# translation auto-copied from project Red Hat Satellite User Guide, version 6.0, document Host_Groups
 msgid "Add Parameter"
 msgstr "Aggiungi parametro"
 
@@ -416,8 +408,8 @@ msgid "Additional steps"
 msgstr "Fasi aggiuntive"
 
 msgid ""
-"Additionally, you may restrict user permissions based on many criteria, make"
-" sure you check the roles settings tab."
+"Additionally, you may restrict user permissions based on many criteria, make "
+"sure you check the roles settings tab."
 msgstr ""
 "È possibile altresì limitare i permessi dell'utente in base a numerosi "
 "criteri, a tale scopo controllare la scheda relativa ai ruoli."
@@ -458,8 +450,7 @@ msgstr "Tutti i capsule"
 msgid "All compute resources"
 msgstr "Tutte le risorse di calcolo"
 
-# translation auto-copied from project policycoreutils, version 2.1.14,
-# document policycoreutils
+# translation auto-copied from project policycoreutils, version 2.1.14, document policycoreutils
 msgid "All domains"
 msgstr "Tutti i domini"
 
@@ -474,8 +465,8 @@ msgstr "Tutti gli host"
 
 msgid "All hosts data matches configurations for locations and organizations."
 msgstr ""
-"Tutti i dati degli host corrispondono alle configurazioni per le posizioni e"
-" le organizzazioni."
+"Tutti i dati degli host corrispondono alle configurazioni per le posizioni e "
+"le organizzazioni."
 
 msgid "All hosts previously with no %{single} are now assigned to %{name}"
 msgstr ""
@@ -519,16 +510,16 @@ msgstr "Assegnazione (GB)"
 
 msgid ""
 "An IP address will be auto-suggested if you have a DHCP-enabled Smart Proxy "
-"on the subnet selected above.<br/><br/>The IP address can be left blank "
-"when:<br/><ul><li>provisioning tokens are enabled</li><li>the domain does "
-"not manage DNS</li><li>the subnet does not manage reverse DNS</li><li>and "
-"the subnet does not manage DHCP reservations</li></ul>"
+"on the subnet selected above.<br/><br/>The IP address can be left blank when:"
+"<br/><ul><li>provisioning tokens are enabled</li><li>the domain does not "
+"manage DNS</li><li>the subnet does not manage reverse DNS</li><li>and the "
+"subnet does not manage DHCP reservations</li></ul>"
 msgstr ""
 "Un indirizzo IP verrà suggerito automaticamente se è presente un DHCP-"
 "enabled Smart Proxy sulla sottorete selezionata. <br/><br/>L'indirizzo IP "
 "può essere lasciato vuoto quando:<br/><ul><li>sono stati abilitati i token "
-"per il provisioning</li><li>il dominio non gestisce DNS</li><li>la sottorete"
-" non gestisce il DNS inverso</li><li>e la sottorete non gestisce le "
+"per il provisioning</li><li>il dominio non gestisce DNS</li><li>la sottorete "
+"non gestisce il DNS inverso</li><li>e la sottorete non gestisce le "
 "prenotazioni DHCP</li></ul>"
 
 msgid "An explicit layout for the partitions of your hard drive(s). E.G."
@@ -549,8 +540,7 @@ msgstr "Organizzazioni"
 msgid "Applicable<br>Operating Systems"
 msgstr "Applicabile<br>Sistemi operativi"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Applied"
 msgstr "Applicata"
 
@@ -558,9 +548,8 @@ msgstr "Applicata"
 msgid "Applied|A"
 msgstr "A"
 
+# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
 #. "Table name" or "Table name|Column name" for error messages
-# translation auto-copied from project Satellite6 Katello, version 6.1,
-# document katello
 msgid "Architecture"
 msgstr "Architettura"
 
@@ -570,8 +559,7 @@ msgstr "Distribuzione architettura"
 msgid "Architecture configuration"
 msgstr "Configurazione architettura"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Architectures"
 msgstr "Architetture"
 
@@ -593,8 +581,7 @@ msgstr "Sei sicuro di voler %{act} %{vm}?"
 msgid "Are you sure you want to power %{act} %{vm}?"
 msgstr "Sei sicuro di voler attivare %{act} %{vm}?"
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version
-# 6.1, document foreman_discovery
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery
 msgid "Are you sure?"
 msgstr "Sei sicuro?"
 
@@ -613,21 +600,18 @@ msgstr "Assegna tutti"
 msgid "Assign Hosts to %s"
 msgstr "Assegna gli host a %s"
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version
-# 6.1, document foreman_discovery
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery
 msgid "Assign Location"
 msgstr "Assegna posizione"
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version
-# 6.1, document foreman_discovery
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery
 msgid "Assign Organization"
 msgstr "Assegna organizzazione"
 
 msgid "Assign Selected Hosts"
 msgstr "Assegna host selezionati"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1,
-# document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
 msgid ""
 "Assign the %{count} host with no %{taxonomy_single} to %{taxonomy_name}"
 msgid_plural ""
@@ -661,8 +645,7 @@ msgstr "Associa VM con gli host"
 msgid "Associate VMs to Satellite 6 hosts"
 msgstr "Associa le VM con gli host Satellite 6"
 
-# translation auto-copied from project Red Hat Subscription Asset Manager,
-# version 1.0, document images/130996-Progression-SAM, author fvalen
+# translation auto-copied from project Red Hat Subscription Asset Manager, version 1.0, document images/130996-Progression-SAM, author fvalen
 msgid "Association"
 msgstr "Associazione"
 
@@ -739,9 +722,8 @@ msgstr "Versione"
 msgid "Audits"
 msgstr "Verifiche"
 
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 #. "Table name" or "Table name|Column name" for error messages
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
 msgid "Auth source"
 msgstr "Sorgente di autenticazione"
 
@@ -815,8 +797,7 @@ msgstr "Tls"
 msgid "Authentication Source Configuration"
 msgstr "Configurazione sorgente di autenticazione"
 
-# translation auto-copied from project nautilus, version 3.8.2, document
-# nautilus
+# translation auto-copied from project nautilus, version 3.8.2, document nautilus
 msgid "Author"
 msgstr "Autore"
 
@@ -830,8 +811,7 @@ msgstr ""
 "Autorizzazione delega accesso con la variabile d'ambiente REMOTE_USER anche "
 "per le chiamate API"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Authorized by"
 msgstr "Autorizzato da"
 
@@ -847,8 +827,7 @@ msgstr "Autentica automaticamente le voci per %s"
 msgid "Availability zone"
 msgstr "Area disponibilità"
 
-# translation auto-copied from project Red Hat Satellite User Guide, version
-# 6.0, document Host_Groups
+# translation auto-copied from project Red Hat Satellite User Guide, version 6.0, document Host_Groups
 msgid "Available Classes"
 msgstr "Classi disponibili"
 
@@ -870,8 +849,7 @@ msgstr "BIOS"
 msgid "BMC"
 msgstr "BMC"
 
-# translation auto-copied from project Satellite6 Foreman Bootdisk, version
-# 6.1, document foreman_bootdisk
+# translation auto-copied from project Satellite6 Foreman Bootdisk, version 6.1, document foreman_bootdisk
 msgid "Back"
 msgstr "Indietro"
 
@@ -884,32 +862,29 @@ msgstr "Torna all'elenco di host"
 msgid "Bare Metal"
 msgstr "Bare Metal"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Base DN"
 msgstr "DN di base"
 
 msgid ""
-"Before you can use Satellite 6 for the first time there are a few tasks that"
-" must be performed."
+"Before you can use Satellite 6 for the first time there are a few tasks that "
+"must be performed."
 msgstr ""
 "Prima di poter usare Satellite 6 per la prima volta, sarà necessario "
 "eseguire alcuni compiti."
 
 msgid ""
-"Before you proceed to using Satellite 6 you should provide information about"
-" one or more architectures."
+"Before you proceed to using Satellite 6 you should provide information about "
+"one or more architectures."
 msgstr ""
 "Per poter usare Satellite 6 è necessario fornire prima le informazioni "
 "relative a una o più architetture."
 
-# translation auto-copied from project evolution, version 3.8.5, document
-# evolution-3.8
+# translation auto-copied from project evolution, version 3.8.5, document evolution-3.8
 msgid "Blog"
 msgstr "Blog"
 
-# translation auto-copied from project nm-applet, version 0.8.1, document nm-
-# applet, author fvalen
+# translation auto-copied from project nm-applet, version 0.8.1, document nm-applet, author fvalen
 msgid "Bond"
 msgstr "Aggregata"
 
@@ -992,14 +967,14 @@ msgid "Build|B"
 msgstr "C"
 
 msgid ""
-"By unchecking this you can specify filter using Satellite 6 search syntax in"
-" search field. If filter remains unlimited (this field is checked) it "
-"applies on all resources of the selected type"
+"By unchecking this you can specify filter using Satellite 6 search syntax in "
+"search field. If filter remains unlimited (this field is checked) it applies "
+"on all resources of the selected type"
 msgstr ""
 "Deselezionandolo sarà possibile specificare il filtro con la sintassi di "
 "ricerca di Satellite 6 nel campo di ricerca. Se il filtro ha uno stato di "
-"illimitato (campo selezionato), questa impostazione verrà applicata su tutte"
-" le risorse con la tipologia selezionata"
+"illimitato (campo selezionato), questa impostazione verrà applicata su tutte "
+"le risorse con la tipologia selezionata"
 
 msgid "CDROM"
 msgstr "CDROM"
@@ -1046,8 +1021,8 @@ msgstr ""
 
 msgid "Cannot delete group %{current} because it has nested groups."
 msgstr ""
-"Impossibile rimuovere il gruppo %{current} poichè presenta gruppi "
-"nidificati."
+"Impossibile rimuovere il gruppo %{current} poichè presenta gruppi nidificati."
+""
 
 msgid "Cannot delete group %{current} because it has nested host groups."
 msgstr ""
@@ -1081,8 +1056,7 @@ msgstr "Percorso certificato"
 msgid "Certificate that Foreman will use to encrypt websockets "
 msgstr "Certificato che verrà utilizzato da Foreman per cifrare i websocket"
 
-# translation auto-copied from project subscription-manager, version 1.10.10,
-# document keys
+# translation auto-copied from project subscription-manager, version 1.10.10, document keys
 msgid "Certificates"
 msgstr "Certificati"
 
@@ -1131,8 +1105,7 @@ msgstr "Scegli un provider"
 msgid "Choose a server type"
 msgstr "Seleziona un tipo di server"
 
-# translation auto-copied from project policycoreutils, version 2.1.14,
-# document policycoreutils
+# translation auto-copied from project policycoreutils, version 2.1.14, document policycoreutils
 msgid "Class"
 msgstr "Classe"
 
@@ -1151,8 +1124,7 @@ msgstr ""
 msgid "Click to add %s"
 msgstr "Seleziona per aggiungere %s"
 
-# translation auto-copied from project Katello, version 0.1v, document app,
-# author fvalen
+# translation auto-copied from project Katello, version 0.1v, document app, author fvalen
 msgid "Click to edit"
 msgstr "Seleziona per la modifica"
 
@@ -1175,13 +1147,13 @@ msgid "Client Email"
 msgstr "Email client"
 
 msgid ""
-"Client SSL certificates are used to identify Smart Proxies accessing "
-"fact/report importers and ENC output over HTTPS (:require_ssl should also be"
-" enabled)"
+"Client SSL certificates are used to identify Smart Proxies accessing fact/"
+"report importers and ENC output over HTTPS (:require_ssl should also be "
+"enabled)"
 msgstr ""
-"I certificati SSL del client sono usati per identificare gli Smart Proxy con"
-" accesso agli output ENC e agli eventi/notifiche attraverso HTTPS "
-"(:require_ssl deve essere abilitato)"
+"I certificati SSL del client sono usati per identificare gli Smart Proxy con "
+"accesso agli output ENC e agli eventi/notifiche attraverso HTTPS (:"
+"require_ssl deve essere abilitato)"
 
 msgid "Clone"
 msgstr "Clona"
@@ -1195,8 +1167,7 @@ msgstr "Clona host %s"
 msgid "Clone a host group"
 msgstr "Clona un gruppo di host"
 
-# translation auto-copied from project subscription-manager, version 1.10.10,
-# document keys
+# translation auto-copied from project subscription-manager, version 1.10.10, document keys
 msgid "Close"
 msgstr "Chiudi"
 
@@ -1209,13 +1180,11 @@ msgstr "Per elencare le reti disponibili è necessario usare l'ID del cluster"
 msgid "Code"
 msgstr "Codice"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Compute Resource"
 msgstr "Risorsa di calcolo"
 
-# translation auto-copied from project Red Hat Satellite User Guide, version
-# 6.0, document chap-Configuring_the_Provisioning_Environment, author fvalen
+# translation auto-copied from project Red Hat Satellite User Guide, version 6.0, document chap-Configuring_the_Provisioning_Environment, author fvalen
 msgid "Compute Resources"
 msgstr "Risorse di calcolo"
 
@@ -1240,8 +1209,7 @@ msgstr "ID risorsa di calcolo"
 msgid "Compute resource update for %s"
 msgstr "Aggiornamento risorsa di calcolo per %s"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Compute resources"
 msgstr "Risorse di calcolo"
 
@@ -1339,8 +1307,7 @@ msgstr "Modello"
 msgid "ConfigTemplate|Vendor"
 msgstr "ConfigTemplate|Rivenditore"
 
-# translation auto-copied from project system-config-printer, version 1.4.1,
-# document system-config-printer
+# translation auto-copied from project system-config-printer, version 1.4.1, document system-config-printer
 msgid "Configure"
 msgstr "Configura"
 
@@ -1362,8 +1329,7 @@ msgstr "Connessione a (non cifrata) in corso: %s"
 msgid "Connecting.."
 msgstr "Connessione in corso.."
 
-# translation auto-copied from project virt-manager, version 0.10.0, document
-# virt-manager
+# translation auto-copied from project virt-manager, version 0.10.0, document virt-manager
 msgid "Console"
 msgstr "Console"
 
@@ -1498,8 +1464,7 @@ msgstr "Crea un sorgente di autenticazione LDAP"
 msgid "Create an architecture"
 msgstr "Crea una architettura"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1,
-# document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
 msgid "Create an environment"
 msgstr "Crea un ambiente"
 
@@ -1530,13 +1495,11 @@ msgstr "Ctrl-Alt-Del"
 msgid "Custom LDAP search filter, <i>optional</i>"
 msgstr "Filtro ricerca LDAP personalizzato, <i>facoltativo</i>"
 
-# translation auto-copied from project Customer Portal Translations, version
-# 004_messages, document messages, author fvalen
+# translation auto-copied from project Customer Portal Translations, version 004_messages, document messages, author fvalen
 msgid "Customer Portal"
 msgstr "Portale Clienti"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "DHCP"
 msgstr "DHCP"
 
@@ -1561,8 +1524,7 @@ msgstr "DHCP non supportato per questo NIC"
 msgid "DHCP records %s already exists"
 msgstr "I record DHCP %s sono già esistenti"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "DNS"
 msgstr "DNS"
 
@@ -1577,16 +1539,16 @@ msgid ""
 "records are managed via Subnet DNS Capsule"
 msgstr ""
 "DNS Capsule da usare all'interno di questo dominio per la gestione dei "
-"record A, da notare che i record PTR sono gestiti per mezzo di un Subnet DNS"
-" Capsule"
+"record A, da notare che i record PTR sono gestiti per mezzo di un Subnet DNS "
+"Capsule"
 
 msgid ""
 "DNS Capsule to use within this subnet for managing PTR records, note that A "
 "records are managed via Domain DNS Capsule"
 msgstr ""
 "DNS Capsule da usare all'interno di questa sottorete per la gestione dei "
-"record PTR, da notare che i record A sono gestiti per mezzo di un Domain DNS"
-" Capsule"
+"record PTR, da notare che i record A sono gestiti per mezzo di un Domain DNS "
+"Capsule"
 
 msgid "DNS PTR Records %s already exists"
 msgstr "I record DNS PTR %s sono già esistenti"
@@ -1600,13 +1562,11 @@ msgstr "Nome DNS"
 msgid "DNS proxy to use within this domain"
 msgstr "DNS proxy da usare all'interno di questo dominio"
 
-# translation auto-copied from project evolution, version 3.8.5, document
-# evolution-3.8
+# translation auto-copied from project evolution, version 3.8.5, document evolution-3.8
 msgid "Daily"
 msgstr "Giornaliero"
 
-# translation auto-copied from project Red Hat Subscription Asset Manager,
-# version 1.2, document Accessing_SAM, author fvalen
+# translation auto-copied from project Red Hat Subscription Asset Manager, version 1.2, document Accessing_SAM, author fvalen
 msgid "Dashboard"
 msgstr "Dashboard"
 
@@ -1630,8 +1590,8 @@ msgid ""
 "Default boot mode for interfaces assigned to this subnet, valid values are "
 "\"Static\", \"DHCP\""
 msgstr ""
-"Modalità d'avvio predefinita per le interfacce assegnate a questa sottorete,"
-" i valori validi sono \"Static\", \"DHCP\""
+"Modalità d'avvio predefinita per le interfacce assegnate a questa sottorete, "
+"i valori validi sono \"Static\", \"DHCP\""
 
 msgid "Default encrypted root password on provisioned hosts"
 msgstr "Password root cifrata predefinita su host con provisioning "
@@ -1639,13 +1599,11 @@ msgstr "Password root cifrata predefinita su host con provisioning "
 msgid "Default on login"
 msgstr "Esegui il default all'accesso"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Default value"
 msgstr "Valore predefinito"
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version
-# 6.1, document foreman_discovery
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery
 msgid "Delete"
 msgstr "Cancella"
 
@@ -1686,8 +1644,7 @@ msgstr ""
 msgid "Delete a domain"
 msgstr "Cancella un dominio"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1,
-# document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
 msgid "Delete a filter"
 msgstr "Cancella filtro"
 
@@ -1824,8 +1781,7 @@ msgstr "%{pcs} e ambiente %{env} rimossi"
 msgid "Deploy on"
 msgstr "Implementare su"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Description"
 msgstr "Descrizione"
 
@@ -1838,13 +1794,11 @@ msgstr "Deseleziona tutti"
 msgid "Destroy"
 msgstr "Elimina"
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version
-# 6.1, document foreman_discovery
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery
 msgid "Destroyed selected hosts"
 msgstr "Host selezionati annullati"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1,
-# document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
 msgid "Details"
 msgstr "Dettagli"
 
@@ -1854,22 +1808,21 @@ msgstr "Indetificatore del dispositivo"
 msgid ""
 "Device identifier for this interface. This may be different on various "
 "platforms and environments, here are some common examples.<br/><ul><li>Use "
-"the basic name for physical interface identifiers, e.g. "
-"<strong>eth0</strong> or <strong>em0</strong> with biosdevname.</li><li>For "
-"virtual interfaces, use either alias notation (<strong>eth0:1</strong>, "
-"name:index) or VLAN notation (<strong>eth0.15</strong>, "
-"name.tag).</li><li>For bonds it's common to use <strong>bond0</strong> on "
-"Linux, <strong>lagg0</strong> on FreeBSD systems.</li></ul>"
+"the basic name for physical interface identifiers, e.g. <strong>eth0</"
+"strong> or <strong>em0</strong> with biosdevname.</li><li>For virtual "
+"interfaces, use either alias notation (<strong>eth0:1</strong>, name:index) "
+"or VLAN notation (<strong>eth0.15</strong>, name.tag).</li><li>For bonds "
+"it's common to use <strong>bond0</strong> on Linux, <strong>lagg0</strong> "
+"on FreeBSD systems.</li></ul>"
 msgstr ""
-"Identificatore del dispositivo per questa interfaccia. Può essere diverso su"
-" varie piattaforme e ambienti, di seguito vengono riportati alcuni "
-"esempi.<br/><ul><li>Usare il nome di base per gli identificatori delle "
-"interfacce fisiche, es. <strong>eth0</strong> o <strong>em0</strong> con "
-"biosdevname.</li><li>Per interfacce virtuali, usare una notazione alias "
-"(<strong>eth0:1</strong>, name:index) o VLAN (<strong>eth0.15</strong>, "
-"name.tag).</li><li>Per le associazioni generalmente vengono usate "
-"<strong>bond0</strong> su sistemi Linux, <strong>lagg0</strong> su "
-"FreeBSD.</li></ul>"
+"Identificatore del dispositivo per questa interfaccia. Può essere diverso su "
+"varie piattaforme e ambienti, di seguito vengono riportati alcuni esempi.<br/"
+"><ul><li>Usare il nome di base per gli identificatori delle interfacce "
+"fisiche, es. <strong>eth0</strong> o <strong>em0</strong> con biosdevname.</"
+"li><li>Per interfacce virtuali, usare una notazione alias (<strong>eth0:1</"
+"strong>, name:index) o VLAN (<strong>eth0.15</strong>, name.tag).</"
+"li><li>Per le associazioni generalmente vengono usate <strong>bond0</strong> "
+"su sistemi Linux, <strong>lagg0</strong> su FreeBSD.</li></ul>"
 
 msgid "Device identifier, e.g. eth0 or eth1.1"
 msgstr "Identificatore del dispositivo, es. eth0 o eth1.1"
@@ -1883,8 +1836,7 @@ msgstr "Disabilita notifiche"
 msgid "Disable alerts for selected hosts"
 msgstr "Disabilita gli avvisi per host selezionati"
 
-# translation auto-copied from project nm-applet, version 0.8.1, document nm-
-# applet
+# translation auto-copied from project nm-applet, version 0.8.1, document nm-applet
 msgid "Disabled"
 msgstr "Disabilitato"
 
@@ -1904,8 +1856,7 @@ msgstr "Rimuovi associazione host da una VM"
 msgid "Disassociate the selected hosts from their VMs"
 msgstr "Rimuovere associazione degli host selezionati dalle rispettive VM"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Disk"
 msgstr "Disco"
 
@@ -1934,15 +1885,15 @@ msgid "Distribution chart"
 msgstr "Grafico di distribuzione"
 
 msgid ""
-"Do not send this parameter via the ENC. Puppet will use the value defined in"
-" the Puppet manifest for this parameter."
+"Do not send this parameter via the ENC. Puppet will use the value defined in "
+"the Puppet manifest for this parameter."
 msgstr ""
 "Non inviare questo parametro tramite ENC. Puppet userà il valore definito "
 "nel manifesto del Puppet per questo parametro."
 
 msgid ""
-"Do not send this parameter via the ENC. Puppet will use the value defined in"
-" the puppet manifest for this parameter"
+"Do not send this parameter via the ENC. Puppet will use the value defined in "
+"the puppet manifest for this parameter"
 msgstr ""
 "Non inviare questo parametro tramite ENC. Puppet userà il valore definito "
 "nel manifesto del Puppet per questo parametro"
@@ -1953,8 +1904,7 @@ msgstr "Non usare la tua email come password"
 msgid "Document root where puppetdoc files should be created"
 msgstr "Root del documento dove creare i file puppetdoc"
 
-# translation auto-copied from project gnome-packagekit, version 3.8.2,
-# document gnome-packagekit
+# translation auto-copied from project gnome-packagekit, version 3.8.2, document gnome-packagekit
 msgid "Documentation"
 msgstr "Documentazione"
 
@@ -1962,9 +1912,8 @@ msgid "Does this image support user data input (e.g. via cloud-init)?"
 msgstr ""
 "Questa immagine supporta l'input dei dati utente (es. tramite cloud-init)?"
 
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 #. "Table name" or "Table name|Column name" for error messages
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
 msgid "Domain"
 msgstr "Dominio"
 
@@ -1974,8 +1923,7 @@ msgstr "Configurazione dominio"
 msgid "Domain IDs"
 msgstr "ID del dominio"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Domains"
 msgstr "Domini"
 
@@ -1998,19 +1946,17 @@ msgstr "Domain|Conteggio host"
 msgid "Domain|Name"
 msgstr "Nome"
 
-# translation auto-copied from project empathy, version 3.8.3, document
-# empathy
+# translation auto-copied from project empathy, version 3.8.3, document empathy
 msgid "Down"
 msgstr "Giù"
 
-# translation auto-copied from project Red Hat Satellite User Guide, version
-# 6.0, document Compute_Resources
+# translation auto-copied from project Red Hat Satellite User Guide, version 6.0, document Compute_Resources
 msgid "EC2"
 msgstr "EC2"
 
 msgid ""
-"Each architecture can also be associated with more than one operating system"
-" and a selector block is provided to allow you to select valid combinations."
+"Each architecture can also be associated with more than one operating system "
+"and a selector block is provided to allow you to select valid combinations."
 msgstr ""
 "Ogni architettura può essere associata con più di un sistema operativo, "
 "viene altresì fornito un blocco di selezione per permettere all'utente di "
@@ -2029,8 +1975,7 @@ msgstr ""
 msgid "Eager zero"
 msgstr "Eager zero"
 
-# translation auto-copied from project nm-applet, version 0.8.1, document nm-
-# applet
+# translation auto-copied from project nm-applet, version 0.8.1, document nm-applet
 msgid "Edit"
 msgstr "Modifica"
 
@@ -2112,8 +2057,7 @@ msgstr "Modifica modello"
 msgid "Edit Trend %s"
 msgstr "Modifica trend %s"
 
-# translation auto-copied from project Katello, version 0.1v, document app,
-# author fvalen
+# translation auto-copied from project Katello, version 0.1v, document app, author fvalen
 msgid "Edit User"
 msgstr "Modifica utente"
 
@@ -2127,15 +2071,15 @@ msgid "Edit your host"
 msgstr "Modifica host"
 
 msgid ""
-"Either you didnt generate the puppetdocs (see <a rel=\"external\" "
-"href=\"%{url}\">here</a>) or the class <strong>%{name}</strong> could not be"
-" found in environment <strong>%{environment}</strong><br/> Please ensure "
-"that the class <strong>%{name}</strong>s declaration is accessible via the "
+"Either you didnt generate the puppetdocs (see <a rel=\"external\" href="
+"\"%{url}\">here</a>) or the class <strong>%{name}</strong> could not be "
+"found in environment <strong>%{environment}</strong><br/> Please ensure that "
+"the class <strong>%{name}</strong>s declaration is accessible via the "
 "modulepath associated with <strong>%{environment}</strong>."
 msgstr ""
-"Molto probabilmente non è stato generato puppetdocs (consultare <a "
-"rel=\"external\" href=\"%{url}\">qui</a>), oppure la classe "
-"<strong>%{name}</strong> non è stata trovata all'interno dell'ambiente "
+"Molto probabilmente non è stato generato puppetdocs (consultare <a rel="
+"\"external\" href=\"%{url}\">qui</a>), oppure la classe <strong>%{name}</"
+"strong> non è stata trovata all'interno dell'ambiente "
 "<strong>%{environment}</strong><br/>. Assicurarsi che la dichiarazione "
 "<strong>%{name}</strong>s della classe sia accessibile tramite il percorso "
 "associato con <strong>%{environment}</strong>."
@@ -2166,14 +2110,13 @@ msgstr "Abilita processo di ricompilazione al prossimo riavvio dell'host"
 
 msgid "Enable safe mode config templates rendering (recommended)"
 msgstr ""
-"Abilita la modalità sicura per la riproduzione dei modelli di configurazione"
-" (consigliato)"
+"Abilita la modalità sicura per la riproduzione dei modelli di configurazione "
+"(consigliato)"
 
 msgid "Enable this host for provisioning"
 msgstr "Abilita questo host al provisioning"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Enabled"
 msgstr "Abilitato"
 
@@ -2186,9 +2129,8 @@ msgstr "Abilitato %s alla ricompilazione al riavvio successivo"
 msgid "Ending IP Address for IP auto suggestion"
 msgstr "Indirizzo IP finale per il suggerimento automatico degli IP"
 
+# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
 #. "Table name" or "Table name|Column name" for error messages
-# translation auto-copied from project Satellite6 Katello, version 6.1,
-# document katello
 msgid "Environment"
 msgstr "Ambiente"
 
@@ -2211,8 +2153,7 @@ msgstr ""
 "Variabile d'ambiente contentente lo stato di verifica di un certificato SSL "
 "del client"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Environments"
 msgstr "Ambienti"
 
@@ -2258,8 +2199,7 @@ msgid "Error loading virtual machine information: %s"
 msgstr ""
 "Errore durante il caricamento delle informazioni sulla macchina virtuale: %s"
 
-# translation auto-copied from project RHN Satellite Reference Guide, version
-# 5.6, document Troubleshooting
+# translation auto-copied from project RHN Satellite Reference Guide, version 5.6, document Troubleshooting
 msgid "Errors"
 msgstr "Errori"
 
@@ -2277,8 +2217,7 @@ msgstr "Errori: %s"
 msgid "Error|E"
 msgstr "E"
 
-# translation auto-copied from project [RHEL] [DEV] Developer Guide, version
-# 6.4, document ch-profiling-systemtap-casestudy
+# translation auto-copied from project [RHEL] [DEV] Developer Guide, version 6.4, document ch-profiling-systemtap-casestudy
 msgid "Examples"
 msgstr "Esempi"
 
@@ -2291,8 +2230,7 @@ msgstr "Espandi gli elementi nidificati"
 msgid "Expand the chart"
 msgstr "Espandi il grafico"
 
-# translation auto-copied from project subscription-manager, version 1.10.10,
-# document keys
+# translation auto-copied from project subscription-manager, version 1.10.10, document keys
 msgid "Expires"
 msgstr "Scade"
 
@@ -2368,16 +2306,14 @@ msgstr "Nome abbreviato"
 msgid "FactValue|Value"
 msgstr "Valore"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman
-# Discovery, version 6.1, document hammer_cli_foreman_discovery
+# translation auto-copied from project Satellite6 Hammer CLI Foreman Discovery, version 6.1, document hammer_cli_foreman_discovery
 msgid "Facts"
 msgstr "Eventi"
 
 msgid "Fail on Mismatch"
 msgstr "Errore mancata corrispondenza"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1,
-# document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
 msgid "Failed"
 msgstr "Fallito"
 
@@ -2512,8 +2448,8 @@ msgstr ""
 "dall'installazione puppet su-disco: %s"
 
 msgid ""
-"Failed to update the environments and Puppet classes from the on-disk puppet"
-" installation: %s"
+"Failed to update the environments and Puppet classes from the on-disk puppet "
+"installation: %s"
 msgstr ""
 "Impossibile aggiornare le classi del puppet e gli ambienti "
 "dall'installazione puppet su-disco: %s"
@@ -2531,8 +2467,7 @@ msgstr "Implementazione tramite smart proxy %{proxy} fallita: %{error}."
 msgid "Failure parsing %{template}: %{error}."
 msgstr "Analisi %{template} fallita: %{error}."
 
-# translation auto-copied from project pulseaudio, version 3.0, document
-# pulseaudio
+# translation auto-copied from project pulseaudio, version 3.0, document pulseaudio
 msgid "Failure: %s"
 msgstr "Fallimento: %s"
 
@@ -2540,8 +2475,7 @@ msgstr "Fallimento: %s"
 msgid "Feature"
 msgstr "Funzionalità"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Features"
 msgstr "Funzionalità"
 
@@ -2552,9 +2486,8 @@ msgstr "Nome"
 msgid "Fetch TFTP boot files for %s"
 msgstr "Recupero file d'avvio TFTP per %s"
 
+# translation auto-copied from project policycoreutils, version 2.1.14, document policycoreutils
 #. "Table name" or "Table name|Column name" for error messages
-# translation auto-copied from project policycoreutils, version 2.1.14,
-# document policycoreutils
 msgid "Filter"
 msgstr "Filtro"
 
@@ -2567,8 +2500,7 @@ msgstr "Filtra per stato: %s"
 msgid "Filter classes"
 msgstr "Classi del filtro"
 
-# translation auto-copied from project subscription-manager, version 1.10.10,
-# document keys
+# translation auto-copied from project subscription-manager, version 1.10.10, document keys
 msgid "Filters"
 msgstr "Filtri"
 
@@ -2610,8 +2542,7 @@ msgstr "Tipo di istanza"
 msgid "Floating IP network"
 msgstr "Rete IP floating"
 
-# translation auto-copied from project nautilus, version 3.8.2, document
-# nautilus
+# translation auto-copied from project nautilus, version 3.8.2, document nautilus
 msgid "Folder"
 msgstr "Cartella"
 
@@ -2626,23 +2557,23 @@ msgid ""
 "directory structure where the disk images are named 5.8 or 6.2, and each "
 "contained both x86_64 and i386 binaries, then you\\n  could create a single "
 "medium entry describing them all.\\n  The entry, which could be just named "
-"'Red Hat' could contain a path like this "
-"<em>'http://server/redhat/$version/$arch'</em>"
+"'Red Hat' could contain a path like this <em>'http://server/redhat/$version/"
+"$arch'</em>"
 msgstr ""
 "Per esempio, se avete copiato alcuni dischetti per la release di Red Hat "
 "all'interno di una struttura della directory, dove le immagini del disco "
 "vengono chiamate 5.8 o 6.2, e entrambi presentano binari x86_64 e i386, "
-"allora\\n sarà possibile creare una singola voce per la loro descrizione.\\n"
-" La voce in questione, che può essere chiamata semplicemente 'Red Hat', "
-"potrà contenere un percorso simile al seguente "
-"<em>'http://server/redhat/$version/$arch'</em>"
+"allora\\n sarà possibile creare una singola voce per la loro descrizione.\\n "
+"La voce in questione, che può essere chiamata semplicemente 'Red Hat', potrà "
+"contenere un percorso simile al seguente <em>'http://server/redhat/$version/"
+"$arch'</em>"
 
 msgid ""
 "For example, there might be a data center in London and one in Virginia; "
 "these are locations. Locations also work nicely when used in tandem with "
 msgstr ""
-"Per esempio, è disponibile un centro dati a Londra e uno in Virginia; queste"
-" sono considerate posizioni. Le posizioni funzionano bene se usate insieme "
+"Per esempio, è disponibile un centro dati a Londra e uno in Virginia; queste "
+"sono considerate posizioni. Le posizioni funzionano bene se usate insieme "
 "con"
 
 msgid "For internal Users, simply create a new user at the %s page"
@@ -2707,8 +2638,8 @@ msgid ""
 "false, OAuth requests will have admin rights."
 msgstr ""
 "Foreman mapperà gli utenti per nome utente in intestazione-richiesta. Se "
-"impostato su falso, le richieste OAuth avranno i permessi di "
-"amministrazione."
+"impostato su falso, le richieste OAuth avranno i permessi di amministrazione."
+""
 
 msgid "Foreman will parse ERB in parameters value in the ENC output"
 msgstr ""
@@ -2769,8 +2700,7 @@ msgstr ""
 msgid "Full"
 msgstr "Completo"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Full name describing the domain"
 msgstr "Nome completo che descrive il dominio"
 
@@ -2779,21 +2709,18 @@ msgstr ""
 "Percorso completo per l'immagine genitore usata per la creazione di nuovi "
 "volumi."
 
-# translation auto-copied from project virt-viewer, version 0.5.7, document
-# virt-viewer
+# translation auto-copied from project virt-viewer, version 0.5.7, document virt-viewer
 msgid "Full screen"
 msgstr "Schermo intero"
 
 msgid "Full trace"
 msgstr "Controllo completo"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Gateway"
 msgstr "Gateway"
 
-# translation auto-copied from project nm-applet, version 0.8.1, document nm-
-# applet, author fvalen
+# translation auto-copied from project nm-applet, version 0.8.1, document nm-applet, author fvalen
 msgid "General"
 msgstr "Generale"
 
@@ -2805,8 +2732,8 @@ msgid ""
 "General useful description, for example this kind of hardware needs a "
 "special BIOS setup"
 msgstr ""
-"Descrizione utile generale, ad esempio questo tipo di hardware ha bisogno di"
-" una impostazione particolare del BIOS"
+"Descrizione utile generale, ad esempio questo tipo di hardware ha bisogno di "
+"una impostazione particolare del BIOS"
 
 msgid "Generated %s ago"
 msgstr "Generato %s fa"
@@ -2827,8 +2754,7 @@ msgstr "Acquisisci stato dell'host"
 msgid "Global"
 msgstr "Globale"
 
-# translation auto-copied from project Red Hat Satellite User Guide, version
-# 6.0, document chap-Configuring_the_Provisioning_Environment
+# translation auto-copied from project Red Hat Satellite User Guide, version 6.0, document chap-Configuring_the_Provisioning_Environment
 msgid "Global Parameters"
 msgstr "Parametri globali"
 
@@ -2850,16 +2776,14 @@ msgstr "DN di base dei gruppi"
 msgid "Guest OS"
 msgstr "OS del guest"
 
-# translation auto-copied from project nm-applet, version 0.8.1, document nm-
-# applet, author fvalen
+# translation auto-copied from project nm-applet, version 0.8.1, document nm-applet, author fvalen
 msgid "Hardware"
 msgstr "Hardware"
 
 msgid "Hardware Model"
 msgstr "Modello hardware"
 
-# translation auto-copied from project Red Hat Satellite User Guide, version
-# 6.0, document chap-Configuring_the_Provisioning_Environment, author fvalen
+# translation auto-copied from project Red Hat Satellite User Guide, version 6.0, document chap-Configuring_the_Provisioning_Environment, author fvalen
 msgid "Hardware Models"
 msgstr "Modelli hardware"
 
@@ -2877,8 +2801,7 @@ msgstr "Hash per le metriche della notifica, può essere solo {}"
 msgid "Hash of status type totals"
 msgstr "Hash dei totali del tipo di stato"
 
-# translation auto-copied from project Satellite6 Foreman Bootdisk, version
-# 6.1, document foreman_bootdisk
+# translation auto-copied from project Satellite6 Foreman Bootdisk, version 6.1, document foreman_bootdisk
 msgid "Help"
 msgstr "Aiuto"
 
@@ -2887,16 +2810,14 @@ msgstr "Aiuto!"
 
 msgid "Here you can manage bookmarks. Bookmarks are saved search queries."
 msgstr ""
-"Qui è possibile gestire i segnalibri. I segnalibri sono delle interrogazioni"
-" di ricerca salvate."
+"Qui è possibile gestire i segnalibri. I segnalibri sono delle interrogazioni "
+"di ricerca salvate."
 
-# translation auto-copied from project control-center, version 3.8.6, document
-# gnome-control-center-2.0
+# translation auto-copied from project control-center, version 3.8.6, document gnome-control-center-2.0
 msgid "History"
 msgstr "Cronologia"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1,
-# document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
 msgid "Host"
 msgstr "Host"
 
@@ -2912,8 +2833,7 @@ msgstr "Grafico configurazione host"
 msgid "Host Configuration Status"
 msgstr "Stato configurazione host"
 
-# translation auto-copied from project Red Hat Satellite User Guide, version
-# 6.0, document chap-Configuring_the_Provisioning_Environment, author fvalen
+# translation auto-copied from project Red Hat Satellite User Guide, version 6.0, document chap-Configuring_the_Provisioning_Environment, author fvalen
 msgid "Host Groups"
 msgstr "Gruppi host"
 
@@ -3150,11 +3070,11 @@ msgid "Hosts that had performed modifications without error"
 msgstr "Host che hanno eseguito delle modifiche senza alcun errore"
 
 msgid ""
-"Hosts that will be trusted in addition to Smart Proxies for access to "
-"fact/report importers and ENC output"
+"Hosts that will be trusted in addition to Smart Proxies for access to fact/"
+"report importers and ENC output"
 msgstr ""
-"Host che verranno considerati fidati insieme agli Smart Proxy, per l'accesso"
-" agli importer di notifiche/eventi e ouput ENC"
+"Host che verranno considerati fidati insieme agli Smart Proxy, per l'accesso "
+"agli importer di notifiche/eventi e ouput ENC"
 
 msgid "Hosts which didn't run puppet in the last %s"
 msgstr "Host che non hanno eseguito puppet negli ultimi %s"
@@ -3276,8 +3196,7 @@ msgstr "ID delle tabelle di partizioni associate"
 msgid "IDs of associated provisioning templates"
 msgstr "ID dei template per il provisioning associati"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "IP"
 msgstr "IP"
 
@@ -3306,27 +3225,25 @@ msgstr "Indirizzo IP dell'interfaccia"
 msgid "IPAM"
 msgstr "IPAM"
 
-# translation auto-copied from project gnome-contacts, version 3.8.2, document
-# gnome-contacts
+# translation auto-copied from project gnome-contacts, version 3.8.2, document gnome-contacts
 msgid "IRC"
 msgstr "IRC"
 
-# translation auto-copied from project anaconda, version 19.31.34, document
-# anaconda, author fvalen
+# translation auto-copied from project anaconda, version 19.31.34, document anaconda, author fvalen
 msgid "Identifier"
 msgstr "Indetificatore"
 
 msgid "Identifier of the interface to which this interface belongs, e.g. eth1"
 msgstr ""
-"Identificatore dell'interfaccia alla quale appartiene questa interfaccia, "
-"es. eth1"
+"Identificatore dell'interfaccia alla quale appartiene questa interfaccia, es."
+" eth1"
 
 msgid ""
-"Identifier of the interface to which this interface belongs, e.g. eth1. Only"
-" for virtual interfaces."
+"Identifier of the interface to which this interface belongs, e.g. eth1. Only "
+"for virtual interfaces."
 msgstr ""
-"Identificatore dell'interfaccia alla quale appartiene questa interfaccia, "
-"es. eth1. Solo per interfacce virtuali."
+"Identificatore dell'interfaccia alla quale appartiene questa interfaccia, es."
+" eth1. Solo per interfacce virtuali."
 
 msgid ""
 "Identifiers of slave interfaces, e.g. `['eth1', 'eth2']`. Only for bond "
@@ -3342,8 +3259,8 @@ msgid ""
 msgstr ""
 "Se Foreman è in esecuzione dietro Passenger o un bilanciatore di carico "
 "remoto, è necessario impostare qui l'IP. Questa è una espressione regolare "
-"ed è in grado di supportare numerosi bilanciatori di carico, es: "
-"(10.0.0.1|127.0.0.1)"
+"ed è in grado di supportare numerosi bilanciatori di carico, es: (10.0.0."
+"1|127.0.0.1)"
 
 msgid ""
 "If checked, will raise an error if there is no default value and no matcher "
@@ -3379,8 +3296,8 @@ msgstr ""
 "Se credi che questo sia un errore di Satellite 6, apri un nuovo caso con"
 
 msgid ""
-"If you wish to track the actions of a particular user then it is possible to"
-" use an additional authentication stage and provide a user account."
+"If you wish to track the actions of a particular user then it is possible to "
+"use an additional authentication stage and provide a user account."
 msgstr ""
 "Se desideri controllare le azioni di un utente specifico, allora implementa "
 "una ulteriore fase di autenticazione fornendo l'account utente."
@@ -3390,12 +3307,11 @@ msgid ""
 "in need of a capsule - either on this machine or elsewhere on your network."
 msgstr ""
 "Se disederi svolgere qualsiasi altra operazione oltre alla gestione delle "
-"notifiche, allora sarà necessario utilizzare un capsule - su questa macchina"
-" o in un'altra posizione della rete."
+"notifiche, allora sarà necessario utilizzare un capsule - su questa macchina "
+"o in un'altra posizione della rete."
 
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 #. "Table name" or "Table name|Column name" for error messages
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
 msgid "Image"
 msgstr "Immagine"
 
@@ -3414,8 +3330,7 @@ msgstr "Percorso immagine"
 msgid "Image to use"
 msgstr "Immagine da usare"
 
-# translation auto-copied from project empathy, version 3.8.3, document
-# empathy
+# translation auto-copied from project empathy, version 3.8.3, document empathy
 msgid "Images"
 msgstr "Immagini"
 
@@ -3443,8 +3358,7 @@ msgstr "Nome utente"
 msgid "Image|Uuid"
 msgstr "Uuid"
 
-# translation auto-copied from project subscription-manager, version 1.10.10,
-# document keys
+# translation auto-copied from project subscription-manager, version 1.10.10, document keys
 msgid "Import"
 msgstr "Importa"
 
@@ -3463,8 +3377,7 @@ msgstr "Importa sottoreti"
 msgid "Import your data"
 msgstr "Importa i tuoi dati"
 
-# translation auto-copied from project publican-redhat-db5, version 4,
-# document Conventions
+# translation auto-copied from project publican-redhat-db5, version 4, document Conventions
 msgid "Important"
 msgstr "Importante"
 
@@ -3478,10 +3391,9 @@ msgid "Importing Puppet classes and environments"
 msgstr "Importazione ambienti e classi del puppet"
 
 msgid ""
-"In addition to defining which puppet classes get included when building this"
-" host type you are also able to assign variables and provisioning "
-"information to a host group to further refine the behavior of the puppet "
-"runtime."
+"In addition to defining which puppet classes get included when building this "
+"host type you are also able to assign variables and provisioning information "
+"to a host group to further refine the behavior of the puppet runtime."
 msgstr ""
 "Oltre a poter definire le classi del puppet incluse durante la creazione di "
 "questo tipo di host, sarà possibile anche assegnare le variabili e le "
@@ -3491,8 +3403,7 @@ msgstr ""
 msgid "Include this host within Satellite 6 reporting"
 msgstr "Includi questo host all'interno della notifica di Satellite 6"
 
-# translation auto-copied from project Red Hat Satellite User Guide, version
-# 6.0, document Host_Groups
+# translation auto-copied from project Red Hat Satellite User Guide, version 6.0, document Host_Groups
 msgid "Included Classes"
 msgstr "Classi incluse"
 
@@ -3505,8 +3416,7 @@ msgstr "Parametri inclusi ereditati"
 msgid "Incorrect username or password"
 msgstr "Password o nome utente non corretti"
 
-# translation auto-copied from project nm-applet, version 0.8.1, document nm-
-# applet, author fvalen
+# translation auto-copied from project nm-applet, version 0.8.1, document nm-applet, author fvalen
 msgid "Infrastructure"
 msgstr "Infrastruttura"
 
@@ -3516,31 +3426,26 @@ msgstr "Eredita valore genitore (%s)"
 msgid "Inherits from subnet VLAN ID if not set"
 msgstr "Eredita dalla sottorete VLAN ID se non impostato"
 
-# translation auto-copied from project Red Hat Satellite User Guide, version
-# 6.0, document chap-Configuring_the_Provisioning_Environment, author fvalen
+# translation auto-copied from project Red Hat Satellite User Guide, version 6.0, document chap-Configuring_the_Provisioning_Environment, author fvalen
 msgid "Installation Media"
 msgstr "Dispositivo d'installazione"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Installation media"
 msgstr "Dispositivo d'installazione"
 
 msgid "Installation medium configuration"
 msgstr "Configurazione supporto di installazione"
 
-# translation auto-copied from project subscription-manager, version 1.10.10,
-# document keys
+# translation auto-copied from project subscription-manager, version 1.10.10, document keys
 msgid "Installed"
 msgstr "Installato"
 
-# translation auto-copied from project anaconda, version 19.31.34, document
-# anaconda, author fvalen
+# translation auto-copied from project anaconda, version 19.31.34, document anaconda, author fvalen
 msgid "Interface"
 msgstr "Interfaccia"
 
-# translation auto-copied from project virt-manager, version 0.10.0, document
-# virt-manager
+# translation auto-copied from project virt-manager, version 0.10.0, document virt-manager
 msgid "Interface name"
 msgstr "Nome interfaccia"
 
@@ -3550,8 +3455,7 @@ msgstr "Provider dell'interfaccia, es IPMI. Solo per le interfacce BMC."
 msgid "Interface type, e.g: bmc"
 msgstr "Tipo di interfaccia, es: bmc"
 
-# translation auto-copied from project Satellite6 Bastion Katello, version
-# 6.1, document bastion_katello
+# translation auto-copied from project Satellite6 Bastion Katello, version 6.1, document bastion_katello
 msgid "Interfaces"
 msgstr "Interfacce"
 
@@ -3580,8 +3484,7 @@ msgstr ""
 "Richiesta stato alimentazione non valido: %{action}, le azioni supportate "
 "sono %{supported}"
 
-# translation auto-copied from project evolution-data-server, version 3.8.4,
-# document evolution-data-server-3.8
+# translation auto-copied from project evolution-data-server, version 3.8.4, document evolution-data-server-3.8
 msgid "Invalid query"
 msgstr "Interrogazione non valida"
 
@@ -3627,24 +3530,21 @@ msgstr "Segreta"
 msgid "Kind"
 msgstr "Tipo"
 
-# translation auto-copied from project authconfig, version 6.2.8, document
-# authconfig
+# translation auto-copied from project authconfig, version 6.2.8, document authconfig
 msgid "LDAP"
 msgstr "LDAP"
 
 msgid "LDAP Authentication"
 msgstr "Autenticazione LDAP"
 
-# translation auto-copied from project authconfig, version 6.2.8, document
-# authconfig
+# translation auto-copied from project authconfig, version 6.2.8, document authconfig
 msgid "LDAP authentication"
 msgstr "Autenticazione LDAP"
 
 msgid "LDAP error - %{message}"
 msgstr "Errore LDAP - %{message}"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "LDAP filter"
 msgstr "Filtro LDAP"
 
@@ -3658,13 +3558,11 @@ msgstr ""
 "Gli utenti LDAP avranno un account Satellite 6 creato automaticamente "
 "durante il loro primo login con Satellite 6"
 
-# translation auto-copied from project Customer Portal Translations, version
-# management_page, document Management_Prototype.html, author fvalen
+# translation auto-copied from project Customer Portal Translations, version management_page, document Management_Prototype.html, author fvalen
 msgid "Language"
 msgstr "Lingua"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Last report"
 msgstr "Ultima notifica"
 
@@ -3674,13 +3572,11 @@ msgstr "Ultimo aggiornamento %s fa"
 msgid "Latest Events"
 msgstr "Ultimissimi eventi"
 
-# translation auto-copied from project empathy, version 3.8.3, document
-# empathy
+# translation auto-copied from project empathy, version 3.8.3, document empathy
 msgid "Level"
 msgstr "Livello"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1,
-# document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
 msgid "List all :resource_id"
 msgstr "Elenca tutte le :resource_id"
 
@@ -3982,8 +3878,8 @@ msgid ""
 "List of smart class parameters for a specific environment/Puppet class "
 "combination"
 msgstr ""
-"Elenco parametri di classe smart per una combinazione classe puppet/ambiente"
-" specifica"
+"Elenco parametri di classe smart per una combinazione classe puppet/ambiente "
+"specifica"
 
 msgid "List of smart class parameters for a specific host"
 msgstr "Elenco parametri di classe smart per un host specifico"
@@ -4014,8 +3910,8 @@ msgstr "Elenco di sottoreti per organizzazione"
 
 msgid "List operating systems where this template is set as a default"
 msgstr ""
-"Elenca i sistemi operativi dove questo template è impostato per impostazione"
-" predefinita"
+"Elenca i sistemi operativi dove questo template è impostato per impostazione "
+"predefinita"
 
 msgid "List provisioning templates"
 msgstr "Elenca i template di provisioning"
@@ -4092,8 +3988,7 @@ msgstr "Caricamento informazioni macchina virutuale in corso..."
 msgid "Loading virtual machines information ..."
 msgstr "Caricamento informazioni macchine virutuali in corso..."
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version
-# 6.1, document foreman_discovery
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery
 msgid "Location"
 msgstr "Posizione"
 
@@ -4106,8 +4001,7 @@ msgstr "La posizione selezionata come contesto è stata rimossa."
 msgid "Location/Organization"
 msgstr "Posizione/Organizzazione"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Locations"
 msgstr "Posizioni"
 
@@ -4118,13 +4012,11 @@ msgstr ""
 "Le posizioni sono usate per gestire e differenziare la posizione fisica di "
 "un sistema gestito da Satellite 6."
 
-# translation auto-copied from project authconfig, version 6.2.8, document
-# authconfig
+# translation auto-copied from project authconfig, version 6.2.8, document authconfig
 msgid "Lock"
 msgstr "Blocca"
 
-# translation auto-copied from project Customer Portal Translations, version
-# management_page, document Management_Prototype.html, author fvalen
+# translation auto-copied from project Customer Portal Translations, version management_page, document Management_Prototype.html, author fvalen
 msgid "Log out"
 msgstr "Termina la sessione"
 
@@ -4140,8 +4032,7 @@ msgstr "Collegato"
 msgid "Login"
 msgstr "Accedi"
 
-# translation auto-copied from project Katello, version 0.1v, document app,
-# author fvalen
+# translation auto-copied from project Katello, version 0.1v, document app, author fvalen
 msgid "Logout"
 msgstr "Esci"
 
@@ -4221,16 +4112,14 @@ msgstr "LookupValue|Usa default di puppet"
 msgid "LookupValue|Value"
 msgstr "Valore"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "MAC"
 msgstr "MAC"
 
 msgid "MAC Address"
 msgstr "Indirizzo MAC"
 
-# translation auto-copied from project libvirt, version 1.1.1, document
-# libvirt
+# translation auto-copied from project libvirt, version 1.1.1, document libvirt
 msgid "MAC address"
 msgstr "Indirizzo MAC"
 
@@ -4246,8 +4135,7 @@ msgstr "Tipo di macchina"
 msgid "Machine type"
 msgstr "Tipo di macchina"
 
-# translation auto-copied from project evolution, version 3.8.5, document
-# evolution-3.8
+# translation auto-copied from project evolution, version 3.8.5, document evolution-3.8
 msgid "Mail Preferences"
 msgstr "Preferenze di posta"
 
@@ -4316,14 +4204,14 @@ msgstr "Corrispondenza"
 msgid ""
 "Matcher is a combination of an attribute and its value, if they match, the "
 "value below would be provided.<br> You may use any attribute Satellite 6 "
-"knows about, such as facts etc for example: <code> domain = example.com "
-"</code> or <code> is_virtual = true</code>"
+"knows about, such as facts etc for example: <code> domain = example.com </"
+"code> or <code> is_virtual = true</code>"
 msgstr ""
 "La corrispondenza è una combinazione tra un attributo ed il rispettivo "
-"valore, se corrispondono, verrà fornito il valore di seguito indicato.<br> È"
-" possibile usare un attributo conosciuto da Satellite 6, come ad esempio gli"
-" eventi: <code> domain = example.com </code> o <code> is_virtual = "
-"true</code>"
+"valore, se corrispondono, verrà fornito il valore di seguito indicato.<br> È "
+"possibile usare un attributo conosciuto da Satellite 6, come ad esempio gli "
+"eventi: <code> domain = example.com </code> o <code> is_virtual = true</"
+"code>"
 
 msgid "Max days for Trends graphs"
 msgstr "Numero massimo di giorni per i diagrammi di Trend"
@@ -4331,17 +4219,15 @@ msgstr "Numero massimo di giorni per i diagrammi di Trend"
 msgid "Max timeout for REST client requests to smart-proxy"
 msgstr "Scadenza massima per le richieste del client REST per smart-proxy"
 
-# translation auto-copied from project Red Hat Satellite User Guide, version
-# 6.0, document Host_Groups
+# translation auto-copied from project Red Hat Satellite User Guide, version 6.0, document Host_Groups
 msgid "Media"
 msgstr "Dispositivo"
 
 msgid "Media IDs"
 msgstr "ID dispositivo"
 
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 #. "Table name" or "Table name|Column name" for error messages
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
 msgid "Medium"
 msgstr "Supporto"
 
@@ -4369,17 +4255,15 @@ msgstr "Famiglia OS"
 msgid "Medium|Path"
 msgstr "Percorso"
 
-# translation auto-copied from project control-center, version 3.8.6, document
-# gnome-control-center-2.0
+# translation auto-copied from project control-center, version 3.8.6, document gnome-control-center-2.0
 msgid "Memory"
 msgstr "Memoria"
 
 msgid "Memory (MB)"
 msgstr "Memoria (MB)"
 
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 #. "Table name" or "Table name|Column name" for error messages
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
 msgid "Message"
 msgstr "Messaggio"
 
@@ -4391,8 +4275,7 @@ msgstr "Digest"
 msgid "Message|Value"
 msgstr "Valore"
 
-# translation auto-copied from project shotwell-core, version 0.14.1, document
-# shotwell-core
+# translation auto-copied from project shotwell-core, version 0.14.1, document shotwell-core
 msgid "Metadata"
 msgstr "Metadati"
 
@@ -4414,9 +4297,8 @@ msgstr "Corrispondenze errate"
 msgid "Mismatches Report"
 msgstr "Notifica corrispondenze errate"
 
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery
 #. "Table name" or "Table name|Column name" for error messages
-# translation auto-copied from project Satellite6 Foreman Discovery, version
-# 6.1, document foreman_discovery
 msgid "Model"
 msgstr "Modello"
 
@@ -4464,14 +4346,11 @@ msgstr "Specificare un utente valido con una email abilitata"
 msgid "My account"
 msgstr "Account"
 
-# translation auto-copied from project Customer Portal Translations, version
-# 010_supportPolicies, document prod_sla.html, author fvalen
+# translation auto-copied from project Customer Portal Translations, version 010_supportPolicies, document prod_sla.html, author fvalen
 msgid "N/A"
 msgstr "N/A"
 
-# translation auto-copied from project Customer Portal Translations, version
-# RHJBossMiddlewareOperationsNetworkProduc, document
-# RHJBossMiddlewareOperationsNetworkProductUpdate.html, author fvalen
+# translation auto-copied from project Customer Portal Translations, version RHJBossMiddlewareOperationsNetworkProduc, document RHJBossMiddlewareOperationsNetworkProductUpdate.html, author fvalen
 msgid "NA"
 msgstr "NA"
 
@@ -4481,8 +4360,7 @@ msgstr "NIC"
 msgid "NIC type"
 msgstr "Tipo di NIC"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1,
-# document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
 msgid "Name"
 msgstr "Nome"
 
@@ -4507,8 +4385,7 @@ msgstr "Netmask"
 msgid "Netmask for this subnet"
 msgstr "Maschera di rete per questa sottorete"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Network"
 msgstr "Rete"
 
@@ -4521,8 +4398,7 @@ msgstr "Interfaccia di rete"
 msgid "Network type"
 msgstr "Tipo di rete"
 
-# translation auto-copied from project gnote, version 3.8.1, document gnote,
-# author fvalen
+# translation auto-copied from project gnote, version 3.8.1, document gnote, author fvalen
 msgid "New"
 msgstr "Nuovo"
 
@@ -4580,8 +4456,7 @@ msgstr "Nuovo sorgente di autenticazione LDAP"
 msgid "New LDAP Source"
 msgstr "Nuovo sorgente LDAP"
 
-# translation auto-copied from project evolution, version 3.8.5, document
-# evolution-3.8
+# translation auto-copied from project evolution, version 3.8.5, document evolution-3.8
 msgid "New Location"
 msgstr "Nuova posizione"
 
@@ -4597,8 +4472,7 @@ msgstr "Nuovo sistema operativo"
 msgid "New Operating system"
 msgstr "Nuovo sistema operativo"
 
-# translation auto-copied from project Katello, version 0.1v, document app,
-# author fvalen
+# translation auto-copied from project Katello, version 0.1v, document app, author fvalen
 msgid "New Organization"
 msgstr "Nuova organizzazione"
 
@@ -4614,8 +4488,7 @@ msgstr "Nuovo ambiente puppet"
 msgid "New Realm"
 msgstr "Nuova area di autenticazione"
 
-# translation auto-copied from project Katello, version 0.1v, document app,
-# author fvalen
+# translation auto-copied from project Katello, version 0.1v, document app, author fvalen
 msgid "New Role"
 msgstr "Nuovo ruolo"
 
@@ -4628,8 +4501,7 @@ msgstr "Nuovo modello"
 msgid "New Trend"
 msgstr "Nuovo trend"
 
-# translation auto-copied from project Katello, version 0.1v, document app,
-# author fvalen
+# translation auto-copied from project Katello, version 0.1v, document app, author fvalen
 msgid "New User"
 msgstr "Nuovo utente"
 
@@ -4731,8 +4603,8 @@ msgid "Nic::Base|Virtual"
 msgstr "Nic::Base|Virtuale"
 
 msgid ""
-"No %{template_kind} templates were found for this host, make sure you define"
-" at least one in your %{os} settings"
+"No %{template_kind} templates were found for this host, make sure you define "
+"at least one in your %{os} settings"
 msgstr ""
 "Impossibile trovare i modelli %{template_kind} per questo host, definirne "
 "almeno uno nelle impostazioni %{os}"
@@ -4785,8 +4657,8 @@ msgid ""
 "No finish templates were found for this host, make sure you define at least "
 "one in your %s settings"
 msgstr ""
-"Impossibile trovare modelli completati per questo host, definirne almeno uno"
-" nelle impostazioni %s"
+"Impossibile trovare modelli completati per questo host, definirne almeno uno "
+"nelle impostazioni %s"
 
 msgid "No history found"
 msgstr "Nessuna cronologia trovata"
@@ -4800,13 +4672,11 @@ msgstr "Nessun gruppo di host selezionato!"
 msgid "No hosts are mismatched!"
 msgstr "Nessun host presenta corrispondenze errate! "
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version
-# 6.1, document foreman_discovery
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery
 msgid "No hosts selected"
 msgstr "Nessun host selezionato"
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version
-# 6.1, document foreman_discovery
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery
 msgid "No hosts were found with that id or name"
 msgstr "Nessun host trovato con l'id o nome indicato"
 
@@ -4893,16 +4763,14 @@ msgstr "Nessun errore del valore"
 msgid "No value warning"
 msgstr "Nessun avviso sul valore"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1,
-# document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
 msgid "None"
 msgstr "Nessuno"
 
 msgid "None Found"
 msgstr "Non trovata"
 
-# translation auto-copied from project evolution, version 3.8.5, document
-# evolution-3.8
+# translation auto-copied from project evolution, version 3.8.5, document evolution-3.8
 msgid "Normal"
 msgstr "Normale"
 
@@ -4954,8 +4822,7 @@ msgstr "Note, avvertimenti ed errori"
 msgid "Notification disabled"
 msgstr "Notifiche disabilitate"
 
-# translation auto-copied from project control-center, version 3.8.6, document
-# gnome-control-center-2.0
+# translation auto-copied from project control-center, version 3.8.6, document gnome-control-center-2.0
 msgid "Notifications"
 msgstr "Notifiche"
 
@@ -4992,8 +4859,7 @@ msgstr "Chiave utenza OAuth"
 msgid "OAuth consumer secret"
 msgstr "Segreto utenza OAuth"
 
-# translation auto-copied from project NetworkManager, version 0.9.9.0,
-# document NetworkManager, author fvalen
+# translation auto-copied from project NetworkManager, version 0.9.9.0, document NetworkManager, author fvalen
 msgid "OK"
 msgstr "OK"
 
@@ -5004,8 +4870,7 @@ msgstr "O"
 msgid "OS Distribution"
 msgstr "Distribuzione OS"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "OS Family"
 msgstr "Famiglia OS"
 
@@ -5024,21 +4889,18 @@ msgstr "Nome OS di Facter; es. RedHat"
 msgid "Obsolete"
 msgstr "Obsoleto"
 
-# translation auto-copied from project control-center, version 3.8.6, document
-# gnome-control-center-2.0
+# translation auto-copied from project control-center, version 3.8.6, document gnome-control-center-2.0
 msgid "Off"
 msgstr "Off"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1,
-# document katello, author fvalen
+# translation auto-copied from project Satellite6 Katello, version 6.1, document katello, author fvalen
 msgid "Ok"
 msgstr "Ok"
 
 msgid "Old"
 msgstr "Vecchio"
 
-# translation auto-copied from project pulseaudio, version 3.0, document
-# pulseaudio, author fvalen
+# translation auto-copied from project pulseaudio, version 3.0, document pulseaudio, author fvalen
 msgid "On"
 msgstr "On"
 
@@ -5049,8 +4911,8 @@ msgid ""
 "Only URLs with schema http://, https://, ftp:// or nfs:// are allowed (e.g. "
 "nfs://server/vol/dir)"
 msgstr ""
-"Sono permessi solo gli URL con un formato http://, https://, ftp:// o nfs://"
-" (es. nfs://server/vol/dir)"
+"Sono permessi solo gli URL con un formato http://, https://, ftp:// o nfs:// "
+"(es. nfs://server/vol/dir)"
 
 msgid "Only for BMC interfaces."
 msgstr "Solo per interfacce BMC."
@@ -5059,8 +4921,8 @@ msgid ""
 "Only known Smart Proxies with the Puppet feature can access fact/report "
 "importers and ENC output"
 msgstr ""
-"Solo gli Smart Proxy conosciuti con la funzione Puppet possono accedere agli"
-" eventi/notifiche e output ENC"
+"Solo gli Smart Proxy conosciuti con la funzione Puppet possono accedere agli "
+"eventi/notifiche e output ENC"
 
 msgid "Only one bootable interface is allowed"
 msgstr "È permessa solo una interfaccia avviabile"
@@ -5086,8 +4948,7 @@ msgstr "Aprire Spice in una nuova finestra"
 msgid "Operating Mode"
 msgstr "Modalità operativa"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Operating System"
 msgstr "Sistema Operativo"
 
@@ -5097,8 +4958,7 @@ msgstr "Famiglia sistema operativo"
 msgid "Operating System version is required"
 msgstr "È necessaria la versione del sistema operativo"
 
-# translation auto-copied from project Red Hat Satellite User Guide, version
-# 6.0, document chap-Configuring_the_Provisioning_Environment
+# translation auto-copied from project Red Hat Satellite User Guide, version 6.0, document chap-Configuring_the_Provisioning_Environment
 msgid "Operating Systems"
 msgstr "Sistemi operativi"
 
@@ -5116,8 +4976,7 @@ msgstr ""
 "Famiglia del sistema operativo, valori disponibili: "
 "%{operatingsystem_families}"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Operating systems"
 msgstr "Sistemi operativi"
 
@@ -5168,8 +5027,7 @@ msgstr "Operatingsystem|Titolo"
 msgid "Operation"
 msgstr "Operazione"
 
-# translation auto-copied from project [RHEL] [SECURITY] Security Guide,
-# version 6.4, document Tcp_Wrappers, author fvalen
+# translation auto-copied from project [RHEL] [SECURITY] Security Guide, version 6.4, document Tcp_Wrappers, author fvalen
 msgid "Operators"
 msgstr "Operatori"
 
@@ -5190,8 +5048,8 @@ msgid ""
 "Optional parameter without value.<br/><i>Won't be given to Puppet.</i> "
 "<br><br><b>Description:</b> %s"
 msgstr ""
-"Parametro facoltativo senza valore.<br/><i>Non verrà conferito al "
-"Puppet.</i> <br><br><b>Descrizione:</b> %s"
+"Parametro facoltativo senza valore.<br/><i>Non verrà conferito al Puppet.</"
+"i> <br><br><b>Descrizione:</b> %s"
 
 msgid "Optional: Ending IP Address for IP auto suggestion"
 msgstr ""
@@ -5219,16 +5077,14 @@ msgid ""
 "first request."
 msgstr ""
 "Facoltativamente fornire un CA o una catena CA con un ordine corretto. Se "
-"lasciato vuoto, un CA auto-firmato verrà popolato automaticamente dal server"
-" durante la prima richiesta."
+"lasciato vuoto, un CA auto-firmato verrà popolato automaticamente dal server "
+"durante la prima richiesta."
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Order"
 msgstr "Ordine"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1,
-# document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
 msgid "Organization"
 msgstr "Organizzazione"
 
@@ -5238,8 +5094,7 @@ msgstr "Configurazione organizzazione"
 msgid "Organization you had selected as your context has been deleted."
 msgstr "L'organizzazione selezionata come contesto è stata rimossa."
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Organizations"
 msgstr "Organizzazioni"
 
@@ -5276,9 +5131,7 @@ msgstr "Sovrascrivi questo valore"
 msgid "Override value for specific hosts"
 msgstr "Valore di override per host specifici"
 
-# translation auto-copied from project Customer Portal Translations, version
-# RHJBossMiddlewareOperationsNetworkProduc, document
-# RHJBossMiddlewareOperationsNetworkProductUpdate.html, author fvalen
+# translation auto-copied from project Customer Portal Translations, version RHJBossMiddlewareOperationsNetworkProduc, document RHJBossMiddlewareOperationsNetworkProductUpdate.html, author fvalen
 msgid "Overview"
 msgstr "Panoramica"
 
@@ -5288,8 +5141,7 @@ msgstr "Sovrascrivi"
 msgid "Owned By"
 msgstr "Posseduto da"
 
-# translation auto-copied from project Customer Portal Translations, version
-# Portal-Case-Management, document Template, author fvalen
+# translation auto-copied from project Customer Portal Translations, version Portal-Case-Management, document Template, author fvalen
 msgid "Owner"
 msgstr "Proprietario"
 
@@ -5299,8 +5151,7 @@ msgstr "Proprietario cambiato a %s"
 msgid "Owner type needs to be one of the following: %s"
 msgstr "Il tipo di proprietario deve essere uno dei seguenti: %s"
 
-# translation auto-copied from project virt-manager, version 0.10.0, document
-# virt-manager
+# translation auto-copied from project virt-manager, version 0.10.0, document virt-manager
 msgid "PXE"
 msgstr "PXE"
 
@@ -5311,9 +5162,8 @@ msgstr ""
 msgid "Param name"
 msgstr "Nome param"
 
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 #. "Table name" or "Table name|Column name" for error messages
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
 msgid "Parameter"
 msgstr "Parametro"
 
@@ -5326,8 +5176,7 @@ msgstr "Tipo di parametro"
 msgid "Parameter types"
 msgstr "Tipi di parametro"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Parameters"
 msgstr "Parametri"
 
@@ -5368,13 +5217,11 @@ msgstr "Tabella delle partizione"
 msgid "Partition table configuration"
 msgstr "Configurazione tabella delle partizioni"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Partition tables"
 msgstr "Tabelle delle partizioni"
 
-# translation auto-copied from project Customer Portal Translations, version
-# Portal-Case-Management, document Template, author fvalen
+# translation auto-copied from project Customer Portal Translations, version Portal-Case-Management, document Template, author fvalen
 msgid "Password"
 msgstr "Password"
 
@@ -5387,8 +5234,7 @@ msgstr "La password deve contenere 8 o più caratteri"
 msgid "Password to authenticate with - used for SSH finish step."
 msgstr "Password per un'autenticazione con -used per la fase finale di SSH."
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Path"
 msgstr "Percorso"
 
@@ -5396,18 +5242,15 @@ msgid "Path to template, relative to datacenter (e.g. My templates/RHEL 6)"
 msgstr ""
 "Percorso per il template, relativo al datacenter (es. templates/RHEL 6)"
 
-# translation auto-copied from project shotwell-core, version 0.14.1, document
-# shotwell-core
+# translation auto-copied from project shotwell-core, version 0.14.1, document shotwell-core
 msgid "Pause"
 msgstr "Pausa"
 
-# translation auto-copied from project virt-manager, version 0.10.0, document
-# virt-manager
+# translation auto-copied from project virt-manager, version 0.10.0, document virt-manager
 msgid "Paused"
 msgstr "In pausa"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Pending"
 msgstr "In attesa"
 
@@ -5448,8 +5291,7 @@ msgstr "Attributo foto"
 msgid "Physical (Bridge)"
 msgstr "Fisico (Bridge)"
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version
-# 6.1, document foreman_discovery
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery
 msgid "Please Confirm"
 msgstr "Conferma"
 
@@ -5521,18 +5363,15 @@ msgstr ""
 msgid "Please try to update your request"
 msgstr "Aggiornare la richiesta"
 
-# translation auto-copied from project system-config-printer, version 1.4.1,
-# document system-config-printer
+# translation auto-copied from project system-config-printer, version 1.4.1, document system-config-printer
 msgid "Please wait..."
 msgstr "Attendere prego..."
 
-# translation auto-copied from project shotwell-core, version 0.14.1, document
-# shotwell-core
+# translation auto-copied from project shotwell-core, version 0.14.1, document shotwell-core
 msgid "Plugins"
 msgstr "Plugin"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Power"
 msgstr "Alimentazione"
 
@@ -5554,8 +5393,7 @@ msgstr "Prefisso da aggiungere a tutte le email in uscita"
 msgid "Prepare post installation script for %s"
 msgstr "Preparare lo scirpt post-installazione per %s"
 
-# translation auto-copied from project control-center, version 3.8.6, document
-# gnome-control-center-2.0
+# translation auto-copied from project control-center, version 3.8.6, document gnome-control-center-2.0
 msgid "Preview"
 msgstr "Anteprima"
 
@@ -5578,21 +5416,18 @@ msgstr ""
 msgid "Proceed to Edit"
 msgstr "Procedere su Modifica"
 
-# translation auto-copied from project nautilus, version 3.8.2, document
-# nautilus
+# translation auto-copied from project nautilus, version 3.8.2, document nautilus
 msgid "Properties"
 msgstr "Proprietà"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Provider"
 msgstr "Provider"
 
 msgid "Providers include %{providers}"
 msgstr "I provider includono %{providers}"
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version
-# 6.1, document foreman_discovery
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery
 msgid "Provision"
 msgstr "Provisioning"
 
@@ -5649,13 +5484,11 @@ msgstr "Famiglia OS"
 msgid "Public"
 msgstr "Pubblica"
 
-# translation auto-copied from project Red Hat Satellite Installation Guide,
-# version 6.0, document RednbspHat_Satellite_6_Supported_Usage
+# translation auto-copied from project Red Hat Satellite Installation Guide, version 6.0, document RednbspHat_Satellite_6_Supported_Usage
 msgid "Puppet"
 msgstr "Puppet"
 
-# translation auto-copied from project Red Hat Satellite User Guide, version
-# 6.0, document Host_Groups
+# translation auto-copied from project Red Hat Satellite User Guide, version 6.0, document Host_Groups
 msgid "Puppet CA"
 msgstr "Puppet CA"
 
@@ -5674,8 +5507,7 @@ msgstr "Ambienti del puppet"
 msgid "Puppet External Nodes"
 msgstr "Nodi esterni del puppet"
 
-# translation auto-copied from project Red Hat Satellite User Guide, version
-# 6.0, document appe-Glossary_of_Terms
+# translation auto-copied from project Red Hat Satellite User Guide, version 6.0, document appe-Glossary_of_Terms
 msgid "Puppet Master"
 msgstr "Puppet Master"
 
@@ -5689,14 +5521,13 @@ msgid "Puppet Reports integration"
 msgstr "Integrazione notifiche del puppet"
 
 msgid ""
-"Puppet Summary Report - F:%{failed} R:%{restarted} S:%{skipped} A:%{applied}"
-" FR:%{failed_restarts} T:%{total}"
+"Puppet Summary Report - F:%{failed} R:%{restarted} S:%{skipped} A:%{applied} "
+"FR:%{failed_restarts} T:%{total}"
 msgstr ""
-"Notifica Sommario del Puppet di Foreman - F:%{failed} R:%{restarted} "
-"S:%{skipped} A:%{applied} FR:%{failed_restarts} T:%{total}"
+"Notifica Sommario del Puppet di Foreman - F:%{failed} R:%{restarted} S:"
+"%{skipped} A:%{applied} FR:%{failed_restarts} T:%{total}"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Puppet class"
 msgstr "Classe del puppet"
 
@@ -5823,14 +5654,13 @@ msgid "Red Hat Satellite Blog"
 msgstr "Blog per il Red Hat Satellite"
 
 msgid ""
-"Redirect your users to this url on logout (authorize_login_delegation should"
-" also be enabled)"
+"Redirect your users to this url on logout (authorize_login_delegation should "
+"also be enabled)"
 msgstr ""
 "Ridirezionare gli utenti su questo url previo abbandono sessione "
 "(authorize_login_delegation deve essere abiliato)"
 
-# translation auto-copied from project anaconda, version 19.31.34, document
-# anaconda, author fvalen
+# translation auto-copied from project anaconda, version 19.31.34, document anaconda, author fvalen
 msgid "Refresh"
 msgstr "Aggiorna"
 
@@ -5843,8 +5673,7 @@ msgstr "Aggiorna il gruppo di utenti esterno"
 msgid "Refresh features"
 msgstr "Aggiorna funzionalità"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Region"
 msgstr "Regione"
 
@@ -5884,8 +5713,7 @@ msgstr "Rimuovi:"
 msgid "Removing compute instance %s"
 msgstr "Rimozione istanza di calcolo %s"
 
-# translation auto-copied from project empathy, version 3.8.3, document
-# empathy
+# translation auto-copied from project empathy, version 3.8.3, document empathy
 msgid "Rename"
 msgstr "Rinomina"
 
@@ -5908,8 +5736,7 @@ msgstr "Stato notifica"
 msgid "Report summary"
 msgstr "Sommario notifica"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Reported at"
 msgstr "Riportato"
 
@@ -5953,8 +5780,7 @@ msgstr "Resetta lo zoom"
 msgid "Resolve"
 msgstr "Risolvi"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Resource"
 msgstr "Risorsa"
 
@@ -5964,16 +5790,14 @@ msgstr "Risorsa %{resource_name} non trovata usando id '%{id}'"
 msgid "Resource %{res} not found."
 msgstr "Risorsa %{res} non trovata."
 
-# translation auto-copied from project control-center, version 3.8.6, document
-# gnome-control-center-2.0
+# translation auto-copied from project control-center, version 3.8.6, document gnome-control-center-2.0
 msgid "Resources"
 msgstr "Risorse"
 
 msgid "Restart<br>Failures"
 msgstr "Riavvio<br>Errori"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Restarted"
 msgstr "Riavviata"
 
@@ -5984,13 +5808,11 @@ msgstr "R"
 msgid "Restore widgets"
 msgstr "Ripristina widget"
 
-# translation auto-copied from project control-center, version 3.8.6, document
-# gnome-control-center-2.0
+# translation auto-copied from project control-center, version 3.8.6, document gnome-control-center-2.0
 msgid "Resume"
 msgstr "Riprendi"
 
-# translation auto-copied from project policycoreutils, version 2.1.14,
-# document policycoreutils, author fvalen
+# translation auto-copied from project policycoreutils, version 2.1.14, document policycoreutils, author fvalen
 msgid "Revert"
 msgstr "Ripristina"
 
@@ -6003,9 +5825,8 @@ msgstr "Revisione"
 msgid "Review build status for %s"
 msgstr "Ricontrolla lo stato della compilazione per %s"
 
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 #. "Table name" or "Table name|Column name" for error messages
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
 msgid "Role"
 msgstr "Ruolo"
 
@@ -6015,8 +5836,7 @@ msgstr "Ruolo clonato da ruolo %{old_name}"
 msgid "Role is in use"
 msgstr "Ruolo in uso"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Roles"
 msgstr "Ruoli"
 
@@ -6099,38 +5919,37 @@ msgstr ""
 "inserimento di numerosi dati relativi all'installazione corrente."
 
 msgid ""
-"Satellite 6 considers a domain and a DNS zone as the same thing. That is, if"
-" you are planning to manage a site where all the machines are or the form "
-"<i>hostname</i>.<b>somewhere.com</b>\\n  then the domain is "
-"<b>somewhere.com</b>. This allows Satellite 6 to associate a puppet variable"
-" with a domain/site and automatically append this variable to all external "
-"node requests made\\n  by machines at that site."
+"Satellite 6 considers a domain and a DNS zone as the same thing. That is, if "
+"you are planning to manage a site where all the machines are or the form "
+"<i>hostname</i>.<b>somewhere.com</b>\\n  then the domain is <b>somewhere."
+"com</b>. This allows Satellite 6 to associate a puppet variable with a "
+"domain/site and automatically append this variable to all external node "
+"requests made\\n  by machines at that site."
 msgstr ""
 "Satellite 6 considera un dominio e una zona DNS in modo simile. E cioè, per "
-"la gestione di un sito dove tutte le macchine hanno un formato "
-"<i>hostname</i>.<b>somewhere.com</b>\\n, allora il dominio sarà "
-"<b>somewhere.com</b>. Ciò permetterà a Satellite 6 di associare una "
-"variabile puppet con un dominio/sito, e assegnare automaticamente la "
-"variabile a tutte le richieste del nodo esterno fatte\\n dalle macchine a "
-"questo sito."
+"la gestione di un sito dove tutte le macchine hanno un formato <i>hostname</"
+"i>.<b>somewhere.com</b>\\n, allora il dominio sarà <b>somewhere.com</b>. Ciò "
+"permetterà a Satellite 6 di associare una variabile puppet con un dominio/"
+"sito, e assegnare automaticamente la variabile a tutte le richieste del nodo "
+"esterno fatte\\n dalle macchine a questo sito."
 
 msgid "Satellite 6 report creation time is <em>%s</em>"
 msgstr "L'orario di creazione della notifica di Satellite 6 è <em>%s</em>"
 
 msgid ""
 "Satellite 6 supports automatically creating realm entries for new hosts.  "
-"When a realm is selected for a host, Satellite 6 contacts the relevant realm"
-" Capsule to create an entry for the host and retrieve it's one-time "
+"When a realm is selected for a host, Satellite 6 contacts the relevant realm "
+"Capsule to create an entry for the host and retrieve it's one-time "
 "registration password."
 msgstr ""
-"Satellite 6 supporta la creazione automatica delle voci del real per i nuovi"
-" host. Alla selezione di un realm, Satellite 6 contatta il realm Capsule "
+"Satellite 6 supporta la creazione automatica delle voci del real per i nuovi "
+"host. Alla selezione di un realm, Satellite 6 contatta il realm Capsule "
 "rilevante per la creazione di una voce; permette altresì il recupero della "
 "password di registrazione (one-time password)."
 
 msgid ""
-"Satellite 6, by default, operates in anonymous mode where all operations are"
-" performed without reference to the user who is performing the task."
+"Satellite 6, by default, operates in anonymous mode where all operations are "
+"performed without reference to the user who is performing the task."
 msgstr ""
 "Satellite 6, per impostazione predefinita, opera in modalità anonima quando "
 "tutte le operazioni vengono effettuate senza alcun riferimento all'utente "
@@ -6151,8 +5970,7 @@ msgstr "ID sottorete di Satellite dell'interfaccia"
 msgid "Satellite ticketing system"
 msgstr "Sistema di creazione ticket di Satellite"
 
-# translation auto-copied from project Customer Portal Translations, version
-# Portal-Case-Management, document Template, author fvalen
+# translation auto-copied from project Customer Portal Translations, version Portal-Case-Management, document Template, author fvalen
 msgid "Save"
 msgstr "Salva"
 
@@ -6162,8 +5980,7 @@ msgstr "Salva dashboard"
 msgid "Save something and try again"
 msgstr "Salva qualcosa e riprova"
 
-# translation auto-copied from project Katello, version 0.1v, document app,
-# author fvalen
+# translation auto-copied from project Katello, version 0.1v, document app, author fvalen
 msgid "Scope"
 msgstr "Scopo"
 
@@ -6173,8 +5990,7 @@ msgstr "Scopo per posizioni"
 msgid "Scope by organizations"
 msgstr "Scopo per organizzazioni"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Search"
 msgstr "Cerca"
 
@@ -6190,26 +6006,22 @@ msgstr "Gruppo di sicurezza"
 msgid "Security groups"
 msgstr "Gruppi di sicurezza"
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version
-# 6.1, document foreman_discovery
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery
 msgid "Select Action"
 msgstr "Seleziona azione"
 
-# translation auto-copied from project gnote, version 3.8.1, document gnote,
-# author fvalen
+# translation auto-copied from project gnote, version 3.8.1, document gnote, author fvalen
 msgid "Select All"
 msgstr "Seleziona tutto"
 
 msgid "Select Hosts"
 msgstr "Selezionare Host"
 
-# translation auto-copied from project control-center, version 3.8.6, document
-# gnome-control-center-2.0
+# translation auto-copied from project control-center, version 3.8.6, document gnome-control-center-2.0
 msgid "Select Location"
 msgstr "Seleziona posizione"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1,
-# document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
 msgid "Select Organization"
 msgstr "Seleziona organizzazione"
 
@@ -6316,8 +6128,7 @@ msgstr "Impostazione istanza di calcolo %s"
 msgid "Setting"
 msgstr "Impostazione"
 
-# translation auto-copied from project control-center, version 3.8.6, document
-# gnome-control-center-2.0
+# translation auto-copied from project control-center, version 3.8.6, document gnome-control-center-2.0
 msgid "Settings"
 msgstr "Impostazioni"
 
@@ -6356,8 +6167,8 @@ msgid ""
 "Should the `foreman-rake db:migrate` be executed on the next run of the "
 "installer modules?"
 msgstr ""
-"Eseguire `foreman-rake db:migrate`durante l'esecuzione successiva dei moduli"
-" dell'installer?"
+"Eseguire `foreman-rake db:migrate`durante l'esecuzione successiva dei moduli "
+"dell'installer?"
 
 msgid ""
 "Should the `foreman-rake db:seed` be executed on the next run of the "
@@ -6377,9 +6188,9 @@ msgid ""
 "Puppet default"
 msgstr ""
 "La corrispondenza deve continuare ad eseguire la ricerca delle "
-"corrispondenze possibili dopo il primo risultato? (solo tipo di array/hash)."
-" Nota: che l'esecuzione del merge degli override ignorerà tutti i matcher "
-"che utilizzano il default di puppet"
+"corrispondenze possibili dopo il primo risultato? (solo tipo di array/hash). "
+"Nota: che l'esecuzione del merge degli override ignorerà tutti i matcher che "
+"utilizzano il default di puppet"
 
 msgid ""
 "Should this interface be managed via DHCP and DNS smart proxy and should it "
@@ -6527,8 +6338,7 @@ msgstr "Mostra una architettura"
 msgid "Show an audit"
 msgstr "Mostra una verifica"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1,
-# document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
 msgid "Show an environment"
 msgstr "Mostra un ambiente"
 
@@ -6581,8 +6391,7 @@ msgstr "Mostra l'ultima notifica per un host"
 msgid "Sign"
 msgstr "Accedi"
 
-# translation auto-copied from project Customer Portal Translations, version
-# Portal-Case-Management, document Template, author fvalen
+# translation auto-copied from project Customer Portal Translations, version Portal-Case-Management, document Template, author fvalen
 msgid "Size"
 msgstr "Dimensione"
 
@@ -6604,8 +6413,7 @@ msgstr "S"
 msgid "Smart Class Parameter"
 msgstr "Parametro classe smart"
 
-# translation auto-copied from project Red Hat Satellite User Guide, version
-# 6.0, document appe-Glossary_of_Terms
+# translation auto-copied from project Red Hat Satellite User Guide, version 6.0, document appe-Glossary_of_Terms
 msgid "Smart Proxy"
 msgstr "Smart Proxy"
 
@@ -6619,8 +6427,7 @@ msgstr "Smart proxy"
 msgid "Smart proxy IDs"
 msgstr "ID Smart proxy"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Smart variables"
 msgstr "Variabili smart"
 
@@ -6650,8 +6457,7 @@ msgstr ""
 msgid "Something went wrong while changing host type - %s"
 msgstr "Si è verificato un errore durante la modifica del tipo di host - %s"
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version
-# 6.1, document foreman_discovery
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery
 msgid "Something went wrong while selecting hosts - %s"
 msgstr "Si è verificato un errore durante la selezione degli host - %s"
 
@@ -6682,9 +6488,7 @@ msgstr ""
 "Opzioni separate da spazi, es. miimon=100. Solo per interfacce di "
 "aggregazione."
 
-# translation auto-copied from project Customer Portal Translations, version
-# RHJBossMiddlewareOperationsNetworkProduc, document
-# RHJBossMiddlewareOperationsNetworkProductUpdate.html, author fvalen
+# translation auto-copied from project Customer Portal Translations, version RHJBossMiddlewareOperationsNetworkProduc, document RHJBossMiddlewareOperationsNetworkProductUpdate.html, author fvalen
 msgid "Start"
 msgstr "Inizio"
 
@@ -6700,8 +6504,7 @@ msgstr "Statico"
 msgid "Statistics"
 msgstr "Statistiche"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Status"
 msgstr "Stato"
 
@@ -6724,27 +6527,23 @@ msgstr "Dominio di archiviazione"
 msgid "Storage pool"
 msgstr "Pool di archiviazione"
 
-# translation auto-copied from project firstboot, version 19.6, document
-# firstboot
+# translation auto-copied from project firstboot, version 19.6, document firstboot
 msgid "Strong"
 msgstr "Forte"
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version
-# 6.1, document foreman_discovery
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery
 msgid "Submit"
 msgstr "Invia"
 
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery
 #. "Table name" or "Table name|Column name" for error messages
-# translation auto-copied from project Satellite6 Foreman Discovery, version
-# 6.1, document foreman_discovery
 msgid "Subnet"
 msgstr "Sottorete"
 
 msgid "Subnet IDs"
 msgstr "ID sottoreti"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Subnet name"
 msgstr "Nome sottorete"
 
@@ -6754,8 +6553,7 @@ msgstr "Rete della sottorete"
 msgid "Subnet numeric identifier"
 msgstr "idenificatore numerico della sottorete"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Subnets"
 msgstr "Sottoreti"
 
@@ -6847,8 +6645,8 @@ msgid "Successfully updated %s."
 msgstr "%s aggiornato con successo."
 
 msgid ""
-"Successfully updated environments and Puppet classes from the on-disk Puppet"
-" installation"
+"Successfully updated environments and Puppet classes from the on-disk Puppet "
+"installation"
 msgstr ""
 "Classi del puppet e ambienti aggiornati con successo dal dischetto "
 "d'installazione del puppet"
@@ -6856,8 +6654,7 @@ msgstr ""
 msgid "Suggest new"
 msgstr "Suggerisci nuovo"
 
-# translation auto-copied from project Customer Portal Translations, version
-# Portal-Case-Management, document Template, author fvalen
+# translation auto-copied from project Customer Portal Translations, version Portal-Case-Management, document Template, author fvalen
 msgid "Support"
 msgstr "Supporto"
 
@@ -6952,13 +6749,11 @@ msgstr "Template sbloccato"
 msgid "TemplateKind|Name"
 msgstr "Nome"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Templates"
 msgstr "Modelli"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Tenant"
 msgstr "Titolare"
 
@@ -6966,8 +6761,8 @@ msgid "Test Connection"
 msgstr "Connessione test"
 
 msgid ""
-"The <b>fullname</b> field is used for human readability in reports and other"
-" pages that refer to domains,\\n  and also available as an external node "
+"The <b>fullname</b> field is used for human readability in reports and other "
+"pages that refer to domains,\\n  and also available as an external node "
 "parameter"
 msgstr ""
 "Il campo <b>nome completo</b> viene usato per semplificare la lettura "
@@ -7045,18 +6840,18 @@ msgid "The file path where your p12 file is located"
 msgstr "Il percorso del file dove viene posizionato il file p12"
 
 msgid ""
-"The final entry, Operating System default, can be set by editing the %s "
-"page."
+"The final entry, Operating System default, can be set by editing the %s page."
+""
 msgstr ""
 "La voce finale, impostazione predefinita del sistema operativo, può essere "
 "impostata modificando la pagina %s."
 
 msgid ""
-"The following entries were found conflicting with what Satellite 6 wanted to"
-" apply."
+"The following entries were found conflicting with what Satellite 6 wanted to "
+"apply."
 msgstr ""
-"Le seguenti voci sono in conflitto con il contenuto che Satellite 6 desidera"
-" applicare."
+"Le seguenti voci sono in conflitto con il contenuto che Satellite 6 desidera "
+"applicare."
 
 msgid "The following errors may prevent a successful build:"
 msgstr ""
@@ -7106,10 +6901,10 @@ msgid ""
 "during the build process."
 msgstr ""
 "L'inclusione di <b>#Dynamic</b> all'inizio di una riga indica a Satellite 6 "
-"che questa non è una disposizione del disco esplicita, e quindi dovrà essere"
-" gestita come uno script della shell, eseguita prima\\n del processo "
-"d'installazione, e la tabella delle partizioni sarà disponibile in "
-"<b>/tmp/diskpart.cfg</b> durante il processo di compilazione."
+"che questa non è una disposizione del disco esplicita, e quindi dovrà essere "
+"gestita come uno script della shell, eseguita prima\\n del processo "
+"d'installazione, e la tabella delle partizioni sarà disponibile in <b>/tmp/"
+"diskpart.cfg</b> durante il processo di compilazione."
 
 msgid ""
 "The keywords <b>$version</b>, <b>$major</b> and <b>$minor</b> will be "
@@ -7130,38 +6925,37 @@ msgid ""
 msgstr ""
 "L'ordine con il quale vengono processate le chiavi per la corrispondenza, a "
 "tale scopo viene utilizzata la prima corrispondenza.<br> È possibile usare "
-"attributi multipli, per esempio l'ordine <code>host group, "
-"environment</code> prevede una corrispondenza del tipo  <code>hostgroup = "
-"\"web servers\", environment = production</code>"
+"attributi multipli, per esempio l'ordine <code>host group, environment</"
+"code> prevede una corrispondenza del tipo  <code>hostgroup = \"web "
+"servers\", environment = production</code>"
 
 msgid "The order in which values are resolved"
 msgstr "L'ordine attraverso il quale vengono risolti i valori"
 
 msgid ""
-"The path to the medium, can be a URL or a valid NFS server (exclusive of the"
-" architecture).\\n          for example "
-"<em>http://mirror.centos.org/centos/$version/os/$arch</em> where "
-"<strong>$arch</strong> will be substituted for the host's actual OS "
-"architecture and <strong>$version</strong>, <strong>$major</strong> and "
-"<strong>$minor</strong> will be substituted for the version of the operating"
-" system. Solaris and Debian media may also use <strong>$release</strong>."
+"The path to the medium, can be a URL or a valid NFS server (exclusive of the "
+"architecture).\\n          for example <em>http://mirror.centos.org/centos/"
+"$version/os/$arch</em> where <strong>$arch</strong> will be substituted for "
+"the host's actual OS architecture and <strong>$version</strong>, "
+"<strong>$major</strong> and <strong>$minor</strong> will be substituted for "
+"the version of the operating system. Solaris and Debian media may also use "
+"<strong>$release</strong>."
 msgstr ""
 "Il percorso per il supporto, può essere un URL o un server NFS valido "
-"(esclusivo dell'architettura).\\n          per esempio "
-"<em>http://mirror.centos.org/centos/$version/os/$arch</em> dove "
-"<strong>$arch</strong> verrà sostituito con l'architettura del sistema "
-"operativo dell'host e <strong>$version</strong>, <strong>$major</strong> e "
-"<strong>$minor</strong> verranno sostituiti con la versione del sistema "
-"operativo. I dispositivi Solaris e Debian possono usare anche "
-"<strong>$release</strong>."
+"(esclusivo dell'architettura).\\n          per esempio <em>http://mirror."
+"centos.org/centos/$version/os/$arch</em> dove <strong>$arch</strong> verrà "
+"sostituito con l'architettura del sistema operativo dell'host e "
+"<strong>$version</strong>, <strong>$major</strong> e <strong>$minor</strong> "
+"verranno sostituiti con la versione del sistema operativo. I dispositivi "
+"Solaris e Debian possono usare anche <strong>$release</strong>."
 
 msgid "The realm name, e.g. EXAMPLE.COM"
 msgstr "Nome del realm, es. EXAMPLE.COM"
 
 msgid ""
 "The remote system presented a public key signed by an unidentified "
-"certificate authority. If you are sure the remote system is authentic, go to"
-" the compute resource edit page, press the 'Test Connection' or 'Load "
+"certificate authority. If you are sure the remote system is authentic, go to "
+"the compute resource edit page, press the 'Test Connection' or 'Load "
 "Datacenters' button and submit"
 msgstr ""
 "Il sistema remoto presenta una chiave pubblica firmata da un certificate "
@@ -7178,8 +6972,8 @@ msgid ""
 msgstr ""
 "Il sistema remoto presenta una chiave pubblica con codice hash %s, ma era "
 "previsto un codice hash diverso. Se sei sicuro che il sistema remoto sia "
-"autentico, vai sulla pagina per la modifica della risorsa di calcolo e premi"
-" \"Esegui il test della connessione' oppure 'Carica i datacenter', "
+"autentico, vai sulla pagina per la modifica della risorsa di calcolo e premi "
+"\"Esegui il test della connessione' oppure 'Carica i datacenter', "
 "successivamete seleziona invia."
 
 msgid "The selected hosts will execute a build operation on next reboot"
@@ -7188,8 +6982,8 @@ msgstr ""
 "successivo"
 
 msgid ""
-"The user that is used to ssh into the instance, normally cloud-user, "
-"ec2-user, ubuntu, root etc"
+"The user that is used to ssh into the instance, normally cloud-user, ec2-"
+"user, ubuntu, root etc"
 msgstr ""
 "L'utente usato per una operazione ssh in una istanza, normalmente cloud-"
 "user, ec2-user, ubuntu, root ecc"
@@ -7255,8 +7049,7 @@ msgstr "Ereditato dal genitore"
 msgid "This is used by a host"
 msgstr "Usato da un host"
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version
-# 6.1, document foreman_discovery
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery
 msgid ""
 "This might take a while, as all hosts, facts and reports will be destroyed "
 "as well"
@@ -7292,8 +7085,8 @@ msgid ""
 "This setting is defined in the configuration file 'settings.yaml' and is "
 "read-only."
 msgstr ""
-"Questa impostazione viene definita nel file di configurazione "
-"'settings.yaml' ed è in sola lettura."
+"Questa impostazione viene definita nel file di configurazione 'settings."
+"yaml' ed è in sola lettura."
 
 msgid "This template is locked and may not be removed."
 msgstr "Questo template è bloccato e non può essere rimosso."
@@ -7342,8 +7135,8 @@ msgid ""
 "To enable a provider, either install the OS package (e.g. foreman-libvirt) "
 "or enable the bundler group for development setup (e.g. ovirt)."
 msgstr ""
-"Per abilitare un provider installare il pacchetto del sistema operativo (es."
-"  foreman-libvirt), oppure abilitare il gruppo bundler per una impostazione "
+"Per abilitare un provider installare il pacchetto del sistema operativo (es. "
+" foreman-libvirt), oppure abilitare il gruppo bundler per una impostazione "
 "di sviluppo (es. ovirt)."
 
 msgid ""
@@ -7354,12 +7147,13 @@ msgstr ""
 "rake trends:counter' ad ogni intervallo Puppet (%s minuti)."
 
 msgid ""
-"To start collecting trend data, set a cron job to execute <span class='black"
-"'>foreman-rake trends:counter</span> every Puppet Interval (%s minutes)"
+"To start collecting trend data, set a cron job to execute <span class="
+"'black'>foreman-rake trends:counter</span> every Puppet Interval (%s "
+"minutes)"
 msgstr ""
-"Per ottenere i dati sul trend impostare un cron job per eseguire <span "
-"class='black'>foreman-rake trends:counter</span> ad ogni intervallo Puppet "
-"(%s minuti)."
+"Per ottenere i dati sul trend impostare un cron job per eseguire <span class="
+"'black'>foreman-rake trends:counter</span> ad ogni intervallo Puppet (%s "
+"minuti)."
 
 msgid ""
 "To update the class signature, go to the Puppet Classes page and select "
@@ -7386,8 +7180,7 @@ msgstr "Valore"
 msgid "Too many repetitions"
 msgstr "Troppe ripetizioni"
 
-# translation auto-copied from project libvirt, version 1.1.1, document
-# libvirt
+# translation auto-copied from project libvirt, version 1.1.1, document libvirt
 msgid "Total"
 msgstr "Totale"
 
@@ -7397,9 +7190,8 @@ msgstr "Host totali: %s"
 msgid "Transition Guide"
 msgstr "Guida alla transizione"
 
+# translation auto-copied from project Katello, version 0.1v, document app, author fvalen
 #. "Table name" or "Table name|Column name" for error messages
-# translation auto-copied from project Katello, version 0.1v, document app,
-# author fvalen
 msgid "Trend"
 msgstr "Tendenza"
 
@@ -7441,8 +7233,7 @@ msgstr ""
 "Attiva una esecuzione del puppet sul nodo; per fare questo è necessario "
 "abilitare l'esecuzione del puppet"
 
-# translation auto-copied from project RHN Satellite Reference Guide, version
-# 5.6, document Troubleshooting
+# translation auto-copied from project RHN Satellite Reference Guide, version 5.6, document Troubleshooting
 msgid "Troubleshooting"
 msgstr "Troubleshooting"
 
@@ -7456,16 +7247,14 @@ msgstr ""
 msgid "Try going to %{href}"
 msgstr "Prova ad andare su %{href}"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Type"
 msgstr "Tipo"
 
 msgid "Type of realm, e.g. Red Hat Identity Management"
 msgstr "Tipo di Realm, es. Red Hat Identity Management"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "URL"
 msgstr "URL"
 
@@ -7489,16 +7278,15 @@ msgstr ""
 msgid "UTC time of report"
 msgstr "Orario UTC della notifica"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "UUID"
 msgstr "UUID"
 
 msgid ""
 "UUID to track orchestration tasks status, GET /api/orchestration/:UUID/tasks"
 msgstr ""
-"UUID per controllare gli stati dei compiti d'orchestrazione, GET "
-"/api/orchestration/:UUID/tasks"
+"UUID per controllare gli stati dei compiti d'orchestrazione, GET /api/"
+"orchestration/:UUID/tasks"
 
 msgid "Unable to access key"
 msgstr "Impossibile accedere alla chiave"
@@ -7689,8 +7477,7 @@ msgstr "Formato stato della notifica non supportato"
 msgid "Up"
 msgstr "Su"
 
-# translation auto-copied from project subscription-manager, version 1.10.10,
-# document keys
+# translation auto-copied from project subscription-manager, version 1.10.10, document keys
 msgid "Update"
 msgstr "Aggiorna"
 
@@ -7725,8 +7512,7 @@ msgstr ""
 msgid "Update a domain"
 msgstr "Aggiorna un dominio"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1,
-# document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
 msgid "Update a filter"
 msgstr "Aggiorna un filtro"
 
@@ -7802,8 +7588,7 @@ msgstr "Aggiorna un sorgente di autenticazione LDAP"
 msgid "Update an architecture"
 msgstr "Aggiorna una architettura"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1,
-# document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
 msgid "Update an environment"
 msgstr "Aggiorna un ambiente"
 
@@ -7833,8 +7618,7 @@ msgstr ""
 msgid "Update:"
 msgstr "Aggiorna:"
 
-# translation auto-copied from project Customer Portal Translations, version
-# Portal-Case-Management, document Template, author fvalen
+# translation auto-copied from project Customer Portal Translations, version Portal-Case-Management, document Template, author fvalen
 msgid "Updated"
 msgstr "Aggiornato"
 
@@ -7874,9 +7658,8 @@ msgstr ""
 msgid "Useful template functions and macros"
 msgstr "Macro e funzioni per il template utili"
 
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 #. "Table name" or "Table name|Column name" for error messages
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
 msgid "User"
 msgstr "Utente"
 
@@ -7886,8 +7669,7 @@ msgstr "Autenticazione utente"
 msgid "User Groups"
 msgstr "Gruppi di utenti"
 
-# translation auto-copied from project Red Hat Satellite User Guide, version
-# 6.0, document Book_Info, author fvalen
+# translation auto-copied from project Red Hat Satellite User Guide, version 6.0, document Book_Info, author fvalen
 msgid "User Guide"
 msgstr "User Guide "
 
@@ -7943,16 +7725,14 @@ msgstr "Sorgente di autenticazione"
 msgid "Usergroup|Name"
 msgstr "Nome"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Username"
 msgstr "Nome utente"
 
 msgid "Username for RHEV, EC2, Vmware, Openstack. Access Key for EC2."
 msgstr "Nome utente per RHEV, EC2, Vmware, Openstack. Chiave accesso per EC2."
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Users"
 msgstr "Utenti"
 
@@ -8008,8 +7788,8 @@ msgid "Uses thin provisioning if unchecked"
 msgstr "Usa thin provisioning se non selezionato"
 
 msgid ""
-"Using the organization system provides a way to group resources together for"
-" easy management."
+"Using the organization system provides a way to group resources together for "
+"easy management."
 msgstr ""
 "L'uso del sistema dell'organizzazione permette di poter raggruppare le "
 "risorse e semplificarne la gestione."
@@ -8064,26 +7844,22 @@ msgstr "Tipi di convalida"
 msgid "Validator type"
 msgstr "Tipo di convalidatore"
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version
-# 6.1, document foreman_discovery
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery
 msgid "Value"
 msgstr "Valore"
 
 msgid "Value to use when there is no match"
 msgstr "Valore da usare quando non è presente alcuna corrispondenza"
 
-# translation auto-copied from project libgweather, version 3.8.2, document
-# libgweather-3.0
+# translation auto-copied from project libgweather, version 3.8.2, document libgweather-3.0
 msgid "Variable"
 msgstr "Variabile"
 
-# translation auto-copied from project [RHEL] [DEV] SystemTap Beginner's
-# Guide, version 6.4, document ScriptConstructs
+# translation auto-copied from project [RHEL] [DEV] SystemTap Beginner's Guide, version 6.4, document ScriptConstructs
 msgid "Variables"
 msgstr "Variabili"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "Vendor class"
 msgstr "Classe rivenditore"
 
@@ -8151,13 +7927,11 @@ msgstr "Avvisi ed errori"
 msgid "We have not found any documentation for your API."
 msgstr "Non abbiamo trovato alcuna documentazione per l'API."
 
-# translation auto-copied from project firstboot, version 19.6, document
-# firstboot
+# translation auto-copied from project firstboot, version 19.6, document firstboot
 msgid "Weak"
 msgstr "Debole"
 
-# translation auto-copied from project evolution, version 3.8.5, document
-# evolution-3.8
+# translation auto-copied from project evolution, version 3.8.5, document evolution-3.8
 msgid "Weekly"
 msgstr "Settimanale"
 
@@ -8197,18 +7971,18 @@ msgstr ""
 
 msgid ""
 "When editing a Template, you must assign a list of Operating Systems which "
-"this Template can be used with. Optionally, you can restrict a template to a"
-" list of Hostgroups and/or Environments"
+"this Template can be used with. Optionally, you can restrict a template to a "
+"list of Hostgroups and/or Environments"
 msgstr ""
 "Durante la modifica di un template assegnare un elenco di Sistemi operativi "
 "con i quali è possibile usare il template stesso. Facoltativamente è "
 "possibile limitare l'elenco ai soli Hostgroups e/o Ambienti"
 
 msgid ""
-"When operating in unattended mode Satellite 6 will require more information,"
-" so expect more questions, but it will be able to automate host "
-"installations for Red Hat, Debian, SUSE and Solaris operating systems (and "
-"their clones), see"
+"When operating in unattended mode Satellite 6 will require more information, "
+"so expect more questions, but it will be able to automate host installations "
+"for Red Hat, Debian, SUSE and Solaris operating systems (and their clones), "
+"see"
 msgstr ""
 "Durante l'esecuzione in modalità automatica Satellite 6 avrà bisogno di "
 "maggiori informazioni, per questo motivo verranno formulate un numero più "
@@ -8232,8 +8006,8 @@ msgid "YAML"
 msgstr "YAML"
 
 msgid ""
-"You Are about to change the default PXE menu on all configured TFTP servers "
-"- continue ?"
+"You Are about to change the default PXE menu on all configured TFTP servers -"
+" continue ?"
 msgstr ""
 "Stai per modificare il menu predefinito di PXE su tutti i server TFTP "
 "configurati - continuare?"
@@ -8242,8 +8016,8 @@ msgid ""
 "You are about to override the editor content with a previous version, are "
 "you sure?"
 msgstr ""
-"Stai per sovrascrivere il contenuto dell'editor con una versione precedente "
-"- sei sicuro di voler continuare?"
+"Stai per sovrascrivere il contenuto dell'editor con una versione precedente -"
+" sei sicuro di voler continuare?"
 
 msgid "You are about to override the editor content, are you sure?"
 msgstr ""
@@ -8274,23 +8048,23 @@ msgstr ""
 "Ci puoi trovare su %{freenode} (irc.freenode.net) nel canale #satellite6."
 
 msgid ""
-"You can select one of three possible IPAM "
-"modes:<br/><ul><li><strong>DHCP</strong> - will manage the IP on DHCP "
-"through assigned DHCP proxy, auto-suggested IPs come from "
-"DHCP</li><li><strong>Internal DB</strong> - use internal DB to auto-suggest "
-"free IP based on other interfaces on same subnet respecting range if "
-"specified, useful mainly with static boot mode</li><li><strong>None</strong>"
-" - leave IP management solely on user, no auto-suggestion</li></ul>"
+"You can select one of three possible IPAM modes:<br/><ul><li><strong>DHCP</"
+"strong> - will manage the IP on DHCP through assigned DHCP proxy, auto-"
+"suggested IPs come from DHCP</li><li><strong>Internal DB</strong> - use "
+"internal DB to auto-suggest free IP based on other interfaces on same subnet "
+"respecting range if specified, useful mainly with static boot mode</"
+"li><li><strong>None</strong> - leave IP management solely on user, no auto-"
+"suggestion</li></ul>"
 msgstr ""
-"È possibile selezionare una delle tre modalità IPAM "
-"disponibili:<br/><ul><li><strong>DHCP</strong> - gestirà l'IP su DHCP "
-"attraverso un DHCP proxy assegnato, gli IP suggeriti automaticamente "
-"provengono da DHCP</li><li><strong>DB interno</strong> - usare DB interno "
-"per suggerire automaticamente un IP disponibile in base al rispetto della "
-"gamma, se specificata, di altre interfacce presenti sulla stessa sottorete, "
-"utile principalmente con una modalità d'avvio "
-"statica</li><li><strong>None</strong> - lascia la gestione dell'IP "
-"all'utente, senza suggerimento automatico</li></ul>"
+"È possibile selezionare una delle tre modalità IPAM disponibili:<br/"
+"><ul><li><strong>DHCP</strong> - gestirà l'IP su DHCP attraverso un DHCP "
+"proxy assegnato, gli IP suggeriti automaticamente provengono da DHCP</"
+"li><li><strong>DB interno</strong> - usare DB interno per suggerire "
+"automaticamente un IP disponibile in base al rispetto della gamma, se "
+"specificata, di altre interfacce presenti sulla stessa sottorete, utile "
+"principalmente con una modalità d'avvio statica</li><li><strong>None</"
+"strong> - lascia la gestione dell'IP all'utente, senza suggerimento "
+"automatico</li></ul>"
 
 msgid "You can't assign locations to this resource"
 msgstr "Non puoi assegnare le posizioni a questa risorsa"
@@ -8313,8 +8087,8 @@ msgid "You don't seem to have any Hosts, for more information see"
 msgstr "Non hai alcun host, per maggiori informazioni consultare"
 
 msgid ""
-"You don't seem to have any facts yet. If you wish to configure fact pushing,"
-" please follow"
+"You don't seem to have any facts yet. If you wish to configure fact pushing, "
+"please follow"
 msgstr ""
 "Non hai ancora alcun evento. Se desideri configurare l'invio degli eventi, "
 "consultare"
@@ -8323,8 +8097,8 @@ msgid ""
 "You don't seem to have any reports, if you wish to configure Puppet to "
 "forward it reports to Satellite 6, please follow"
 msgstr ""
-"Non hai ancora alcuna notifica, se desideri configurare Puppet per inoltrare"
-" le notifiche a Satellite 6, consultare "
+"Non hai ancora alcuna notifica, se desideri configurare Puppet per inoltrare "
+"le notifiche a Satellite 6, consultare "
 
 msgid ""
 "You may also associate one or more operating systems with this medium or "
@@ -8345,16 +8119,16 @@ msgid "You may also find the"
 msgstr "Puoi anche trovare"
 
 msgid ""
-"You may create puppet classes that represent high-level host configurations,"
-" for example, a <b>host-type-ldap-server</b> class, which includes all the "
-"required functionality from other modules or you may decide to create a host"
-" group called <b>host-type-ldap-server</b> and add the required classes into"
-" the host group configuration."
+"You may create puppet classes that represent high-level host configurations, "
+"for example, a <b>host-type-ldap-server</b> class, which includes all the "
+"required functionality from other modules or you may decide to create a host "
+"group called <b>host-type-ldap-server</b> and add the required classes into "
+"the host group configuration."
 msgstr ""
 "È possibile creare le classi puppet che rappresentano configurazioni host "
 "dettagliate, per esempio <b>host-type-ldap-server</b>, le quali includono "
-"tutte le funzionalità necessarie di altri moduli, oppure creare un gruppo di"
-" host chiamato <b>host-type-ldap-server</b>, e aggiungere le classi "
+"tutte le funzionalità necessarie di altri moduli, oppure creare un gruppo di "
+"host chiamato <b>host-type-ldap-server</b>, e aggiungere le classi "
 "necessarie nella configurazione del gruppo di host."
 
 msgid ""
@@ -8364,13 +8138,13 @@ msgid ""
 "necessary to completely configure a new host."
 msgstr ""
 "Usando la modalità di base sarà possibile utilizzare Satellite 6 come "
-"classificatore dei nodi esterni e per le notifiche, oppure potrete abilitare"
-" una modalità automatica con la quale Satellite 6 potrà creare e gestire i "
+"classificatore dei nodi esterni e per le notifiche, oppure potrete abilitare "
+"una modalità automatica con la quale Satellite 6 potrà creare e gestire i "
 "file di configurazione necessari per la configurazione di un nuovo host."
 
 msgid ""
-"You may optionally wish to generate the online documentation for your puppet"
-" classes"
+"You may optionally wish to generate the online documentation for your puppet "
+"classes"
 msgstr ""
 "È altresì possibile creare una documentazione online per le classi del "
 "puppet"
@@ -8422,8 +8196,7 @@ msgstr "La tua password è troppo corta"
 msgid "Your session has expired, please login again"
 msgstr "La sessione è scaduta, eseguire nuovamente la registrazione"
 
-# translation auto-copied from project firewalld, version 0.3.8, document
-# firewalld
+# translation auto-copied from project firewalld, version 0.3.8, document firewalld
 msgid "Zone"
 msgstr "Zona"
 
@@ -8454,8 +8227,7 @@ msgstr "è già in uso"
 msgid "an organization"
 msgstr "una organizzazione"
 
-# translation auto-copied from project subscription-manager, version 1.10.10,
-# document keys
+# translation auto-copied from project subscription-manager, version 1.10.10, document keys
 msgid "and"
 msgstr "e"
 
@@ -8553,8 +8325,7 @@ msgstr "non appartiene alla sottorete"
 msgid "does not match selected subnet"
 msgstr "non corrisponde alla sottorete selezionata"
 
-# translation auto-copied from project RHN_Subscription_Management, version
-# 1.0, document Red_Hat_Network_Certificate-based_Subscription_Management
+# translation auto-copied from project RHN_Subscription_Management, version 1.0, document Red_Hat_Network_Certificate-based_Subscription_Management
 msgid "domain"
 msgstr "dominio"
 
@@ -8597,8 +8368,7 @@ msgstr "es. sn"
 msgid "e.g. uid"
 msgstr "es. uid"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1,
-# document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
 msgid "environment id"
 msgstr "id ambiente"
 
@@ -8653,8 +8423,7 @@ msgstr "swap disponibile"
 msgid "further instructions"
 msgstr "ulteriori informazioni"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1,
-# document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
 msgid "has already been taken"
 msgstr "è già stato selezionato"
 
@@ -8691,8 +8460,7 @@ msgstr "in corso"
 msgid "included already from parent"
 msgstr "già incluso dal genitore"
 
-# translation auto-copied from project subscription-manager, version 1.10.10,
-# document keys
+# translation auto-copied from project subscription-manager, version 1.10.10, document keys
 msgid "integer"
 msgstr "intero"
 
@@ -8747,8 +8515,7 @@ msgstr "è un account amministrativo"
 msgid "is an unsupported provisioning method"
 msgstr "è un metodo di provisioning non supportato"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1,
-# document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
 msgid "is invalid"
 msgstr "non è valido"
 
@@ -8761,8 +8528,7 @@ msgstr "non è valido - sono permessi solo http://, https://"
 msgid "is invalid: %s"
 msgstr "non è valido: %s"
 
-# translation auto-copied from project NetworkManager, version 0.9.9.0,
-# document NetworkManager
+# translation auto-copied from project NetworkManager, version 0.9.9.0, document NetworkManager
 msgid "is not a valid MAC address"
 msgstr "non è un indirizzo MAC valido"
 
@@ -8786,8 +8552,7 @@ msgstr "è troppo lungo (massimo 15 caratteri)"
 msgid "is unknown"
 msgstr "è sconosciuto "
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version
-# 6.1, document foreman_discovery
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery
 msgid "items selected. Uncheck to Clear"
 msgstr "oggetti selezionati. Deselezionare per annullare"
 
@@ -8802,8 +8567,7 @@ msgstr[1] "ultimi %s giorni"
 msgid "link external user group with this user group"
 msgstr "collega il gruppo di utenti esterno a questo gruppo"
 
-# translation auto-copied from project evolution, version 3.8.5, document
-# evolution-3.8
+# translation auto-copied from project evolution, version 3.8.5, document evolution-3.8
 msgid "list"
 msgstr "elenco"
 
@@ -8817,8 +8581,7 @@ msgstr "posizione"
 msgid "locations"
 msgstr "posizioni"
 
-# translation auto-copied from project libvirt, version 1.1.1, document
-# libvirt
+# translation auto-copied from project libvirt, version 1.1.1, document libvirt
 msgid "message"
 msgstr "messaggio"
 
@@ -8852,8 +8615,7 @@ msgstr "fornire un provider"
 msgid "must set host and port"
 msgstr "impostare host e porta"
 
-# translation auto-copied from project pulseaudio, version 3.0, document
-# pulseaudio, author fvalen
+# translation auto-copied from project pulseaudio, version 3.0, document pulseaudio, author fvalen
 msgid "new"
 msgstr "nuovo"
 
@@ -8869,8 +8631,7 @@ msgstr "non è stato definito alcun proxy del puppet - impossibile continuare"
 msgid "no value"
 msgstr "nessun valore"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman
 msgid "none"
 msgstr "nessuno"
 
@@ -8883,13 +8644,11 @@ msgstr "non necessario se si utilizza una sottorete con DHCP proxy"
 msgid "number of entries per request"
 msgstr "numero di voci per richiesta"
 
-# translation auto-copied from project NetworkManager, version 0.9.9.0,
-# document NetworkManager
+# translation auto-copied from project NetworkManager, version 0.9.9.0, document NetworkManager
 msgid "off"
 msgstr "off"
 
-# translation auto-copied from project NetworkManager, version 0.9.9.0,
-# document NetworkManager
+# translation auto-copied from project NetworkManager, version 0.9.9.0, document NetworkManager
 msgid "on"
 msgstr "on"
 
@@ -8902,16 +8661,14 @@ msgstr "facoltativo: certname dell'host"
 msgid "optional: the STI type of host to create"
 msgstr "facoltativo: tipo STI dell'host da creare"
 
-# translation auto-copied from project Katello, version 0.1v, document app,
-# author fvalen
+# translation auto-copied from project Katello, version 0.1v, document app, author fvalen
 msgid "organization"
 msgstr "organizzazione"
 
 msgid "organizations"
 msgstr "organizzazioni"
 
-# translation auto-copied from project Cloudforms Cloud Engine User Guide,
-# version 1.1, document topics/os1, author fvalen
+# translation auto-copied from project Cloudforms Cloud Engine User Guide, version 1.1, document topics/os1, author fvalen
 msgid "os"
 msgstr "os"
 
@@ -8925,8 +8682,8 @@ msgid ""
 "parameters require an associated domain, operating system, host or host "
 "group"
 msgstr ""
-"i parametri hanno bisogno di un dominio associato, sistema operativo, host o"
-" gruppo di host"
+"i parametri hanno bisogno di un dominio associato, sistema operativo, host o "
+"gruppo di host"
 
 msgid "parsing settings type '%s' from string is not defined"
 msgstr ""
@@ -8967,8 +8724,7 @@ msgstr "riavvia"
 msgid "regexp"
 msgstr "regexp"
 
-# translation auto-copied from project pulseaudio, version 3.0, document
-# pulseaudio, author fvalen
+# translation auto-copied from project pulseaudio, version 3.0, document pulseaudio, author fvalen
 msgid "remove"
 msgstr "rimuovi"
 
@@ -8985,8 +8741,8 @@ msgid "required"
 msgstr "necessario"
 
 msgid ""
-"required for managed host that is bare metal, not required if it's a virtual"
-" machine"
+"required for managed host that is bare metal, not required if it's a virtual "
+"machine"
 msgstr ""
 "necessario per gli host gestiti di tipo bare metal, non richiesto se è una "
 "macchina virtuale"
@@ -9015,8 +8771,8 @@ msgid ""
 "required if not imaged based provisioning and host is managed and value is "
 "not inherited from host group"
 msgstr ""
-"necessario se non è disponibile imaged based provisioning e l'host è gestito"
-" ed il valore non è stato ereditato dal gruppo di host"
+"necessario se non è disponibile imaged based provisioning e l'host è gestito "
+"ed il valore non è stato ereditato dal gruppo di host"
 
 msgid "required if onthefly_register is true"
 msgstr "necessario se onthefly_register è su true"
@@ -9068,16 +8824,14 @@ msgstr "inizio"
 msgid "state"
 msgstr "stato"
 
-# translation auto-copied from project webkitgtk3, version 2.0.3, document
-# webkitgtk3
+# translation auto-copied from project webkitgtk3, version 2.0.3, document webkitgtk3
 msgid "status"
 msgstr "stato"
 
 msgid "stop"
 msgstr "stop"
 
-# translation auto-copied from project libvirt, version 1.1.1, document
-# libvirt
+# translation auto-copied from project libvirt, version 1.1.1, document libvirt
 msgid "string"
 msgstr "stringa"
 

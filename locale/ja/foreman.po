@@ -20,12 +20,13 @@ msgstr ""
 "Project-Id-Version: version 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-04-22 11:03-0400\n"
-"PO-Revision-Date: 2015-04-27 06:55+0000\n"
-"Last-Translator: asasaki <asasaki@redhat.com>\n"
-"Language-Team: Japanese (http://www.transifex.com/projects/p/foreman/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-05-01 05:11+0000\n"
+"Last-Translator: bkearney <bkearney@redhat.com>\n"
+"Language-Team: Japanese (http://www.transifex.com/projects/p/foreman/"
+"language/ja/)\n"
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Zanata 3.6.0\n"
@@ -187,8 +188,8 @@ msgid ""
 "'Content-Type: %s' is unsupported in API v2 for POST and PUT requests. "
 "Please use 'Content-Type: application/json'."
 msgstr ""
-"'コンテンツタイプ: %s' は POST および PUT 要求の API v2 でサポートされていません。'コンテンツタイプ: "
-"アプリケーション/json' を使用してください。"
+"'コンテンツタイプ: %s' は POST および PUT 要求の API v2 でサポートされていません。'コンテンツタイプ: アプリケーション/"
+"json' を使用してください。"
 
 msgid "(Miscellaneous)"
 msgstr "(その他)"
@@ -225,32 +226,30 @@ msgid ""
 "Validator rule field.</dd><dt>Regexp</dt> <dd>Validates the input with the "
 "regular expression in the Validator rule field.</dd></dl>"
 msgstr ""
-"<dl><dt>List</dt> "
-"<dd>「バリデータールール」フィールドで指定される、許可される値の一覧です。</dd><dt>Regexp</dt> "
-"<dd>「バリデータールール」フィールドの正規表現による入力の検証を行います。</dd></dl>"
+"<dl><dt>List</dt> <dd>「バリデータールール」フィールドで指定される、許可される値の一覧です。</dd><dt>Regexp</"
+"dt> <dd>「バリデータールール」フィールドの正規表現による入力の検証を行います。</dd></dl>"
 
 msgid ""
-"<dl><dt>String</dt> <dd>Everything is taken as a "
-"string.</dd><dt>Boolean</dt> <dd>Common representation of boolean values are"
-" accepted.</dd><dt>Integer</dt> <dd>Integer numbers only, can be "
-"negative.</dd><dt>Real</dt> <dd>Accept any numerical "
-"input.</dd><dt>Array</dt> <dd>A valid JSON or YAML input, that must evaluate"
-" to an array.</dd><dt>Hash</dt> <dd>A valid JSON or YAML input, that must "
-"evaluate to an object/map/dict/hash.</dd><dt>YAML</dt> <dd>Any valid YAML "
-"input.</dd><dt>JSON</dt> <dd>Any valid JSON input.</dd></dl>"
+"<dl><dt>String</dt> <dd>Everything is taken as a string.</dd><dt>Boolean</"
+"dt> <dd>Common representation of boolean values are accepted.</"
+"dd><dt>Integer</dt> <dd>Integer numbers only, can be negative.</dd><dt>Real</"
+"dt> <dd>Accept any numerical input.</dd><dt>Array</dt> <dd>A valid JSON or "
+"YAML input, that must evaluate to an array.</dd><dt>Hash</dt> <dd>A valid "
+"JSON or YAML input, that must evaluate to an object/map/dict/hash.</"
+"dd><dt>YAML</dt> <dd>Any valid YAML input.</dd><dt>JSON</dt> <dd>Any valid "
+"JSON input.</dd></dl>"
 msgstr ""
 "<dl><dt>String</dt> <dd>すべての値を文字列として取得します。</dd><dt>Boolean</dt> "
-"<dd>ブール値の共通表現が受け入れられます。</dd><dt>Integer</dt> "
-"<dd>整数のみです。負の値にできます。</dd><dt>Real</dt> "
-"<dd>すべての数値入力を受け入れます。</dd><dt>Array</dt> <dd>配列に評価される有効な JSON または YAML "
-"入力です。</dd><dt>Hash</dt> <dd>object/map/dict/hash として評価される有効な JSON または YAML "
-"入力です。</dd><dt>YAML</dt> <dd>すべての有効な YAML 入力です。</dd><dt>JSON</dt> <dd>すべての有効な"
-" JSON 入力です。</dd></dl>"
+"<dd>ブール値の共通表現が受け入れられます。</dd><dt>Integer</dt> <dd>整数のみです。負の値にできます。</"
+"dd><dt>Real</dt> <dd>すべての数値入力を受け入れます。</dd><dt>Array</dt> <dd>配列に評価される有効な "
+"JSON または YAML 入力です。</dd><dt>Hash</dt> <dd>object/map/dict/hash として評価される有効な "
+"JSON または YAML 入力です。</dd><dt>YAML</dt> <dd>すべての有効な YAML 入力です。</dd><dt>JSON</"
+"dt> <dd>すべての有効な JSON 入力です。</dd></dl>"
 
 msgid ""
 "A host group is in some ways similar to an inherited node declaration, in "
-"that it is a high level grouping of classes that can be named and treated as"
-" a unit. This is then treated as a template and  is selectable during the "
+"that it is a high level grouping of classes that can be named and treated as "
+"a unit. This is then treated as a template and  is selectable during the "
 "creation of a new host and ensures that the host is configured in one of "
 "your pre-defined states."
 msgstr ""
@@ -294,8 +293,7 @@ msgstr "情報"
 msgid "Access Key"
 msgstr "アクセスキー"
 
-# translation auto-copied from project Customer Portal Translations, version
-# 006_DrupalPO, document interface, author asasaki
+# translation auto-copied from project Customer Portal Translations, version 006_DrupalPO, document interface, author asasaki
 msgid "Access denied"
 msgstr "アクセスは拒否されました"
 
@@ -379,8 +377,8 @@ msgid "Additional steps"
 msgstr "追加ステップ"
 
 msgid ""
-"Additionally, you may restrict user permissions based on many criteria, make"
-" sure you check the roles settings tab."
+"Additionally, you may restrict user permissions based on many criteria, make "
+"sure you check the roles settings tab."
 msgstr "さらに、数多くの条件に基づいてユーザーのパーミッションを制限できます。ロール設定タブに必ずチェックを付けてください。"
 
 msgid "Admin permissions required"
@@ -470,15 +468,15 @@ msgstr "割り当て (GB)"
 
 msgid ""
 "An IP address will be auto-suggested if you have a DHCP-enabled Smart Proxy "
-"on the subnet selected above.<br/><br/>The IP address can be left blank "
-"when:<br/><ul><li>provisioning tokens are enabled</li><li>the domain does "
-"not manage DNS</li><li>the subnet does not manage reverse DNS</li><li>and "
-"the subnet does not manage DHCP reservations</li></ul>"
+"on the subnet selected above.<br/><br/>The IP address can be left blank when:"
+"<br/><ul><li>provisioning tokens are enabled</li><li>the domain does not "
+"manage DNS</li><li>the subnet does not manage reverse DNS</li><li>and the "
+"subnet does not manage DHCP reservations</li></ul>"
 msgstr ""
 "先に選択したサブネットに DHCP 対応のスマートプロキシーがある場合、IP アドレスの自動補完が行なわれます。<br/><br/>IP "
 "アドレスは以下の場合に空白のままになります。<br/><ul><li>トークンのプロビジョニングが有効な場合</li><li>ドメインが DNS "
-"を管理しない場合</li><li>サブネットが逆引き DNS を管理しない場合</li><li>サブネットが DHCP "
-"予約を管理しない場合</li></ul>"
+"を管理しない場合</li><li>サブネットが逆引き DNS を管理しない場合</li><li>サブネットが DHCP 予約を管理しない場合</li></"
+"ul>"
 
 msgid "An explicit layout for the partitions of your hard drive(s). E.G."
 msgstr "ハードドライブのパーティションの明示的なレイアウト (例)"
@@ -800,22 +798,20 @@ msgid "Base DN"
 msgstr "ベース DN"
 
 msgid ""
-"Before you can use Satellite 6 for the first time there are a few tasks that"
-" must be performed."
+"Before you can use Satellite 6 for the first time there are a few tasks that "
+"must be performed."
 msgstr "初めて Satellite 6 を使用する前に実行する必要のあるいくつかのタスクがあります。"
 
 msgid ""
-"Before you proceed to using Satellite 6 you should provide information about"
-" one or more architectures."
+"Before you proceed to using Satellite 6 you should provide information about "
+"one or more architectures."
 msgstr "Satellite 6 を使用する前に 1 つ以上のアーキテクチャーについての情報を提供する必要があります。"
 
-# translation auto-copied from project Customer Portal Translations, version
-# 006_DrupalPO, document interface, author asasaki
+# translation auto-copied from project Customer Portal Translations, version 006_DrupalPO, document interface, author asasaki
 msgid "Blog"
 msgstr "ブログ"
 
-# translation auto-copied from project nm-applet, version 0.8.1, document nm-
-# applet, author asasaki
+# translation auto-copied from project nm-applet, version 0.8.1, document nm-applet, author asasaki
 msgid "Bond"
 msgstr "ボンド"
 
@@ -896,9 +892,9 @@ msgid "Build|B"
 msgstr "B"
 
 msgid ""
-"By unchecking this you can specify filter using Satellite 6 search syntax in"
-" search field. If filter remains unlimited (this field is checked) it "
-"applies on all resources of the selected type"
+"By unchecking this you can specify filter using Satellite 6 search syntax in "
+"search field. If filter remains unlimited (this field is checked) it applies "
+"on all resources of the selected type"
 msgstr ""
 "これを選択しないと、検索フィールドで Satellite 6 の検索構文を使ってフィルターを指定できます。フィルターに制限が設定されていないままの場合 "
 "(このフィールドにチェックが付けられている場合) は、選択したタイプのすべてのリソースが適用対象になります。"
@@ -1024,8 +1020,7 @@ msgstr "プロバイダーの選択"
 msgid "Choose a server type"
 msgstr "サーバータイプの選択"
 
-# translation auto-copied from project policycoreutils, version 2.1.14,
-# document policycoreutils
+# translation auto-copied from project policycoreutils, version 2.1.14, document policycoreutils
 msgid "Class"
 msgstr "クラス"
 
@@ -1064,9 +1059,9 @@ msgid "Client Email"
 msgstr "クライアントメール"
 
 msgid ""
-"Client SSL certificates are used to identify Smart Proxies accessing "
-"fact/report importers and ENC output over HTTPS (:require_ssl should also be"
-" enabled)"
+"Client SSL certificates are used to identify Smart Proxies accessing fact/"
+"report importers and ENC output over HTTPS (:require_ssl should also be "
+"enabled)"
 msgstr ""
 "クライアント SSL 証明書は、HTTPS 経由でファクト/レポートのインポーターと ENC "
 "出力にアクセスするスマートプロキシーを特定するために使用されます (:require_ssl も有効にする必要があります)。"
@@ -1350,22 +1345,18 @@ msgstr "レルムの作成"
 msgid "Create a report"
 msgstr "レポートの作成"
 
-# translation auto-copied from project RHELOSP Administration User Guide,
-# version 5.0, document section_dashboard_admin_manage_roles, author myamamot
+# translation auto-copied from project RHELOSP Administration User Guide, version 5.0, document section_dashboard_admin_manage_roles, author myamamot
 msgid "Create a role"
 msgstr "ロールの作成"
 
 msgid "Create a smart variable"
 msgstr "スマート変数の作成"
 
-# translation auto-copied from project RHELOSP End User Guide, version 5.0,
-# document app_cheat_sheet, author myamamot
+# translation auto-copied from project RHELOSP End User Guide, version 5.0, document app_cheat_sheet, author myamamot
 msgid "Create a subnet"
 msgstr "サブネットの作成"
 
-# translation auto-copied from project RHELOSP Administration User Guide,
-# version 5.0, document section_cli_keystone_manage_projects_users_roles,
-# author myamamot
+# translation auto-copied from project RHELOSP Administration User Guide, version 5.0, document section_cli_keystone_manage_projects_users_roles, author myamamot
 msgid "Create a user"
 msgstr "ユーザーの作成"
 
@@ -1378,8 +1369,7 @@ msgstr "LDAP 認証ソースの作成"
 msgid "Create an architecture"
 msgstr "アーキテクチャーの作成"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1,
-# document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
 msgid "Create an environment"
 msgstr "環境の作成"
 
@@ -1410,9 +1400,7 @@ msgstr "Ctrl-Alt-Del"
 msgid "Custom LDAP search filter, <i>optional</i>"
 msgstr "カスタム LDAP 検索フィルター: <i>オプション</i>"
 
-# translation auto-copied from project RHELOSP Release Notes, version
-# 5.0-Async, document topics/chap-Product_Introduction/Product_Support, author
-# Ykatabam
+# translation auto-copied from project RHELOSP Release Notes, version 5.0-Async, document topics/chap-Product_Introduction/Product_Support, author Ykatabam
 msgid "Customer Portal"
 msgstr "カスタマーポータル"
 
@@ -1475,8 +1463,7 @@ msgstr "DNS 名"
 msgid "DNS proxy to use within this domain"
 msgstr "このドメイン内で使用する DNS プロキシー"
 
-# translation auto-copied from project Customer Portal Translations, version
-# 006_DrupalPO, document interface, author asasaki
+# translation auto-copied from project Customer Portal Translations, version 006_DrupalPO, document interface, author asasaki
 msgid "Daily"
 msgstr "毎日"
 
@@ -1551,8 +1538,7 @@ msgstr "オペレーティングシステムのデフォルトのテンプレー
 msgid "Delete a domain"
 msgstr "ドメインの削除"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1,
-# document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
 msgid "Delete a filter"
 msgstr "フィルターの削除"
 
@@ -1604,8 +1590,7 @@ msgstr "レルムの削除"
 msgid "Delete a report"
 msgstr "レポートの削除"
 
-# translation auto-copied from project RHELOSP Administration User Guide,
-# version 5.0, document section_dashboard_admin_manage_roles, author myamamot
+# translation auto-copied from project RHELOSP Administration User Guide, version 5.0, document section_dashboard_admin_manage_roles, author myamamot
 msgid "Delete a role"
 msgstr "ロールの削除"
 
@@ -1618,9 +1603,7 @@ msgstr "サブネットの削除"
 msgid "Delete a template combination"
 msgstr "テンプレートの組み合わせの削除"
 
-# translation auto-copied from project RHELOSP Administration User Guide,
-# version 5.0, document section_cli_keystone_manage_projects_users_roles,
-# author myamamot
+# translation auto-copied from project RHELOSP Administration User Guide, version 5.0, document section_cli_keystone_manage_projects_users_roles, author myamamot
 msgid "Delete a user"
 msgstr "ユーザーの削除"
 
@@ -1660,8 +1643,7 @@ msgstr "環境の削除"
 msgid "Delete an external user group"
 msgstr "外部ユーザーグループの削除"
 
-# translation auto-copied from project RHELOSP End User Guide, version 5.0,
-# document section_dashboard_manage_images, author myamamot
+# translation auto-copied from project RHELOSP End User Guide, version 5.0, document section_dashboard_manage_images, author myamamot
 msgid "Delete an image"
 msgstr "イメージの削除"
 
@@ -1719,18 +1701,17 @@ msgstr "デバイス ID"
 msgid ""
 "Device identifier for this interface. This may be different on various "
 "platforms and environments, here are some common examples.<br/><ul><li>Use "
-"the basic name for physical interface identifiers, e.g. "
-"<strong>eth0</strong> or <strong>em0</strong> with biosdevname.</li><li>For "
-"virtual interfaces, use either alias notation (<strong>eth0:1</strong>, "
-"name:index) or VLAN notation (<strong>eth0.15</strong>, "
-"name.tag).</li><li>For bonds it's common to use <strong>bond0</strong> on "
-"Linux, <strong>lagg0</strong> on FreeBSD systems.</li></ul>"
+"the basic name for physical interface identifiers, e.g. <strong>eth0</"
+"strong> or <strong>em0</strong> with biosdevname.</li><li>For virtual "
+"interfaces, use either alias notation (<strong>eth0:1</strong>, name:index) "
+"or VLAN notation (<strong>eth0.15</strong>, name.tag).</li><li>For bonds "
+"it's common to use <strong>bond0</strong> on Linux, <strong>lagg0</strong> "
+"on FreeBSD systems.</li></ul>"
 msgstr ""
-"このインターフェースのデバイス ID "
-"です。これは各種のプラットフォームおよび環境によって異なる可能性があります。以下は一般的な例になります。<br/><ul><li>biosdevname"
-" と共に、物理インターフェース ID の基本名 (例: <strong>eth0</strong> または <strong>em0</strong>) "
-"を使用します。</li><li>仮想インターフェースの場合、エイリアス表記 (<strong>eth0:1</strong>、name:index) "
-"または VLAN 表記 (<strong>eth0.15</strong>、name.tag) "
+"このインターフェースのデバイス ID です。これは各種のプラットフォームおよび環境によって異なる可能性があります。以下は一般的な例になります。<br/"
+"><ul><li>biosdevname と共に、物理インターフェース ID の基本名 (例: <strong>eth0</strong> または "
+"<strong>em0</strong>) を使用します。</li><li>仮想インターフェースの場合、エイリアス表記 (<strong>eth0:1</"
+"strong>、name:index) または VLAN 表記 (<strong>eth0.15</strong>、name.tag) "
 "のいずれかを使用します。</li><li>ボンドの場合、Linux では通常 <strong>bond0</strong> を使用し、FreeBSD "
 "システムでは <strong>lagg0</strong> を使用します。</li></ul>"
 
@@ -1791,14 +1772,14 @@ msgid "Distribution chart"
 msgstr "ディストリビューションチャート"
 
 msgid ""
-"Do not send this parameter via the ENC. Puppet will use the value defined in"
-" the Puppet manifest for this parameter."
+"Do not send this parameter via the ENC. Puppet will use the value defined in "
+"the Puppet manifest for this parameter."
 msgstr ""
 "このパラメーターを ENC 経由で送信しないでください。Puppet はこのパラメーターについて Puppet マニフェストで定義された値を使用します。"
 
 msgid ""
-"Do not send this parameter via the ENC. Puppet will use the value defined in"
-" the puppet manifest for this parameter"
+"Do not send this parameter via the ENC. Puppet will use the value defined in "
+"the puppet manifest for this parameter"
 msgstr ""
 "このパラメーターを ENC 経由で送信しないでください。Puppet はこのパラメーターについて Puppet マニフェストで定義された値を使用します。"
 
@@ -1846,8 +1827,7 @@ msgstr "ホスト数"
 msgid "Domain|Name"
 msgstr "名前"
 
-# translation auto-copied from project empathy, version 3.8.3, document
-# empathy
+# translation auto-copied from project empathy, version 3.8.3, document empathy
 msgid "Down"
 msgstr "下へ"
 
@@ -1855,8 +1835,8 @@ msgid "EC2"
 msgstr "EC2"
 
 msgid ""
-"Each architecture can also be associated with more than one operating system"
-" and a selector block is provided to allow you to select valid combinations."
+"Each architecture can also be associated with more than one operating system "
+"and a selector block is provided to allow you to select valid combinations."
 msgstr ""
 "各アーキテクチャーは複数のオペレーティングシステムに関連付けることもでき、有効な組み合わせを選択できるようにセレクターブロックが提供されます。"
 
@@ -1966,17 +1946,16 @@ msgid "Edit your host"
 msgstr "ご使用のホストの編集"
 
 msgid ""
-"Either you didnt generate the puppetdocs (see <a rel=\"external\" "
-"href=\"%{url}\">here</a>) or the class <strong>%{name}</strong> could not be"
-" found in environment <strong>%{environment}</strong><br/> Please ensure "
-"that the class <strong>%{name}</strong>s declaration is accessible via the "
+"Either you didnt generate the puppetdocs (see <a rel=\"external\" href="
+"\"%{url}\">here</a>) or the class <strong>%{name}</strong> could not be "
+"found in environment <strong>%{environment}</strong><br/> Please ensure that "
+"the class <strong>%{name}</strong>s declaration is accessible via the "
 "modulepath associated with <strong>%{environment}</strong>."
 msgstr ""
 "puppetdoc (<a rel=\"external\" href=\"%{url}\">こちら</a> をご覧ください) "
-"を生成しなかったか、またはクラス <strong>%{name}</strong> が環境 "
-"<strong>%{environment}</strong><br/> に見つからなかったかのいずれかです。クラス "
-"<strong>%{name}</strong>s の宣言が <strong>%{environment}</strong> "
-"と関連付けられたモジュールパスからアクセスできることを確認してください。"
+"を生成しなかったか、またはクラス <strong>%{name}</strong> が環境 <strong>%{environment}</"
+"strong><br/> に見つからなかったかのいずれかです。クラス <strong>%{name}</strong>s の宣言が "
+"<strong>%{environment}</strong> と関連付けられたモジュールパスからアクセスできることを確認してください。"
 
 msgid "Email reply address for emails that Foreman is sending"
 msgstr "Foreman が送信しているメールについてのメールの返信アドレス"
@@ -2080,8 +2059,7 @@ msgstr "%{cr} との通信中にエラーが発生しました: %{e}"
 msgid "Error loading virtual machine information: %s"
 msgstr "仮想マシン情報のロード時のエラー: %s"
 
-# translation auto-copied from project RHN Satellite Reference Guide, version
-# 5.6, document Troubleshooting
+# translation auto-copied from project RHN Satellite Reference Guide, version 5.6, document Troubleshooting
 msgid "Errors"
 msgstr "エラー"
 
@@ -2098,8 +2076,7 @@ msgstr "エラー: %s"
 msgid "Error|E"
 msgstr "E"
 
-# translation auto-copied from project PressGang CCMS topics, version 1,
-# document CS22965-743391, author Ykatabam
+# translation auto-copied from project PressGang CCMS topics, version 1, document CS22965-743391, author Ykatabam
 msgid "Examples"
 msgstr "例"
 
@@ -2310,8 +2287,8 @@ msgid ""
 msgstr "オンディスクの Puppet インストールから環境および Puppet クラスを更新することに失敗しました: %s"
 
 msgid ""
-"Failed to update the environments and Puppet classes from the on-disk puppet"
-" installation: %s"
+"Failed to update the environments and Puppet classes from the on-disk puppet "
+"installation: %s"
 msgstr "オンディスクの Puppet インストールから環境および Puppet クラスを更新することに失敗しました: %s"
 
 msgid "Failed to validate %{host}: %{error}"
@@ -2327,8 +2304,7 @@ msgstr "スマートプロキシー %{proxy} 経由でのデプロイに失敗: 
 msgid "Failure parsing %{template}: %{error}."
 msgstr "%{template} の解析に失敗: %{error}."
 
-# translation auto-copied from project pulseaudio, version 3.0, document
-# pulseaudio
+# translation auto-copied from project pulseaudio, version 3.0, document pulseaudio
 msgid "Failure: %s"
 msgstr "失敗: %s"
 
@@ -2414,13 +2390,13 @@ msgid ""
 "directory structure where the disk images are named 5.8 or 6.2, and each "
 "contained both x86_64 and i386 binaries, then you\\n  could create a single "
 "medium entry describing them all.\\n  The entry, which could be just named "
-"'Red Hat' could contain a path like this "
-"<em>'http://server/redhat/$version/$arch'</em>"
+"'Red Hat' could contain a path like this <em>'http://server/redhat/$version/"
+"$arch'</em>"
 msgstr ""
 "たとえば、複数の Red Hat リリースディスクを、ディスクイメージの名前が 5.8 または 6.2 で、それぞれに x86_64 と i386 "
 "バイナリーが含まれるディレクトリー構造にコピーした場合、\\n それらすべてを記述する単一のメディアエントリーを作成することができます。\\n  "
-"名前が単純に 'Red Hat' となるエントリーの場合には、以下のようなパスが含まれます。 "
-"<em>'http://server/redhat/$version/$arch'</em>"
+"名前が単純に 'Red Hat' となるエントリーの場合には、以下のようなパスが含まれます。 <em>'http://server/redhat/"
+"$version/$arch'</em>"
 
 msgid ""
 "For example, there might be a data center in London and one in Virginia; "
@@ -2540,8 +2516,7 @@ msgstr "完全トレース"
 msgid "Gateway"
 msgstr "ゲートウェイ"
 
-# translation auto-copied from project nm-applet, version 0.8.1, document nm-
-# applet, author asasaki
+# translation auto-copied from project nm-applet, version 0.8.1, document nm-applet, author asasaki
 msgid "General"
 msgstr "全般"
 
@@ -2868,8 +2843,8 @@ msgid "Hosts that had performed modifications without error"
 msgstr "変更をエラーなく実行したホスト"
 
 msgid ""
-"Hosts that will be trusted in addition to Smart Proxies for access to "
-"fact/report importers and ENC output"
+"Hosts that will be trusted in addition to Smart Proxies for access to fact/"
+"report importers and ENC output"
 msgstr "ファクト/レポートのインポーターおよび ENC 出力にアクセスするためのスマートプロキシー以外の信頼されるホストです"
 
 msgid "Hosts which didn't run puppet in the last %s"
@@ -3021,8 +2996,7 @@ msgstr "IPAM"
 msgid "IRC"
 msgstr "IRC"
 
-# translation auto-copied from project anaconda, version 19.31.34, document
-# anaconda
+# translation auto-copied from project anaconda, version 19.31.34, document anaconda
 msgid "Identifier"
 msgstr "識別子"
 
@@ -3030,8 +3004,8 @@ msgid "Identifier of the interface to which this interface belongs, e.g. eth1"
 msgstr "このインターフェースが属するインターフェースの ID (例: eth1)"
 
 msgid ""
-"Identifier of the interface to which this interface belongs, e.g. eth1. Only"
-" for virtual interfaces."
+"Identifier of the interface to which this interface belongs, e.g. eth1. Only "
+"for virtual interfaces."
 msgstr "このインターフェースが属するインターフェースの ID (例: eth1)。仮想インターフェースの場合にのみ使用できます。"
 
 msgid ""
@@ -3073,8 +3047,8 @@ msgid ""
 msgstr "これが Satellite 6 自体のエラーであると思われる場合は、新規の問題として提出してください。"
 
 msgid ""
-"If you wish to track the actions of a particular user then it is possible to"
-" use an additional authentication stage and provide a user account."
+"If you wish to track the actions of a particular user then it is possible to "
+"use an additional authentication stage and provide a user account."
 msgstr "特定ユーザーのアクションを追跡する場合、追加の認証ステージの使用や、ユーザーアカウントの指定が可能です。"
 
 msgid ""
@@ -3160,10 +3134,9 @@ msgid "Importing Puppet classes and environments"
 msgstr "Puppet クラスおよび環境をインポート中です"
 
 msgid ""
-"In addition to defining which puppet classes get included when building this"
-" host type you are also able to assign variables and provisioning "
-"information to a host group to further refine the behavior of the puppet "
-"runtime."
+"In addition to defining which puppet classes get included when building this "
+"host type you are also able to assign variables and provisioning information "
+"to a host group to further refine the behavior of the puppet runtime."
 msgstr ""
 "このホストタイプのビルド時に組み込む puppet クラスを定義するほか、puppet "
 "ランタイムの動作を設定し直すため、変数とプロビジョニング情報をホストグループに割り当てることができます。 "
@@ -3207,8 +3180,7 @@ msgstr "インストール済み"
 msgid "Interface"
 msgstr "インターフェース"
 
-# translation auto-copied from project virt-manager, version 0.10.0, document
-# virt-manager
+# translation auto-copied from project virt-manager, version 0.10.0, document virt-manager
 msgid "Interface name"
 msgstr "インターフェース名"
 
@@ -3218,8 +3190,7 @@ msgstr "インターフェースプロバイダー (例: IPMI)。BMC インタ�
 msgid "Interface type, e.g: bmc"
 msgstr "インターフェースタイプ (例: bmc)"
 
-# translation auto-copied from project Satellite6 Bastion Katello, version
-# 6.1, document bastion_katello
+# translation auto-copied from project Satellite6 Bastion Katello, version 6.1, document bastion_katello
 msgid "Interfaces"
 msgstr "インターフェース"
 
@@ -3326,8 +3297,7 @@ msgstr "最新イベント"
 msgid "Level"
 msgstr "レベル"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1,
-# document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
 msgid "List all :resource_id"
 msgstr "すべての :resource_id を一覧表示"
 
@@ -3514,8 +3484,7 @@ msgstr "すべてのテンプレートの種類を一覧表示"
 msgid "List all user groups"
 msgstr "すべてのユーザーグループを一覧表示"
 
-# translation auto-copied from project RHELOSP End User Guide, version 5.0,
-# document app_cheat_sheet, author myamamot
+# translation auto-copied from project RHELOSP End User Guide, version 5.0, document app_cheat_sheet, author myamamot
 msgid "List all users"
 msgstr "すべてのユーザーの一覧表示"
 
@@ -3751,13 +3720,11 @@ msgid ""
 "system managed via Satellite 6 is housed."
 msgstr "ロケーションは Satellite 6 で管理されているシステムが保管されている物理的な場所を管理し、これを区別するために使用されます。"
 
-# translation auto-copied from project authconfig, version 6.2.8, document
-# authconfig
+# translation auto-copied from project authconfig, version 6.2.8, document authconfig
 msgid "Lock"
 msgstr "ロック"
 
-# translation auto-copied from project Customer Portal Translations, version
-# management_page, document Management_Prototype.html, author asasaki
+# translation auto-copied from project Customer Portal Translations, version management_page, document Management_Prototype.html, author asasaki
 msgid "Log out"
 msgstr "ログアウト"
 
@@ -3858,8 +3825,7 @@ msgstr "MAC"
 msgid "MAC Address"
 msgstr "MAC アドレス"
 
-# translation auto-copied from project libvirt, version 1.1.1, document
-# libvirt
+# translation auto-copied from project libvirt, version 1.1.1, document libvirt
 msgid "MAC address"
 msgstr "MAC アドレス"
 
@@ -3875,8 +3841,7 @@ msgstr "マシンタイプ"
 msgid "Machine type"
 msgstr "マシンタイプ"
 
-# translation auto-copied from project evolution, version 3.8.5, document
-# evolution-3.8
+# translation auto-copied from project evolution, version 3.8.5, document evolution-3.8
 msgid "Mail Preferences"
 msgstr "メールの設定"
 
@@ -3945,8 +3910,8 @@ msgstr "Matcher"
 msgid ""
 "Matcher is a combination of an attribute and its value, if they match, the "
 "value below would be provided.<br> You may use any attribute Satellite 6 "
-"knows about, such as facts etc for example: <code> domain = example.com "
-"</code> or <code> is_virtual = true</code>"
+"knows about, such as facts etc for example: <code> domain = example.com </"
+"code> or <code> is_virtual = true</code>"
 msgstr ""
 "Matcher は、属性とその値の組み合わせであり、それらが一致すると、以下のような値が提供されます。<br> Satellite 6  "
 "が認識するファクトなどのすべての属性を使用できます: <code> domain = example.com </code> または <code> "
@@ -4010,8 +3975,7 @@ msgstr "ダイジェスト"
 msgid "Message|Value"
 msgstr "値"
 
-# translation auto-copied from project shotwell-core, version 0.14.1, document
-# shotwell-core
+# translation auto-copied from project shotwell-core, version 0.14.1, document shotwell-core
 msgid "Metadata"
 msgstr "メタデータ"
 
@@ -4328,8 +4292,8 @@ msgid "Nic::Base|Virtual"
 msgstr "仮想"
 
 msgid ""
-"No %{template_kind} templates were found for this host, make sure you define"
-" at least one in your %{os} settings"
+"No %{template_kind} templates were found for this host, make sure you define "
+"at least one in your %{os} settings"
 msgstr ""
 "このホストの %{template_kind} テンプレートが見つかりませんでした。%{os} 設定に少なくとも 1 "
 "つ定義していることを確認してください"
@@ -4483,8 +4447,7 @@ msgstr "なし"
 msgid "None Found"
 msgstr "何も見つかりません"
 
-# translation auto-copied from project evolution, version 3.8.5, document
-# evolution-3.8
+# translation auto-copied from project evolution, version 3.8.5, document evolution-3.8
 msgid "Normal"
 msgstr "標準"
 
@@ -4600,8 +4563,7 @@ msgstr "旧版 "
 msgid "Off"
 msgstr "オフ"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1,
-# document katello, author noriko
+# translation auto-copied from project Satellite6 Katello, version 6.1, document katello, author noriko
 msgid "Ok"
 msgstr "OK"
 
@@ -4697,11 +4659,11 @@ msgstr "ホスト数"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Operatingsystem|Major"
-msgstr "メジャー"
+msgstr "メジャーバージョン"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Operatingsystem|Minor"
-msgstr "マイナー"
+msgstr "マイナーバージョン"
 
 #. "Table name" or "Table name|Column name" for error messages
 msgid "Operatingsystem|Name"
@@ -5172,11 +5134,11 @@ msgid "Puppet Reports integration"
 msgstr "Puppet レポートの統合"
 
 msgid ""
-"Puppet Summary Report - F:%{failed} R:%{restarted} S:%{skipped} A:%{applied}"
-" FR:%{failed_restarts} T:%{total}"
-msgstr ""
-"Puppet レポートの要約 - F:%{failed} R:%{restarted} S:%{skipped} A:%{applied} "
+"Puppet Summary Report - F:%{failed} R:%{restarted} S:%{skipped} A:%{applied} "
 "FR:%{failed_restarts} T:%{total}"
+msgstr ""
+"Puppet レポートの要約 - F:%{failed} R:%{restarted} S:%{skipped} A:%{applied} FR:"
+"%{failed_restarts} T:%{total}"
 
 msgid "Puppet class"
 msgstr "Puppet クラス"
@@ -5304,21 +5266,19 @@ msgid "Red Hat Satellite Blog"
 msgstr "Red Hat Satellite ブログ"
 
 msgid ""
-"Redirect your users to this url on logout (authorize_login_delegation should"
-" also be enabled)"
+"Redirect your users to this url on logout (authorize_login_delegation should "
+"also be enabled)"
 msgstr ""
 "ログアウト時にユーザーをこの URL にリダイレクトします (authorize_login_delegation も有効にする必要があります)"
 
-# translation auto-copied from project anaconda, version 19.31.34, document
-# anaconda
+# translation auto-copied from project anaconda, version 19.31.34, document anaconda
 msgid "Refresh"
 msgstr "更新"
 
 msgid "Refresh Capsule features"
 msgstr "Capsule 機能の更新"
 
-# translation auto-copied from project Satellite6 Hammer CLI Foreman, version
-# 6.1, document hammer-cli-foreman, author asasaki
+# translation auto-copied from project Satellite6 Hammer CLI Foreman, version 6.1, document hammer-cli-foreman, author asasaki
 msgid "Refresh external user group"
 msgstr "外部ユーザーグループの更新"
 
@@ -5549,33 +5509,33 @@ msgstr ""
 "Satellite 6 は、現行インストールについての様々なデータを入力する負荷を軽減するためにいくつかのインポーターと一緒に提供されます。"
 
 msgid ""
-"Satellite 6 considers a domain and a DNS zone as the same thing. That is, if"
-" you are planning to manage a site where all the machines are or the form "
-"<i>hostname</i>.<b>somewhere.com</b>\\n  then the domain is "
-"<b>somewhere.com</b>. This allows Satellite 6 to associate a puppet variable"
-" with a domain/site and automatically append this variable to all external "
-"node requests made\\n  by machines at that site."
+"Satellite 6 considers a domain and a DNS zone as the same thing. That is, if "
+"you are planning to manage a site where all the machines are or the form "
+"<i>hostname</i>.<b>somewhere.com</b>\\n  then the domain is <b>somewhere."
+"com</b>. This allows Satellite 6 to associate a puppet variable with a "
+"domain/site and automatically append this variable to all external node "
+"requests made\\n  by machines at that site."
 msgstr ""
-"Satellite 6 は、ドメインと DNS ゾーンを同一であると見なします。つまり、すべてのマシンのあるサイト、または "
-"<i>hostname</i>.<b>somewhere.com</b>\\n という形式を管理しようとする場合、ドメインは "
-"<b>somewhere.com</b> になります。これにより、Satellite 6 は puppet "
-"変数をドメイン/サイトに関連付け、サイトのマシンによる\\n すべての外部ノード要求にこの変数を自動的に追加できます。  "
+"Satellite 6 は、ドメインと DNS ゾーンを同一であると見なします。つまり、すべてのマシンのあるサイト、または <i>hostname</"
+"i>.<b>somewhere.com</b>\\n という形式を管理しようとする場合、ドメインは <b>somewhere.com</b> "
+"になります。これにより、Satellite 6 は puppet 変数をドメイン/サイトに関連付け、サイトのマシンによる\\n "
+"すべての外部ノード要求にこの変数を自動的に追加できます。  "
 
 msgid "Satellite 6 report creation time is <em>%s</em>"
 msgstr "Satellite 6 レポートの作成時間は <em>%s</em> です"
 
 msgid ""
 "Satellite 6 supports automatically creating realm entries for new hosts.  "
-"When a realm is selected for a host, Satellite 6 contacts the relevant realm"
-" Capsule to create an entry for the host and retrieve it's one-time "
+"When a realm is selected for a host, Satellite 6 contacts the relevant realm "
+"Capsule to create an entry for the host and retrieve it's one-time "
 "registration password."
 msgstr ""
 "Satellite 6 は、新規ホストのレルムエントリーの自動作成に対応します。レルムがホスト用に選択されると、Satellite 6 "
 "は関連するレルムの Capsule に接続してホストのエントリーを作成し、そのワンタイム登録パスワードを取得します。"
 
 msgid ""
-"Satellite 6, by default, operates in anonymous mode where all operations are"
-" performed without reference to the user who is performing the task."
+"Satellite 6, by default, operates in anonymous mode where all operations are "
+"performed without reference to the user who is performing the task."
 msgstr "デフォルトで Satellite 6 は、タスクを実行しているユーザーを参照せずにすべての操作が実行される匿名モードで機能します。"
 
 msgid "Satellite domain ID of interface"
@@ -5938,8 +5898,7 @@ msgstr "アーキテクチャーの表示"
 msgid "Show an audit"
 msgstr "監査の表示"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1,
-# document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
 msgid "Show an environment"
 msgstr "環境の表示"
 
@@ -6110,8 +6069,7 @@ msgstr "ストレージドメイン"
 msgid "Storage pool"
 msgstr "ストレージプール"
 
-# translation auto-copied from project Customer Portal Translations, version
-# 006_DrupalPO, document interface, author asasaki
+# translation auto-copied from project Customer Portal Translations, version 006_DrupalPO, document interface, author asasaki
 msgid "Strong"
 msgstr "強"
 
@@ -6185,8 +6143,7 @@ msgstr "終了アドレス"
 msgid "Subnet|Vlanid"
 msgstr "Vlanid"
 
-# translation auto-copied from project Customer Portal Translations, version
-# 006_DrupalPO, document interface, author asasaki
+# translation auto-copied from project Customer Portal Translations, version 006_DrupalPO, document interface, author asasaki
 msgid "Subscribe"
 msgstr "サブスクリプション"
 
@@ -6222,8 +6179,8 @@ msgid "Successfully updated %s."
 msgstr "%s を正常に更新しました。"
 
 msgid ""
-"Successfully updated environments and Puppet classes from the on-disk Puppet"
-" installation"
+"Successfully updated environments and Puppet classes from the on-disk Puppet "
+"installation"
 msgstr "オンディスクの Puppet インストールからの環境および Puppet クラスの更新が正常に実行されました"
 
 msgid "Suggest new"
@@ -6333,8 +6290,8 @@ msgid "Test Connection"
 msgstr "テスト接続"
 
 msgid ""
-"The <b>fullname</b> field is used for human readability in reports and other"
-" pages that refer to domains,\\n  and also available as an external node "
+"The <b>fullname</b> field is used for human readability in reports and other "
+"pages that refer to domains,\\n  and also available as an external node "
 "parameter"
 msgstr ""
 "<b>フルネーム</b> フィールドは、レポートやドメインを参照する他のページ内で人が判読できるようにする目的で使用され、\\n "
@@ -6404,13 +6361,13 @@ msgid "The file path where your p12 file is located"
 msgstr "p12 ファイルのあるファイルパス"
 
 msgid ""
-"The final entry, Operating System default, can be set by editing the %s "
-"page."
+"The final entry, Operating System default, can be set by editing the %s page."
+""
 msgstr "最終エントリーのオペレーティングシステムのデフォルトは、%s ページを編集して設定できます。"
 
 msgid ""
-"The following entries were found conflicting with what Satellite 6 wanted to"
-" apply."
+"The following entries were found conflicting with what Satellite 6 wanted to "
+"apply."
 msgstr "以下のエントリーは、Satellite 6 が適用しようとした内容と競合していることが確認されました。"
 
 msgid "The following errors may prevent a successful build:"
@@ -6478,35 +6435,34 @@ msgid ""
 "<code>hostgroup = \"web servers\", environment = production</code>"
 msgstr ""
 "Matche キーが処理される順序です。先に一致したもの順になります。<br> 複数の属性を Matcher "
-"キーとして使用できます。たとえば、<code>host group, environment</code> の順序の場合、<code>hostgroup"
-" = \"web servers\", environment = production</code> のような Matcher が予想されます"
+"キーとして使用できます。たとえば、<code>host group, environment</code> の順序の場合、<code>hostgroup "
+"= \"web servers\", environment = production</code> のような Matcher が予想されます"
 
 msgid "The order in which values are resolved"
 msgstr "値が解決される順序"
 
 msgid ""
-"The path to the medium, can be a URL or a valid NFS server (exclusive of the"
-" architecture).\\n          for example "
-"<em>http://mirror.centos.org/centos/$version/os/$arch</em> where "
-"<strong>$arch</strong> will be substituted for the host's actual OS "
-"architecture and <strong>$version</strong>, <strong>$major</strong> and "
-"<strong>$minor</strong> will be substituted for the version of the operating"
-" system. Solaris and Debian media may also use <strong>$release</strong>."
+"The path to the medium, can be a URL or a valid NFS server (exclusive of the "
+"architecture).\\n          for example <em>http://mirror.centos.org/centos/"
+"$version/os/$arch</em> where <strong>$arch</strong> will be substituted for "
+"the host's actual OS architecture and <strong>$version</strong>, "
+"<strong>$major</strong> and <strong>$minor</strong> will be substituted for "
+"the version of the operating system. Solaris and Debian media may also use "
+"<strong>$release</strong>."
 msgstr ""
-"メディアのパスは、URL または有効な NFS サーバー (アーキテクチャーは除く) を指定できます。\\n    "
-"たとえば、<em>http://mirror.centos.org/centos/$version/os/$arch</em> "
-"は、<strong>$arch</strong> がホストの実際の OS "
-"アーキテクチャーに置き換えられ、<strong>$version</strong>、<strong>$major</strong>、<strong>$minor</strong>"
-" がオペレーティングシステムのバージョンに置き換えられます。Solaris と Debian のメディアは "
-"<strong>$release</strong> も使用します。"
+"メディアのパスは、URL または有効な NFS サーバー (アーキテクチャーは除く) を指定できます。\\n    たとえば、<em>http://"
+"mirror.centos.org/centos/$version/os/$arch</em> は、<strong>$arch</strong> "
+"がホストの実際の OS アーキテクチャーに置き換えられ、<strong>$version</strong>、<strong>$major</"
+"strong>、<strong>$minor</strong> がオペレーティングシステムのバージョンに置き換えられます。Solaris と "
+"Debian のメディアは <strong>$release</strong> も使用します。"
 
 msgid "The realm name, e.g. EXAMPLE.COM"
 msgstr "レルム名 (例: EXAMPLE.COM)"
 
 msgid ""
 "The remote system presented a public key signed by an unidentified "
-"certificate authority. If you are sure the remote system is authentic, go to"
-" the compute resource edit page, press the 'Test Connection' or 'Load "
+"certificate authority. If you are sure the remote system is authentic, go to "
+"the compute resource edit page, press the 'Test Connection' or 'Load "
 "Datacenters' button and submit"
 msgstr ""
 "リモートシステムは、未確認の証明機関によって署名された公開鍵を提示します。リモートシステムが認証済みであることが確認できる場合、コンピュートリソースの編集ページに移動してから「テスト接続」または「データセンターのロード」ボタンを押して送信します"
@@ -6524,8 +6480,8 @@ msgid "The selected hosts will execute a build operation on next reboot"
 msgstr "選択されたホストは次回の再起動時にビルド操作を実行します"
 
 msgid ""
-"The user that is used to ssh into the instance, normally cloud-user, "
-"ec2-user, ubuntu, root etc"
+"The user that is used to ssh into the instance, normally cloud-user, ec2-"
+"user, ubuntu, root etc"
 msgstr "SSH をインスタンスに実行するために、通常 cloud-user、ec2-user、ubuntu、root などのユーザーを使用します"
 
 msgid "The virtual machine is being deleted."
@@ -6642,19 +6598,20 @@ msgid ""
 "To enable a provider, either install the OS package (e.g. foreman-libvirt) "
 "or enable the bundler group for development setup (e.g. ovirt)."
 msgstr ""
-"プロバイダーを有効にするには、OS パッケージ (例: foreman-libvirt) のインストールか、または開発セットアップ用のバンドラーグループ"
-" (例: ovirt) の有効化のいずれかを実行します。"
+"プロバイダーを有効にするには、OS パッケージ (例: foreman-libvirt) のインストールか、または開発セットアップ用のバンドラーグループ "
+"(例: ovirt) の有効化のいずれかを実行します。"
 
 msgid ""
 "To start collecting trend data, set a cron job to execute 'foreman-rake "
 "trends:counter' every Puppet Interval (%s minutes)."
 msgstr ""
-"トレンドデータの収集を開始するには、Puppet 間隔 (%s 分) ごとに 'foreman-rake trends:counter' を実行するよう"
-" cron ジョブを設定します。"
+"トレンドデータの収集を開始するには、Puppet 間隔 (%s 分) ごとに 'foreman-rake trends:counter' を実行するよう "
+"cron ジョブを設定します。"
 
 msgid ""
-"To start collecting trend data, set a cron job to execute <span class='black"
-"'>foreman-rake trends:counter</span> every Puppet Interval (%s minutes)"
+"To start collecting trend data, set a cron job to execute <span class="
+"'black'>foreman-rake trends:counter</span> every Puppet Interval (%s "
+"minutes)"
 msgstr ""
 "トレンドデータの収集を開始するには、Puppet 間隔 (%s 分) ごとに <span class='black'>foreman-rake "
 "trends:counter</span> を実行するよう cron ジョブを設定します。"
@@ -6991,8 +6948,7 @@ msgstr "オペレーティングシステムのデフォルトのテンプレー
 msgid "Update a domain"
 msgstr "ドメインの更新"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1,
-# document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
 msgid "Update a filter"
 msgstr "フィルターの更新"
 
@@ -7056,9 +7012,7 @@ msgstr "スマート変数の更新"
 msgid "Update a subnet"
 msgstr "サブネットの更新"
 
-# translation auto-copied from project RHELOSP Administration User Guide,
-# version 5.0, document section_cli_keystone_manage_projects_users_roles,
-# author myamamot
+# translation auto-copied from project RHELOSP Administration User Guide, version 5.0, document section_cli_keystone_manage_projects_users_roles, author myamamot
 msgid "Update a user"
 msgstr "ユーザーの更新"
 
@@ -7071,13 +7025,11 @@ msgstr "LDAP 認証ソースの更新"
 msgid "Update an architecture"
 msgstr "アーキテクチャーの更新"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1,
-# document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
 msgid "Update an environment"
 msgstr "環境の更新"
 
-# translation auto-copied from project RHELOSP End User Guide, version 5.0,
-# document section_dashboard_manage_images, author myamamot
+# translation auto-copied from project RHELOSP End User Guide, version 5.0, document section_dashboard_manage_images, author myamamot
 msgid "Update an image"
 msgstr "イメージの更新"
 
@@ -7117,8 +7069,7 @@ msgstr "更新済みホスト: 変更済み環境"
 msgid "Updated hosts: changed host group"
 msgstr "更新済みホスト: 変更済みホストグループ"
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version
-# 6.1, document foreman_discovery, author asasaki
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery, author asasaki
 msgid "Upload facts for a host, creating the host if required"
 msgstr "ホストのファクトをアップロードし、必要な場合はホストを作成します"
 
@@ -7151,8 +7102,7 @@ msgstr "ユーザー認証"
 msgid "User Groups"
 msgstr "ユーザーグループ"
 
-# translation auto-copied from project PressGang CCMS topics, version 1,
-# document CS23007-738330, author Ykatabam
+# translation auto-copied from project PressGang CCMS topics, version 1, document CS23007-738330, author Ykatabam
 msgid "User Guide"
 msgstr "ユーザーガイド"
 
@@ -7269,8 +7219,8 @@ msgid "Uses thin provisioning if unchecked"
 msgstr "チェックが付けられていない場合にシンプロビジョニングを使用します"
 
 msgid ""
-"Using the organization system provides a way to group resources together for"
-" easy management."
+"Using the organization system provides a way to group resources together for "
+"easy management."
 msgstr "組織システムを使用することで、リソースをグループ化でき、管理が容易になります。"
 
 msgid "VCPU(s)"
@@ -7398,13 +7348,11 @@ msgstr "警告とエラー"
 msgid "We have not found any documentation for your API."
 msgstr "お使いの API についてのドキュメントが見つかっていません。"
 
-# translation auto-copied from project Customer Portal Translations, version
-# 006_DrupalPO, document interface, author asasaki
+# translation auto-copied from project Customer Portal Translations, version 006_DrupalPO, document interface, author asasaki
 msgid "Weak"
 msgstr "弱い"
 
-# translation auto-copied from project evolution, version 3.8.5, document
-# evolution-3.8
+# translation auto-copied from project evolution, version 3.8.5, document evolution-3.8
 msgid "Weekly"
 msgstr "毎週"
 
@@ -7441,16 +7389,17 @@ msgstr ""
 
 msgid ""
 "When editing a Template, you must assign a list of Operating Systems which "
-"this Template can be used with. Optionally, you can restrict a template to a"
-" list of Hostgroups and/or Environments"
+"this Template can be used with. Optionally, you can restrict a template to a "
+"list of Hostgroups and/or Environments"
 msgstr ""
-"テンプレートの編集時に、このテンプレートを使用できるオペレーティングシステムを割り当てなければなりません。オプションで、テンプレートをホストグループおよび/または環境の一覧に制限することができます"
+"テンプレートの編集時に、このテンプレートを使用できるオペレーティングシステムを割り当てなければなりません。オプションで、テンプレートをホストグループおよび/"
+"または環境の一覧に制限することができます"
 
 msgid ""
-"When operating in unattended mode Satellite 6 will require more information,"
-" so expect more questions, but it will be able to automate host "
-"installations for Red Hat, Debian, SUSE and Solaris operating systems (and "
-"their clones), see"
+"When operating in unattended mode Satellite 6 will require more information, "
+"so expect more questions, but it will be able to automate host installations "
+"for Red Hat, Debian, SUSE and Solaris operating systems (and their clones), "
+"see"
 msgstr ""
 "無人モードで操作する際、Satellite 6 には追加の情報が必要になります。これには追加の質問が予想されますが、Red "
 "Hat、Debian、SUSE および Solaris オペレーティングシステム (およびそれらのクローン) "
@@ -7472,8 +7421,8 @@ msgid "YAML"
 msgstr "YAML"
 
 msgid ""
-"You Are about to change the default PXE menu on all configured TFTP servers "
-"- continue ?"
+"You Are about to change the default PXE menu on all configured TFTP servers -"
+" continue ?"
 msgstr "デフォルトの PXE メニューをすべての設定済み TFTP サーバーで変更しようとしています - 続行しますか?"
 
 msgid ""
@@ -7505,19 +7454,19 @@ msgid "You can find us on %{freenode} (irc.freenode.net) on #satellite6."
 msgstr "#satellite6 に %{freenode} (irc.freenode.net) を見つけることができます。"
 
 msgid ""
-"You can select one of three possible IPAM "
-"modes:<br/><ul><li><strong>DHCP</strong> - will manage the IP on DHCP "
-"through assigned DHCP proxy, auto-suggested IPs come from "
-"DHCP</li><li><strong>Internal DB</strong> - use internal DB to auto-suggest "
-"free IP based on other interfaces on same subnet respecting range if "
-"specified, useful mainly with static boot mode</li><li><strong>None</strong>"
-" - leave IP management solely on user, no auto-suggestion</li></ul>"
+"You can select one of three possible IPAM modes:<br/><ul><li><strong>DHCP</"
+"strong> - will manage the IP on DHCP through assigned DHCP proxy, auto-"
+"suggested IPs come from DHCP</li><li><strong>Internal DB</strong> - use "
+"internal DB to auto-suggest free IP based on other interfaces on same subnet "
+"respecting range if specified, useful mainly with static boot mode</"
+"li><li><strong>None</strong> - leave IP management solely on user, no auto-"
+"suggestion</li></ul>"
 msgstr ""
 "3 つの IPAM モードのいずれかを選択できます:<br/><ul><li><strong>DHCP</strong> - 割り当て済みの PHCP "
-"プロキシーにより DHCP で IP を管理します。自動補完 IP は DHCP から生成されます</li><li><strong>内部 "
-"DB</strong> - 内部 DB を使用して、同じサブネット上の別のインターフェースに基づいて空き IP "
-"の自動補完を行います。この際、指定があると範囲が適用されます。主に静的なブートモードで役立ちます</li><li><strong>なし</strong>"
-" - IP 管理を完全にユーザーに任せます。自動補完なし</li></ul>"
+"プロキシーにより DHCP で IP を管理します。自動補完 IP は DHCP から生成されます</li><li><strong>内部 DB</"
+"strong> - 内部 DB を使用して、同じサブネット上の別のインターフェースに基づいて空き IP "
+"の自動補完を行います。この際、指定があると範囲が適用されます。主に静的なブートモードで役立ちます</li><li><strong>なし</strong> "
+"- IP 管理を完全にユーザーに任せます。自動補完なし</li></ul>"
 
 msgid "You can't assign locations to this resource"
 msgstr "ロケーションをこのリソースに割り当てることができません"
@@ -7538,8 +7487,8 @@ msgid "You don't seem to have any Hosts, for more information see"
 msgstr "ホストがないようです。さらに詳しくは、以下を参照してください"
 
 msgid ""
-"You don't seem to have any facts yet. If you wish to configure fact pushing,"
-" please follow"
+"You don't seem to have any facts yet. If you wish to configure fact pushing, "
+"please follow"
 msgstr "まだファクトがないようです。ファクトのプッシュを設定する場合は、以下の指示に従ってください"
 
 msgid ""
@@ -7562,11 +7511,11 @@ msgid "You may also find the"
 msgstr "さらに以下もあります"
 
 msgid ""
-"You may create puppet classes that represent high-level host configurations,"
-" for example, a <b>host-type-ldap-server</b> class, which includes all the "
-"required functionality from other modules or you may decide to create a host"
-" group called <b>host-type-ldap-server</b> and add the required classes into"
-" the host group configuration."
+"You may create puppet classes that represent high-level host configurations, "
+"for example, a <b>host-type-ldap-server</b> class, which includes all the "
+"required functionality from other modules or you may decide to create a host "
+"group called <b>host-type-ldap-server</b> and add the required classes into "
+"the host group configuration."
 msgstr ""
 "たとえば、他のモジュールの必要なすべての機能を組み込む <b>host-type-ldap-server</b> クラスなどの高レベルの設定を表す "
 "puppet クラスを作成するか、または <b>host-type-ldap-server</b> "
@@ -7583,8 +7532,8 @@ msgstr ""
 "は新規ホストの設定全体に必要な設定ファイルの作成と管理を行います。"
 
 msgid ""
-"You may optionally wish to generate the online documentation for your puppet"
-" classes"
+"You may optionally wish to generate the online documentation for your puppet "
+"classes"
 msgstr "オプションとして、puppet クラスのオンラインドキュメントを生成することを希望されるかもしれません"
 
 msgid "You must create a location before continuing."
@@ -7657,8 +7606,7 @@ msgstr "すでに存在します"
 msgid "already in use"
 msgstr "すでに使用されています"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1,
-# document katello, author asasaki
+# translation auto-copied from project Satellite6 Katello, version 6.1, document katello, author asasaki
 msgid "an organization"
 msgstr "組織"
 
@@ -7674,8 +7622,7 @@ msgstr "配列"
 msgid "belongs to config group"
 msgstr "設定グループに属します"
 
-# translation auto-copied from project PressGang CCMS topics, version 1,
-# document 10176-734362, author myamamot
+# translation auto-copied from project PressGang CCMS topics, version 1, document 10176-734362, author myamamot
 msgid "boolean"
 msgstr "ブール値"
 
@@ -7796,8 +7743,7 @@ msgstr "例: sn"
 msgid "e.g. uid"
 msgstr "例: uid"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1,
-# document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
 msgid "environment id"
 msgstr "環境 ID"
 
@@ -7819,8 +7765,7 @@ msgstr "%s の保存に失敗しました"
 msgid "filter for %s role"
 msgstr "%s ロールのフィルター"
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version
-# 6.1, document foreman_discovery, author asasaki
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery, author asasaki
 msgid "filter results"
 msgstr "結果のフィルター"
 
@@ -7854,8 +7799,7 @@ msgstr "空きスワップ"
 msgid "further instructions"
 msgstr "追加のシミ"
 
-# translation auto-copied from project Satellite6 Katello, version 6.1,
-# document katello
+# translation auto-copied from project Satellite6 Katello, version 6.1, document katello
 msgid "has already been taken"
 msgstr "すでに使用されています"
 
@@ -7892,8 +7836,7 @@ msgstr "処理中"
 msgid "included already from parent"
 msgstr "すでに親から組み込まれています"
 
-# translation auto-copied from project PressGang CCMS topics, version 1,
-# document 7698-743369, author Ykatabam
+# translation auto-copied from project PressGang CCMS topics, version 1, document 7698-743369, author Ykatabam
 msgid "integer"
 msgstr "整数"
 
@@ -7960,8 +7903,7 @@ msgstr "無効です。http://、https:// のみが許可されます"
 msgid "is invalid: %s"
 msgstr "無効です: %s"
 
-# translation auto-copied from project NetworkManager, version 0.9.9.0,
-# document NetworkManager
+# translation auto-copied from project NetworkManager, version 0.9.9.0, document NetworkManager
 msgid "is not a valid MAC address"
 msgstr "は有効な MAC アドレスではありません"
 
@@ -7997,8 +7939,7 @@ msgstr[0] "過去 %s 日"
 msgid "link external user group with this user group"
 msgstr "外部ユーザーグループをこのユーザーグループにリンクします"
 
-# translation auto-copied from project PressGang CCMS topics, version 1,
-# document 11627-717760
+# translation auto-copied from project PressGang CCMS topics, version 1, document 11627-717760
 msgid "list"
 msgstr "list"
 
@@ -8078,8 +8019,7 @@ msgstr "オフ"
 msgid "on"
 msgstr "オン"
 
-# translation auto-copied from project PressGang CCMS topics, version 1,
-# document 4726-504599, author jito
+# translation auto-copied from project PressGang CCMS topics, version 1, document 4726-504599, author jito
 msgid "optional"
 msgstr "オプション"
 
@@ -8101,8 +8041,7 @@ msgstr "OS"
 msgid "override"
 msgstr "上書き"
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version
-# 6.1, document foreman_discovery, author asasaki
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery, author asasaki
 msgid "paginate results"
 msgstr "結果のページネーション"
 
@@ -8127,8 +8066,8 @@ msgid ""
 "power action, valid actions are (on/start), (off/stop), (soft/reboot), "
 "(cycle/reset), (state/status)"
 msgstr ""
-"パワーアクション。有効なアクションは "
-"(on/start)、(off/stop)、(soft/reboot)、(cycle/reset)、(state/status) です。"
+"パワーアクション。有効なアクションは (on/start)、(off/stop)、(soft/reboot)、(cycle/reset)、(state/"
+"status) です。"
 
 msgid "poweroff"
 msgstr "パワーオフ"
@@ -8148,8 +8087,7 @@ msgstr "再起動"
 msgid "regexp"
 msgstr "正規表現"
 
-# translation auto-copied from project PressGang CCMS topics, version 1,
-# document 6753-683907, author tnagamot
+# translation auto-copied from project PressGang CCMS topics, version 1, document 6753-683907, author tnagamot
 msgid "remove"
 msgstr "削除"
 
@@ -8162,14 +8100,13 @@ msgstr "ボリュームの削除"
 msgid "remove volume"
 msgstr "ボリュームの削除"
 
-# translation auto-copied from project PressGang CCMS topics, version 1,
-# document 4726-504599, author jito
+# translation auto-copied from project PressGang CCMS topics, version 1, document 4726-504599, author jito
 msgid "required"
 msgstr "必須"
 
 msgid ""
-"required for managed host that is bare metal, not required if it's a virtual"
-" machine"
+"required for managed host that is bare metal, not required if it's a virtual "
+"machine"
 msgstr "管理ホストがベアメタルの場合に必須です。仮想マシンの場合は不要です。"
 
 msgid "required if host is managed and custom partition has not been defined"
@@ -8227,8 +8164,7 @@ msgstr "空白にすることはできません - グローバルまたはホス
 msgid "soft"
 msgstr "ソフト"
 
-# translation auto-copied from project Satellite6 Foreman Discovery, version
-# 6.1, document foreman_discovery, author asasaki
+# translation auto-copied from project Satellite6 Foreman Discovery, version 6.1, document foreman_discovery, author asasaki
 msgid "sort results"
 msgstr "結果のソート"
 
@@ -8247,8 +8183,7 @@ msgstr "状態"
 msgid "stop"
 msgstr "停止"
 
-# translation auto-copied from project PressGang CCMS topics, version 1,
-# document 7981-740257, author Ykatabam
+# translation auto-copied from project PressGang CCMS topics, version 1, document 7981-740257, author Ykatabam
 msgid "string"
 msgstr "文字列"
 

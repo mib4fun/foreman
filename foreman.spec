@@ -19,7 +19,7 @@
 #global dashalphatag -%{alphatag}
 
 Name:   foreman
-Version: 1.7.2.18
+Version: 1.7.2.19
 Release: 1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
@@ -675,6 +675,11 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Tue May 05 2015 Mike McCune <mmccune@redhat.com> 1.7.2.19-1
+- fixes #8676 - tar foreman-debug results including the parent directory
+  (stbenjam@redhat.com)
+- Pull in final french strings from zanata (bkearney@redhat.com)
+
 * Tue Apr 28 2015 Mike McCune <mmccune@redhat.com> 1.7.2.18-1
 - fixes #9773 - correctly render template URL (stbenjam@redhat.com)
 - Add in strings from zanata. All but french are done (bkearney@redhat.com)

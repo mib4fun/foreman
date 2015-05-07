@@ -623,11 +623,15 @@ function interface_subnet_selected(element) {
 function interface_type_selected(element) {
   var fieldset = $(element).closest("fieldset");
 
-  $.ajax({
-    data: fieldset.serialize(),
-    type: 'GET',
-    url: fieldset.attr('data-url'),
-    dataType: 'script'
+  request = $.ajax({
+              data: fieldset.serialize(),
+              type: 'GET',
+              url: fieldset.attr('data-url'),
+              dataType: 'script'
+	    });
+
+  request.done(function() {
+    $("#interfaceModal").find('a[rel="popover-modal"]').popover({html: true});
   });
 }
 

@@ -11,7 +11,7 @@ class AboutTest < ActionDispatch::IntegrationTest
     assert page.has_link?("Capsules", :href => "#smart_proxies")
     assert page.has_link?("Compute Resources", :href => "#compute_resources")
     assert page.has_link?("Red Hat Satellite Blog", :href => "https://access.redhat.com/blogs/1169563")
-    assert page.has_link?("User Guide", :href => "https://access.redhat.com/documentation/en-US/Red_Hat_Satellite/6.0/html/User_Guide/index.html")
+    assert page.has_link?("User Guide", :href => "https://access.redhat.com/documentation/en-US/Red_Hat_Satellite/6.1/html/User_Guide/index.html")
     assert page.has_link?("Ohad Levy", :href => "mailto:ohadlevy@gmail.com")
     assert page.has_content?("Version")
   end

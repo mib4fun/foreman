@@ -7,6 +7,7 @@ module Api
     include FindCommon
 
     protect_from_forgery
+    force_ssl :if => :require_ssl?
     skip_before_filter :verify_authenticity_token, :unless => :protect_api_from_forgery?
 
     before_filter :set_default_response_format, :authorize, :add_version_header, :set_gettext_locale
@@ -62,6 +63,10 @@ module Api
     end
 
     protected
+
+    def require_ssl?
+      SETTINGS[:require_ssl]
+    end
 
     def not_found(options = nil)
       not_found_message = {}

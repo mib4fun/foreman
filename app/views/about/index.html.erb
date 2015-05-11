@@ -135,7 +135,12 @@
     </div>
     <div class="stats-well" id="copyright-div">
       <h4><%= _("System Information") %> </h4>
-      <p id="copyright-p"><%= (_("Version %{version}  © 2009-%{year} Paul Kelly and %{author}") % {:version => Satellite::VERSION, :year=>DateTime.now.year, :author=>link_to("Ohad Levy", "mailto:ohadlevy@gmail.com" )}).html_safe %></p>
+      <p id="copyright-p">
+        <%= _("Red Hat Satellite") %><br />
+        <%= (_("Version %{version}  © 2014 Red Hat Inc.") % {:version => Satellite::VERSION }).html_safe %><br />
+        <br />
+        <%= (_("Includes Foreman © 2009-%{year} Paul Kelly and %{author}") % {:year=>DateTime.now.year, :author=>link_to("Ohad Levy", "mailto:ohadlevy@gmail.com" )}).html_safe %><br />
+      </p>
     </div>
   </div>
 </div>

@@ -57,7 +57,6 @@ module Orchestration::DHCP
   # returns a hash of dhcp record settings
   def dhcp_attrs
     return unless dhcp?
-    raise "Operating System was not defined" if operatingsystem.nil?
     dhcp_attr = { :name => name, :filename => operatingsystem.boot_filename(self),
                   :ip => ip, :mac => mac, :hostname => hostname, :proxy => subnet.dhcp_proxy,
                   :network => subnet.network, :nextServer => boot_server }

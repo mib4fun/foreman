@@ -19,7 +19,7 @@
 #global dashalphatag -%{alphatag}
 
 Name:   foreman
-Version: 1.7.2.19
+Version: 1.7.2.20
 Release: 1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
@@ -675,6 +675,18 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Tue May 12 2015 Mike McCune <mmccune@redhat.com> 1.7.2.20-1
+- fixes #10275 - Add secure cookie when in ssl (CVE-2015-3155) (shlomi@ben-
+  hanna.com)
+- Fixes #10412 - display interface tooltip after type change
+  (mhulan@redhat.com)
+- Fixes #7515 - Prevent label line breaks in add bookmark modal
+  (tbrisker@gmail.com)
+- 1197975 - nice error when OS was not defined (lzap+git@redhat.com)
+- Fixes #bz1190635 - The URLS moved from "...Red_Hat_Satellite/6.0..." to
+  "...Red_Hat_Satellite/6.1..." (sshtein@redhat.com)
+- Fixes #bz1206348 - Changed the copyright message (sshtein@redhat.com)
+
 * Tue May 05 2015 Mike McCune <mmccune@redhat.com> 1.7.2.19-1
 - fixes #8676 - tar foreman-debug results including the parent directory
   (stbenjam@redhat.com)

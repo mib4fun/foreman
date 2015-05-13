@@ -19,7 +19,7 @@
 #global dashalphatag -%{alphatag}
 
 Name:   foreman
-Version: 1.7.2.20
+Version: 1.7.2.21
 Release: 1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
@@ -675,6 +675,9 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Wed May 13 2015 Mike McCune <mmccune@redhat.com> 1.7.2.21-1
+- Fixes BZ1221014: remove unintentional reference to jstz. (walden@redhat.com)
+
 * Tue May 12 2015 Mike McCune <mmccune@redhat.com> 1.7.2.20-1
 - fixes #10275 - Add secure cookie when in ssl (CVE-2015-3155) (shlomi@ben-
   hanna.com)

@@ -421,6 +421,22 @@ module Foreman::Model
       "VMWare"
     end
 
+    def vm_compute_attributes_for(uuid)
+      vm_networks = networks
+
+      vm = find_vm_by_uuid(uuid)
+      vm_attrs = vm.attributes.reject{|k,v| k == :id }
+      vm_attrs[:volumes_attributes] = Hash[vm.volumes.each_with_index.map { |volume, idx| [idx.to_s, volume.attributes] }]
+      vm_attrs[:interfaces_attributes] = Hash[vm.interfaces.each_with_index.map { |interface, idx|
+        interface_attrs = {
+          :type => interface.type.to_s,
+          :network => vm_networks.find{|n| n.name == interface.network}.try(:id)
+        }
+        [idx.to_s, interface_attrs]
+      }]
+      vm_attrs
+    end
+
     private
 
     def dc

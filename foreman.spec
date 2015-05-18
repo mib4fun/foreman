@@ -19,7 +19,7 @@
 #global dashalphatag -%{alphatag}
 
 Name:   foreman
-Version: 1.7.2.21
+Version: 1.7.2.22
 Release: 1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
@@ -675,6 +675,8 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Mon May 18 2015 Daniel Lobato <elobatocs@gmail.com> 1.7.2.22-1
+Fixes for: 1143925 1194357 1194620 1200083 1221227 1221343 1197975 1143925
 * Wed May 13 2015 Mike McCune <mmccune@redhat.com> 1.7.2.21-1
 - Fixes BZ1221014: remove unintentional reference to jstz. (walden@redhat.com)
 

@@ -8,7 +8,7 @@ module Orchestration::DHCP
   end
 
   def dhcp?
-    hostname.present? && ip_available? && mac_available? && !subnet.nil? && subnet.dhcp? && managed?
+    hostname.present? && ip_available? && mac_available? && !subnet.nil? && subnet.dhcp? && managed? && operatingsystem.present?
   end
 
   def dhcp_record

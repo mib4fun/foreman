@@ -79,8 +79,8 @@
     </div>
   </div>
 
+  <%= new_child_fields_template(f, :interfaces, {:partial => Nic::Managed.new, :layout => 'nic/hidden_layout'}) %>
 </fieldset>
 
 
-<%= new_child_fields_template(f, :interfaces, {:partial => Nic::Managed.new, :layout => 'nic/hidden_layout'}) %>
 

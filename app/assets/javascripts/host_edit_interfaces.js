@@ -50,7 +50,7 @@ function close_interface_modal() {
 }
 
 function get_interface_template_clone() {
-  var content = $('.interfaces_fields_template').html();
+  var content = $('#interfaces .interfaces_fields_template').html();
   var interface_id = new Date().getTime();
 
   content = fix_template_names(content, 'interfaces', interface_id);

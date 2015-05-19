@@ -19,7 +19,7 @@
 #global dashalphatag -%{alphatag}
 
 Name:   foreman
-Version: 1.7.2.22
+Version: 1.7.2.24
 Release: 1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
@@ -675,6 +675,10 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Tue May 19 2015 dlobatog <elobatocs@gmail.com> 1.7.2.24-1
+- Fixes for #10402 #10535
+* Tue May 19 2015 dlobatog <elobatocs@gmail.com>
+- Fixes for #10402 #10535
 * Mon May 18 2015 Daniel Lobato <elobatocs@gmail.com> 1.7.2.22-1
 Fixes for: 1143925 1194357 1194620 1200083 1221227 1221343 1197975 1143925
 * Wed May 13 2015 Mike McCune <mmccune@redhat.com> 1.7.2.21-1

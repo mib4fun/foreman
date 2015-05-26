@@ -347,13 +347,9 @@ module Foreman::Model
     # Fog calls +cluster.resourcePool.find("Resources")+ that actually calls
     # +searchIndex.FindChild("Resources")+ in RbVmomi that then returns nil
     # because it has no children.
-    def clone_vm(args)
-      args = parse_args args
-      path_replace = %r{/Datacenters/#{datacenter}/vm(/|)}
-
-      interfaces = client.list_vm_interfaces(args[:image_id])
-      interface = interfaces.detect{|i| i[:name] == "Network adapter 1" }
-      network_adapter_device_key = interface[:key]
+    def clone_vm(raw_args)
+      args = parse_args(raw_args)
+      path_replace = %r{/[^/]+/#{datacenter}/vm(/|)}
 
       opts = {
         "datacenter" => datacenter,
@@ -365,9 +361,12 @@ module Foreman::Model
         "numCPUs" => args[:cpus],
         "memoryMB" => args[:memory_mb],
         "datastore" => args[:volumes].first[:datastore],
-        "network_label" => args[:interfaces].first[:network],
-        "network_adapter_device_key" => network_adapter_device_key
       }
+
+      vm_model = new_vm(raw_args)
+      opts['interfaces'] = vm_model.interfaces
+      opts['volumes'] = vm_model.volumes
+      opts["customization_spec"] = client.cloudinit_to_customspec(args[:user_data]) if args[:user_data]
       client.servers.get(client.vm_clone(opts)['new_vm']['id'])
     end
 

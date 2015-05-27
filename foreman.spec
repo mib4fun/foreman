@@ -19,7 +19,7 @@
 #global dashalphatag -%{alphatag}
 
 Name:   foreman
-Version: 1.7.2.24
+Version: 1.7.2.25
 Release: 1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
@@ -675,6 +675,12 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Tue May 26 2015 Mike McCune <mmccune@redhat.com> 1.7.2.25-1
+- Fixes #7533 - auto resize pie chart labels to prevent overflow
+  (tbrisker@gmail.com)
+- Fixes #10542: correct path for auto complete search on filters page.
+  (walden@redhat.com)
+
 * Tue May 19 2015 dlobatog <elobatocs@gmail.com> 1.7.2.24-1
 - Fixes for #10402 #10535
 * Tue May 19 2015 dlobatog <elobatocs@gmail.com>

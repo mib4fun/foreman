@@ -19,7 +19,7 @@
 #global dashalphatag -%{alphatag}
 
 Name:   foreman
-Version: 1.7.2.25
+Version: 1.7.2.26
 Release: 1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
@@ -675,6 +675,11 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Tue Jun 02 2015 Mike McCune <mmccune@redhat.com> 1.7.2.26-1
+- Fixes BZ#1225360 - Alias config file name workaround (mhulan@redhat.com)
+- Fixes #9424 - orchestration progress no longer triggers twice
+  (orabin@redhat.com)
+
 * Tue May 26 2015 Mike McCune <mmccune@redhat.com> 1.7.2.25-1
 - Fixes #7533 - auto resize pie chart labels to prevent overflow
   (tbrisker@gmail.com)

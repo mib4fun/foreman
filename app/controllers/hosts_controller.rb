@@ -83,7 +83,7 @@ class HostsController < ApplicationController
     @host.managed = true if (params[:host] && params[:host][:managed].nil?)
     forward_url_options
     if @host.save
-      process_success :success_redirect => host_path(@host), :redirect_xhr => request.xhr?
+      process_success :success_redirect => host_path(@host)
     else
       load_vars_for_ajax
       offer_to_overwrite_conflicts
@@ -108,7 +108,7 @@ class HostsController < ApplicationController
         end
       end
       if @host.update_attributes(params[:host])
-        process_success :success_redirect => host_path(@host), :redirect_xhr => request.xhr?
+        process_success :success_redirect => host_path(@host)
       else
         taxonomy_scope
         load_vars_for_ajax

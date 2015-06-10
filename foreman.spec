@@ -19,7 +19,7 @@
 #global dashalphatag -%{alphatag}
 
 Name:   foreman
-Version: 1.7.2.26
+Version: 1.7.2.27
 Release: 1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
@@ -675,6 +675,22 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Tue Jun 09 2015 Mike McCune <mmccune@redhat.com> 1.7.2.27-1
+- updating branding to state Beta (mmccune@redhat.com)
+- Merge branch '9873' into 'SATELLITE-6.1.0' (bkearney@redhat.com)
+- Fixes #10699 - foreman debug options -au are exclusive (lzap+git@redhat.com)
+- fixes #10284 - improves foreman-debug usage for consumption from other tools
+  (komidore64@gmail.com)
+- fixes #10695 - don't seed initial taxonomies if there are any already
+  (stbenjam@redhat.com)
+- Merge branch 'fix_1218519' into 'SATELLITE-6.1.0' (bkearney@redhat.com)
+- Fixes #10715 - api build_pxe_default returns non-JSON message
+  (tstrachota@redhat.com)
+- Fixes #8736 - confirmation before host delete for freshly created hosts
+  (tstrachota@redhat.com)
+- fixes #9873 - generate unique alert mails for each user group member
+  (dcleal@redhat.com)
+
 * Tue Jun 02 2015 Mike McCune <mmccune@redhat.com> 1.7.2.26-1
 - Fixes BZ#1225360 - Alias config file name workaround (mhulan@redhat.com)
 - Fixes #9424 - orchestration progress no longer triggers twice

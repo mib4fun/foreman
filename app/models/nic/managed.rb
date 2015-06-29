@@ -8,8 +8,10 @@ module Nic
     # Interface normally are not executed by them self, so we use the host queue and related methods.
     # this ensures our orchestration works on both a host and a managed interface
     delegate :progress_report_id, :require_ip_validation?, :capabilities, :compute_resource,
+             :operatingsystem,
              :image_build?, :pxe_build?, :pxe_build?, :ip_available?, :mac_available?, :to => :host
-    delegate :overwrite?, :to => :host, :allow_nil => true
+    delegate :operatingsystem_id,
+             :overwrite?, :to => :host, :allow_nil => true
 
     register_to_enc_transformation :type, lambda { |type| type.constantize.humanized_name }
 

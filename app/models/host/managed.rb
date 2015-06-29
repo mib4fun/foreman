@@ -248,7 +248,7 @@ class Host::Managed < Host::Base
     self.build        = false
     self.otp          = nil
     self.installed_at = Time.now.utc if installed
-    self.save
+    self.save!
   rescue => e
     logger.warn "Failed to set Build on #{self}: #{e}"
     false

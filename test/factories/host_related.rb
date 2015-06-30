@@ -192,6 +192,14 @@ FactoryGirl.define do
   factory :nic_base do
     sequence(:identifier) { |n| "eth#{n}" }
     sequence(:mac) { |n| "00:00:00:00:" + n.to_s(16).rjust(4, '0').insert(2, ':') }
+
+    trait :with_subnet do
+      subnet {
+        FactoryGirl.build(:subnet,
+          :organizations => host ? [host.organization] : [],
+          :locations => host ? [host.location] : [])
+      }
+    end
   end
   factory :nic_interface, :class => Nic::Interface, :parent => :nic_base do
     type 'Nic::Interface'

@@ -78,6 +78,13 @@ module Nic
       end
     end
 
+    # we don't consider host as managed if we are in non-unattended mode
+    # in which case host managed? flag can be true but we should consider
+    # everything as unmanaged
+    def host_managed?
+      self.host && self.host.managed? && SETTINGS[:unattended]
+    end
+
     protected
 
     def uniq_fields_with_hosts

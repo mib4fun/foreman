@@ -19,7 +19,7 @@
 #global dashalphatag -%{alphatag}
 
 Name:   foreman
-Version: 1.7.2.31
+Version: 1.7.2.32
 Release: 1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
@@ -675,6 +675,9 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Wed Jul 15 2015 Mike McCune <mmccune@redhat.com> 1.7.2.32-1
+- fixing version string (mmccune@redhat.com)
+
 * Tue Jul 14 2015 Mike McCune <mmccune@redhat.com> 1.7.2.31-1
 - Fixes #11033 - adding missing params to auth_source ldap API docs
   (martin.bacovsky@gmail.com)

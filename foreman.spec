@@ -19,7 +19,7 @@
 #global dashalphatag -%{alphatag}
 
 Name:   foreman
-Version: 1.7.2.30
+Version: 1.7.2.31
 Release: 1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
@@ -675,6 +675,14 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Tue Jul 14 2015 Mike McCune <mmccune@redhat.com> 1.7.2.31-1
+- Fixes #11033 - adding missing params to auth_source ldap API docs
+  (martin.bacovsky@gmail.com)
+- Merge branch 'bz1218876' into 'SATELLITE-6.1.0' (bkearney@redhat.com)
+- Set version to GA 6.1.1 (mmccune@redhat.com)
+- Fixes #10727 - Added validation to require BMC Smart proxy in order to add
+  BMC nic (sshtein@redhat.com)
+
 * Tue Jul 07 2015 dlobatog <elobatocs@gmail.com> 1.7.2.30-1
 1236480, 1233080
 

@@ -83,8 +83,10 @@ module LayoutHelper
   end
 
   # add hidden field for options[:disabled]
-  def multiple_selects(f, attr, associations, selected_ids, options = {}, html_options = {})
+  def multiple_selects(f, attr, associations, selected_ids, options = {}, html_options = {}, association_klass_name = nil)
     options.merge!(:size => "col-md-10")
+    authorized = AssociationAuthorizer.authorized_associations(associations, association_klass_name).all
+    unauthorized = selected_ids.blank? ? [] : selected_ids - authorized.map(&:id)
     field(f, attr, options) do
       attr_ids = (attr.to_s.singularize+"_ids").to_sym
       hidden_fields = ''

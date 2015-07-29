@@ -19,7 +19,7 @@
 #global dashalphatag -%{alphatag}
 
 Name:   foreman
-Version: 1.7.2.32
+Version: 1.7.2.33
 Release: 1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
@@ -675,6 +675,12 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Wed Jul 29 2015 Chris Peters <chrispeters.psu@gmail.com> 1.7.2.33-1
+- Fixes #10826 - Adds unique constraint to the title in operatingsystem table
+  (oprazak@redhat.com)
+- 1246227 - remove welcome landing page in favor of the Dashboard
+  (mmccune@redhat.com)
+
 * Wed Jul 15 2015 Mike McCune <mmccune@redhat.com> 1.7.2.32-1
 - fixing version string (mmccune@redhat.com)
 

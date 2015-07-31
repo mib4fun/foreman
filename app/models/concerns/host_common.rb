@@ -142,7 +142,7 @@ module HostCommon
   end
 
   def host_class_ids
-    h_ids = kind_of?(Host::Base) ? host_classes.pluck(:puppetclass_id) : []
+    (is_a?(Host::Base) ? host_classes : hostgroup_classes).map(&:puppetclass_id)
   end
 
   def all_puppetclass_ids
@@ -172,7 +172,12 @@ module HostCommon
   end
 
   def individual_puppetclasses
-    puppetclasses - classes_in_groups
+    conditions = {:id => host_class_ids - cg_class_ids}
+    if environment
+      environment.puppetclasses.where(conditions)
+    else
+      Puppetclass.where(conditions)
+    end
   end
 
   def available_puppetclasses
@@ -201,6 +206,7 @@ module HostCommon
   end
 
   def update_config_group_counters(record)
+    return unless persisted?
     record.update_attribute(:hostgroups_count, cnt_hostgroups(record))
     record.update_attribute(:hosts_count, cnt_hosts(record))
 

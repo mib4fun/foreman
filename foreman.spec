@@ -19,7 +19,7 @@
 #global dashalphatag -%{alphatag}
 
 Name:   foreman
-Version: 1.7.2.33
+Version: 1.7.2.34
 Release: 1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
@@ -675,6 +675,9 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Mon Aug 17 2015 Mike McCune <mmccune@redhat.com> 1.7.2.34-1
+- Fixes #11339 - ensure unique parameters before adding uniq index
+
 * Wed Jul 29 2015 Chris Peters <chrispeters.psu@gmail.com> 1.7.2.33-1
 - Fixes #10826 - Adds unique constraint to the title in operatingsystem table
   (oprazak@redhat.com)

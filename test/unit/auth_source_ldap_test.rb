@@ -160,13 +160,48 @@ class AuthSourceLdapTest < ActiveSupport::TestCase
     @auth_source_ldap.send(:update_usergroups, 'test', 'pass')
   end
 
-  test 'update_usergroups calls refresh_ldap if entry belongs to some group' do
-    setup_ldap_stubs
-    ExternalUsergroup.expects(:find_by_name).with('ipausers').returns(ExternalUsergroup.new)
-    ExternalUsergroup.any_instance.expects(:present?).returns(true)
-    ExternalUsergroup.any_instance.expects(:refresh).returns(true)
-    LdapFluff.any_instance.expects(:group_list).with('test').returns(['ipausers'])
-    @auth_source_ldap.send(:update_usergroups, 'test', 'pass')
+  context 'refresh ldap' do
+    setup do
+      setup_ldap_stubs
+      LdapFluff.any_instance.expects(:group_list).with('test').returns(['ipausers'])
+    end
+
+    test 'update_usergroups calls refresh_ldap if entry belongs to some group' do
+      @auth_source_ldap.expects(:valid_group?).with('ipausers').returns(true)
+      FactoryGirl.create(:external_usergroup, :name => 'ipausers', :auth_source => @auth_source_ldap)
+      ExternalUsergroup.any_instance.expects(:refresh)
+      @auth_source_ldap.send(:update_usergroups, 'test')
+    end
+
+    test 'update_usergroups matches LDAP gids with external user groups case insensitively' do
+      @auth_source_ldap.expects(:valid_group?).with('IPAUSERS').returns(true)
+      external = FactoryGirl.create(:external_usergroup, :auth_source => @auth_source_ldap, :name => 'IPAUSERS')
+      ldap_user = FactoryGirl.create(:user, :login => 'JohnSmith', :mail => 'a@b.com', :auth_source => @auth_source_ldap)
+      AuthSourceLdap.any_instance.expects(:users_in_group).with('IPAUSERS').returns(['JohnSmith'])
+      @auth_source_ldap.send(:update_usergroups, 'test')
+      assert_include ldap_user.usergroups, external.usergroup
+    end
+
+    test 'update_usergroups refreshes on all external user groups, in LDAP and in Foreman auth source' do
+      @auth_source_ldap.expects(:valid_group?).with('external_usergroup1').returns(true)
+      external = FactoryGirl.create(:external_usergroup, :auth_source => @auth_source_ldap)
+      User.any_instance.expects(:external_usergroups).returns([external])
+      @auth_source_ldap.send(:update_usergroups, 'test')
+    end
+  end
+
+  test 'update_usergroups is no-op with $login service account' do
+    ldap = FactoryGirl.build(:auth_source_ldap, :account => 'DOMAIN/$login')
+    User.any_instance.expects(:external_usergroups).never
+    ExternalUsergroup.any_instance.expects(:refresh).never
+    ldap.send(:update_usergroups, 'test')
+  end
+
+  test 'update_usergroups is no-op with usergroup_sync=false' do
+    ldap = FactoryGirl.build(:auth_source_ldap, :usergroup_sync => false)
+    User.any_instance.expects(:external_usergroups).never
+    ExternalUsergroup.any_instance.expects(:refresh).never
+    ldap.send(:update_usergroups, 'test')
   end
 
   test '#to_config with dedicated service account returns hash' do

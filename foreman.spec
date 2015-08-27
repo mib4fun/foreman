@@ -19,7 +19,7 @@
 #global dashalphatag -%{alphatag}
 
 Name:   foreman
-Version: 1.7.2.35
+Version: 1.7.2.36
 Release: 1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
@@ -675,6 +675,9 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Wed Aug 26 2015 Mike McCune <mmccune@redhat.com> 1.7.2.36-1
+- Version bump for 6.1.2 zstream (mmccune@redhat.com)
+
 * Wed Aug 26 2015 Mike McCune <mmccune@redhat.com> 1.7.2.35-1
 -  Fixes #11111 - action dropdowns pulled right (tstrachota@redhat.com)
 - Fixes #5568 - Improves performance of trends:clean rake task

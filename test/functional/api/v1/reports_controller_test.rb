@@ -1,6 +1,8 @@
 require 'test_helper'
+require 'functional/shared/report_host_permissions_test'
 
 class Api::V1::ReportsControllerTest < ActionController::TestCase
+  include ::ReportHostPermissionsTest
 
   test "should get index" do
     get :index, { }
@@ -71,4 +73,10 @@ class Api::V1::ReportsControllerTest < ActionController::TestCase
     assert_response :not_found
   end
 
+  test 'cannot view the last report without hosts view permission' do
+    setup_user('view', 'reports')
+    report = FactoryGirl.create(:report)
+    get :last, { :host_id => report.host.id }, set_session_user.merge(:user => User.current)
+    assert_response :not_found
+  end
 end

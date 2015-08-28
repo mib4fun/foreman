@@ -1,10 +1,12 @@
 require 'test_helper'
+require 'functional/shared/report_host_permissions_test'
 
 class Api::V2::ReportsControllerTest < ActionController::TestCase
+  include ::ReportHostPermissionsTest
 
   describe "Non Admin User" do
     def setup
-      User.current = users(:one) #use an unpriviledged user, not apiadmin
+      User.current = users(:one) #use an unprivileged user, not apiadmin
     end
 
     def create_a_puppet_transaction_report
@@ -186,4 +188,10 @@ class Api::V2::ReportsControllerTest < ActionController::TestCase
     assert_response :not_found
   end
 
+  test 'cannot view the last report without hosts view permission' do
+    setup_user('view', 'reports')
+    report = FactoryGirl.create(:report)
+    get :last, { :host_id => report.host.id }, set_session_user.merge(:user => User.current)
+    assert_response :not_found
+  end
 end

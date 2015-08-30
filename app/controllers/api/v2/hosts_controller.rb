@@ -89,7 +89,8 @@ module Api
       param_group :host
 
       def update
-        process_response @host.update_attributes(params[:host])
+        @host.attributes = host_attributes(params[:host], @host)
+        process_response @host.save
       end
 
       api :DELETE, "/hosts/:id/", N_("Delete a host")
@@ -172,6 +173,14 @@ Return value may either be one of the following:
 
       private
 
+      def host_attributes(params, host = nil)
+        return {} if params.nil?
+
+        params = params.deep_clone
+        params = host.apply_inherited_attributes(params) if host
+        params
+      end
+
       def action_permission
         case params[:action]
           when 'puppetrun'
@@ -210,8 +219,6 @@ Return value may either be one of the following:
         permission = "#{params[:action]}_hosts".to_sym
         deny_access unless Host.authorized(permission).find(@host.id)
       end
-
-      private
 
       def resource_class
         Host::Managed

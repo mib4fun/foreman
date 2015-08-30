@@ -23,8 +23,9 @@ $(function() {
 });
 
 function onContentLoad(){
-  if($('.autocomplete-clear').size() == 0){
-    $('.autocomplete-input').scopedSearch({'delay': 250});
+  uninitialized_autocompletes = $.grep($('.autocomplete-input'), function(i){ return !$(i).next().hasClass('autocomplete-clear'); });
+  if (uninitialized_autocompletes.length > 0) {
+    $.each(uninitialized_autocompletes, function(i, input) {$(input).scopedSearch({'delay': 250})});
     $('.ui-helper-hidden-accessible').remove();
   }
 
@@ -153,11 +154,11 @@ function mark_params_override(){
     $('#inherited_parameters').find('[id^=name_]').each(function(){
       if (param_name.val() == $(this).text()){
         $(this).addClass('override-param');
-        $(this).closest('tr').find('textarea').addClass('override-param')
+        $(this).closest('tr').find('textarea').addClass('override-param');
         $(this).closest('tr').find('[data-tag=override]').hide();
       }
-    })
-  })
+    });
+  });
   $('#inherited_puppetclasses_parameters .override-param').removeClass('override-param');
   $('#inherited_puppetclasses_parameters [data-tag=override]').show();
   $('#puppetclasses_parameters').find('[data-property=class]:visible').each(function(){
@@ -426,4 +427,68 @@ function setPowerState(item, status){
   }
   power_actions.hide();
   $('[rel="twipsy"]').tooltip();
+}
+
+function reloadOnAjaxComplete(element) {
+  $(element).indicator_hide();
+  $('[rel="twipsy"]').tooltip();
+  $('select').select2({ allowClear: true });
+}
+
+function set_fullscreen(element){
+  var exit_button = $('<div class="exit-fullscreen"><a class="btn btn-default btn-lg" href="#" onclick="exit_fullscreen(); return false;" title="'+__('Exit Full Screen')+'"><i class="glyphicon glyphicon-resize-small"></i></a></div>');
+  element.data('origin',element.parent())
+         .data('position', $(window).scrollTop())
+         .addClass('fullscreen')
+         .appendTo($('#main'))
+         .resize()
+         .after(exit_button);
+  $('#content').addClass('hidden');
+  $('.navbar').addClass('hidden');
+  $(document).on('keyup', function(e) {
+    if (e.keyCode == 27) {    // esc
+      exit_fullscreen();
+    }
+  });
+}
+
+function exit_fullscreen(){
+  var element = $('.fullscreen');
+  $('#content').removeClass('hidden');
+  $('.navbar').removeClass('hidden');
+  element.removeClass('fullscreen')
+         .prependTo(element.data('origin'))
+         .resize();
+  $('.exit-fullscreen').remove();
+  $(window).scrollTop(element.data('position'));
+}
+
+function disableButtonToggle(item, explicit) {
+  if (explicit === undefined) {
+    explicit = true;
+  }
+  
+  item = $(item);
+  item.data('explicit', explicit);
+  var isActive = item.hasClass("active");
+  var formControl = item.closest('.input-group').find('.form-control');
+  if (!isActive) {
+    var blankValue = formControl.children("option[value='']");
+    if (blankValue.length == 0) {
+      $(item).data('no-blank', true);
+      $(formControl).append("<option value='' />");
+    }
+  } else {
+    var blankAttr = item.data('no-blank');
+    if (blankAttr == 'true') {
+      $(formControl).children("[value='']").remove();
+    }
+  }
+
+  formControl.attr('disabled', !isActive);
+  if (!isActive) {
+    $(formControl).val('');
+  }
+
+  $(item).blur();
 }

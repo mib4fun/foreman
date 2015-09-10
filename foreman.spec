@@ -19,7 +19,7 @@
 #global dashalphatag -%{alphatag}
 
 Name:   foreman
-Version: 1.7.2.36
+Version: 1.7.2.37
 Release: 1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
@@ -673,6 +673,9 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Thu Sep 10 2015 Mike McCune <mmccune@redhat.com> 1.7.2.37-1
+- Fixes: BZ1250116 - remove limitation on max fog version (jmontleo@redhat.com)
+
 * Wed Aug 26 2015 Mike McCune <mmccune@redhat.com> 1.7.2.36-1
 - Version bump for 6.1.2 zstream (mmccune@redhat.com)
 

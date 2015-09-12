@@ -1776,6 +1776,291 @@ end # end of context "location or organizations are not enabled"
     end
   end
 
+  test 'updating host domain should validate domain exists' do
+    host = FactoryGirl.create(:host, :managed)
+    last_domain_id = Domain.order(:id).last.id
+    fake_domain_id = last_domain_id + 1
+    host.domain_id = fake_domain_id
+    refute(host.valid?)
+    host.domain_id = last_domain_id
+    assert(host.valid?)
+  end
+
+  test '#jumpstart? should return true for Solaris and SPARC hosts' do
+    host = FactoryGirl.create(:host,
+                              :operatingsystem => FactoryGirl.create(:solaris),
+                              :architecture => FactoryGirl.create(:architecture, :name => 'SPARC-T2'))
+    assert host.jumpstart?
+  end
+
+  test '#fqdn returns the FQDN from the primary interface' do
+    primary = FactoryGirl.build(:nic_managed, :primary => true, :name => 'foo', :domain => FactoryGirl.build(:domain))
+    host = FactoryGirl.create(:host, :managed, :interfaces => [primary, FactoryGirl.build(:nic_managed, :provision => true)])
+    assert_equal "foo.#{primary.domain.name}", host.fqdn
+  end
+
+  test '#shortname returns the name from the primary interface' do
+    primary = FactoryGirl.build(:nic_managed, :primary => true, :name => 'foo')
+    host = FactoryGirl.create(:host, :managed, :interfaces => [primary, FactoryGirl.build(:nic_managed, :provision => true)])
+    assert_equal 'foo', host.shortname
+  end
+
+  test 'lookup_value_match returns host name instead of fqdn when there is no primary interface' do
+    host = FactoryGirl.build(:host, :managed)
+    host_name = host.name
+    host.interfaces.delete_all
+    assert_nil host.primary_interface
+    assert_equal host.send(:lookup_value_match), "fqdn=#{host_name}"
+  end
+
+  test 'check operatingsystem and architecture association' do
+    host = FactoryGirl.build(:host, :interfaces => [FactoryGirl.build(:nic_primary_and_provision)])
+    assert_nil Operatingsystem.find_by_name('RedHat-test'), "operatingsystem already exist"
+    host.populate_fields_from_facts(:architecture => "x86_64", :operatingsystem => 'RedHat-test', :operatingsystemrelease => '6.2')
+    assert host.operatingsystem.architectures.include?(host.architecture), "no association between operatingsystem and architecture"
+  end
+
+  context "lookup value attributes" do
+    test "invoking lookup_values_attributes= does not save lookup values in db until #save is invoked" do
+      host = FactoryGirl.create(:host)
+      assert_no_difference('LookupValue.count') do
+        host.lookup_values_attributes = {"new_123456" => {"lookup_key_id" => lookup_keys(:complex).id, "value"=>"some_value", "match" => "fqdn=abc.mydomain.net"}}
+      end
+
+      assert_difference('LookupValue.count') do
+        host.save
+      end
+    end
+
+    test "lookup_values_attributes= updates existing lookup values" do
+      host = FactoryGirl.create(:host, :with_puppetclass)
+      lkey = FactoryGirl.create(:puppetclass_lookup_key, :as_smart_class_param, :puppetclass => host.classes.first, :overrides => {"fqdn=#{host.name}" => 'old value'})
+      lval = host.lookup_values.first
+
+      host.lookup_values_attributes = {'0' => {'lookup_key_id' => lkey.id.to_s, 'value' => 'new value', '_destroy' => 'false', 'id' => lval.id.to_s}}.with_indifferent_access
+      assert_equal 'old value', LookupValue.find(lval.id).value
+
+      host.save!
+      assert_equal 'new value', LookupValue.find(lval.id).value
+    end
+
+    test "same works for destruction of lookup keys" do
+      host = FactoryGirl.create(:host, :lookup_values_attributes => {"new_123456" => {"lookup_key_id" => lookup_keys(:complex).id, "value"=>"some_value", "match" => "fqdn=abc.mydomain.net"}})
+      lookup_value = host.lookup_values.first
+      assert_no_difference('LookupValue.count') do
+        host.lookup_values_attributes = {"lv" => {:id => lookup_value.id, :_destroy => true}}
+      end
+
+      assert_difference('LookupValue.count', -1) do
+        host.save
+      end
+    end
+  end
+
+  describe '#apply_inherited_attributes' do
+    test 'should be no-op if no hostgroup selected' do
+      host = FactoryGirl.build(:host, :managed)
+      attributes = { 'environment_id' => 1 }
+
+      actual_attr = host.apply_inherited_attributes(attributes)
+
+      assert_equal actual_attr, attributes
+    end
+
+    test 'should take new hostgroup if hostgroup_id present' do
+      host = FactoryGirl.build(:host, :managed, :with_hostgroup)
+      new_environment = FactoryGirl.create(:environment)
+      new_hostgroup = FactoryGirl.create(:hostgroup, :environment => new_environment)
+      assert_not_equal new_environment.id, host.hostgroup.environment.try(:id)
+
+      attributes = { 'hostgroup_id' => new_hostgroup.id }
+      actual_attr = host.apply_inherited_attributes(attributes)
+
+      assert_equal actual_attr['environment_id'], new_environment.id
+    end
+
+    test 'should take new hostgroup if hostgroup_name present' do
+      host = FactoryGirl.build(:host, :managed, :with_hostgroup)
+      new_environment = FactoryGirl.create(:environment)
+      new_hostgroup = FactoryGirl.create(:hostgroup, :environment => new_environment)
+      assert_not_equal new_environment.id, host.hostgroup.environment.try(:id)
+
+      attributes = { 'hostgroup_name' => new_hostgroup.title }
+      actual_attr = host.apply_inherited_attributes(attributes)
+
+      assert_equal actual_attr['environment_id'], new_environment.id
+    end
+
+    test 'should take old hostgroup if hostgroup not updated' do
+      environment = FactoryGirl.create(:environment)
+      host = FactoryGirl.build(:host, :managed, :with_hostgroup, :environment => environment)
+      Hostgroup.expects(:find).never
+
+      attributes = { 'hostgroup_id' => host.hostgroup.id }
+      actual_attr = host.apply_inherited_attributes(attributes)
+
+      assert_equal actual_attr['environment_id'], host.hostgroup.environment.id
+    end
+
+    test 'should accept non-existing hostgroup' do
+      host = FactoryGirl.build(:host, :managed, :with_hostgroup)
+      Hostgroup.expects(:find).with(1111).returns(nil)
+
+      attributes = { 'hostgroup_id' => 1111 }
+      actual_attr = host.apply_inherited_attributes(attributes)
+
+      assert_nil actual_attr['environment_id']
+    end
+
+    test 'should not touch attribute set explicitly' do
+      host = FactoryGirl.build(:host, :managed, :with_hostgroup)
+
+      attributes = { 'hostgroup_id' => host.hostgroup.id, 'environment_id' => 1111 }
+      actual_attr = host.apply_inherited_attributes(attributes)
+
+      assert_equal actual_attr['environment_id'], 1111
+    end
+
+    test 'should inherit attribute value, if not set explicitly' do
+      host = FactoryGirl.build(:host, :managed, :with_hostgroup)
+      environment = FactoryGirl.create(:environment)
+      host.hostgroup.environment = environment
+      host.hostgroup.save!
+
+      attributes = { 'hostgroup_id' => host.hostgroup.id }
+      actual_attr = host.apply_inherited_attributes(attributes)
+
+      assert_equal actual_attr['environment_id'], host.hostgroup.environment.id
+    end
+
+    test 'should not touch non-inherited attributes' do
+      host = FactoryGirl.build(:host, :managed, :with_hostgroup)
+
+      attributes = { 'hostgroup_id' => host.hostgroup.id, 'zzz_id' => 1111 }
+      actual_attr = host.apply_inherited_attributes(attributes)
+
+      assert_equal actual_attr['zzz_id'], 1111
+    end
+  end
+
+  describe 'rendering interface' do
+    let(:host) { FactoryGirl.build(:host, :managed) }
+
+    test "#multiboot" do
+      host.respond_to?(:multiboot)
+    end
+
+    test "#jumpstart_path" do
+      host.respond_to?(:jumpstart_path)
+    end
+
+    test "#install_path" do
+      host.respond_to?(:install_path)
+    end
+
+    test "#miniroot" do
+      host.respond_to?(:miniroot)
+    end
+  end
+
+  describe 'interface identifiers validation' do
+    let(:host) { FactoryGirl.build(:host, :managed) }
+    let(:additional_interface) { host.interfaces.build }
+
+    context 'additional interface has different identifier' do
+      test 'host is valid' do
+        assert host.valid?
+      end
+    end
+
+    context 'additional interface has same identifier' do
+      before { additional_interface.identifier = host.primary_interface.identifier }
+
+      test 'host is valid' do
+        refute host.valid?
+      end
+
+      test 'validation ignores interfaces marked for destruction' do
+        additional_interface.mark_for_destruction
+        assert host.valid?
+      end
+    end
+  end
+
+  context "recreating host config" do
+    setup do
+      @nic = FactoryGirl.build(:nic_primary_and_provision)
+      @nic.expects(:rebuild_tftp).returns(true)
+      @nic.expects(:rebuild_dns).returns(true)
+      @nic.expects(:rebuild_dhcp).returns(true)
+      Nic::Managed.expects(:rebuild_methods).returns(:rebuild_dhcp => "DHCP", :rebuild_dns => "DNS", :rebuild_tftp => "TFTP")
+    end
+
+    test "recreate config with success" do
+      Host::Managed.expects(:rebuild_methods).returns(:rebuild_test => "TEST")
+      host = FactoryGirl.build(:host, :interfaces => [@nic])
+      host.expects(:rebuild_test).returns(true)
+      result = host.recreate_config
+      assert result["DHCP"]
+      assert result["DNS"]
+      assert result["TFTP"]
+      assert result["TEST"]
+    end
+
+    test "recreate config with clashing methods" do
+      Host::Managed.expects(:rebuild_methods).returns(:rebuild_dns => "DNS")
+      host = FactoryGirl.build(:host, :interfaces => [@nic])
+      assert_raises(Foreman::Exception) { host.recreate_config }
+    end
+
+    context "recreate with multiple nics and failures" do
+      setup do
+        @nic2 = FactoryGirl.build(:nic_managed)
+        @nic2.expects(:rebuild_tftp).returns(false)
+        @nic2.expects(:rebuild_dns).returns(false)
+        @nic2.expects(:rebuild_dhcp).returns(false)
+      end
+
+      test "second is a failure" do
+        host = FactoryGirl.build(:host, :interfaces => [@nic, @nic2])
+        result = host.recreate_config
+        refute result["DHCP"]
+        refute result["DNS"]
+        refute result["TFTP"]
+      end
+
+      test "first is a failure" do
+        host = FactoryGirl.build(:host, :interfaces => [@nic2, @nic])
+        result = host.recreate_config
+        refute result["DHCP"]
+        refute result["DNS"]
+        refute result["TFTP"]
+      end
+    end
+
+    test "recreate with multiple nics, all are success" do
+      nic = FactoryGirl.build(:nic_managed)
+      nic.expects(:rebuild_tftp).returns(true)
+      nic.expects(:rebuild_dns).returns(true)
+      nic.expects(:rebuild_dhcp).returns(true)
+      host = FactoryGirl.build(:host, :interfaces => [@nic, nic])
+      result = host.recreate_config
+      assert result["DHCP"]
+      assert result["DNS"]
+      assert result["TFTP"]
+    end
+  end
+
+  test 'should display inherited parameters' do
+    host = FactoryGirl.create(:host,
+                              :location => taxonomies(:location1),
+                              :organization => taxonomies(:organization1),
+                              :domain => domains(:mydomain))
+    location_parameter = LocationParameter.new(:name => 'location', :value => 'parameter')
+    host.location.location_parameters = [location_parameter]
+    assert(host.host_inherited_params_objects.include?(location_parameter), 'Taxonomy parameters should be included')
+  end
+
   private
 
   def parse_json_fixture(relative_path)

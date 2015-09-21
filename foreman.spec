@@ -19,7 +19,7 @@
 #global dashalphatag -%{alphatag}
 
 Name:   foreman
-Version: 1.7.2.36
+Version: 1.7.2.36.hotfix.1261253
 Release: 1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
@@ -675,6 +675,9 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Mon Sep 21 2015 Mike McCune <mmccune@redhat.com> 1.7.2.36.hotfix.1261253-1
+- 1261253 - HOTFIX commit from upstream patch (mmccune@redhat.com)
+
 * Wed Aug 26 2015 Mike McCune <mmccune@redhat.com> 1.7.2.36-1
 - Version bump for 6.1.2 zstream (mmccune@redhat.com)
 

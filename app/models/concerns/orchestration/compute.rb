@@ -114,7 +114,11 @@ module Orchestration::Compute
         if value.blank? or (other_host = Host.send("find_by_#{foreman_attr}", value))
           delCompute
           return failure("#{foreman_attr} #{value} is already used by #{other_host}") if other_host
-          return failure("#{foreman_attr} value is blank!")
+          if foreman_attr == :mac
+            return failure("could not fetch MAC address, you must specify attributes for at least one compute interface")
+          else
+            return failure("#{foreman_attr} value is blank!")
+          end
         end
       end
       true

@@ -19,7 +19,7 @@
 #global dashalphatag -%{alphatag}
 
 Name:   foreman
-Version: 1.7.2.37
+Version: 1.7.2.38
 Release: 1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
@@ -673,6 +673,16 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Tue Sep 29 2015 Chris Peters <chrispeters.psu@gmail.com> 1.7.2.38-1
+- Fixes #11188 - EnsureNotUsedBy checks for unscoped associations before
+  destroying (orabin@redhat.com)
+- Merge branch '1193867' into 'SATELLITE-6.1.0' (chpeters@redhat.com)
+- Merge branch 'bz1177570' into 'SATELLITE-6.1.0' (chpeters@redhat.com)
+- Merge branch '1135918' into 'SATELLITE-6.1.0' (chpeters@redhat.com)
+- Fixes BZ1193867 - Make dashboard respect max columns (tbrisker@gmail.com)
+- Fixes #1177570 - change the error message (mhulan@redhat.com)
+- [BRANDING] Fixes BZ1135918 - display 'x' in search box (tbrisker@gmail.com)
+
 * Thu Sep 10 2015 Mike McCune <mmccune@redhat.com> 1.7.2.37-1
 - Fixes: BZ1250116 - remove limitation on max fog version (jmontleo@redhat.com)
 

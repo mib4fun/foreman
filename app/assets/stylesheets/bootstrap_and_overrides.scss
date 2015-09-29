@@ -20,7 +20,9 @@ $navbar-default-bg: $primary_color;
 }
 
 .autocomplete-clear{
-  font-size: 14px
+  font-size: 14px;
+  position: relative;
+  z-index: 10;
 }
 .autocomplete-input{
   min-height: 27px;

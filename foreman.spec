@@ -19,7 +19,7 @@
 #global dashalphatag -%{alphatag}
 
 Name:   foreman
-Version: 1.7.2.38
+Version: 1.7.2.39
 Release: 1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
@@ -673,6 +673,22 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Wed Sep 30 2015 Mike McCune <mmccune@redhat.com> 1.7.2.39-1
+- Fixes #11673 - accept integer value when setting the integer via API
+  (inecas@redhat.com)
+- Fixes #9104 - allow disabling of interface updates (mhulan@redhat.com)
+- Fixes #9673 - treat YAML and JSON lookup keys as strings (mhulan@redhat.com)
+- Fixes #9787 - correctly typecast default values (mhulan@redhat.com)
+- fixes #10287 - provide helper methods for proxy features
+  (stbenjam@redhat.com)
+- Fixes #11763 - Add inherited parameters to Host view api (shlomi@ben-
+  hanna.com)
+- Fixes #11428 - External user groups refresh shouldn't be case sensitive
+  (elobatocs@gmail.com)
+- Fixes #1193812 - Added support for "inherit" state. (sshtein@redhat.com)
+- Fixes #11303: Allow scoped search by name for permissions.
+  (ericdhelms@gmail.com)
+
 * Tue Sep 29 2015 Chris Peters <chrispeters.psu@gmail.com> 1.7.2.38-1
 - Fixes #11188 - EnsureNotUsedBy checks for unscoped associations before
   destroying (orabin@redhat.com)

@@ -1,11 +1,12 @@
 module Api
   module V2
     class PermissionsController < V2::BaseController
+      include Api::Version2
+
       before_filter :find_resource, :only => %w{show}
 
       api :GET, "/permissions/", N_("List all permissions")
-      param :page, String, :desc => N_("paginate results")
-      param :per_page, String, :desc => N_("number of entries per request")
+      param_group :search_and_pagination, ::Api::V2::BaseController
       param :resource_type, String
       param :name, String
 
@@ -13,13 +14,13 @@ module Api
         type = params[:resource_type].blank? ? nil : params[:resource_type]
         name = params[:name].blank? ? nil : params[:name]
         if type
-          @permissions = Permission.find_all_by_resource_type(type)
+          @permissions = Permission.where(:resource_type => type).paginate(paginate_options)
         elsif name
-          @permissions = Permission.find_all_by_name(name)
+          @permissions = Permission.where(:name => name).paginate(paginate_options)
         else
-          @permissions = Permission.all
+          @permissions = resource_scope_for_index
         end
-        @permissions = @permissions.paginate(paginate_options)
+        @permissions
       end
 
       api :GET, "/permissions/:id/", N_("Show a permission")

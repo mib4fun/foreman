@@ -19,7 +19,7 @@
 #global dashalphatag -%{alphatag}
 
 Name:   foreman
-Version: 1.7.2.39
+Version: 1.7.2.40
 Release: 1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
@@ -673,6 +673,9 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Thu Oct 01 2015 Mike McCune <mmccune@redhat.com> 1.7.2.40-1
+- Version 6.1.3 (mmccune@redhat.com)
+
 * Wed Sep 30 2015 Mike McCune <mmccune@redhat.com> 1.7.2.39-1
 - Fixes #11673 - accept integer value when setting the integer via API
   (inecas@redhat.com)

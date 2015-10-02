@@ -1,3 +1,3 @@
 module Satellite
-  VERSION = "6.1.2"
+  VERSION = "6.1.3"
 end

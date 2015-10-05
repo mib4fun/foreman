@@ -85,8 +85,6 @@ module LayoutHelper
   # add hidden field for options[:disabled]
   def multiple_selects(f, attr, associations, selected_ids, options = {}, html_options = {})
     options.merge!(:size => "col-md-10")
-    authorized = AssociationAuthorizer.authorized_associations(associations).all
-    unauthorized = selected_ids.blank? ? [] : selected_ids - authorized.map(&:id)
     field(f, attr, options) do
       attr_ids = (attr.to_s.singularize+"_ids").to_sym
       hidden_fields = ''
@@ -347,32 +345,5 @@ module LayoutHelper
 
   def modal_close(data_dismiss = 'modal', text = _('Close'))
     button_tag(text, :class => 'btn btn-default', :data => { :dismiss => data_dismiss })
-  end
-
-  def number_f(f, attr, options = {})
-    field(f, attr, options) do
-      addClass options, "form-control"
-      f.number_field attr, options
-    end
-  end
-
-  def last_days(days)
-    content_tag(:h6, n_("last %s day", "last %s days", days) % days, :class => 'ca')
-  end
-
-  def fullscreen_button(element = "$(this).prev()")
-    button_tag(:type => 'button', :class => 'btn btn-default btn-md btn-fullscreen', :onclick => "set_fullscreen(#{element})", :title => _("Full screen")) do
-      icon_text('resize-full')
-    end
-  end
-
-  def fullscreen_input(element = "$(this).parent().prev()")
-    content_tag(:span, fullscreen_button(element), :class => 'input-group-btn')
-  end
-
-  private
-
-  def table_css_classes(classes = '')
-    "table table-bordered table-striped table-condensed " + classes
   end
 end

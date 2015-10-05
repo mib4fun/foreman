@@ -1832,21 +1832,6 @@ end # end of context "location or organizations are not enabled"
       end
     end
 
-<<<<<<< HEAD
-    test "lookup_values_attributes= updates existing lookup values" do
-      host = FactoryGirl.create(:host, :with_puppetclass)
-      lkey = FactoryGirl.create(:puppetclass_lookup_key, :as_smart_class_param, :puppetclass => host.classes.first, :overrides => {"fqdn=#{host.name}" => 'old value'})
-      lval = host.lookup_values.first
-
-      host.lookup_values_attributes = {'0' => {'lookup_key_id' => lkey.id.to_s, 'value' => 'new value', '_destroy' => 'false', 'id' => lval.id.to_s}}.with_indifferent_access
-      assert_equal 'old value', LookupValue.find(lval.id).value
-
-      host.save!
-      assert_equal 'new value', LookupValue.find(lval.id).value
-    end
-
-=======
->>>>>>> sshtein/foreman-bz1193812
     test "same works for destruction of lookup keys" do
       host = FactoryGirl.create(:host, :lookup_values_attributes => {"new_123456" => {"lookup_key_id" => lookup_keys(:complex).id, "value"=>"some_value", "match" => "fqdn=abc.mydomain.net"}})
       lookup_value = host.lookup_values.first

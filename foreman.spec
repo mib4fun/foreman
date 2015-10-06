@@ -19,7 +19,7 @@
 #global dashalphatag -%{alphatag}
 
 Name:   foreman
-Version: 1.7.2.40
+Version: 1.7.2.41
 Release: 1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
@@ -673,6 +673,12 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Mon Oct 05 2015 Mike McCune <mmccune@redhat.com> 1.7.2.41-1
+- Revert "Fixes #11188 - EnsureNotUsedBy checks for unscoped associations
+  before destroying" (mmccune@redhat.com)
+- Fixing a bad cherry-pick Merge conflicts weren't resolved properly
+  (chrispeters.psu@gmail.com)
+
 * Thu Oct 01 2015 Mike McCune <mmccune@redhat.com> 1.7.2.40-1
 - Version 6.1.3 (mmccune@redhat.com)
 

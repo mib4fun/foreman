@@ -107,9 +107,7 @@ class HostsController < ApplicationController
           params[:host][:interfaces_attributes]["#{k}"].except!(:password) if params[:host][:interfaces_attributes]["#{k}"][:password].blank?
         end
       end
-      attributes = @host.apply_inherited_attributes(params[:host])
-
-      if @host.update_attributes(attributes)
+      if @host.update_attributes(params[:host])
         process_success :success_redirect => host_path(@host)
       else
         taxonomy_scope
@@ -527,7 +525,7 @@ class HostsController < ApplicationController
     @host = if params[:host][:id]
               host = Host::Base.authorized(:view_hosts, Host).find(params[:host][:id])
               host = host.becomes Host::Managed
-              host.attributes = host.apply_inherited_attributes(params[:host])
+              host.attributes = params[:host]
               host
             else
               Host.new(params[:host])

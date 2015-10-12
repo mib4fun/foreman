@@ -1832,6 +1832,18 @@ end # end of context "location or organizations are not enabled"
       end
     end
 
+    test "lookup_values_attributes= updates existing lookup values" do
+      host = FactoryGirl.create(:host, :with_puppetclass)
+      lkey = FactoryGirl.create(:puppetclass_lookup_key, :as_smart_class_param, :puppetclass => host.classes.first, :overrides => {"fqdn=#{host.name}" => 'old value'})
+      lval = host.lookup_values.first
+
+      host.lookup_values_attributes = {'0' => {'lookup_key_id' => lkey.id.to_s, 'value' => 'new value', '_destroy' => 'false', 'id' => lval.id.to_s}}.with_indifferent_access
+      assert_equal 'old value', LookupValue.find(lval.id).value
+
+      host.save!
+      assert_equal 'new value', LookupValue.find(lval.id).value
+    end
+
     test "same works for destruction of lookup keys" do
       host = FactoryGirl.create(:host, :lookup_values_attributes => {"new_123456" => {"lookup_key_id" => lookup_keys(:complex).id, "value"=>"some_value", "match" => "fqdn=abc.mydomain.net"}})
       lookup_value = host.lookup_values.first
@@ -1929,6 +1941,124 @@ end # end of context "location or organizations are not enabled"
 
       assert_equal actual_attr['zzz_id'], 1111
     end
+  end
+
+  describe 'rendering interface' do
+    let(:host) { FactoryGirl.build(:host, :managed) }
+
+    test "#multiboot" do
+      host.respond_to?(:multiboot)
+    end
+
+    test "#jumpstart_path" do
+      host.respond_to?(:jumpstart_path)
+    end
+
+    test "#install_path" do
+      host.respond_to?(:install_path)
+    end
+
+    test "#miniroot" do
+      host.respond_to?(:miniroot)
+    end
+  end
+
+  describe 'interface identifiers validation' do
+    let(:host) { FactoryGirl.build(:host, :managed) }
+    let(:additional_interface) { host.interfaces.build }
+
+    context 'additional interface has different identifier' do
+      test 'host is valid' do
+        assert host.valid?
+      end
+    end
+
+    context 'additional interface has same identifier' do
+      before { additional_interface.identifier = host.primary_interface.identifier }
+
+      test 'host is valid' do
+        refute host.valid?
+      end
+
+      test 'validation ignores interfaces marked for destruction' do
+        additional_interface.mark_for_destruction
+        assert host.valid?
+      end
+    end
+  end
+
+  context "recreating host config" do
+    setup do
+      @nic = FactoryGirl.build(:nic_primary_and_provision)
+      @nic.expects(:rebuild_tftp).returns(true)
+      @nic.expects(:rebuild_dns).returns(true)
+      @nic.expects(:rebuild_dhcp).returns(true)
+      Nic::Managed.expects(:rebuild_methods).returns(:rebuild_dhcp => "DHCP", :rebuild_dns => "DNS", :rebuild_tftp => "TFTP")
+    end
+
+    test "recreate config with success" do
+      Host::Managed.expects(:rebuild_methods).returns(:rebuild_test => "TEST")
+      host = FactoryGirl.build(:host, :interfaces => [@nic])
+      host.expects(:rebuild_test).returns(true)
+      result = host.recreate_config
+      assert result["DHCP"]
+      assert result["DNS"]
+      assert result["TFTP"]
+      assert result["TEST"]
+    end
+
+    test "recreate config with clashing methods" do
+      Host::Managed.expects(:rebuild_methods).returns(:rebuild_dns => "DNS")
+      host = FactoryGirl.build(:host, :interfaces => [@nic])
+      assert_raises(Foreman::Exception) { host.recreate_config }
+    end
+
+    context "recreate with multiple nics and failures" do
+      setup do
+        @nic2 = FactoryGirl.build(:nic_managed)
+        @nic2.expects(:rebuild_tftp).returns(false)
+        @nic2.expects(:rebuild_dns).returns(false)
+        @nic2.expects(:rebuild_dhcp).returns(false)
+      end
+
+      test "second is a failure" do
+        host = FactoryGirl.build(:host, :interfaces => [@nic, @nic2])
+        result = host.recreate_config
+        refute result["DHCP"]
+        refute result["DNS"]
+        refute result["TFTP"]
+      end
+
+      test "first is a failure" do
+        host = FactoryGirl.build(:host, :interfaces => [@nic2, @nic])
+        result = host.recreate_config
+        refute result["DHCP"]
+        refute result["DNS"]
+        refute result["TFTP"]
+      end
+    end
+
+    test "recreate with multiple nics, all are success" do
+      nic = FactoryGirl.build(:nic_managed)
+      nic.expects(:rebuild_tftp).returns(true)
+      nic.expects(:rebuild_dns).returns(true)
+      nic.expects(:rebuild_dhcp).returns(true)
+      host = FactoryGirl.build(:host, :interfaces => [@nic, nic])
+      result = host.recreate_config
+      assert result["DHCP"]
+      assert result["DNS"]
+      assert result["TFTP"]
+    end
+  end
+
+  test 'should display inherited parameters' do
+    host = FactoryGirl.create(:host,
+                              :location => taxonomies(:location1),
+                              :organization => taxonomies(:organization1),
+                              :domain => domains(:mydomain))
+    location_parameter = LocationParameter.new(:name => 'location', :value => 'parameter')
+    host.location.location_parameters = [location_parameter]
+    assert(host.host_inherited_params_objects.include?(location_parameter), 'Taxonomy parameters should be included')
   end
 
   private

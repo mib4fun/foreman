@@ -47,39 +47,28 @@ module HostsAndHostgroupsHelper
     @operatingsystem.ptables
   end
 
-  def puppet_master_fields(f, can_override = false, override = false)
-    "#{puppet_ca(f, can_override, override)} #{puppet_master(f, can_override, override)}".html_safe
+  def puppet_master_fields(f)
+    "#{puppet_ca(f)} #{puppet_master(f)}".html_safe
   end
 
-  INHERIT_TEXT = N_("inherit")
-
-  def puppet_ca(f, can_override, override)
+  def puppet_ca(f)
     # Don't show this if we have no CA proxies, otherwise always include blank
     # so the user can choose not to sign the puppet cert on this host
     proxies = SmartProxy.unscoped.with_features("Puppet CA").with_taxonomy_scope(@location,@organization,:path_ids)
     return if proxies.count == 0
     select_f f, :puppet_ca_proxy_id, proxies, :id, :name,
-             { :include_blank => blank_or_inherit_f(f, :puppet_ca_proxy),
-               :disable_button => can_override ? _(INHERIT_TEXT) : nil,
-               :disable_button_enabled => override && !params[:host][:puppet_ca_proxy_id],
-               :user_set => params[:host] && params[:host][:puppet_ca_proxy_id]
-             },
+             { :include_blank => blank_or_inherit_f(f, :puppet_ca_proxy) },
              { :label       => _("Puppet CA"),
                :help_inline => _("Use this puppet server as a CA server") }
   end
 
-  def puppet_master(f, can_override, override)
+  def puppet_master(f)
     # Don't show this if we have no Puppet proxies, otherwise always include blank
     # so the user can choose not to use puppet on this host
     proxies = SmartProxy.unscoped.with_features("Puppet").with_taxonomy_scope(@location,@organization,:path_ids)
     return if proxies.count == 0
     select_f f, :puppet_proxy_id, proxies, :id, :name,
-             { :include_blank => blank_or_inherit_f(f, :puppet_proxy),
-               :disable_button => can_override ? _(INHERIT_TEXT) : nil,
-               :disable_button_enabled => override && !params[:host][:puppet_proxy_id],
-               :user_set => params[:host] && params[:host][:puppet_proxy_id]
-
-             },
+             { :include_blank => blank_or_inherit_f(f, :puppet_proxy) },
              { :label       => _("Puppet Master"),
                :help_inline => _("Use this puppet server as an initial Puppet Server or to execute puppet runs") }
   end

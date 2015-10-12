@@ -19,7 +19,7 @@
 #global dashalphatag -%{alphatag}
 
 Name:   foreman
-Version: 1.7.2.41
+Version: 1.7.2.42
 Release: 1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
@@ -673,6 +673,10 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Mon Oct 12 2015 Chris Peters <chrispeters.psu@gmail.com> 1.7.2.42-1
+- Revert "Merge branch 'sshtein/foreman-bz1193812' into SATELLITE-6.1.0"
+  (chrispeters.psu@gmail.com)
+
 * Mon Oct 05 2015 Mike McCune <mmccune@redhat.com> 1.7.2.41-1
 - Revert "Fixes #11188 - EnsureNotUsedBy checks for unscoped associations
   before destroying" (mmccune@redhat.com)

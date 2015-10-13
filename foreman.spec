@@ -19,7 +19,7 @@
 #global dashalphatag -%{alphatag}
 
 Name:   foreman
-Version: 1.7.2.42
+Version: 1.7.2.43
 Release: 1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
@@ -673,6 +673,13 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Tue Oct 13 2015 Chris Peters <chrispeters.psu@gmail.com> 1.7.2.43-1
+- Merge branch '20151013-1337' into 'SATELLITE-6.1.0' (chpeters@redhat.com)
+- Revert "Fixes #11763 - Add inherited parameters to Host view api"
+  (mmccune@redhat.com)
+- Revert "Fixes #11428 - External user groups refresh shouldn't be case
+  sensitive" (mmccune@redhat.com)
+
 * Mon Oct 12 2015 Chris Peters <chrispeters.psu@gmail.com> 1.7.2.42-1
 - Revert "Merge branch 'sshtein/foreman-bz1193812' into SATELLITE-6.1.0"
   (chrispeters.psu@gmail.com)

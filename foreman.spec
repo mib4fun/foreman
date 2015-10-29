@@ -19,7 +19,7 @@
 #global dashalphatag -%{alphatag}
 
 Name:   foreman
-Version: 1.7.2.43
+Version: 1.7.2.44
 Release: 1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
@@ -673,6 +673,27 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Thu Oct 29 2015 Chris Peters <chrispeters.psu@gmail.com> 1.7.2.44-1
+- Fixes #11761 - support hostgroup form push through AJAX (mhulan@redhat.com)
+- fixes #8521 - fix classes accessors, copy overrides on host clone
+  (dcleal@redhat.com)
+- Fixes #11579 - Reports show/destroy restricted by host authorization
+  (CVE-2015-5233) (elobatocs@gmail.com)
+- Merge branch 'external_usergroups' into 'SATELLITE-6.1.0'
+  (chpeters@redhat.com)
+- Merge branch '1207972' into 'SATELLITE-6.1.0' (chpeters@redhat.com)
+- fixes #10509 - add toggle for LDAP usergroup updating (dcleal@redhat.com)
+- Fixes #11407 - Uppercase logins from LDAP break external user group sync
+  (elobatocs@gmail.com)
+- Fixes #11428 - External user groups refresh shouldn't be case sensitive
+  (elobatocs@gmail.com)
+- Fixes #7369 - External user groups update on login (elobatocs@gmail.com)
+- Pin fog-google (ericdhelms@gmail.com)
+- Pin wirb to 1.0.0 (ericdhelms@gmail.com)
+- fixes #11980 - pin net-ssh to 2.x on Ruby 1.9.3
+- Fixes #11188 - EnsureNotUsedBy checks for unscoped associations before
+  destroying (orabin@redhat.com)
+
 * Tue Oct 13 2015 Chris Peters <chrispeters.psu@gmail.com> 1.7.2.43-1
 - Merge branch '20151013-1337' into 'SATELLITE-6.1.0' (chpeters@redhat.com)
 - Revert "Fixes #11763 - Add inherited parameters to Host view api"

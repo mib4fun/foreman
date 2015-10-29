@@ -87,11 +87,27 @@ class AuthSourceLdap < AuthSource
     end
   end
 
-  def update_usergroups(login, password)
-    ldap_con(login, password).group_list(login).each do |name|
+  def update_usergroups(login)
+    if use_user_login_for_service?
+      logger.info "Skipping user group update for user #{login} as $login is in use, group sync is unsupported"
+      return
+    end
+
+    unless usergroup_sync?
+      logger.info "Skipping user group update for user #{login} as usergroup_sync is disabled"
+      return
+    end
+
+    logger.debug "Updating user groups for user #{login}"
+    internal = User.find_by_login(login).external_usergroups.map(&:name)
+    external = ldap_con.group_list(login) # this list may return all groups in lowercase
+    (internal | external).each do |name|
       begin
-        external_usergroup = external_usergroups.find_by_name(name)
-        external_usergroup.refresh if external_usergroup.present?
+        external_usergroup = external_usergroups.where('lower(name) = ?', name.downcase).last
+        if external_usergroup.present?
+          logger.debug "Refreshing external user group #{external_usergroup.name}"
+          external_usergroup.refresh
+        end
       rescue => error
         logger.warn "Could not update user group #{name}: #{error}"
       end
@@ -105,6 +121,10 @@ class AuthSourceLdap < AuthSource
 
   def users_in_group(name)
     ldap_con.user_list(name)
+  rescue
+    # To be fixed after ldap_fluff returns [] for an empty group
+    # instead of raising an exception
+    []
   end
 
   private
@@ -124,6 +144,7 @@ class AuthSourceLdap < AuthSource
     { :firstname => attr_firstname,
       :lastname  => attr_lastname,
       :mail      => attr_mail,
+      :login     => attr_login,
       :dn        => :dn,
     }
   end

@@ -32,6 +32,7 @@ module Api
         param :attr_mail, String, :desc => "required if onthefly_register is true"
         param :attr_photo, String
         param :onthefly_register, :bool
+        param :usergroup_sync, :bool, :desc => N_("sync external user groups on login")
         param :tls, :bool
       end
 
@@ -55,6 +56,7 @@ module Api
         param :attr_mail, String, :desc => "required if onthefly_register is true"
         param :attr_photo, String
         param :onthefly_register, :bool
+        param :usergroup_sync, :bool, :desc => N_("sync external user groups on login")
         param :tls, :bool
       end
 

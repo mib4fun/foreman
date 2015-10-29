@@ -31,6 +31,7 @@ module Api
           param :attr_mail, String, :desc => N_("required if onthefly_register is true")
           param :attr_photo, String
           param :onthefly_register, :bool
+          param :usergroup_sync, :bool, :desc => N_("sync external user groups on login")
           param :tls, :bool
           param :groups_base, String, :desc => N_("groups base DN")
           param :server_type, AuthSourceLdap::SERVER_TYPES.keys, :desc => N_("type of the LDAP server")

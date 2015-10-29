@@ -127,7 +127,7 @@
                                  {:disabled => taxonomy.used_and_selected_or_inherited_ids[:config_template_ids], :label => _('Select templates')},
                                  {'data-mismatches' => taxonomy.need_to_be_selected_ids[:config_template_ids].to_json,
                                   'data-inheriteds' => taxonomy.inherited_ids[:config_template_ids].to_json,
-                                  'data-useds' => taxonomy.used_ids[:config_template_ids].to_json } %>
+                                  'data-useds' => taxonomy.used_ids[:config_template_ids].to_json }, 'template' %>
 
           </div>
         <% end %>

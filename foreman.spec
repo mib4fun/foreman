@@ -19,7 +19,7 @@
 #global dashalphatag -%{alphatag}
 
 Name:   foreman
-Version: 1.7.2.44
+Version: 1.7.2.45
 Release: 1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
@@ -673,6 +673,10 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Tue Nov 03 2015 Mike McCune <mmccune@redhat.com> 1.7.2.45-1
+- 6.1.4 version (mmccune@redhat.com)
+- Fixes #7233 - Drop Ruby 1.8.7 and revert Ruby 1.8.7 specifics
+
 * Thu Oct 29 2015 Chris Peters <chrispeters.psu@gmail.com> 1.7.2.44-1
 - Fixes #11761 - support hostgroup form push through AJAX (mhulan@redhat.com)
 - fixes #8521 - fix classes accessors, copy overrides on host clone

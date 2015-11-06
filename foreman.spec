@@ -19,7 +19,7 @@
 #global dashalphatag -%{alphatag}
 
 Name:   foreman
-Version: 1.7.2.45
+Version: 1.7.2.46
 Release: 1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
@@ -673,6 +673,10 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Fri Nov 06 2015 Mike McCune <mmccune@redhat.com> 1.7.2.46-1
+- fixes #12118 - query model for alternative permission names
+  (stbenjam@redhat.com)
+
 * Tue Nov 03 2015 Mike McCune <mmccune@redhat.com> 1.7.2.45-1
 - 6.1.4 version (mmccune@redhat.com)
 - Fixes #7233 - Drop Ruby 1.8.7 and revert Ruby 1.8.7 specifics

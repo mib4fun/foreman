@@ -204,13 +204,14 @@ FactoryGirl.define do
   factory :nic_interface, :class => Nic::Interface, :parent => :nic_base do
     type 'Nic::Interface'
   end
-  factory :nic_managed, :class => Nic::Interface, :parent => :nic_base do
+  factory :nic_managed, :class => Nic::Managed, :parent => :nic_interface do
     type 'Nic::Managed'
     sequence(:mac) { |n| "01:23:45:ab:cd:" + n.to_s(16).rjust(2, '0') }
   end
-  factory :nic_bmc, :class => Nic::Interface, :parent => :nic_base do
+  factory :nic_bmc, :class => Nic::BMC, :parent => :nic_base do
     type 'Nic::BMC'
     sequence(:mac) { |n| "01:23:45:ab:ef:" + n.to_s(16).rjust(2, '0') }
+    provider 'IPMI'
   end
   factory :nic_bond, :class => Nic::Bond, :parent => :nic_base do
     type 'Nic::Bond'

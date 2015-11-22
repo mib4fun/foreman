@@ -177,7 +177,7 @@ class AuthSourceLdapTest < ActiveSupport::TestCase
       @auth_source_ldap.expects(:valid_group?).with('IPAUSERS').returns(true)
       external = FactoryGirl.create(:external_usergroup, :auth_source => @auth_source_ldap, :name => 'IPAUSERS')
       ldap_user = FactoryGirl.create(:user, :login => 'JohnSmith', :mail => 'a@b.com', :auth_source => @auth_source_ldap)
-      AuthSourceLdap.any_instance.expects(:users_in_group).with('IPAUSERS').returns(['JohnSmith'])
+      AuthSourceLdap.any_instance.stubs(:users_in_group).with('IPAUSERS').returns(['JohnSmith'])
       @auth_source_ldap.send(:update_usergroups, 'test')
       assert_include ldap_user.usergroups, external.usergroup
     end

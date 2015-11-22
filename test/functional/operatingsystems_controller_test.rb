@@ -39,7 +39,7 @@ class OperatingsystemsControllerTest < ActionController::TestCase
   context 'redirects' do
     test 'create valid' do
       Operatingsystem.any_instance.stubs(:valid?).returns(true)
-      post :create, {}, set_session_user
+      post :create, {:operatingsystem => {:name => "MyOS"}}, set_session_user
       assert_redirected_to operatingsystems_url
     end
 

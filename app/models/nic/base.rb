@@ -19,7 +19,7 @@ module Nic
     validates :mac, :uniqueness => {:scope => :virtual},
               :if => Proc.new { |nic| nic.managed? && nic.host && nic.host.managed? && !nic.host.compute? && !nic.virtual? }, :allow_blank => true
     validates :mac, :presence => true,
-              :if => Proc.new { |nic| nic.managed? && nic.host && nic.host.managed? && !nic.host.compute? &&!nic.virtual? }
+              :if => Proc.new { |nic| nic.managed? && nic.host && nic.host.managed? && !nic.host.compute? && !nic.virtual? }
     validates :mac, :mac_address => true, :allow_blank => true
 
     validate :uniq_with_hosts
@@ -96,7 +96,7 @@ module Nic
       failed = false
       uniq_fields_with_hosts.each do |attr|
         value = self.send(attr)
-        unless value.blank?
+        unless value.blank? || host.nil?
           if host.send(attr) == value
             errors.add(attr, _("can't use the same value as the primary interface"))
             failed = true
@@ -111,6 +111,8 @@ module Nic
 
     def normalize_mac
       self.mac = Net::Validations.normalize_mac(mac)
+    rescue ArgumentError => e
+      self.errors.add(:mac, e.message)
     end
 
     # do we require a host object associate to the interface? defaults to true

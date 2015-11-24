@@ -19,7 +19,7 @@
 #global dashalphatag -%{alphatag}
 
 Name:   foreman
-Version: 1.7.2.46
+Version: 1.7.2.47
 Release: 1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
@@ -673,6 +673,16 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Tue Nov 24 2015 Mike McCune <mmccune@redhat.com> 1.7.2.47-1
+- fixes #8739 - use global setting when hostgroup root_pass is blank
+  (dcleal@redhat.com)
+- fixes #8822 - append target=_blank to all links with rel-external (shlomi
+  @ben-hanna.com)
+- fixes #8817 - look up reports with all joins from host scoped_search
+  (dcleal@redhat.com)
+- Fixes #8727 - DHCP validation does not fail on discovered leases
+  (lzap+git@redhat.com)
+
 * Fri Nov 06 2015 Mike McCune <mmccune@redhat.com> 1.7.2.46-1
 - fixes #12118 - query model for alternative permission names
   (stbenjam@redhat.com)

@@ -182,7 +182,16 @@ class HostsControllerTest < ActionController::TestCase
     refute assigns(:host).mac
   end
 
-  def setup_user(operation, type = 'hosts', filter = nil)
+  def test_clone_with_hostgroup
+    ComputeResource.any_instance.stubs(:vm_compute_attributes_for).returns({})
+    host = FactoryGirl.create(:host, :with_hostgroup)
+    get :clone, {:id => host.id}, set_session_user
+    assert assigns(:clone_host)
+    assert_template 'clone'
+    assert_response :success
+  end
+
+  def setup_user(operation, type = 'hosts', filter = nil, user = :one)
     super
   end
 
@@ -796,6 +805,15 @@ class HostsControllerTest < ActionController::TestCase
     put :update, { :commit => "Update", :id => @host.name, :host => {:interfaces_attributes => {"0" => {:id => bmc1.id, :password => new_password, :mac => bmc1.mac} } } }, set_session_user
     @host = Host.find(@host.id)
     assert_equal new_password, @host.interfaces.bmc.first.password
+  end
+
+  test "test non admin multiple action" do
+    setup_user 'edit', 'hosts', "owner_type = User and owner_id = #{users(:restricted).id}", :restricted
+    host = FactoryGirl.create(:host)
+    host_ids = [host.id]
+    #the ajax can be any of the multiple actions, toke multiple_parameters for example
+    xhr :get, :multiple_parameters, {:host_ids => host_ids}, set_session_user(:restricted)
+    assert_response :success
   end
 
   test "#disassociate shows error when used on non-CR host" do

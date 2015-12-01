@@ -410,7 +410,7 @@ context "location or organizations are not enabled" do
     refute host.valid?
     assert_present host.errors[:root_pass]
   end
-  
+
   test 'host can be searched in multiple taxonomies' do
     org1 = FactoryGirl.create(:organization)
     org2 = FactoryGirl.create(:organization)
@@ -903,21 +903,6 @@ context "location or organizations are not enabled" do
     assert_equal 1, h.interfaces.count
   end
 
-  test "#set_interfaces skips primary physical interface but updates primary_interface attribute of host" do
-    host, parser = setup_host_with_nic_parser({:macaddress => '00:00:00:11:22:33', :virtual => false, :ipaddress => '10.0.0.200'})
-    host.update_attribute :mac, '00:00:00:11:22:33'
-    host.update_attribute :ip, '10.0.0.100'
-    assert_nil host.primary_interface
-
-    # physical NICs with same MAC are skipped
-    assert_no_difference 'Nic::Base.count' do
-      host.set_interfaces(parser)
-    end
-    assert_equal '10.0.0.100', host.ip
-    assert_equal 'eth0', host.primary_interface
-  end
-
-
   test "#set_interfaces updates existing physical interface" do
     host, parser = setup_host_with_nic_parser({:macaddress => '00:00:00:11:22:33', :virtual => false, :ipaddress => '10.0.0.200', :link => false})
     FactoryGirl.create(:nic_managed, :host => host, :mac => '00:00:00:11:22:33', :ip => '10.10.0.1', :link => true)
@@ -1008,30 +993,6 @@ context "location or organizations are not enabled" do
     virtual.reload
     assert_equal 'eth5.1', virtual.identifier
     assert_equal 'eth5', virtual.attached_to
-  end
-  
-  test "host can't have more interfaces with same identifier" do
-    host = FactoryGirl.build(:host, :managed)
-    host.primary_interface.identifier = 'eth0'
-    nic = host.interfaces.build(:identifier => 'eth0')
-    refute host.valid?
-    assert_present nic.errors[:identifier]
-    assert_present host.errors[:interfaces]
-    nic.identifier = 'eth1'
-    host.valid?
-    refute_includes nic.errors.keys, :identifier
-    refute_includes host.errors.keys, :interfaces
-  end
-
-  test "set_interfaces updates associated virtuals identifier even on primary interface" do
-    host, parser = setup_host_with_nic_parser({:macaddress => '00:00:00:11:22:33', :ipaddress => '10.10.0.1', :virtual => false, :identifier => 'eth1'})
-    host.update_attribute :primary_interface, 'eth0'
-    host.update_attribute :mac, '00:00:00:11:22:33'
-    virtual = FactoryGirl.create(:nic_managed, :host => host, :mac => '00:00:00:11:22:33', :virtual => true, :ip => '10.10.0.2', :identifier => 'eth0.1', :attached_to => 'eth0')
-    host.set_interfaces(parser)
-    virtual.reload
-    assert_equal 'eth1.1', virtual.identifier
-    assert_equal 'eth1', virtual.attached_to
   end
 
   test "#set_interfaces updates associated virtuals identifier on identifier change mutualy exclusively" do
@@ -1435,7 +1396,7 @@ context "location or organizations are not enabled" do
         end
       end
       Setting[:token_duration] = 30 #enable tokens so that we only test the subnet
-      test_host    = Host::Test.create(:name => 'testhost', :interfaces => [FactoryGirl.build(:nic_primary_and_provision)])
+      test_host    = Host::Test.create(:name => 'testhost')
       managed_host = test_host.to_managed!
       refute managed_host.valid?
       assert_empty Token.where(:host_id => managed_host.id)
@@ -1665,14 +1626,6 @@ end # end of context "location or organizations are not enabled"
       assert_equal host.available_puppetclasses.map(&:id), copy.available_puppetclasses.map(&:id)
     end
 
-    test 'lookup values are copied' do
-      host = FactoryGirl.create(:host, :with_puppetclass)
-      FactoryGirl.create(:puppetclass_lookup_key, :as_smart_class_param, :with_override, :puppetclass => host.puppetclasses.first, :overrides => {host.lookup_value_matcher => 'test'})
-      copy = host.clone
-      assert_equal 1, copy.lookup_values.size
-      assert_equal host.lookup_values.map(&:value), copy.lookup_values.map(&:value)
-    end
-
     test 'clone host should not copy name, system fields (mac, ip, etc)' do
       host = FactoryGirl.create(:host, :with_config_group, :with_puppetclass, :with_parameter)
       copy = host.clone
@@ -1682,18 +1635,6 @@ end # end of context "location or organizations are not enabled"
       assert copy.uuid.blank?
       assert copy.certname.blank?
       assert copy.last_report.blank?
-    end
-
-    test 'clone host should copy interfaces without name, mac and ip' do
-      host = FactoryGirl.create(:host, :with_config_group, :with_puppetclass, :with_parameter)
-      copy = host.clone
-
-      assert_equal host.interfaces.length, copy.interfaces.length
-
-      interface = copy.interfaces.first
-      assert interface.name.blank?
-      assert interface.mac.blank?
-      assert interface.ip.blank?
     end
   end
 

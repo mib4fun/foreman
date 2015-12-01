@@ -4,6 +4,7 @@ module Nic
     PROVIDERS = %w(IPMI)
     before_validation :ensure_physical
     validates :provider, :presence => true, :inclusion => { :in => PROVIDERS }
+    before_validation { |nic| nic.provider.try(:upcase!) }
     validates :mac, :presence => true, :if => :managed?
     validate :validate_bmc_proxy
 

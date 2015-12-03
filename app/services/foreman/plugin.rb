@@ -194,7 +194,7 @@ module Foreman #:nodoc:
 
     # Add a new role if it doesn't exist
     def role(name, permissions)
-      return false if pending_migrations
+      return false if pending_migrations || Rails.env.test?
 
       Role.transaction do
         role = Role.find_or_create_by_name(name)

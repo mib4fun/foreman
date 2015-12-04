@@ -19,7 +19,7 @@
 #global dashalphatag -%{alphatag}
 
 Name:   foreman
-Version: 1.7.2.47
+Version: 1.7.2.48
 Release: 1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
@@ -673,6 +673,12 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Fri Dec 04 2015 Chris Peters <chrispeters.psu@gmail.com> 1.7.2.48-1
+- Allow plugin tests to run such as foreman_discovery (ericdhelms@gmail.com)
+- Fixes for Foreman unit tests (ericdhelms@gmail.com)
+- fixes #12431 - pin tins for Ruby 1.9.3 compatibility (dcleal@redhat.com)
+- Satellite 6.1.5 version update (mmccune@redhat.com)
+
 * Tue Nov 24 2015 Mike McCune <mmccune@redhat.com> 1.7.2.47-1
 - fixes #8739 - use global setting when hostgroup root_pass is blank
   (dcleal@redhat.com)

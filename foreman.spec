@@ -19,7 +19,7 @@
 #global dashalphatag -%{alphatag}
 
 Name:   foreman
-Version: 1.7.2.48
+Version: 1.7.2.49
 Release: 1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
@@ -673,6 +673,10 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Thu Dec 10 2015 Mike McCune <mmccune@redhat.com> 1.7.2.49-1
+- fixes #10627 - apply host taxonomy scope to facts/report joins
+  (dcleal@redhat.com)
+
 * Fri Dec 04 2015 Chris Peters <chrispeters.psu@gmail.com> 1.7.2.48-1
 - Allow plugin tests to run such as foreman_discovery (ericdhelms@gmail.com)
 - Fixes for Foreman unit tests (ericdhelms@gmail.com)

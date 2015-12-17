@@ -1,10 +1,9 @@
 class ConfigGroupsController < ApplicationController
-
   include Foreman::Controller::AutoCompleteSearch
-  before_filter :find_config_group, :only => %w{edit update destroy}
+  before_filter :find_resource, :only => [:edit, :update, :destroy]
 
   def index
-    @config_groups = ConfigGroup.search_for(params[:search], :order => params[:order]).paginate(:page => params[:page])
+    @config_groups = resource_base.search_for(params[:search], :order => params[:order]).paginate(:page => params[:page])
   end
 
   def new
@@ -38,11 +37,4 @@ class ConfigGroupsController < ApplicationController
       process_error
     end
   end
-
-  private
-
-  def find_config_group
-    @config_group = ConfigGroup.find(params[:id])
-  end
-
 end

@@ -19,7 +19,7 @@
 #global dashalphatag -%{alphatag}
 
 Name:   foreman
-Version: 1.7.2.49
+Version: 1.7.2.50
 Release: 1%{?dotalphatag}%{?dist}
 Summary:Systems Management web application
 
@@ -673,6 +673,17 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Fri Dec 18 2015 Chris Peters <chrispeters.psu@gmail.com> 1.7.2.50-1
+- Fixes #12554 - Change OS name column heading to match contents
+  (alexshtayer@yahoo.com)
+- Fixes #12452 - Enable non admin users to do bulk actions on hosts
+  (alongoldboim@gmail.com)
+- Fixes #9704,#9705 - ability to customize vmware VM on image-based
+  provisioning (inecas@redhat.com)
+- Satellite 6.1.6 version (mmccune@redhat.com)
+- Fixes bz1284475 - Add granular permissions to config groups
+  (mhulan@redhat.com)
+
 * Thu Dec 10 2015 Mike McCune <mmccune@redhat.com> 1.7.2.49-1
 - fixes #10627 - apply host taxonomy scope to facts/report joins
   (dcleal@redhat.com)
